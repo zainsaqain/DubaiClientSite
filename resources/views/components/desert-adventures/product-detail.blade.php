@@ -7,6 +7,7 @@
         ->filter();
     $mainImage = $product['gallery'][0];
     $mainAlt = $product['gallery_alt'][0] ?? $product['title'];
+    $currency = $product['booking']['currency'] ?? 'AED';
 @endphp
 
 <section class="da-product-page da-container" data-product-detail>
@@ -63,17 +64,17 @@
             <div class="da-video-preview"><img src="{{ asset($product['video_image']) }}" alt="{{ $product['title'] }} video preview" loading="lazy"><button type="button" aria-label="Preview {{ $product['title'] }} video" data-video-preview>▶</button><strong>{{ $product['title'] }} preview</strong><span data-video-status aria-live="polite"></span></div>
         </div>
 
-        <aside class="da-booking-card" data-booking-card>
-            <p>Sample from <strong data-booking-total>AED {{ number_format($product['booking']['base_price']) }}</strong><small>Example price only — not live</small></p>
+        <aside class="da-booking-card" data-booking-card data-currency="{{ $currency }}">
+            <p>From <strong data-booking-total>{{ $currency }} {{ number_format($product['booking']['base_price']) }}</strong><small>Per person · final availability confirmed at booking</small></p>
             <h2>Select date and travellers</h2>
             <label>Date<input type="date" data-booking-date></label>
             <div class="da-traveller-grid">
                 <div><span>Adults</span><div class="da-quantity-control"><button type="button" data-quantity-action="decrease" data-quantity="adults" aria-label="Decrease adults">−</button><output data-quantity-output="adults">1</output><button type="button" data-quantity-action="increase" data-quantity="adults" aria-label="Increase adults">+</button></div></div>
                 <div><span>Children</span><div class="da-quantity-control"><button type="button" data-quantity-action="decrease" data-quantity="children" aria-label="Decrease children">−</button><output data-quantity-output="children">0</output><button type="button" data-quantity-action="increase" data-quantity="children" aria-label="Increase children">+</button></div></div>
             </div>
-            <label>Choose your sample service<select data-booking-service>@foreach ($product['booking']['services'] as $service)<option value="{{ $service['price'] }}">{{ $service['label'] }} — AED {{ number_format($service['price']) }}</option>@endforeach</select></label>
-            <small>Sample availability and prices only. This interface does not create a booking or payment.</small>
-            <button type="button" class="da-check-availability" data-check-availability>Check sample availability <span aria-hidden="true">→</span></button>
+            <label>Choose your package<select data-booking-service>@foreach ($product['booking']['services'] as $service)<option value="{{ $service['price'] }}">{{ $service['label'] }} — {{ $currency }} {{ number_format($service['price']) }}</option>@endforeach</select></label>
+            <small>Select a date and travellers to review your preferred experience package.</small>
+            <button type="button" class="da-check-availability" data-check-availability>Check availability <span aria-hidden="true">→</span></button>
             <p class="da-booking-status" data-booking-status aria-live="polite"></p>
         </aside>
     </div>

@@ -107,7 +107,7 @@ $desertSafarisList = [
         'travellers_choice' => false,
         'location' => 'Dubai',
         'price' => 'PKR 7,618',
-        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book The Fort - Lisaili Desert Experience'),
+        'url' => route('fort-lisaili-desert-experience'),
     ],
     [
         'category' => 'Desert Safaris',
@@ -138,6 +138,26 @@ $desertSafarisList = [
         'location' => 'Dubai',
         'price' => 'PKR 61,558',
         'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book Dune Buggy Adventure in Dubai'),
+    ],
+    [
+        'category' => 'Desert Experiences',
+        'title' => 'Exclusive Desert Experience',
+        'image' => asset('images/desert-safari.png'),
+        'bestseller' => false,
+        'travellers_choice' => true,
+        'location' => 'Dubai',
+        'price' => 'PKR 230,446',
+        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book the Exclusive Desert Experience'),
+    ],
+    [
+        'category' => 'Desert Experiences',
+        'title' => 'Camel Ride in Dubai',
+        'image' => asset('images/camel-desert-journey.png'),
+        'bestseller' => false,
+        'travellers_choice' => false,
+        'location' => 'Dubai',
+        'price' => 'PKR 38,395',
+        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book a Camel Ride in Dubai'),
     ],
 ];
 
@@ -386,13 +406,31 @@ $dubaiMoments = [
                         </button>
                         <x-site.desert-adventures-mega-menu />
                     </div>
-                    <a class="is-active" href="#attractions">Attractions</a>
-                    <a href="#sports-events">Sports Events</a>
-                    <a href="#city-tours">City Tours</a>
-                    <a href="#cruise-boat-tours">Cruise and Boat Tours</a>
-                    <a href="#waterparks-theme-parks">Waterparks &amp; Theme Parks</a>
-                    <a href="#transfers">Transfers</a>
-                    <a href="#why-us">Why us</a>
+                    <div class="nav-item has-mega-menu" data-attractions-mega-menu>
+                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="attractions-mega-menu">
+                            Attractions
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
+                        </button>
+                        <x-site.attractions-mega-menu />
+                    </div>
+                    <a href="{{ route('sports-events') }}">Sports Events</a>
+                    <div class="nav-item has-mega-menu" data-city-tours-mega-menu>
+                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="city-tours-mega-menu">
+                            City Tours
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
+                        </button>
+                        <x-site.city-tours-mega-menu />
+                    </div>
+                    <a href="{{ route('cruise-boat-tours') }}">Cruise and Boat Tours</a>
+                    <a href="{{ route('waterparks-theme-parks') }}">Waterparks &amp; Theme Parks</a>
+                    <a href="{{ route('transfers') }}">Transfers</a>
+                    <div class="nav-item has-mega-menu" data-why-us-mega-menu>
+                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="why-us-mega-menu">
+                            Why us
+                            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
+                        </button>
+                        <x-site.why-us-mega-menu />
+                    </div>
                 </div>
 
                 <div class="account-links">
@@ -439,11 +477,11 @@ $dubaiMoments = [
                         <span>Desert Adventures</span><i aria-hidden="true">›</i>
                     </button>
                     <a class="mobile-menu-item" href="#attractions"><span class="mobile-nav-icon icon-attractions" aria-hidden="true">✦</span><span>Attractions</span><i aria-hidden="true">›</i></a>
-                    <a class="mobile-menu-item" href="#sports-events"><span class="mobile-nav-icon icon-sports" aria-hidden="true">◉</span><span>Sports Events</span><i aria-hidden="true">›</i></a>
+                    <a class="mobile-menu-item" href="{{ route('sports-events') }}"><span class="mobile-nav-icon icon-sports" aria-hidden="true">◉</span><span>Sports Events</span><i aria-hidden="true">›</i></a>
                     <a class="mobile-menu-item" href="#city-tours"><span class="mobile-nav-icon icon-city" aria-hidden="true">▥</span><span>City Tours</span><i aria-hidden="true">›</i></a>
-                    <a class="mobile-menu-item" href="#cruise-boat-tours"><span class="mobile-nav-icon icon-cruise" aria-hidden="true">⌇</span><span>Cruise and Boat Tours</span><i aria-hidden="true">›</i></a>
-                    <a class="mobile-menu-item" href="#waterparks-theme-parks"><span class="mobile-nav-icon icon-parks" aria-hidden="true">♧</span><span>Waterparks &amp; Theme Parks</span><i aria-hidden="true">›</i></a>
-                    <a class="mobile-menu-item" href="#transfers"><span class="mobile-nav-icon icon-transfers" aria-hidden="true">↗</span><span>Transfers</span><i aria-hidden="true">›</i></a>
+                    <a class="mobile-menu-item" href="{{ route('cruise-boat-tours') }}"><span class="mobile-nav-icon icon-cruise" aria-hidden="true">⌇</span><span>Cruise and Boat Tours</span><i aria-hidden="true">›</i></a>
+                    <a class="mobile-menu-item" href="{{ route('waterparks-theme-parks') }}"><span class="mobile-nav-icon icon-parks" aria-hidden="true">♧</span><span>Waterparks &amp; Theme Parks</span><i aria-hidden="true">›</i></a>
+                    <a class="mobile-menu-item" href="{{ route('transfers') }}"><span class="mobile-nav-icon icon-transfers" aria-hidden="true">↗</span><span>Transfers</span><i aria-hidden="true">›</i></a>
                     <a class="mobile-menu-item" href="#why-us"><span class="mobile-nav-icon icon-why" aria-hidden="true">♥</span><span>Why us</span><i aria-hidden="true">›</i></a>
                 </nav>
 
@@ -656,18 +694,34 @@ $dubaiMoments = [
             class="safaris-section"
             id="desert-safaris"
             x-data="{
+                autoSlide: null,
+                init() {
+                    this.resume();
+                },
+                pause() {
+                    if (this.autoSlide) {
+                        clearInterval(this.autoSlide);
+                        this.autoSlide = null;
+                    }
+                },
+                resume() {
+                    this.pause();
+                    this.autoSlide = setInterval(() => this.scrollRight(), 4000);
+                },
                 scrollLeft() {
                     const track = this.$refs.safarisTrack;
                     if (track) {
                         const amount = track.firstElementChild ? track.firstElementChild.offsetWidth + 20 : 300;
-                        track.scrollBy({ left: -amount, behavior: 'smooth' });
+                        const atBeginning = track.scrollLeft <= 8;
+                        track.scrollTo({ left: atBeginning ? track.scrollWidth : track.scrollLeft - amount, behavior: 'smooth' });
                     }
                 },
                 scrollRight() {
                     const track = this.$refs.safarisTrack;
                     if (track) {
                         const amount = track.firstElementChild ? track.firstElementChild.offsetWidth + 20 : 300;
-                        track.scrollBy({ left: amount, behavior: 'smooth' });
+                        const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 8;
+                        track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + amount, behavior: 'smooth' });
                     }
                 }
             }"
@@ -706,7 +760,7 @@ $dubaiMoments = [
                 </div>
 
                 <!-- Cards Track -->
-                <div class="safaris-track-wrapper">
+                <div class="safaris-track-wrapper" @mouseenter="pause()" @mouseleave="resume()" @touchstart.passive="pause()">
                     <div class="safaris-track" x-ref="safarisTrack">
                         @foreach($desertSafarisList as $safari)
                             <article class="safari-card">
@@ -719,7 +773,7 @@ $dubaiMoments = [
                                 </div>
                                 <div class="safari-card-body">
                                     <span class="safari-card-category">{{ $safari['category'] }}</span>
-                                    <h3 class="safari-card-title">{{ $safari['title'] }}</h3>
+                                    <h3 class="safari-card-title"><a href="{{ $safari['url'] }}">{{ $safari['title'] }}</a></h3>
 
                                     <div class="safari-card-badges">
                                         @if($safari['bestseller'])
@@ -751,8 +805,10 @@ $dubaiMoments = [
 
                                     <a
                                         href="{{ $safari['url'] }}"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                        @if (str_starts_with($safari['url'], 'http'))
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        @endif
                                         class="safari-card-btn"
                                         aria-label="Book {{ $safari['title'] }}"
                                     >
