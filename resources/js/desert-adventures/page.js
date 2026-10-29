@@ -111,13 +111,19 @@ if (bookingCard) {
 
 queryAll('[data-related-carousel]').forEach((carousel) => {
     const track = carousel.querySelector('[data-carousel-track]');
-    const scrollAmount = () => Math.max(track?.clientWidth * 0.82 ?? 0, 260);
+    const prevBtn = carousel.querySelector('[data-carousel-previous]');
+    const nextBtn = carousel.querySelector('[data-carousel-next]');
 
-    carousel.querySelector('[data-carousel-previous]')?.addEventListener('click', () => {
+    const scrollAmount = () => {
+        const firstCard = track?.querySelector('.da-product-preview-card');
+        return firstCard ? firstCard.getBoundingClientRect().width + 16 : Math.max((track?.clientWidth ?? 0) * 0.82, 260);
+    };
+
+    prevBtn?.addEventListener('click', () => {
         track?.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
     });
 
-    carousel.querySelector('[data-carousel-next]')?.addEventListener('click', () => {
+    nextBtn?.addEventListener('click', () => {
         track?.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
     });
 });
@@ -134,21 +140,28 @@ if (recentlyViewed) {
     let storedProductKeys = [];
 
     try {
-        const storedValue = JSON.parse(window.localStorage.getItem(storageKey) ?? '[]');
-        storedProductKeys = Array.isArray(storedValue)
-            ? storedValue.filter((key) => typeof key === 'string' && validProductKeys.has(key))
-            : [];
-        window.localStorage.setItem(storageKey, JSON.stringify([currentProductKey, ...storedProductKeys.filter((key) => key !== currentProductKey)].slice(0, 12)));
+        const rawValue = window.localStorage.getItem(storageKey);
+        const storedValue = rawValue ? JSON.parse(rawValue) : [];
+        if (Array.isArray(storedValue)) {
+            const unique = Array.from(new Set(storedValue.filter((key) => typeof key === 'string' && validProductKeys.has(key))));
+            storedProductKeys = unique;
+        }
+        const updatedList = Array.from(new Set([currentProductKey, ...storedProductKeys])).slice(0, 12);
+        window.localStorage.setItem(storageKey, JSON.stringify(updatedList));
     } catch {
         storedProductKeys = [];
     }
 
     const productsToShow = storedProductKeys.filter((key) => key !== currentProductKey).slice(0, 4);
-    recentCards.forEach((card) => {
-        const isVisible = productsToShow.includes(card.dataset.recentProduct);
-        card.hidden = !isVisible;
 
-        if (isVisible) {
+    recentCards.forEach((card) => {
+        card.hidden = true;
+    });
+
+    productsToShow.forEach((key) => {
+        const card = recentCards.find((c) => c.dataset.recentProduct === key);
+        if (card) {
+            card.hidden = false;
             recentList?.append(card);
         }
     });
@@ -156,4 +169,78 @@ if (recentlyViewed) {
     if (emptyState) {
         emptyState.hidden = productsToShow.length > 0;
     }
+}
+
+/* =====================================================
+   CARD IMAGE CAROUSELS
+   ===================================================== */
+queryAll('[data-card-carousel]').forEach((carousel) => {
+    const slides = Array.from(carousel.querySelectorAll('.da-card-slide'));
+    const dots = Array.from(carousel.querySelectorAll('[data-card-dot]'));
+    if (slides.length <= 1) { return; }
+    let current = 0;
+
+    const goTo = (index) => {
+        slides[current].classList.remove('is-active');
+        dots[current]?.classList.remove('is-active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('is-active');
+        dots[current]?.classList.add('is-active');
+    };
+
+    carousel.querySelector('[data-card-prev]')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        goTo(current - 1);
+    });
+    carousel.querySelector('[data-card-next]')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        goTo(current + 1);
+    });
+    dots.forEach((dot, i) => {
+        dot.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            goTo(i);
+        });
+    });
+});
+
+/* =====================================================
+   HERO GALLERY CAROUSEL (product detail)
+   ===================================================== */
+const heroCarousel = document.querySelector('[data-hero-carousel]');
+
+if (heroCarousel) {
+    const heroSlides = Array.from(heroCarousel.querySelectorAll('.da-hero-slide'));
+    const heroDots = Array.from(heroCarousel.querySelectorAll('[data-hero-dot]'));
+    let heroIndex = 0;
+
+    const heroGoTo = (index) => {
+        heroSlides[heroIndex].classList.remove('is-active');
+        heroSlides[heroIndex].setAttribute('aria-hidden', 'true');
+        heroDots[heroIndex]?.classList.remove('is-active');
+        heroIndex = (index + heroSlides.length) % heroSlides.length;
+        heroSlides[heroIndex].classList.add('is-active');
+        heroSlides[heroIndex].setAttribute('aria-hidden', 'false');
+        heroDots[heroIndex]?.classList.add('is-active');
+    };
+
+    heroCarousel.querySelector('[data-hero-prev]')?.addEventListener('click', () => heroGoTo(heroIndex - 1));
+    heroCarousel.querySelector('[data-hero-next]')?.addEventListener('click', () => heroGoTo(heroIndex + 1));
+
+    heroDots.forEach((dot, i) => {
+        dot.addEventListener('click', () => heroGoTo(i));
+    });
+
+    heroCarousel.querySelector('[data-hero-see-all]')?.addEventListener('click', () => {
+        heroGoTo(1);
+    });
+
+    // Keyboard navigation
+    heroCarousel.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') { heroGoTo(heroIndex - 1); }
+        if (e.key === 'ArrowRight') { heroGoTo(heroIndex + 1); }
+    });
 }

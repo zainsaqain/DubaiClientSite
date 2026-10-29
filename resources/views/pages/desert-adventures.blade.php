@@ -1,13 +1,13 @@
 @extends('layouts.desert-adventures')
 
-@section('title', 'Desert Adventures | Arabian Adventures')
+@section('title', 'Desert Adventures | Waheed Murad')
 
 @section('content')
     @php($adventures = config('desert-adventures.adventures', []))
     <section class="da-intro da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Desert Adventures']]" />
         <h1>Desert Adventures</h1>
-        <p>We have an incredible choice of desert adventures in Arabian Adventures. Head out on an exciting excursion to the Dubai Desert Conservation Reserve (DDCR) with our discover desert hiking, soaring wildlife and culture. Push your heart-racing desert dune buggies, and more memorable desert experiences. Discover the wonders of the desert with us today.</p>
+        <p>We have an incredible choice of desert adventures in Waheed Murad. Head out on an exciting excursion to the Dubai Desert Conservation Reserve (DDCR) with our discover desert hiking, soaring wildlife and culture. Push your heart-racing desert dune buggies, and more memorable desert experiences. Discover the wonders of the desert with us today.</p>
         <h2 class="da-section-title">All Desert <span>Adventures</span></h2>
     </section>
 
@@ -36,7 +36,7 @@
     </section>
 
     <section class="da-desert-story da-container">
-        <h2 class="da-section-title da-story-title">Desert Adventures with <span>Arabian Adventures</span></h2>
+        <h2 class="da-section-title da-story-title">Desert Adventures with <span>Waheed Murad</span></h2>
         <article class="da-story-row"><img src="{{ asset('images/desert-safari.png') }}" alt="Desert guides smiling together" loading="lazy"><div><h3>An award-winning team of desert experts</h3><p>For over 25 years, our desert guides have created unforgettable adventures for visitors from across the world. Friends and solo travellers. Whether you’re seeking thrills, culture, relaxation or all three, our experienced team makes every journey special.</p></div></article>
         <article class="da-story-row da-story-row--reverse"><div><h3>The Dubai Desert Conservation Reserve</h3><p>The Dubai Desert Conservation Reserve is a protected setting for our desert adventures. It is home to an extraordinary variety of wildlife and plants, and offers an escape into the landscape that makes Dubai so unique.</p></div><img src="{{ asset('images/desert-oasis-morning.png') }}" alt="Wildlife walking in the desert" loading="lazy"></article>
         <article class="da-story-row"><img src="{{ asset('images/desert-dune-drive.png') }}" alt="Traveller enjoying a desert sunset" loading="lazy"><div><h3>A commitment to the desert</h3><p>Our desert adventures are underpinned by sustainability efforts as we endeavour to preserve the unspoilt beauty of the DDCR. Our sustainable adventure experiences are designed to protect this land while creating meaningful memories for generations to come.</p></div></article>

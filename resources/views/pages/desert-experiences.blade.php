@@ -6,8 +6,93 @@
     @php($adventures = config('desert-experiences.adventures', []))
     <section class="da-category-hero da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Desert Adventures', 'url' => route('desert-adventures')], ['label' => 'Desert Experiences']]" />
-        <h1>Desert Experiences</h1><p>Slow down and take in the remarkable scenery, culture and hospitality of the Dubai desert. Our curated desert experiences pair authentic activities with memorable dining, private moments and warm Arabian welcome.</p>
-        <div class="da-feature-list"><article><span>◌</span><div><b>Private Experiences</b><small>Made around you</small></div></article><article><span>⌁</span><div><b>Desert Dining</b><small>Under the stars</small></div></article><article><span>♧</span><div><b>Local Culture</b><small>Heritage &amp; stories</small></div></article><article><span>☼</span><div><b>Beautiful Settings</b><small>Morning or evening</small></div></article></div>
+        <h1>Desert Experiences</h1>
+        <p>Slow down and take in the remarkable scenery, culture and hospitality of the Dubai desert. Our curated desert experiences pair authentic activities with memorable dining, private moments and warm Arabian welcome.</p>
+        <div class="da-feature-list">
+            <article>
+                <span class="da-feature-orb-mint">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M6 20v-1a6 6 0 0 1 12 0v1"/>
+                    </svg>
+                </span>
+                <div>
+                    <b>Private Experiences</b>
+                    <small>Made around you</small>
+                </div>
+            </article>
+            <article>
+                <span class="da-feature-orb-mint">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 10h16a8 8 0 0 1-16 0ZM7 10V4M12 10V4M17 10V4M6 18l-2 3M18 18l2 3M12 18v3"/>
+                    </svg>
+                </span>
+                <div>
+                    <b>Desert Dining</b>
+                    <small>Under the stars</small>
+                </div>
+            </article>
+            <article>
+                <span class="da-feature-orb-mint">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m12 3 10 17H2L12 3Zm0 0v17M7 20l5-8 5 8"/>
+                    </svg>
+                </span>
+                <div>
+                    <b>Local Culture</b>
+                    <small>Heritage &amp; stories</small>
+                </div>
+            </article>
+            <article>
+                <span class="da-feature-orb-mint">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                </span>
+                <div>
+                    <b>Beautiful Settings</b>
+                    <small>Morning or evening</small>
+                </div>
+            </article>
+        </div>
     </section>
-    <section class="da-container da-catalogue da-category-catalogue" aria-label="Desert experiences"><aside class="da-filter-sidebar" data-filters><div class="da-filter-heading"><strong>Filter by</strong><button type="button" data-filter-toggle aria-expanded="false">Filters <b>⌄</b></button></div><div class="da-filter-groups" data-filter-groups><details open><summary>Category <b>⌃</b></summary><p class="da-filter-parent">Desert Adventures</p><label><input type="checkbox" value="experience" data-filter="category"> Desert Experiences ({{ count($adventures) }})</label></details><details open><summary>Location <b>⌃</b></summary><label><input type="checkbox" value="dubai" data-filter="location"> Dubai</label><label><input type="checkbox" value="lisaili" data-filter="location"> Lisaili</label></details><details><summary>Time <b>⌄</b></summary><label><input type="checkbox" value="morning" data-filter="time"> Morning</label><label><input type="checkbox" value="evening" data-filter="time"> Evening</label></details></div></aside><div class="da-results"><div class="da-results-top"><strong><span data-product-count>{{ count($adventures) }}</span> products found</strong><label>Sort by <select data-sort><option value="popular">Most Popular</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="az">Name: A–Z</option></select></label></div><div class="da-adventure-list" data-adventure-list>@foreach ($adventures as $adventure)<x-desert-adventures.adventure-card :adventure="$adventure" />@endforeach</div><p class="da-no-results" data-no-results hidden>No experiences match your filters. <button type="button" data-clear-filters>Clear filters</button></p><div class="da-show-more-wrap da-category-count"><span data-showing-count>Showing {{ count($adventures) }} of {{ count($adventures) }} products</span></div></div></section>
+    <section class="da-container da-catalogue da-category-catalogue" aria-label="Desert experiences">
+        <aside class="da-filter-sidebar" data-filters>
+            <div class="da-filter-heading">
+                <strong>Filter by</strong>
+                <button type="button" data-filter-toggle aria-expanded="false">Filters <b>⌄</b></button>
+            </div>
+            <div class="da-filter-groups" data-filter-groups>
+                <details open>
+                    <summary>Category <b>⌃</b></summary>
+                    <p class="da-filter-parent">Desert Adventures</p>
+                    <label><input type="checkbox" value="experience" data-filter="category"> Desert Experiences ({{ count($adventures) }})</label>
+                </details>
+                <details open>
+                    <summary>Location <b>⌃</b></summary>
+                    <label><input type="checkbox" value="dubai" data-filter="location"> Dubai</label>
+                    <label><input type="checkbox" value="lisaili" data-filter="location"> Lisaili</label>
+                </details>
+                <details>
+                    <summary>Time <b>⌄</b></summary>
+                    <label><input type="checkbox" value="morning" data-filter="time"> Morning</label>
+                    <label><input type="checkbox" value="evening" data-filter="time"> Evening</label>
+                </details>
+            </div>
+        </aside>
+        <div class="da-results">
+            <div class="da-results-top">
+                <strong><span data-product-count>{{ count($adventures) }}</span> products found</strong>
+                <label>Sort by <select data-sort><option value="popular">Most Popular</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="az">Name: A–Z</option></select></label>
+            </div>
+            <div class="da-adventure-list" data-adventure-list>
+                @foreach ($adventures as $adventure)
+                    <x-desert-adventures.adventure-card :adventure="$adventure" />
+                @endforeach
+            </div>
+            <p class="da-no-results" data-no-results hidden>No experiences match your filters. <button type="button" data-clear-filters>Clear filters</button></p>
+            <div class="da-show-more-wrap da-category-count"><span data-showing-count>Showing {{ count($adventures) }} of {{ count($adventures) }} products</span></div>
+        </div>
+    </section>
 @endsection
