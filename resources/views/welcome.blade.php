@@ -308,7 +308,7 @@ $dubaiMoments = [
     <meta name="theme-color" content="#062d4f">
     <title>Waheed Murad Tourism | Dubai Experiences</title>
     <link rel="preload" as="image" href="{{ asset('images/hero-dubai-aquarium.png') }}" fetchpriority="high">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/site-shell.js'])
 </head>
 <body class="wmt-site">
     <header class="site-header" id="top">
@@ -379,51 +379,12 @@ $dubaiMoments = [
         <nav class="primary-navigation" aria-label="Main navigation">
             <div class="header-container navigation-row">
                 <div class="nav-links">
-                    <div class="nav-item has-mega-menu">
-                        <button class="nav-trigger" type="button" aria-haspopup="true">
+                    <div class="nav-item has-mega-menu" data-mega-menu>
+                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="desert-adventures-mega-menu">
                             Desert Adventures
                             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
                         </button>
-                        <div class="mega-menu" role="region" aria-label="Desert Adventures menu">
-                            <div class="mega-menu-grid">
-                                <section class="mega-categories" aria-labelledby="desert-categories-title">
-                                    <p class="mega-eyebrow" id="desert-categories-title">Explore the desert</p>
-                                    <a class="mega-category" href="#desert-safaris">
-                                        <span class="category-orb orb-safari" aria-hidden="true"></span>
-                                        <span><b>Desert Safaris</b><small>Sunset dunes &amp; camp nights</small></span>
-                                    </a>
-                                    <a class="mega-category" href="#desert-experiences">
-                                        <span class="category-orb orb-experience" aria-hidden="true"></span>
-                                        <span><b>Desert Experiences</b><small>Slow down and take it all in</small></span>
-                                    </a>
-                                    <a class="mega-category" href="#dune-buggies">
-                                        <span class="category-orb orb-buggy" aria-hidden="true"></span>
-                                        <span><b>Dune Buggies</b><small>Drive your own desert route</small></span>
-                                    </a>
-                                    <a class="mega-category" href="#private-escapes">
-                                        <span class="category-orb orb-private" aria-hidden="true"></span>
-                                        <span><b>Private Escapes</b><small>Made around your itinerary</small></span>
-                                    </a>
-                                </section>
-
-                                <section class="mega-picks" aria-labelledby="desert-picks-title">
-                                    <p class="mega-eyebrow" id="desert-picks-title">Top picks for your itinerary</p>
-                                    <a href="#desert-safaris">Sunset Desert Safari <span>→</span></a>
-                                    <a href="#desert-safaris">Morning Desert Adventure <span>→</span></a>
-                                    <a href="#desert-adventures">Dune Buggy Experience <span>→</span></a>
-                                    <a href="#desert-safaris">Desert Dining Under the Stars <span>→</span></a>
-                                    <a class="view-all-link" href="#desert-adventures">View all desert adventures <span>→</span></a>
-                                </section>
-
-                                <aside class="mega-promo">
-                                    <div class="promo-art" aria-hidden="true"><i></i><span></span><b></b></div>
-                                    <p class="promo-kicker">WMT signature escapes</p>
-                                    <h3>Find your desert story</h3>
-                                    <p>Golden horizons, private moments and a journey shaped around you.</p>
-                                    <a href="#desert-adventures">Explore the collection <span>→</span></a>
-                                </aside>
-                            </div>
-                        </div>
+                        <x-site.desert-adventures-mega-menu />
                     </div>
                     <a class="is-active" href="#attractions">Attractions</a>
                     <a href="#sports-events">Sports Events</a>
@@ -495,27 +456,7 @@ $dubaiMoments = [
                     <a class="mobile-plan-trip" href="#booking">Plan your trip <span aria-hidden="true">→</span></a>
                 </div>
 
-                <section class="mobile-submenu-panel" id="mobile-desert-menu" aria-label="Desert Adventures submenu" aria-hidden="true">
-                    <div class="mobile-menu-bar mobile-submenu-bar">
-                        <button class="mobile-menu-back" type="button"><span aria-hidden="true">‹</span> Back</button>
-                        <button class="mobile-menu-close" type="button" aria-label="Close navigation">×</button>
-                    </div>
-                    <div class="mobile-submenu-content">
-                        <p class="mobile-submenu-eyebrow">DISCOVER THE DESERT</p>
-                        <h2>Desert Adventures</h2>
-                        <a class="mobile-submenu-category" href="#desert-safaris"><span class="category-orb orb-safari" aria-hidden="true"></span><span><b>Desert Safaris</b><small>Sunset dunes &amp; camp nights</small></span><i>›</i></a>
-                        <a class="mobile-submenu-category" href="#desert-experiences"><span class="category-orb orb-experience" aria-hidden="true"></span><span><b>Desert Experiences</b><small>Made for unhurried moments</small></span><i>›</i></a>
-                        <a class="mobile-submenu-category" href="#dune-buggies"><span class="category-orb orb-buggy" aria-hidden="true"></span><span><b>Dune Buggies</b><small>Drive your own desert route</small></span><i>›</i></a>
-                        <a class="mobile-submenu-category" href="#private-escapes"><span class="category-orb orb-private" aria-hidden="true"></span><span><b>Private Escapes</b><small>Designed around your itinerary</small></span><i>›</i></a>
-                        <div class="mobile-top-picks">
-                            <p>TOP PICKS FOR YOUR ITINERARY</p>
-                            <a href="#desert-safaris">Evening Desert Safari <span>→</span></a>
-                            <a href="#desert-safaris">Morning Desert Adventure <span>→</span></a>
-                            <a href="#desert-adventures">Dune Buggy Experience <span>→</span></a>
-                            <a href="#desert-safaris">Desert Dining Under the Stars <span>→</span></a>
-                        </div>
-                    </div>
-                </section>
+                <x-site.desert-adventures-mega-menu mobile />
             </aside>
         </div>
     </header>
@@ -1167,66 +1108,5 @@ $dubaiMoments = [
         </div>
     </footer>
 
-    <script>
-        const menuButton = document.querySelector('.menu-toggle');
-        const mobileNavigation = document.querySelector('.mobile-navigation');
-        const desertMenuTrigger = document.querySelector('.mobile-menu-trigger');
-        const desertSubmenu = document.querySelector('.mobile-submenu-panel');
-
-        const closeMobileNavigation = () => {
-            mobileNavigation?.classList.remove('is-open', 'is-submenu-open');
-            menuButton?.setAttribute('aria-expanded', 'false');
-            desertMenuTrigger?.setAttribute('aria-expanded', 'false');
-            desertSubmenu?.setAttribute('aria-hidden', 'true');
-            document.body.style.overflow = '';
-
-            window.setTimeout(() => {
-                if (mobileNavigation && !mobileNavigation.classList.contains('is-open')) {
-                    mobileNavigation.hidden = true;
-                    mobileNavigation.setAttribute('aria-hidden', 'true');
-                }
-            }, 320);
-        };
-
-        const openMobileNavigation = () => {
-            if (!mobileNavigation) return;
-            mobileNavigation.hidden = false;
-            mobileNavigation.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden';
-            window.requestAnimationFrame(() => mobileNavigation.classList.add('is-open'));
-        };
-
-        menuButton?.addEventListener('click', () => {
-            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-            if (isOpen) {
-                closeMobileNavigation();
-            } else {
-                menuButton.setAttribute('aria-expanded', 'true');
-                openMobileNavigation();
-            }
-        });
-
-        desertMenuTrigger?.addEventListener('click', () => {
-            mobileNavigation?.classList.add('is-submenu-open');
-            desertMenuTrigger.setAttribute('aria-expanded', 'true');
-            desertSubmenu?.setAttribute('aria-hidden', 'false');
-        });
-
-        document.querySelector('.mobile-menu-back')?.addEventListener('click', () => {
-            mobileNavigation?.classList.remove('is-submenu-open');
-            desertMenuTrigger?.setAttribute('aria-expanded', 'false');
-            desertSubmenu?.setAttribute('aria-hidden', 'true');
-        });
-
-        document.querySelectorAll('.mobile-menu-close, .mobile-menu-scrim, .mobile-navigation a').forEach((element) => {
-            element.addEventListener('click', closeMobileNavigation);
-        });
-
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && mobileNavigation?.classList.contains('is-open')) {
-                closeMobileNavigation();
-            }
-        });
-    </script>
 </body>
 </html>
