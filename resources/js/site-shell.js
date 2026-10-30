@@ -162,3 +162,48 @@ document.addEventListener('keydown', (event) => {
 });
 
 desktopMediaQuery.addEventListener('change', () => closeMegaMenus());
+
+const primaryNavigation = document.querySelector('.primary-navigation');
+
+if (primaryNavigation) {
+    const navigationPlaceholder = document.createElement('div');
+    let navigationStart = 0;
+
+    navigationPlaceholder.className = 'primary-navigation-placeholder';
+    primaryNavigation.after(navigationPlaceholder);
+
+    const resetNavigation = () => {
+        primaryNavigation.classList.remove('is-scroll-fixed');
+        navigationPlaceholder.style.height = '';
+    };
+
+    const measureNavigation = () => {
+        resetNavigation();
+        navigationStart = primaryNavigation.getBoundingClientRect().top + window.scrollY;
+    };
+
+    const updateNavigation = () => {
+        if (!desktopMediaQuery.matches) {
+            resetNavigation();
+            return;
+        }
+
+        const shouldFixNavigation = window.scrollY >= navigationStart;
+
+        primaryNavigation.classList.toggle('is-scroll-fixed', shouldFixNavigation);
+        navigationPlaceholder.style.height = shouldFixNavigation ? `${primaryNavigation.offsetHeight}px` : '';
+    };
+
+    measureNavigation();
+    updateNavigation();
+
+    window.addEventListener('scroll', updateNavigation, { passive: true });
+    window.addEventListener('resize', () => {
+        measureNavigation();
+        updateNavigation();
+    });
+    desktopMediaQuery.addEventListener('change', () => {
+        measureNavigation();
+        updateNavigation();
+    });
+}

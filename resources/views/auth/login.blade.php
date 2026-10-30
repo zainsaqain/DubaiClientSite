@@ -43,5 +43,14 @@
                 {{ __('Log in') }}
             </x-primary-button>
         </div>
+
+        @if (Route::has('register'))
+            <p class="mt-5 text-center text-sm text-gray-600">
+                New to Waheed Murad Tourism?
+                <a class="font-semibold text-indigo-600 hover:text-indigo-500" href="{{ route('register') }}">
+                    Create an account
+                </a>
+            </p>
+        @endif
     </form>
 </x-guest-layout>

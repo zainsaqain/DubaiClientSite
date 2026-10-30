@@ -17,17 +17,27 @@ class AdminDashboardTest extends TestCase
         $response->assertRedirect(route('login', absolute: false));
     }
 
-    public function test_authenticated_users_can_view_the_dattaable_admin_dashboard(): void
+    public function test_authenticated_users_can_view_the_branded_admin_dashboard(): void
     {
-        $user = User::factory()->create();
+        $user = User::factory()->create(['is_admin' => true]);
 
         $response = $this->actingAs($user)->get('/admin');
 
         $response
             ->assertOk()
-            ->assertSee('Daily Sales')
-            ->assertSee('Recent Users')
-            ->assertSee('/vendor/dattaable/assets/css/style.css')
-            ->assertSee('/vendor/dattaable/assets/js/script.js');
+            ->assertSee('WAHEED MURAD')
+            ->assertSee('Every journey')
+            ->assertSee('Recent bookings')
+            ->assertSee('admin-dashboard');
+    }
+
+    public function test_authenticated_users_can_open_the_admin_dashboard(): void
+    {
+        $user = User::factory()->create();
+
+        $this->actingAs($user)
+            ->get('/admin')
+            ->assertOk()
+            ->assertSee('Recent bookings');
     }
 }
