@@ -11,6 +11,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::view('/admin', 'admin.dashboard.index')
+    ->middleware(['auth', 'verified'])
+    ->name('admin.dashboard');
+
 Route::view('/desert-adventures', 'pages.desert-adventures')->name('desert-adventures');
 
 Route::view('/sports-events', 'pages.sports-events')->name('sports-events');
