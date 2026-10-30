@@ -13,6 +13,11 @@ Route::get('/dashboard', function () {
 
 Route::view('/desert-adventures', 'pages.desert-adventures')->name('desert-adventures');
 
+Route::view('/sports-events', 'pages.sports-events')->name('sports-events');
+Route::view('/cruise-boat-tours', 'pages.cruise-boat-tours')->name('cruise-boat-tours');
+Route::view('/waterparks-theme-parks', 'pages.waterparks-theme-parks')->name('waterparks-theme-parks');
+Route::view('/transfers', 'pages.transfers')->name('transfers');
+
 Route::view('/dune-buggies', 'pages.dune-buggies')->name('dune-buggies');
 
 Route::view('/desert-adventures/desert-safaris', 'pages.desert-safaris')->name('desert-safaris');

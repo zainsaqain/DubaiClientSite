@@ -2,29 +2,36 @@ const menuButton = document.querySelector('.menu-toggle');
 const mobileNavigation = document.querySelector('.mobile-navigation');
 const mobileDesertMenuTrigger = document.querySelector('.mobile-menu-trigger');
 const mobileDesertSubmenu = document.querySelector('.mobile-submenu-panel');
-const megaMenuItem = document.querySelector('[data-mega-menu]');
-const megaMenuTrigger = megaMenuItem?.querySelector('.nav-trigger');
 const desktopMediaQuery = window.matchMedia('(min-width: 901px)');
+const megaMenuItems = Array.from(document.querySelectorAll('[data-mega-menu], [data-attractions-mega-menu], [data-city-tours-mega-menu], [data-why-us-mega-menu]'));
 
 let megaMenuCloseTimer;
 
-const setMegaMenuState = (isOpen) => {
-    if (!megaMenuItem || !megaMenuTrigger) {
+const triggerFor = (item) => item?.querySelector('.nav-trigger');
+
+const setMegaMenuState = (item, isOpen) => {
+    const trigger = triggerFor(item);
+
+    if (!item || !trigger) {
         return;
     }
 
-    megaMenuItem.classList.toggle('is-open', isOpen);
-    megaMenuTrigger.setAttribute('aria-expanded', String(isOpen));
+    item.classList.toggle('is-open', isOpen);
+    trigger.setAttribute('aria-expanded', String(isOpen));
 };
 
-const closeMegaMenu = () => {
+const closeMegaMenus = (except = null) => {
     window.clearTimeout(megaMenuCloseTimer);
-    setMegaMenuState(false);
+    megaMenuItems.forEach((item) => {
+        if (item !== except) {
+            setMegaMenuState(item, false);
+        }
+    });
 };
 
-const scheduleMegaMenuClose = () => {
+const scheduleMegaMenuClose = (item) => {
     window.clearTimeout(megaMenuCloseTimer);
-    megaMenuCloseTimer = window.setTimeout(closeMegaMenu, 140);
+    megaMenuCloseTimer = window.setTimeout(() => setMegaMenuState(item, false), 140);
 };
 
 const openMobileDesertMenu = () => {
@@ -78,64 +85,74 @@ menuButton?.addEventListener('click', () => {
 });
 
 mobileDesertMenuTrigger?.addEventListener('click', openMobileDesertMenu);
-
 document.querySelector('.mobile-menu-back')?.addEventListener('click', closeMobileDesertMenu);
 
 document.querySelectorAll('.mobile-menu-close, .mobile-menu-scrim, .mobile-navigation a').forEach((element) => {
     element.addEventListener('click', closeMobileNavigation);
 });
 
-megaMenuItem?.addEventListener('mouseenter', () => {
-    if (desktopMediaQuery.matches) {
-        window.clearTimeout(megaMenuCloseTimer);
-        setMegaMenuState(true);
-    }
-});
+megaMenuItems.forEach((item) => {
+    const trigger = triggerFor(item);
 
-megaMenuItem?.addEventListener('mouseleave', () => {
-    if (desktopMediaQuery.matches) {
-        scheduleMegaMenuClose();
-    }
-});
+    item.addEventListener('mouseenter', () => {
+        if (desktopMediaQuery.matches) {
+            window.clearTimeout(megaMenuCloseTimer);
+            closeMegaMenus(item);
+            setMegaMenuState(item, true);
+        }
+    });
 
-megaMenuItem?.addEventListener('focusin', () => {
-    if (desktopMediaQuery.matches) {
-        window.clearTimeout(megaMenuCloseTimer);
-        setMegaMenuState(true);
-    }
-});
+    item.addEventListener('mouseleave', () => {
+        if (desktopMediaQuery.matches) {
+            scheduleMegaMenuClose(item);
+        }
+    });
 
-megaMenuItem?.addEventListener('focusout', (event) => {
-    if (desktopMediaQuery.matches && !megaMenuItem.contains(event.relatedTarget)) {
-        scheduleMegaMenuClose();
-    }
-});
+    item.addEventListener('focusin', () => {
+        if (desktopMediaQuery.matches) {
+            window.clearTimeout(megaMenuCloseTimer);
+            closeMegaMenus(item);
+            setMegaMenuState(item, true);
+        }
+    });
 
-megaMenuTrigger?.addEventListener('click', () => {
-    if (desktopMediaQuery.matches) {
-        setMegaMenuState(!megaMenuItem.classList.contains('is-open'));
-    }
-});
+    item.addEventListener('focusout', (event) => {
+        if (desktopMediaQuery.matches && !item.contains(event.relatedTarget)) {
+            scheduleMegaMenuClose(item);
+        }
+    });
 
-megaMenuTrigger?.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowDown') {
-        event.preventDefault();
-        setMegaMenuState(true);
-        megaMenuItem?.querySelector('.mega-menu a')?.focus();
-    }
+    trigger?.addEventListener('click', () => {
+        if (desktopMediaQuery.matches) {
+            const isOpen = item.classList.contains('is-open');
+            closeMegaMenus(item);
+            setMegaMenuState(item, !isOpen);
+        }
+    });
+
+    trigger?.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowDown') {
+            event.preventDefault();
+            closeMegaMenus(item);
+            setMegaMenuState(item, true);
+            item.querySelector('.mega-menu a')?.focus();
+        }
+    });
 });
 
 document.addEventListener('click', (event) => {
-    if (megaMenuItem && !megaMenuItem.contains(event.target)) {
-        closeMegaMenu();
+    if (!megaMenuItems.some((item) => item.contains(event.target))) {
+        closeMegaMenus();
     }
 });
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
-        if (megaMenuItem?.classList.contains('is-open')) {
-            closeMegaMenu();
-            megaMenuTrigger?.focus();
+        const openMenu = megaMenuItems.find((item) => item.classList.contains('is-open'));
+
+        if (openMenu) {
+            closeMegaMenus();
+            triggerFor(openMenu)?.focus();
         }
 
         if (mobileNavigation?.classList.contains('is-open')) {
@@ -144,4 +161,4 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-desktopMediaQuery.addEventListener('change', closeMegaMenu);
+desktopMediaQuery.addEventListener('change', () => closeMegaMenus());

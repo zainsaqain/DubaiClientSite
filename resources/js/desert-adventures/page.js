@@ -72,6 +72,7 @@ if (bookingCard) {
     const serviceSelect = bookingCard.querySelector('[data-booking-service]');
     const totalOutput = bookingCard.querySelector('[data-booking-total]');
     const status = bookingCard.querySelector('[data-booking-status]');
+    const currency = bookingCard.dataset.currency ?? 'AED';
 
     const refreshBookingTotal = () => {
         const servicePrice = Number(serviceSelect?.value ?? 0);
@@ -82,7 +83,7 @@ if (bookingCard) {
         });
 
         if (totalOutput) {
-            totalOutput.textContent = `AED ${new Intl.NumberFormat('en-AE').format(total)}`;
+            totalOutput.textContent = `${currency} ${new Intl.NumberFormat('en-US').format(total)}`;
         }
     };
 
@@ -101,8 +102,8 @@ if (bookingCard) {
         const selectedDate = bookingCard.querySelector('[data-booking-date]')?.value;
         if (status) {
             status.textContent = selectedDate
-                ? `Sample availability checked for ${selectedDate}. No live booking was created.`
-                : 'Choose a date to preview sample availability. No live booking was created.';
+                ? `Your preferred date is ${selectedDate}. Our travel desk will confirm availability with you.`
+                : 'Please choose your preferred date to continue.';
         }
     });
 
