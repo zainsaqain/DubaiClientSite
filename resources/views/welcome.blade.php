@@ -399,36 +399,36 @@ $dubaiMoments = [
         <nav class="primary-navigation" aria-label="Main navigation">
             <div class="header-container navigation-row">
                 <div class="nav-links">
-                    <div class="nav-item has-mega-menu" data-mega-menu>
-                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="desert-adventures-mega-menu">
+                    <div class="nav-item has-mega-menu {{ request()->is('desert-adventures*') ? 'is-active' : '' }}" data-mega-menu>
+                        <a class="nav-trigger" href="{{ route('desert-adventures') }}" aria-expanded="false">
                             Desert Adventures
                             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
-                        </button>
+                        </a>
                         <x-site.desert-adventures-mega-menu />
                     </div>
-                    <div class="nav-item has-mega-menu" data-attractions-mega-menu>
-                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="attractions-mega-menu">
+                    <div class="nav-item has-mega-menu {{ request()->routeIs('attractions') ? 'is-active' : '' }}" data-attractions-mega-menu>
+                        <a class="nav-trigger" href="{{ route('attractions') }}" aria-expanded="false">
                             Attractions
                             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
-                        </button>
+                        </a>
                         <x-site.attractions-mega-menu />
                     </div>
                     <a href="{{ route('sports-events') }}">Sports Events</a>
-                    <div class="nav-item has-mega-menu" data-city-tours-mega-menu>
-                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="city-tours-mega-menu">
+                    <div class="nav-item has-mega-menu {{ request()->routeIs('city-tours') ? 'is-active' : '' }}" data-city-tours-mega-menu>
+                        <a class="nav-trigger" href="{{ route('city-tours') }}" aria-expanded="false">
                             City Tours
                             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
-                        </button>
+                        </a>
                         <x-site.city-tours-mega-menu />
                     </div>
                     <a href="{{ route('cruise-boat-tours') }}">Cruise and Boat Tours</a>
                     <a href="{{ route('waterparks-theme-parks') }}">Waterparks &amp; Theme Parks</a>
                     <a href="{{ route('transfers') }}">Transfers</a>
                     <div class="nav-item has-mega-menu" data-why-us-mega-menu>
-                        <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="why-us-mega-menu">
+                        <a class="nav-trigger" href="{{ route('why-us') }}" aria-expanded="false">
                             Why us
                             <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg>
-                        </button>
+                        </a>
                         <x-site.why-us-mega-menu />
                     </div>
                 </div>
@@ -472,17 +472,17 @@ $dubaiMoments = [
                 </div>
 
                 <nav class="mobile-menu-main" aria-label="Mobile main navigation">
-                    <button class="mobile-menu-item mobile-menu-trigger" type="button" aria-controls="mobile-desert-menu" aria-expanded="false">
+                    <a class="mobile-menu-item" href="{{ route('desert-adventures') }}">
                         <span class="mobile-nav-icon icon-dunes" aria-hidden="true">⌁</span>
                         <span>Desert Adventures</span><i aria-hidden="true">›</i>
-                    </button>
-                    <a class="mobile-menu-item" href="#attractions"><span class="mobile-nav-icon icon-attractions" aria-hidden="true">✦</span><span>Attractions</span><i aria-hidden="true">›</i></a>
+                    </a>
+                    <a class="mobile-menu-item" href="{{ route('attractions') }}"><span class="mobile-nav-icon icon-attractions" aria-hidden="true">✦</span><span>Attractions</span><i aria-hidden="true">›</i></a>
                     <a class="mobile-menu-item" href="{{ route('sports-events') }}"><span class="mobile-nav-icon icon-sports" aria-hidden="true">◉</span><span>Sports Events</span><i aria-hidden="true">›</i></a>
-                    <a class="mobile-menu-item" href="#city-tours"><span class="mobile-nav-icon icon-city" aria-hidden="true">▥</span><span>City Tours</span><i aria-hidden="true">›</i></a>
+                    <a class="mobile-menu-item" href="{{ route('city-tours') }}"><span class="mobile-nav-icon icon-city" aria-hidden="true">▥</span><span>City Tours</span><i aria-hidden="true">›</i></a>
                     <a class="mobile-menu-item" href="{{ route('cruise-boat-tours') }}"><span class="mobile-nav-icon icon-cruise" aria-hidden="true">⌇</span><span>Cruise and Boat Tours</span><i aria-hidden="true">›</i></a>
                     <a class="mobile-menu-item" href="{{ route('waterparks-theme-parks') }}"><span class="mobile-nav-icon icon-parks" aria-hidden="true">♧</span><span>Waterparks &amp; Theme Parks</span><i aria-hidden="true">›</i></a>
                     <a class="mobile-menu-item" href="{{ route('transfers') }}"><span class="mobile-nav-icon icon-transfers" aria-hidden="true">↗</span><span>Transfers</span><i aria-hidden="true">›</i></a>
-                    <a class="mobile-menu-item" href="#why-us"><span class="mobile-nav-icon icon-why" aria-hidden="true">♥</span><span>Why us</span><i aria-hidden="true">›</i></a>
+                    <a class="mobile-menu-item" href="{{ route('why-us') }}"><span class="mobile-nav-icon icon-why" aria-hidden="true">♥</span><span>Why us</span><i aria-hidden="true">›</i></a>
                 </nav>
 
                 <div class="mobile-menu-actions">
@@ -1136,8 +1136,8 @@ $dubaiMoments = [
                 <div class="footer-col">
                     <h4>Waheed Murad Tourism</h4>
                     <ul class="footer-links">
-                        <li><a href="#why-us">About us</a></li>
-                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="{{ route('why-us') }}">About us</a></li>
+                        <li><a href="{{ route('why-us') }}">Why Choose Us</a></li>
                         <li><a href="#contact">Partner with us</a></li>
                         <li><a href="#booking">Plan your trip</a></li>
                         <li><a href="#contact">Travel support</a></li>

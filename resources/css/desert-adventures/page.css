@@ -281,6 +281,40 @@
 .da-story-row h3 { margin: 0 0 14px; color: var(--da-blue); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(22px, 1.8vw, 28px); font-weight: 600; line-height: 1.25; }
 .da-story-row p { margin: 0; color: #45586d; font-size: 15px; line-height: 1.7; }
 
+/* Explore desert adventures */
+.da-explore {
+    position: relative;
+    margin: 86px 0 74px;
+    padding: 66px 0 72px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f1f7fa 0%, #fff8eb 100%);
+}
+.da-explore::before,
+.da-explore::after {
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    pointer-events: none;
+}
+.da-explore::before { top: -130px; left: -95px; width: 300px; height: 300px; border: 42px solid rgba(8, 89, 122, .08); }
+.da-explore::after { right: -80px; bottom: -125px; width: 290px; height: 290px; border: 40px solid rgba(235, 162, 40, .13); }
+.da-explore .da-container { position: relative; z-index: 1; }
+.da-explore-intro { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 30px; }
+.da-explore-intro p { margin: 0 0 10px; color: #c68110; font-size: 11px; font-weight: 800; letter-spacing: .18em; }
+.da-explore-intro h2 { margin: 0; color: var(--da-blue); font-size: clamp(29px, 3vw, 43px); letter-spacing: -.05em; }
+.da-explore-intro h2 span { display: inline-block; padding: 1px 9px 4px; color: #fff; border-radius: 8px; background: var(--da-red); font-size: .8em; transform: rotate(-2deg); }
+.da-explore-intro > div > span { display: block; max-width: 700px; margin-top: 13px; color: #587187; font-size: 14px; line-height: 1.6; }
+.da-explore-intro > a { display: inline-flex; align-items: center; gap: 10px; flex: 0 0 auto; padding: 12px 16px; color: var(--da-blue); border: 1px solid #9db6ce; border-radius: 999px; background: rgba(255, 255, 255, .65); font-size: 13px; font-weight: 800; transition: color .2s ease, background .2s ease, transform .2s ease; }
+.da-explore-intro > a:hover { color: #fff; border-color: var(--da-blue); background: var(--da-blue); transform: translateY(-2px); }
+.da-explore-intro > a i { color: #d18a17; font-size: 18px; font-style: normal; transition: color .2s ease; }.da-explore-intro > a:hover i { color: #ffcf68; }
+.da-explore-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.da-explore-card { position: relative; display: flex; align-items: flex-end; min-height: 410px; overflow: hidden; isolation: isolate; border-radius: 17px; background: #0c3e64; box-shadow: 0 15px 28px rgba(22, 56, 83, .16); }
+.da-explore-card::after { position: absolute; z-index: -1; inset: 0; content: ''; background: linear-gradient(180deg, rgba(3, 27, 45, .02) 26%, rgba(4, 35, 58, .9) 100%); transition: background .3s ease; }
+.da-explore-card img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.2, .8, .2, 1); }
+.da-explore-card:hover img { transform: scale(1.08); }.da-explore-card:hover::after { background: linear-gradient(180deg, rgba(3, 27, 45, .1) 15%, rgba(4, 35, 58, .95) 100%); }
+.da-explore-card > b { position: absolute; top: 18px; right: 19px; color: rgba(255, 255, 255, .88); font-size: 12px; letter-spacing: .13em; }
+.da-explore-card > span { width: 100%; padding: 26px; color: #fff; }.da-explore-card small { display: block; margin-bottom: 7px; color: #ffcf67; font-size: 10px; font-weight: 800; letter-spacing: .15em; }.da-explore-card strong { display: block; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(27px, 2.4vw, 34px); line-height: 1.05; }.da-explore-card em { display: inline-flex; gap: 7px; margin-top: 13px; color: #fff; font-size: 12px; font-style: normal; font-weight: 700; }.da-explore-card em i { color: #ffca5b; font-size: 16px; font-style: normal; transition: transform .2s ease; }.da-explore-card:hover em i { transform: translateX(4px); }
+
 /* FAQ Section */
 .da-faq { max-width: 1800px; padding-bottom: 80px; }
 .da-category-faq { margin-top: 32px; padding-bottom: 84px; }
@@ -804,6 +838,10 @@
 @media (max-width: 500px) { .cruise-benefits { grid-template-columns: 1fr; padding-bottom: 24px; }.cruise-story { margin-top: 54px; }.cruise-story article { padding: 12px; border-radius: 16px; }.cruise-story img { height: 215px; }.cruise-story article > div { padding: 5px 7px 10px; }.cruise-faq { margin-top: 56px; } }
 
 /* Waterparks and Theme Parks */
+.city-tours-page { padding-bottom: 88px; }.city-tours-heading h1 span { background: #c58425; }.city-tours-highlights { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 0 34px; }.city-tours-highlights span { display: inline-flex; align-items: center; gap: 8px; padding: 9px 13px; color: #40596d; border: 1px solid #e4dccd; border-radius: 999px; background: #fffbf4; font-size: 12px; font-weight: 800; }.city-tours-highlights b { display: inline-grid; width: 22px; height: 22px; place-items: center; color: #fff; border-radius: 50%; background: #c58425; font-size: 13px; }.city-tour-card:hover { border-color: #e9d2aa; }.city-tour-card .sports-event-copy > span { color: #936117; background: #fff3dd; }.city-tours-callout { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-top: 80px; padding: clamp(28px, 5vw, 56px); overflow: hidden; color: #fff; border-radius: 22px; background: radial-gradient(circle at 85% 12%, rgba(245, 184, 81, .58), transparent 27%), linear-gradient(125deg, #083755, #116c71); }.city-tours-callout div { max-width: 650px; }.city-tours-callout span { color: #ffcf69; font-size: 11px; font-weight: 800; letter-spacing: .16em; }.city-tours-callout h2 { margin: 10px 0 12px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(28px, 4vw, 45px); line-height: 1.05; }.city-tours-callout p { margin: 0; color: #deedf5; font-size: 14px; line-height: 1.65; }.city-tours-callout a { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 9px; padding: 13px 18px; color: #11354d; border-radius: 999px; background: #ffca62; font-size: 13px; font-weight: 800; }.city-tours-callout a:hover { color: #11354d; background: #fff0bd; }
+@media (max-width: 600px) { .city-tours-highlights { padding-bottom: 24px; }.city-tours-callout { display: grid; gap: 22px; margin-top: 52px; border-radius: 16px; }.city-tours-callout a { justify-self: start; } }
+.attractions-page { padding-bottom: 88px; }.attractions-heading h1 span { background: #e94d5d; }.attractions-highlights { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 0 34px; }.attractions-highlights span { display: inline-flex; align-items: center; gap: 8px; padding: 9px 13px; color: #31536c; border: 1px solid #dae8ef; border-radius: 999px; background: #f8fbfd; font-size: 12px; font-weight: 800; }.attractions-highlights b { display: inline-grid; width: 22px; height: 22px; place-items: center; color: #fff; border-radius: 50%; background: #e94d5d; font-size: 13px; }.attraction-card:hover { border-color: #f0c2c8; }.attraction-card .sports-event-copy > span { color: #c33d4c; background: #fff0f2; }.attractions-callout { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-top: 80px; padding: clamp(28px, 5vw, 56px); overflow: hidden; color: #fff; border-radius: 22px; background: radial-gradient(circle at 85% 10%, rgba(242, 114, 126, .65), transparent 28%), linear-gradient(125deg, #063b67, #174e7a); }.attractions-callout div { max-width: 650px; }.attractions-callout span { color: #ffcf69; font-size: 11px; font-weight: 800; letter-spacing: .16em; }.attractions-callout h2 { margin: 10px 0 12px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(28px, 4vw, 45px); line-height: 1.05; }.attractions-callout p { margin: 0; color: #deedf5; font-size: 14px; line-height: 1.65; }.attractions-callout a { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 9px; padding: 13px 18px; color: #11354d; border-radius: 999px; background: #ffca62; font-size: 13px; font-weight: 800; }.attractions-callout a:hover { color: #11354d; background: #fff0bd; }
+@media (max-width: 600px) { .attractions-highlights { padding-bottom: 24px; }.attractions-callout { display: grid; gap: 22px; margin-top: 52px; border-radius: 16px; }.attractions-callout a { justify-self: start; } }
 .waterparks-page { padding-bottom: 88px; }.waterparks-heading h1 span { background: #147f78; }.waterparks-highlights { display: flex; flex-wrap: wrap; gap: 10px; padding: 0 0 34px; }.waterparks-highlights span { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; color: #24556e; border: 1px solid #d6e8e6; border-radius: 999px; background: #f4fbfa; font-size: 12px; font-weight: 800; }.waterparks-highlights b { color: #d58e1c; font-size: 16px; }.waterpark-card:hover { border-color: #b7e0da; }.waterpark-card .sports-event-copy > span { color: #147f78; background: #e5f6f1; }.waterparks-callout { display: flex; align-items: center; justify-content: space-between; gap: 28px; margin-top: 80px; padding: clamp(28px, 5vw, 56px); overflow: hidden; color: #fff; border-radius: 22px; background: radial-gradient(circle at 84% 12%, rgba(83, 207, 203, .65), transparent 26%), linear-gradient(125deg, #063b67, #096f76); }.waterparks-callout div { max-width: 650px; }.waterparks-callout span { color: #ffcb62; font-size: 11px; font-weight: 800; letter-spacing: .16em; }.waterparks-callout h2 { margin: 10px 0 12px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(28px, 4vw, 45px); line-height: 1.05; }.waterparks-callout p { margin: 0; color: #d8f0ee; font-size: 14px; line-height: 1.65; }.waterparks-callout a { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 9px; padding: 13px 18px; color: #10364e; border-radius: 999px; background: #ffcb62; font-size: 13px; font-weight: 800; }.waterparks-callout a:hover { color: #10364e; background: #fff0bd; }
 @media (max-width: 600px) { .waterparks-highlights { padding-bottom: 24px; }.waterparks-callout { display: grid; gap: 22px; margin-top: 52px; border-radius: 16px; }.waterparks-callout a { justify-self: start; } }
 
@@ -816,3 +854,20 @@
 
 /* Keep action-button labels consistently white across all catalogue pages. */
 .sports-events-page .sports-events-plan, .sports-events-page .sports-events-plan span, .sports-events-page .sports-event-action a, .sports-events-page .sports-event-action a span, .sports-events-page .waterparks-callout a, .sports-events-page .waterparks-callout a span, .sports-events-page .transfer-callout a, .sports-events-page .transfer-callout a span { color: #fff !important; }.sports-events-page .sports-event-action a { background: #e9921d; }.sports-events-page .sports-event-action a:hover { background: #c97813; }.sports-events-page .waterparks-callout a { background: #c17a1b; }.sports-events-page .waterparks-callout a:hover { background: #9e5e10; }.sports-events-page .transfer-callout a { background: #c17a1b; }.sports-events-page .transfer-callout a:hover { background: #9e5e10; }.sports-events-heading h1 span { color: #fff !important; }
+
+@media (max-width: 850px) {
+    .da-explore { margin: 60px 0 52px; padding: 50px 0 55px; }
+    .da-explore-intro { align-items: flex-start; flex-direction: column; }
+    .da-explore-grid { gap: 16px; }
+    .da-explore-card { min-height: 340px; }
+    .da-explore-card > span { padding: 20px; }
+}
+@media (max-width: 620px) {
+    .da-explore { margin: 48px 0 43px; padding: 40px 0 44px; }
+    .da-explore-intro { gap: 18px; margin-bottom: 22px; }
+    .da-explore-intro > div > span { font-size: 13px; }
+    .da-explore-intro > a { padding: 10px 14px; }
+    .da-explore-grid { grid-template-columns: 1fr; }
+    .da-explore-card { min-height: 310px; }
+    .da-explore-card strong { font-size: 29px; }
+}

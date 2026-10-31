@@ -3,17 +3,17 @@
 @section('title', 'School Trips | Waheed Murad Tourism')
 
 @section('content')
-    @php($adventures = config('school-trips.adventures', []))
+    @php($adventures = $adventures ?? config('school-trips.adventures', []))
 
     <section class="da-category-hero da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Desert Adventures', 'url' => route('desert-adventures')], ['label' => 'School Trips']]" />
         <h1>School Trips</h1>
-        <p>Explore sample school-trip ideas designed around the desert’s wildlife, heritage and landscapes. Each page is a static preview so a future booking flow can add live group availability, educational options and safeguarding details without changing the frontend structure.</p>
+        <p>Explore school-trip ideas designed around the desert’s wildlife, heritage and landscapes. Every live experience is managed by our team, with options for educational visits, group activities and guided outdoor learning.</p>
         <div class="da-feature-list">
             <article><span>✦</span><div><b>Learning moments</b><small>Desert heritage &amp; nature</small></div></article>
-            <article><span>◌</span><div><b>Group-friendly</b><small>Sample daytime options</small></div></article>
-            <article><span>▱</span><div><b>Guided visits</b><small>Static itinerary previews</small></div></article>
-            <article><span>♧</span><div><b>Flexible planning</b><small>Future group configuration</small></div></article>
+            <article><span>◌</span><div><b>Group-friendly</b><small>Thoughtful daytime options</small></div></article>
+            <article><span>▱</span><div><b>Guided visits</b><small>Purposeful local itineraries</small></div></article>
+            <article><span>♧</span><div><b>Flexible planning</b><small>Plans tailored to your group</small></div></article>
         </div>
     </section>
 
@@ -37,9 +37,9 @@
 
     <section class="da-desert-story da-container da-category-story">
         <h2 class="da-section-title">Why learn with <span>us</span></h2>
-        <article class="da-story-row"><img src="{{ asset('images/desert-safari.png') }}" alt="Desert landscape for a school-trip preview" loading="lazy"><div><h3>Desert heritage</h3><p>This static section demonstrates where future curriculum links, learning goals and teacher resources can be introduced without altering the category layout.</p></div></article>
-        <article class="da-story-row da-story-row--reverse"><div><h3>Guided group planning</h3><p>Future group bookings can add confirmed transport, access requirements and supervision details while retaining the current visual presentation.</p></div><img src="{{ asset('images/desert-oasis-morning.png') }}" alt="Morning desert landscape" loading="lazy"></article>
+        <article class="da-story-row"><img src="{{ asset('images/desert-safari.png') }}" alt="Desert landscape for a school trip" loading="lazy"><div><h3>Desert heritage</h3><p>Bring learning to life with guided moments that introduce students to the desert’s nature, heritage and wide-open landscapes.</p></div></article>
+        <article class="da-story-row da-story-row--reverse"><div><h3>Guided group planning</h3><p>Our team can help shape a day around your group’s transport, access requirements, timings and learning priorities.</p></div><img src="{{ asset('images/desert-oasis-morning.png') }}" alt="Morning desert landscape" loading="lazy"></article>
     </section>
 
-    <section class="da-container da-faq da-category-faq"><h2 class="da-section-title">School Trips: Frequently asked <span>questions</span></h2><div class="da-faq-list"><details><summary>Can a school trip be customised?<b>+</b></summary><p>Yes, a future booking system can collect group needs and build an appropriate itinerary. This frontend is only a sample preview.</p></details><details><summary>Are prices live?<b>+</b></summary><p>No. Every displayed price is sample data for layout and interaction testing only.</p></details><details><summary>How are safety and supervision handled?<b>+</b></summary><p>Final safety, transport and supervision arrangements must be confirmed through the future live booking process.</p></details></div></section>
+    <section class="da-container da-faq da-category-faq"><h2 class="da-section-title">School Trips: Frequently asked <span>questions</span></h2><div class="da-faq-list"><details><summary>Can a school trip be customised?<b>+</b></summary><p>Yes. Contact our team with your group size, learning goals and preferred date to shape the right itinerary.</p></details><details><summary>Are prices live?<b>+</b></summary><p>Prices shown are starting prices. Final group rates are confirmed when your trip details are shared with our team.</p></details><details><summary>How are safety and supervision handled?<b>+</b></summary><p>Transport, activity requirements and supervision arrangements are confirmed before the trip begins.</p></details></div></section>
 @endsection

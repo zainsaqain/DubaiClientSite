@@ -28,6 +28,16 @@
                 <a href="#experiences"><i>✦</i> Experiences</a>
                 <a href="#guests"><i>◎</i> Guests</a>
                 <a href="#reports"><i>⌁</i> Reports</a>
+                <details class="wmt-admin-menu">
+                    <summary><i>▦</i><span>Category</span><b>⌄</b></summary>
+                    <div class="wmt-admin-menu-panel">
+                        <details class="wmt-admin-submenu">
+                            <summary><span>Desert Adventures</span><b>⌄</b></summary>
+                            <a href="{{ route('admin.desert-adventures.index') }}">All adventures</a>
+                            <a href="{{ route('admin.desert-adventures.create') }}">Create adventure</a>
+                        </details>
+                    </div>
+                </details>
             </nav>
 
             <p class="wmt-admin-label">MANAGEMENT</p>

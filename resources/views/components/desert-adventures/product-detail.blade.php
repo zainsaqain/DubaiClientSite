@@ -78,10 +78,10 @@
             <span class="da-callout-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
             </span>
-            <span>Hotel or residence pick-up included from anywhere in Dubai</span>
+            <span>{{ $product['pickup'] ?? 'Hotel or residence pick-up included from anywhere in Dubai' }}</span>
         </div>
         <div class="da-callout-price">
-            <div class="da-callout-price-val">From <strong>PKR 49,937</strong></div>
+            <div class="da-callout-price-val">From <strong>{{ $currency }} {{ number_format($product['booking']['base_price']) }}</strong></div>
             <small>Price varies by vehicle, group sizes and other selections</small>
         </div>
     </div>
@@ -126,10 +126,10 @@
 
             <section class="da-product-section">
                 <h2>About</h2>
-                <p>Our Evening Desert Safari features an unforgettable itinerary of activities, from breathtaking sunset stops and wildlife spotting to a sumptuous BBQ buffet and stargazing in a Bedouin-inspired camp.</p>
+                <p>{{ $product['about'] ?? $product['description'] }}</p>
                 <div class="da-duration-info">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    <span>Duration: 6 hours</span>
+                    <span>Duration: {{ $product['duration'] ?? 'Flexible' }}</span>
                 </div>
             </section>
 

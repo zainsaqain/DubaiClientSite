@@ -3,7 +3,7 @@
 @section('title', 'Desert Adventures | Waheed Murad')
 
 @section('content')
-    @php($adventures = config('desert-adventures.adventures', []))
+    @php($adventures = $adventures ?? config('desert-adventures.adventures', []))
     <section class="da-intro da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Desert Adventures']]" />
         <h1>Desert Adventures</h1>
@@ -11,7 +11,7 @@
         <h2 class="da-section-title">All Desert <span>Adventures</span></h2>
     </section>
 
-    <section class="da-container da-catalogue" aria-label="All desert adventures">
+    <section class="da-container da-catalogue" id="all-desert-adventures" aria-label="All desert adventures">
         <aside class="da-filter-sidebar" data-filters>
             <div class="da-filter-heading"><strong>Filter by</strong><button type="button" data-filter-toggle aria-expanded="false">Filters <b>⌄</b></button></div>
             <div class="da-filter-groups" data-filter-groups>
@@ -42,7 +42,33 @@
         <article class="da-story-row"><img src="{{ asset('images/desert-dune-drive.png') }}" alt="Traveller enjoying a desert sunset" loading="lazy"><div><h3>A commitment to the desert</h3><p>Our desert adventures are underpinned by sustainability efforts as we endeavour to preserve the unspoilt beauty of the DDCR. Our sustainable adventure experiences are designed to protect this land while creating meaningful memories for generations to come.</p></div></article>
     </section>
 
-    <section class="da-container da-explore"><h2 class="da-section-title">Explore different desert <span>adventures</span></h2><div class="da-explore-grid"><a href="{{ route('desert-safaris') }}" class="da-explore-card"><img src="{{ asset('images/desert-safari.png') }}" alt="Desert Safaris" loading="lazy"><span><strong>Desert Safaris</strong><small>Learn more →</small></span></a><a href="{{ route('dune-buggies-category') }}" class="da-explore-card"><img src="{{ asset('images/desert-buggy-adventure.png') }}" alt="Dune Buggies" loading="lazy"><span><strong>Dune Buggies</strong><small>Learn more →</small></span></a><a href="{{ route('desert-experiences') }}" class="da-explore-card"><img src="{{ asset('images/desert-camp-experience.png') }}" alt="Desert Experiences" loading="lazy"><span><strong>Desert Experiences</strong><small>Learn more →</small></span></a></div></section>
+    <section class="da-explore" aria-labelledby="explore-desert-adventures">
+        <div class="da-container">
+            <div class="da-explore-intro">
+                <div>
+                    <p>CHOOSE YOUR ADVENTURE</p>
+                    <h2 id="explore-desert-adventures">Explore different desert <span>adventures</span></h2>
+                    <span>From quiet sunrise moments to thrilling dune drives, find the Dubai desert experience that feels made for you.</span>
+                </div>
+                <a href="#all-desert-adventures">Browse all adventures <i>→</i></a>
+            </div>
+
+            <div class="da-explore-grid">
+                <a href="{{ route('desert-safaris') }}" class="da-explore-card">
+                    <img src="{{ asset('images/desert-safari.png') }}" alt="Guests enjoying a Desert Safari in Dubai" loading="lazy">
+                    <b>01</b><span><small>SUNSET &amp; SUNRISE</small><strong>Desert Safaris</strong><em>Explore safaris <i>→</i></em></span>
+                </a>
+                <a href="{{ route('dune-buggies-category') }}" class="da-explore-card">
+                    <img src="{{ asset('images/desert-buggy-adventure.png') }}" alt="Dune buggies in the Dubai desert" loading="lazy">
+                    <b>02</b><span><small>ADRENALINE AWAITS</small><strong>Dune Buggies</strong><em>Explore buggies <i>→</i></em></span>
+                </a>
+                <a href="{{ route('desert-experiences') }}" class="da-explore-card">
+                    <img src="{{ asset('images/desert-camp-experience.png') }}" alt="Exclusive desert camp experience in Dubai" loading="lazy">
+                    <b>03</b><span><small>MADE FOR MEMORIES</small><strong>Desert Experiences</strong><em>Explore experiences <i>→</i></em></span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section class="da-container da-faq"><h2 class="da-section-title">Desert Adventures: Frequently asked <span>questions</span></h2><div class="da-faq-list"><details><summary>Where is the desert in Dubai?<b>+</b></summary><p>Dubai’s most accessible desert landscapes are a short drive from the city, with the Dubai Desert Conservation Reserve offering a protected and memorable setting.</p></details><details><summary>Can I go to the Dubai desert on my own?<b>+</b></summary><p>Guided adventures are the easiest way to explore responsibly, with expert drivers, carefully planned routes and local insight included.</p></details><details><summary>Is it cooler in the desert in Dubai?<b>+</b></summary><p>Desert temperatures are generally most comfortable at sunrise and after sunset, which is why morning and evening adventures are so popular.</p></details><details><summary>Why is the Dubai desert famous?<b>+</b></summary><p>Its sweeping dunes, wildlife, Bedouin heritage and warm hospitality make the desert one of Dubai’s most distinctive experiences.</p></details></div></section>
 @endsection

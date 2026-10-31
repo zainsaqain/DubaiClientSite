@@ -122,22 +122,24 @@ megaMenuItems.forEach((item) => {
         }
     });
 
-    trigger?.addEventListener('click', () => {
-        if (desktopMediaQuery.matches) {
-            const isOpen = item.classList.contains('is-open');
-            closeMegaMenus(item);
-            setMegaMenuState(item, !isOpen);
-        }
-    });
+    if (trigger instanceof HTMLButtonElement) {
+        trigger.addEventListener('click', () => {
+            if (desktopMediaQuery.matches) {
+                const isOpen = item.classList.contains('is-open');
+                closeMegaMenus(item);
+                setMegaMenuState(item, !isOpen);
+            }
+        });
 
-    trigger?.addEventListener('keydown', (event) => {
-        if (event.key === 'ArrowDown') {
-            event.preventDefault();
-            closeMegaMenus(item);
-            setMegaMenuState(item, true);
-            item.querySelector('.mega-menu a')?.focus();
-        }
-    });
+        trigger.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                closeMegaMenus(item);
+                setMegaMenuState(item, true);
+                item.querySelector('.mega-menu a')?.focus();
+            }
+        });
+    }
 });
 
 document.addEventListener('click', (event) => {

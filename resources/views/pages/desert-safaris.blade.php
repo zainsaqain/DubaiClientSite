@@ -3,7 +3,7 @@
 @section('title', 'Desert Safaris | Waheed Murad Tourism')
 
 @section('content')
-    @php($adventures = config('desert-safaris.adventures', []))
+    @php($adventures = $adventures ?? config('desert-safaris.adventures', []))
     <section class="da-category-hero da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Desert Adventures', 'url' => route('desert-adventures')], ['label' => 'Desert Safaris']]" />
         <h1>Desert Safaris</h1>

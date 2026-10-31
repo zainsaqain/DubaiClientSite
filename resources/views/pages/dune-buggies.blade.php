@@ -3,7 +3,7 @@
 @section('title', 'Dune Buggies | Waheed Murad Tourism')
 
 @section('content')
-    @php($adventures = config('dune-buggies.adventures', []))
+    @php($adventures = $adventures ?? config('dune-buggies.adventures', []))
     <section class="da-category-hero da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Desert Adventures', 'url' => route('desert-adventures')], ['label' => 'Dune buggies']]" />
         <h1>Dune buggies</h1>
@@ -17,9 +17,9 @@
         <aside class="da-filter-sidebar" data-filters>
             <div class="da-filter-heading"><strong>Filter by</strong><button type="button" data-filter-toggle aria-expanded="false">Filters <b>⌄</b></button></div>
             <div class="da-filter-groups" data-filter-groups>
-                <details open><summary>Category <b>⌃</b></summary><p class="da-filter-parent">Desert Adventures</p><label><input type="checkbox" value="buggy" data-filter="category"> Dune buggies (3)</label></details>
-                <details open><summary>Location <b>⌃</b></summary><label><input type="checkbox" value="dubai" data-filter="location"> Dubai (3)</label></details>
-                <details><summary>Time <b>⌄</b></summary><label><input type="checkbox" value="morning" data-filter="time"> Morning (1)</label><label><input type="checkbox" value="evening" data-filter="time"> Evening (2)</label></details>
+                <details open><summary>Category <b>⌃</b></summary><p class="da-filter-parent">Desert Adventures</p><label><input type="checkbox" value="buggy" data-filter="category"> Dune buggies ({{ count($adventures) }})</label></details>
+                <details open><summary>Location <b>⌃</b></summary><label><input type="checkbox" value="dubai" data-filter="location"> Dubai ({{ count($adventures) }})</label></details>
+                <details><summary>Time <b>⌄</b></summary><label><input type="checkbox" value="morning" data-filter="time"> Morning</label><label><input type="checkbox" value="evening" data-filter="time"> Evening</label></details>
                 <details><summary>Price <b>⌄</b></summary><label><input type="radio" name="price" value="2000" data-price-filter> Under AED 2,000</label><label><input type="radio" name="price" value="99999" data-price-filter> AED 2,000+</label></details>
                 <details><summary>Language <b>⌄</b></summary><label><input type="checkbox"> English (3)</label></details>
             </div>
