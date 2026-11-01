@@ -3,16 +3,6 @@
 @section('title', 'Waterparks & Theme Parks | Waheed Murad Tourism')
 
 @section('content')
-    @php
-        $parks = [
-            ['title' => 'Dubai Parks and Resorts', 'image' => 'images/dubai-attractions.png', 'tag' => 'Theme park', 'description' => 'A full day of rides, stories and family fun across Dubai’s favourite entertainment parks.', 'price' => 'PKR 22,699'],
-            ['title' => 'Atlantis Aquaventure', 'image' => 'images/water-theme-parks-dubai.png', 'tag' => 'Waterpark', 'description' => 'Dive into slides, splash zones and ocean-inspired thrills at one of Dubai’s most iconic waterparks.', 'price' => 'PKR 31,932'],
-            ['title' => 'IMG Worlds of Adventure', 'image' => 'images/global-village-dubai.png', 'tag' => 'Indoor adventure', 'description' => 'Step into an air-conditioned world of big rides, favourite characters and all-day entertainment.', 'price' => 'PKR 28,085'],
-            ['title' => 'Ski Dubai Snow Park', 'image' => 'images/hero-dubai-aquarium.png', 'tag' => 'Indoor snow', 'description' => 'Swap the sunshine for snowy slopes, winter activities and memorable family moments.', 'price' => 'PKR 19,236'],
-            ['title' => 'Wild Wadi Waterpark', 'image' => 'images/water-theme-parks-dubai.png', 'tag' => 'Waterpark', 'description' => 'Cool off with exciting slides, wave pools and spectacular views close to Burj Al Arab.', 'price' => 'PKR 19,929'],
-        ];
-    @endphp
-
     <section class="sports-events-page waterparks-page da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Waterparks & Theme Parks']]" />
 
@@ -38,8 +28,8 @@
                     @foreach ($parks as $park)
                         <article class="sports-event-card waterpark-card">
                             <img src="{{ asset($park['image']) }}" alt="{{ $park['title'] }}" loading="lazy">
-                            <div class="sports-event-copy"><span>{{ $park['tag'] }}</span><h2>{{ $park['title'] }}</h2><p>{{ $park['description'] }}</p><small>⌖ Dubai</small></div>
-                            <div class="sports-event-action"><small>From</small><strong>{{ $park['price'] }}</strong><a href="{{ url('/') }}#booking">Book now <span aria-hidden="true">→</span></a></div>
+                            <div class="sports-event-copy"><span>{{ $park['tag'] }}</span><h2>{{ $park['title'] }}</h2><p>{{ $park['description'] }}</p><small>⌖ {{ $park['location'] }}</small></div>
+                            <div class="sports-event-action"><small>From</small><strong>{{ $park['price'] }}</strong><a href="{{ $park['url'] ?? url('/') }}#booking">Book now <span aria-hidden="true">→</span></a></div>
                         </article>
                     @endforeach
                 </div>

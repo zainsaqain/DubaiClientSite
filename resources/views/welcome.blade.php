@@ -1,5 +1,5 @@
 @php
-$heroSlides = [
+$heroSlides = $heroSlides ?? [
     [
         'id' => 'dubai-adventure',
         'badge' => 'EXPLORE DUBAI',
@@ -231,7 +231,7 @@ $trendingAttractionsList = [
     ],
 ];
 
-$cityTourPromos = [
+$cityTourPromos = $cityTourPromos ?? [
     [
         'title' => 'Curated City Tours',
         'description' => "Book private and shared tours with expert guides across the country's cultural landmarks.",
@@ -950,10 +950,10 @@ $dubaiMoments = [
                             <img src="{{ $promo['image'] }}" alt="{{ $promo['title'] }}" loading="lazy">
                             <div class="city-tour-promo-shade"></div>
                             <div class="city-tour-promo-copy">
-                                <span>WMT CURATED</span>
+                                <span>{{ $promo['eyebrow'] ?? 'WMT CURATED' }}</span>
                                 <h2>{{ $promo['title'] }}</h2>
                                 <p>{{ $promo['description'] }}</p>
-                                <a href="{{ $promo['url'] }}">Learn more <span aria-hidden="true">→</span></a>
+                                <a href="{{ $promo['url'] }}">{{ $promo['button_label'] ?? 'Learn more' }} <span aria-hidden="true">→</span></a>
                             </div>
                         </article>
                     @endforeach
@@ -996,61 +996,46 @@ $dubaiMoments = [
         <!-- Signature Journeys & Guest Stories (#why-us) -->
         <section class="signature-journeys-section" id="why-us">
             <div class="header-container">
-                <div class="signature-journey-shell">
-                    <div class="signature-journey-visual">
-                        <img src="{{ asset('images/camel-desert-journey.png') }}" alt="Travelers riding camels through Dubai desert dunes at sunrise" loading="lazy">
-                        <span class="signature-journey-badge">WMT SELECT</span>
-                        <span class="signature-journey-caption">Dubai, beyond the ordinary</span>
-                    </div>
-
-                    <div class="signature-journey-copy">
-                        <span class="signature-journey-eyebrow">DESIGNED FOR THE WAY YOU TRAVEL</span>
-                        <h2>More than a booking.<br><em>A Dubai memory.</em></h2>
-                        <p>From a sunrise across the dunes to a city evening made just for you, our local team turns simple plans into standout moments.</p>
-
-                        <ul class="signature-journey-points">
-                            <li><span aria-hidden="true">✦</span> Local experts, thoughtful details</li>
-                            <li><span aria-hidden="true">✦</span> Flexible plans for every pace</li>
-                            <li><span aria-hidden="true">✦</span> Support from first message to last stop</li>
-                        </ul>
-
-                        <a class="signature-journey-cta" href="#booking">Plan your experience <span aria-hidden="true">→</span></a>
-                    </div>
-                </div>
-
-                <section class="guest-stories-section" aria-labelledby="guest-stories-title" x-data="{ active: 0, total: {{ count($guestStories) }}, next() { this.active = (this.active + 1) % this.total }, previous() { this.active = (this.active - 1 + this.total) % this.total } }">
-                    <div class="guest-stories-intro">
-                        <span class="guest-stories-eyebrow">GUEST STORIES</span>
-                        <h2 id="guest-stories-title">Loved in every<br>little detail.</h2>
-                        <div class="guest-stories-rating" aria-label="Five star guest experience">
-                            <span aria-hidden="true">★★★★★</span>
-                            <strong>Made for memorable days</strong>
+                @foreach ($signatureJourneys as $journey)
+                    <div class="signature-journey-shell">
+                        <div class="signature-journey-visual">
+                            <img src="{{ $journey->imageUrl() }}" alt="{{ $journey->title }}" loading="lazy">
+                            <span class="signature-journey-badge">{{ $journey->badge }}</span>
+                            <span class="signature-journey-caption">{{ $journey->caption }}</span>
                         </div>
-                        <p>Real moments from travellers who explored Dubai with Waheed Murad Tourism.</p>
-                    </div>
 
-                    <div class="guest-stories-slider" aria-live="polite">
-                        <button class="guest-story-arrow guest-story-previous" type="button" @click="previous()" aria-label="Previous guest story"><span aria-hidden="true">←</span></button>
-                        <div class="guest-story-window">
-                            @foreach($guestStories as $index => $story)
-                                <article class="guest-story-card" x-show="active === {{ $index }}" x-cloak>
-                                    <span class="guest-story-quote" aria-hidden="true">“</span>
-                                    <blockquote>{{ $story['quote'] }}</blockquote>
-                                    <footer>
-                                        <strong>{{ $story['name'] }}</strong>
-                                        <span>{{ $story['meta'] }}</span>
-                                    </footer>
+                        <div class="signature-journey-copy">
+                            <span class="signature-journey-eyebrow">{{ $journey->eyebrow }}</span>
+                            <h2>{{ $journey->title }}<br><em>{{ $journey->highlight }}</em></h2>
+                            <p>{{ $journey->description }}</p>
+
+                            <ul class="signature-journey-points">
+                                <li><span aria-hidden="true">✦</span> {{ $journey->point_one }}</li>
+                                <li><span aria-hidden="true">✦</span> {{ $journey->point_two }}</li>
+                                <li><span aria-hidden="true">✦</span> {{ $journey->point_three }}</li>
+                            </ul>
+
+                            <a class="signature-journey-cta" href="{{ $journey->button_url }}">{{ $journey->button_label }} <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                @endforeach
+
+                <section class="home-testimonials" aria-labelledby="testimonials-title">
+                    <div class="home-testimonials-heading"><span>GUEST EXPERIENCES</span><h2 id="testimonials-title">Memories Made, Stories Shared</h2><p>Discover why travelers love exploring Dubai with us.</p></div>
+                    <div class="home-testimonial-slider" x-data="{ move(direction) { const track = this.$refs.testimonialTrack; track.scrollBy({ left: direction * (track.clientWidth * (window.innerWidth <= 900 ? .92 : .72)), behavior: 'smooth' }); } }">
+                        <button class="home-testimonial-arrow is-previous" type="button" @click="move(-1)" aria-label="Previous testimonials">←</button>
+                        <div class="home-testimonial-grid" x-ref="testimonialTrack">
+                            @foreach ($testimonials as $testimonial)
+                                <article class="home-testimonial-card {{ $testimonial->is_featured ? 'is-featured' : '' }}">
+                                    <div class="home-testimonial-stars" aria-label="{{ $testimonial->rating }} out of 5 stars">{{ str_repeat('★', $testimonial->rating) }}</div><span class="home-testimonial-quote" aria-hidden="true">”</span>
+                                    <blockquote>“{{ $testimonial->quote }}”</blockquote>
+                                    <footer><img src="{{ $testimonial->avatarUrl() }}" alt="{{ $testimonial->name }}"><span><strong>{{ $testimonial->name }}</strong><small>{{ $testimonial->country }}</small></span></footer>
                                 </article>
                             @endforeach
                         </div>
-                        <button class="guest-story-arrow guest-story-next" type="button" @click="next()" aria-label="Next guest story"><span aria-hidden="true">→</span></button>
-
-                        <div class="guest-story-dots" role="tablist" aria-label="Guest stories">
-                            @foreach($guestStories as $index => $story)
-                                <button type="button" :class="{ 'is-active': active === {{ $index }} }" @click="active = {{ $index }}" aria-label="Show story {{ $index + 1 }}"></button>
-                            @endforeach
-                        </div>
+                        <button class="home-testimonial-arrow is-next" type="button" @click="move(1)" aria-label="Next testimonials">→</button>
                     </div>
+                    <div class="home-testimonial-stats"><div><b>★</b><span><strong>4.9/5</strong><small>Guest Rating</small></span></div><div><b>♟</b><span><strong>2,500+</strong><small>Happy Travelers</small></span></div><div><b>♢</b><span><strong>Trusted</strong><small>Dubai Experiences</small></span></div></div>
                 </section>
             </div>
         </section>

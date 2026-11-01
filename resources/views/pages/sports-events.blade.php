@@ -3,43 +3,6 @@
 @section('title', 'Sports Events | Waheed Murad Tourism')
 
 @section('content')
-    @php
-        $events = [
-            [
-                'title' => 'Dubai Championship Golf Day',
-                'image' => 'images/sports-golf-dubai.png',
-                'description' => 'A polished day on the fairway with championship atmosphere, skyline views and premium hospitality.',
-                'location' => 'Dubai',
-                'price' => 'PKR 100,028',
-                'tag' => 'Golf',
-            ],
-            [
-                'title' => 'Abu Dhabi Grand Prix Weekend',
-                'image' => 'images/sports-events-dubai.png',
-                'description' => 'Feel the energy of race weekend with a seamless UAE experience built around speed, spectacle and excitement.',
-                'location' => 'Abu Dhabi',
-                'price' => 'PKR 299,622',
-                'tag' => 'Motorsport',
-            ],
-            [
-                'title' => 'Dubai Sevens Rugby Experience',
-                'image' => 'images/sports-rugby-dubai.png',
-                'description' => 'A high-energy stadium day with world-class rugby, big-match atmosphere and unforgettable Dubai evenings.',
-                'location' => 'Dubai',
-                'price' => 'PKR 115,417',
-                'tag' => 'Rugby',
-            ],
-            [
-                'title' => 'Topgolf Dubai Evening',
-                'image' => 'images/sports-golf-dubai.png',
-                'description' => 'Bring your group together for golf, great food and city views in one of Dubai’s favourite social spots.',
-                'location' => 'Dubai',
-                'price' => 'PKR 13,850',
-                'tag' => 'Leisure sport',
-            ],
-        ];
-    @endphp
-
     <section class="sports-events-page da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Sports Events']]" />
 
@@ -60,13 +23,15 @@
             <div class="sports-events-results">
                 <div class="sports-results-bar"><strong><span>{{ count($events) }}</span> sports events to explore</strong><label>Sort by <select><option>Most popular</option><option>Price: Low to high</option><option>Price: High to low</option></select></label></div>
                 <div class="sports-event-list">
-                    @foreach ($events as $event)
+                    @forelse ($events as $event)
                         <article class="sports-event-card">
                             <img src="{{ asset($event['image']) }}" alt="{{ $event['title'] }}" loading="lazy">
                             <div class="sports-event-copy"><span>{{ $event['tag'] }}</span><h2>{{ $event['title'] }}</h2><p>{{ $event['description'] }}</p><small>⌖ {{ $event['location'] }}</small></div>
-                            <div class="sports-event-action"><small>From</small><strong>{{ $event['price'] }}</strong><a href="{{ url('/') }}#booking">Book now <span aria-hidden="true">→</span></a></div>
+                            <div class="sports-event-action"><small>From</small><strong>{{ $event['price'] }}</strong><a href="{{ $event['url'] ?? url('/') }}#booking">Book now <span aria-hidden="true">→</span></a></div>
                         </article>
-                    @endforeach
+                    @empty
+                        <div class="sports-filter-help"><span aria-hidden="true">✦</span><p>There are no live sports events yet. Please check back soon.</p></div>
+                    @endforelse
                 </div>
                 <p class="sports-events-note">You’ve explored all {{ count($events) }} sports events.</p>
             </div>

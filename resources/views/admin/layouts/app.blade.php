@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Waheed Murad Tourism administration dashboard">
     <title>@yield('title', 'Admin Dashboard') | Waheed Murad Tourism</title>
-    @vite('resources/css/admin-dashboard.css')
+    @vite(['resources/css/admin-dashboard.css', 'resources/js/admin-sidebar.js'])
 </head>
 <body class="wmt-admin-body">
     @yield('content')

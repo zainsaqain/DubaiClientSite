@@ -1,0 +1,5 @@
+@extends('admin.layouts.app')
+@section('title', $tour->name)
+@section('content')
+<div class="wmt-admin-shell">@include('admin.partials.sidebar')<main class="wmt-admin-main wmt-admin-manager-main"><header class="wmt-admin-topbar"><div><p>TOUR PREVIEW</p><h1>{{ $tour->name }}</h1></div><div class="wmt-admin-actions"><a class="wmt-admin-site-link" href="{{ route('tours.show', $tour) }}" target="_blank">View public page ↗</a><a class="wmt-admin-primary-action" href="{{ route('admin.tours.edit', $tour) }}">Edit Tour</a></div></header><section class="wmt-admin-panel"><div class="wmt-tour-preview"><img src="{{ $tour->imageUrl($tour->main_image) }}" alt="{{ $tour->image_alt }}"><div><span>{{ $tour->category?->name }} · {{ $tour->subcategory?->name }}</span><h2>{{ $tour->name }}</h2><p>{{ $tour->short_description }}</p><strong>{{ $tour->currency }} {{ number_format((float)$tour->starting_price, 0) }}</strong><p>Status: <b>{{ ucfirst($tour->status) }}</b> · {{ $tour->itineraries->count() }} itinerary steps · {{ $tour->packages->count() }} packages</p></div></div></section></main></div>
+@endsection

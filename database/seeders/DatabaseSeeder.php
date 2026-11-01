@@ -21,5 +21,21 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        $this->call([
+            DesertAdventureSeeder::class,
+            SportsEventSeeder::class,
+            CruiseBoatTourSeeder::class,
+            AttractionSeeder::class,
+            CityTourSeeder::class,
+            WaterparkThemeParkSeeder::class,
+            TransferSeeder::class,
+            WhyUsFeatureSeeder::class,
+            HeroSlideSeeder::class,
+            HomePromoCardSeeder::class,
+            HomeSignatureJourneySeeder::class,
+            HomeTestimonialSeeder::class,
+            TourManagementSeeder::class,
+        ]);
     }
 }

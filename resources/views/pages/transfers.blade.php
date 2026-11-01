@@ -3,13 +3,6 @@
 @section('title', 'Transfers | Waheed Murad Tourism')
 
 @section('content')
-    @php
-        $transfers = [
-            ['title' => 'Dubai Airport Private Transfer', 'image' => 'images/airport-transfer.png', 'tag' => 'Airport service', 'description' => 'Meet your professional driver on arrival and travel comfortably from Dubai International Airport to your hotel or destination.', 'price' => 'PKR 9,618'],
-            ['title' => 'Private Intercity Transfer', 'image' => 'images/dubai-adventure.png', 'tag' => 'Door to door', 'description' => 'A reliable private journey for your plans beyond Dubai, with flexible pickup and room for your travel essentials.', 'price' => 'PKR 35,560'],
-        ];
-    @endphp
-
     <section class="sports-events-page transfers-page da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Transfers']]" />
 
@@ -35,8 +28,8 @@
                     @foreach ($transfers as $transfer)
                         <article class="sports-event-card transfer-card">
                             <img src="{{ asset($transfer['image']) }}" alt="{{ $transfer['title'] }}" loading="lazy">
-                            <div class="sports-event-copy"><span>{{ $transfer['tag'] }}</span><h2>{{ $transfer['title'] }}</h2><p>{{ $transfer['description'] }}</p><small>⌖ Dubai &amp; UAE</small></div>
-                            <div class="sports-event-action"><small>From</small><strong>{{ $transfer['price'] }}</strong><a href="{{ url('/') }}#booking">Book now <span aria-hidden="true">→</span></a></div>
+                            <div class="sports-event-copy"><span>{{ $transfer['tag'] }}</span><h2>{{ $transfer['title'] }}</h2><p>{{ $transfer['description'] }}</p><small>⌖ {{ $transfer['location'] }}</small></div>
+                            <div class="sports-event-action"><small>From</small><strong>{{ $transfer['price'] }}</strong><a href="{{ $transfer['url'] ?? url('/') }}#booking">Book now <span aria-hidden="true">→</span></a></div>
                         </article>
                     @endforeach
                 </div>

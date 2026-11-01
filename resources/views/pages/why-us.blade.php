@@ -41,35 +41,19 @@
             </section>
 
             <section class="why-us-features-list" aria-label="Reasons to choose Waheed Murad Tourism">
-                <article class="why-us-feature-row">
-                    <div class="why-us-feature-media"><img src="{{ asset('images/desert-camp-experience.png') }}" alt="A welcoming evening camp in the Dubai desert" loading="lazy"></div>
-                    <div class="why-us-feature-copy">
-                        <span>ONE JOURNEY, MANY SIDES OF DUBAI</span>
-                        <h3>Desert Nights to City Lights</h3>
-                        <p>Spend the afternoon crossing golden dunes, then make the most of Dubai's celebrated landmarks, waterfronts and family attractions. We connect the desert, the city and every little detail in between through one friendly local team.</p>
-                        <a href="{{ route('desert-adventures') }}">Explore desert adventures <i>→</i></a>
-                    </div>
-                </article>
-
-                <article class="why-us-feature-row why-us-feature-row-reverse">
-                    <div class="why-us-feature-media"><img src="{{ asset('images/dubai-adventure.png') }}" alt="A memorable Dubai adventure with iconic city views" loading="lazy"></div>
-                    <div class="why-us-feature-copy">
-                        <span>MADE FOR YOUR WISHLIST</span>
-                        <h3>Bucket List Moments</h3>
-                        <p>Whether your must-do moment is a desert sunset, a marine escape or an iconic attraction, we help you experience it your way. Our curated choices make it easy to choose more of what you love and less of what you need to organise.</p>
-                        <a href="{{ route('attractions') }}">Browse attractions <i>→</i></a>
-                    </div>
-                </article>
-
-                <article class="why-us-feature-row">
-                    <div class="why-us-feature-media"><img src="{{ asset('images/desert-oasis-morning.png') }}" alt="A peaceful morning in Dubai's natural desert landscape" loading="lazy"></div>
-                    <div class="why-us-feature-copy">
-                        <span>TRAVEL WITH CARE</span>
-                        <h3>Nature First</h3>
-                        <p>Dubai's desert is remarkable, and it deserves to stay that way. We select responsible experiences and work with guides who respect the land, wildlife and communities that make every journey feel authentic.</p>
-                        <a href="{{ route('city-tours') }}">Discover city tours <i>→</i></a>
-                    </div>
-                </article>
+                @foreach ($features as $feature)
+                    <article class="why-us-feature-row {{ $feature->is_reversed ? 'why-us-feature-row-reverse' : '' }}">
+                        <div class="why-us-feature-media"><img src="{{ asset($feature->publicImagePath()) }}" alt="{{ $feature->title }}" loading="lazy"></div>
+                        <div class="why-us-feature-copy">
+                            <span>{{ $feature->eyebrow }}</span>
+                            <h3>{{ $feature->title }}</h3>
+                            <p>{{ $feature->description }}</p>
+                            @if ($feature->link_label && $feature->link_url)
+                                <a href="{{ url($feature->link_url) }}">{{ $feature->link_label }} <i>→</i></a>
+                            @endif
+                        </div>
+                    </article>
+                @endforeach
             </section>
 
             <section class="why-us-cta" aria-label="Plan your trip">
