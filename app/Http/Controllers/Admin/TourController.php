@@ -82,7 +82,7 @@ class TourController extends Controller
             foreach ($tour->images as $image) {
                 Storage::disk('public')->delete($image->path);
             }
-            Storage::disk('public')->delete([$tour->thumbnail, $tour->main_image]);
+            Storage::disk('public')->delete(array_filter([$tour->thumbnail, $tour->main_image]));
             $tour->delete();
         });
 
@@ -123,6 +123,7 @@ class TourController extends Controller
             'location' => ['required', 'string', 'max:120'],
             'duration' => ['nullable', 'integer', 'min:1'],
             'duration_unit' => ['nullable', 'in:minutes,hours,days'],
+            'experience_time' => ['nullable', 'in:morning,evening,anytime'],
             'languages' => ['nullable', 'array'],
             'languages.*' => ['string', 'max:40'],
             'starting_price' => ['required', 'numeric', 'min:0'],
@@ -134,15 +135,15 @@ class TourController extends Controller
             'gallery' => ['nullable', 'array'], 'gallery.*' => ['image', 'mimes:jpg,jpeg,png,webp', 'max:4096'],
             'gallery_alt' => ['nullable', 'array'], 'gallery_caption' => ['nullable', 'array'],
             'remove_image_ids' => ['nullable', 'array'], 'remove_image_ids.*' => ['integer'],
-            'feature_status' => ['nullable', 'array'], 'feature_status.*' => ['in:included,optional,not_included'],
+            'feature_status' => ['nullable', 'array'], 'feature_status.*' => ['nullable', 'in:included,optional,not_included'],
             'about' => ['nullable', 'string'], 'full_description' => ['nullable', 'string'], 'pickup_information' => ['nullable', 'string'],
             'itineraries' => ['nullable', 'array'], 'itineraries.*.title' => ['nullable', 'string', 'max:180'], 'itineraries.*.description' => ['nullable', 'string'], 'itineraries.*.duration' => ['nullable', 'integer', 'min:1'], 'itineraries.*.duration_unit' => ['nullable', 'in:minutes,hours,days'], 'itineraries.*.icon' => ['nullable', 'string', 'max:40'],
             'highlights' => ['nullable', 'string'], 'know_before_you_go' => ['nullable', 'string'], 'age_policy' => ['nullable', 'string'], 'cancellation_policy' => ['nullable', 'string'], 'additional_notes' => ['nullable', 'string'],
-            'packages' => ['nullable', 'array'], 'packages.*.name' => ['nullable', 'string', 'max:120'], 'packages.*.description' => ['nullable', 'string'], 'packages.*.is_active' => ['nullable', 'boolean'],
-            'prices' => ['nullable', 'array'], 'prices.*.package_index' => ['nullable', 'integer', 'min:0'], 'prices.*.vehicle_type' => ['required_with:prices', 'in:shared,private'], 'prices.*.adult_price' => ['required_with:prices', 'numeric', 'min:0'], 'prices.*.child_price' => ['nullable', 'numeric', 'min:0'], 'prices.*.minimum_guests' => ['nullable', 'integer', 'min:1'], 'prices.*.maximum_guests' => ['nullable', 'integer', 'min:1'],
+            'packages' => ['nullable', 'array'], 'packages.*.name' => ['nullable', 'string', 'max:120'], 'packages.*.description' => ['nullable', 'string'], 'packages.*.is_active' => ['nullable', 'boolean'], 'packages.*.is_recommended' => ['nullable', 'boolean'], 'packages.*.badge_label' => ['nullable', 'string', 'max:80'],
+            'prices' => ['nullable', 'array'], 'prices.*.package_index' => ['nullable', 'integer', 'min:0'], 'prices.*.vehicle_type' => ['required_with:prices', 'in:shared,private'], 'prices.*.vehicle_label' => ['nullable', 'string', 'max:120'], 'prices.*.description' => ['nullable', 'string'], 'prices.*.adult_price' => ['required_with:prices', 'numeric', 'min:0'], 'prices.*.child_price' => ['nullable', 'numeric', 'min:0'], 'prices.*.child_min_age' => ['nullable', 'integer', 'min:0', 'max:99'], 'prices.*.child_max_age' => ['nullable', 'integer', 'min:0', 'max:99'], 'prices.*.infant_price' => ['nullable', 'numeric', 'min:0'], 'prices.*.infant_max_age' => ['nullable', 'integer', 'min:0', 'max:99'], 'prices.*.minimum_guests' => ['nullable', 'integer', 'min:1'], 'prices.*.maximum_guests' => ['nullable', 'integer', 'min:1'],
             'availabilities' => ['nullable', 'array'], 'availabilities.*.available_date' => ['nullable', 'date'], 'availabilities.*.start_time' => ['nullable', 'date_format:H:i'], 'availabilities.*.capacity' => ['nullable', 'integer', 'min:1'], 'availabilities.*.booking_cutoff_hours' => ['nullable', 'integer', 'min:0'], 'availabilities.*.is_blocked' => ['nullable', 'boolean'],
             'meta_title' => ['nullable', 'string', 'max:255'], 'meta_description' => ['nullable', 'string', 'max:500'],
-            'is_featured' => ['nullable', 'boolean'], 'is_bestseller' => ['nullable', 'boolean'], 'is_travellers_choice' => ['nullable', 'boolean'], 'is_original' => ['nullable', 'boolean'], 'location_badge' => ['nullable', 'string', 'max:80'], 'display_order' => ['nullable', 'integer', 'min:0'], 'youtube_url' => ['nullable', 'url', 'max:255'],
+            'is_featured' => ['nullable', 'boolean'], 'is_bestseller' => ['nullable', 'boolean'], 'is_travellers_choice' => ['nullable', 'boolean'], 'is_original' => ['nullable', 'boolean'], 'location_badge' => ['nullable', 'string', 'max:80'], 'promotion_label' => ['nullable', 'string', 'max:100'], 'display_order' => ['nullable', 'integer', 'min:0'], 'youtube_url' => ['nullable', 'url', 'max:255'],
         ]);
 
         if ($data['tour_subcategory_id'] ?? null) {
@@ -162,11 +163,15 @@ class TourController extends Controller
                 unset($data[$field]);
             }
             if ($request->hasFile('thumbnail')) {
-                Storage::disk('public')->delete($tour->thumbnail);
+                if ($tour->thumbnail) {
+                    Storage::disk('public')->delete($tour->thumbnail);
+                }
                 $data['thumbnail'] = $request->file('thumbnail')->store('tours/thumbnails', 'public');
             }
             if ($request->hasFile('main_image')) {
-                Storage::disk('public')->delete($tour->main_image);
+                if ($tour->main_image) {
+                    Storage::disk('public')->delete($tour->main_image);
+                }
                 $data['main_image'] = $request->file('main_image')->store('tours/main', 'public');
             }
             $tour->fill($data)->save();
@@ -179,8 +184,11 @@ class TourController extends Controller
             }
             $featureRows = [];
             foreach ($request->input('feature_status', []) as $featureId => $inclusionStatus) {
-                $featureRows[$featureId] = ['inclusion_status' => $inclusionStatus];
-            } $tour->features()->sync($featureRows);
+                if (in_array($inclusionStatus, ['included', 'optional', 'not_included'], true)) {
+                    $featureRows[$featureId] = ['inclusion_status' => $inclusionStatus];
+                }
+            }
+            $tour->features()->sync($featureRows);
             $tour->itineraries()->delete();
             foreach (array_values($request->input('itineraries', [])) as $index => $item) {
                 if (! empty($item['title'])) {
@@ -192,7 +200,7 @@ class TourController extends Controller
             $packages = [];
             foreach (array_values($request->input('packages', [])) as $index => $package) {
                 if (! empty($package['name'])) {
-                    $packages[$index] = $tour->packages()->create(['name' => $package['name'], 'description' => $package['description'] ?? null, 'is_active' => (bool) ($package['is_active'] ?? true), 'display_order' => $index + 1]);
+                    $packages[$index] = $tour->packages()->create(['name' => $package['name'], 'description' => $package['description'] ?? null, 'is_active' => (bool) ($package['is_active'] ?? true), 'is_recommended' => (bool) ($package['is_recommended'] ?? false), 'badge_label' => $package['badge_label'] ?? null, 'display_order' => $index + 1]);
                 }
             }
             foreach ($request->input('prices', []) as $price) {
@@ -200,7 +208,7 @@ class TourController extends Controller
                     $max = $price['maximum_guests'] ?? null;
                     if ($max && $max < ($price['minimum_guests'] ?? 1)) {
                         abort(422, 'Maximum guests cannot be lower than minimum guests.');
-                    } $tour->prices()->create(['tour_package_id' => isset($price['package_index']) ? ($packages[$price['package_index']]->id ?? null) : null, 'vehicle_type' => $price['vehicle_type'], 'adult_price' => $price['adult_price'], 'child_price' => $price['child_price'] ?? null, 'minimum_guests' => $price['minimum_guests'] ?? 1, 'maximum_guests' => $max, 'currency' => $tour->currency, 'is_active' => true]);
+                    } $tour->prices()->create(['tour_package_id' => isset($price['package_index']) ? ($packages[$price['package_index']]->id ?? null) : null, 'vehicle_type' => $price['vehicle_type'], 'vehicle_label' => $price['vehicle_label'] ?? null, 'description' => $price['description'] ?? null, 'adult_price' => $price['adult_price'], 'child_price' => $price['child_price'] ?? null, 'child_min_age' => $price['child_min_age'] ?? null, 'child_max_age' => $price['child_max_age'] ?? null, 'infant_price' => $price['infant_price'] ?? null, 'infant_max_age' => $price['infant_max_age'] ?? null, 'minimum_guests' => $price['minimum_guests'] ?? 1, 'maximum_guests' => $max, 'currency' => $tour->currency, 'is_active' => true]);
                 }
             }
             $tour->availabilities()->delete();

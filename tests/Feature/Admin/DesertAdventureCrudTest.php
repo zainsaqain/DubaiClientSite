@@ -13,7 +13,7 @@ class DesertAdventureCrudTest extends TestCase
 
     public function test_admin_can_create_and_manage_a_desert_adventure(): void
     {
-        $user = User::factory()->create(['email_verified_at' => now()]);
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
 
         $this->actingAs($user)
             ->get(route('admin.desert-adventures.index'))
@@ -47,7 +47,7 @@ class DesertAdventureCrudTest extends TestCase
 
     public function test_admin_can_change_an_adventure_category(): void
     {
-        $user = User::factory()->create(['email_verified_at' => now()]);
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
         $adventure = DesertAdventure::query()->create([
             'title' => 'Editable School Trip',
             'category' => 'School Trips',

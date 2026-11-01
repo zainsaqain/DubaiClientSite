@@ -107,7 +107,7 @@
 
     <p class="wmt-admin-label">MANAGEMENT</p>
     <nav class="wmt-admin-nav" aria-label="Management navigation">
-        <a href="{{ route('profile.edit') }}"><i>⚙</i> Account settings</a>
+        <a href="{{ route('profile.edit') }}" class="{{ request()->routeIs('profile.edit') ? 'is-active' : '' }}"><i>⚙</i> Account settings</a>
         <a href="{{ route('home') }}"><i>↗</i> View website</a>
     </nav>
 

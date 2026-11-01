@@ -2,16 +2,22 @@
 
 @section('title', ($tour->meta_title ?: $tour->name).' | Waheed Murad Tourism')
 
+@section('meta_description', $tour->meta_description ?: $tour->short_description)
+
 @section('content')
 @php
     $gallery = $tour->images->pluck('path')->prepend($tour->main_image ?: $tour->thumbnail)->filter()->unique()->values();
     $mainImage = $gallery->first() ?: $tour->thumbnail;
     $sideImages = $gallery->skip(1)->take(2);
     $visibleFeatures = $tour->features->where('is_active', true);
+    $activePackages = $tour->packages->where('is_active', true);
+    $activePrices = $tour->prices->where('is_active', true);
+    $categoryUrl = $tour->category ? route('tour-categories.show', $tour->category) : route('tours.search');
+    $subcategoryUrl = $tour->category && $tour->subcategory ? route('tour-subcategories.show', [$tour->category, $tour->subcategory]) : null;
 @endphp
 
 <section class="da-product-page da-container">
-    <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => $tour->category?->name ?? 'Tours', 'url' => route('desert-adventures')], ['label' => $tour->subcategory?->name ?? $tour->category?->name], ['label' => $tour->name]]" />
+    <x-breadcrumb :items="array_filter([['label' => 'Home', 'url' => route('home')], ['label' => $tour->category?->name ?? 'Tours', 'url' => $categoryUrl], $tour->subcategory ? ['label' => $tour->subcategory->name, 'url' => $subcategoryUrl] : null, ['label' => $tour->name]])" />
 
     <div class="da-product-heading">
         <div>
@@ -77,7 +83,13 @@
             <div class="da-booking-input-wrap"><span>▣</span><input type="date" min="{{ now()->toDateString() }}" aria-label="Select date"></div>
             <div class="da-booking-input-wrap"><span>♧</span><input type="number" min="1" value="1" aria-label="Number of guests"></div>
             <div class="da-booking-accordion-row"><span>Choose Your Vehicle</span><b>⌄</b></div>
-            <div class="da-booking-accordion-row"><span>Choose Your Package</span><b>⌄</b></div>
+            @forelse ($activePackages as $package)
+                <div class="da-booking-accordion-row da-package-summary"><span><strong>{{ $package->name }}</strong>@if ($package->description)<small>{{ $package->description }}</small>@endif</span><b>{{ $package->prices->where('is_active', true)->min('adult_price') !== null ? $package->prices->where('is_active', true)->first()->currency.' '.number_format((float) $package->prices->where('is_active', true)->min('adult_price')) : '' }}</b></div>
+            @empty
+                @foreach ($activePrices->whereNull('tour_package_id') as $price)
+                    <div class="da-booking-accordion-row da-package-summary"><span><strong>{{ ucfirst($price->vehicle_type) }}</strong><small>{{ $price->minimum_guests }} {{ Str::plural('guest', $price->minimum_guests) }} minimum</small></span><b>{{ $price->currency }} {{ number_format((float) $price->adult_price) }}</b></div>
+                @endforeach
+            @endforelse
             <button type="button" class="da-check-avail-btn">Check Availability</button>
         </aside>
     </div>

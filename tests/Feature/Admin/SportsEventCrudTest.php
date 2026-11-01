@@ -13,7 +13,7 @@ class SportsEventCrudTest extends TestCase
 
     public function test_admin_can_create_update_and_delete_a_sports_event(): void
     {
-        $user = User::factory()->create(['email_verified_at' => now()]);
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
 
         $this->actingAs($user)
             ->post(route('admin.sports-events.store'), [

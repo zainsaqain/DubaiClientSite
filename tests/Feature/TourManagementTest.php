@@ -16,7 +16,7 @@ class TourManagementTest extends TestCase
 
     public function test_admin_can_create_a_tour_and_publish_it_to_its_subcategory_listing(): void
     {
-        $user = User::factory()->create(['email_verified_at' => now()]);
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
         $category = TourCategory::query()->create(['name' => 'Desert Adventures', 'slug' => 'desert-adventures', 'is_active' => true]);
         $subcategory = TourSubcategory::query()->create(['tour_category_id' => $category->id, 'name' => 'Desert Safaris', 'slug' => 'desert-safaris', 'is_active' => true]);
 
@@ -40,7 +40,7 @@ class TourManagementTest extends TestCase
 
     public function test_admin_cannot_assign_a_subcategory_from_another_category(): void
     {
-        $user = User::factory()->create(['email_verified_at' => now()]);
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
         $category = TourCategory::query()->create(['name' => 'Desert Adventures', 'slug' => 'desert-adventures', 'is_active' => true]);
         $otherCategory = TourCategory::query()->create(['name' => 'Attractions', 'slug' => 'attractions', 'is_active' => true]);
         $otherSubcategory = TourSubcategory::query()->create(['tour_category_id' => $otherCategory->id, 'name' => 'Entry Tickets', 'slug' => 'entry-tickets', 'is_active' => true]);

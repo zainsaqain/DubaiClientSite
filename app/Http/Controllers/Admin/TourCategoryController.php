@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\TourCategory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -13,9 +14,24 @@ use Illuminate\View\View;
 
 class TourCategoryController extends Controller
 {
-    public function index(): View
+    public function index(Request $request): View
     {
-        return view('admin.tour-categories.index', ['categories' => TourCategory::query()->withCount(['tours', 'subcategories'])->orderBy('display_order')->paginate(15)]);
+        $search = trim((string) $request->query('search', ''));
+
+        $categories = TourCategory::query()
+            ->withCount(['tours', 'subcategories'])
+            ->when($search !== '', function (Builder $query) use ($search): void {
+                $query->where(function (Builder $searchQuery) use ($search): void {
+                    $searchQuery
+                        ->where('name', 'like', '%'.$search.'%')
+                        ->orWhere('slug', 'like', '%'.$search.'%');
+                });
+            })
+            ->orderBy('display_order')
+            ->paginate(15)
+            ->withQueryString();
+
+        return view('admin.tour-categories.index', compact('categories', 'search'));
     }
 
     public function create(): View

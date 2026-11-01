@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Database\Factories\TourFactory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -14,7 +15,7 @@ class Tour extends Model
     /** @use HasFactory<TourFactory> */
     use HasFactory;
 
-    protected $fillable = ['tour_category_id', 'tour_subcategory_id', 'name', 'slug', 'short_description', 'about', 'full_description', 'location', 'duration', 'duration_unit', 'languages', 'starting_price', 'currency', 'status', 'thumbnail', 'main_image', 'image_alt', 'pickup_information', 'highlights', 'know_before_you_go', 'age_policy', 'cancellation_policy', 'additional_notes', 'meta_title', 'meta_description', 'is_featured', 'is_bestseller', 'is_travellers_choice', 'is_original', 'location_badge', 'display_order', 'youtube_url'];
+    protected $fillable = ['tour_category_id', 'tour_subcategory_id', 'name', 'slug', 'short_description', 'about', 'full_description', 'location', 'duration', 'duration_unit', 'experience_time', 'languages', 'starting_price', 'currency', 'status', 'thumbnail', 'main_image', 'image_alt', 'pickup_information', 'highlights', 'know_before_you_go', 'age_policy', 'cancellation_policy', 'additional_notes', 'meta_title', 'meta_description', 'is_featured', 'is_bestseller', 'is_travellers_choice', 'is_original', 'location_badge', 'promotion_label', 'display_order', 'youtube_url'];
 
     protected function casts(): array
     {
@@ -63,7 +64,24 @@ class Tour extends Model
 
     public function isPublic(): bool
     {
-        return $this->status === 'active';
+        if ($this->status !== 'active' || ! $this->category()->where('is_active', true)->exists()) {
+            return false;
+        }
+
+        return ! $this->tour_subcategory_id
+            || $this->subcategory()->where('is_active', true)->exists();
+    }
+
+    public function scopePublic(Builder $query): Builder
+    {
+        return $query
+            ->where('status', 'active')
+            ->whereHas('category', fn (Builder $categoryQuery): Builder => $categoryQuery->where('is_active', true))
+            ->where(function (Builder $tourQuery): void {
+                $tourQuery
+                    ->whereNull('tour_subcategory_id')
+                    ->orWhereHas('subcategory', fn (Builder $subcategoryQuery): Builder => $subcategoryQuery->where('is_active', true));
+            });
     }
 
     public function imageUrl(?string $path = null): string
@@ -93,15 +111,17 @@ class Tour extends Model
             'title' => $this->name,
             'description' => $this->short_description ?: 'Explore a memorable experience with Waheed Murad Tourism.',
             'price' => (float) $this->starting_price,
+            'price_label' => $this->currency.' '.number_format((float) $this->starting_price),
             'pkr_price' => number_format((float) $this->starting_price * 103),
             'category' => $category,
             'category_name' => $categoryName,
-            'time' => $this->duration ? $this->duration.' '.$this->duration_unit : 'flexible',
+            'time' => $this->experience_time ?: ($this->duration ? $this->duration.' '.$this->duration_unit : 'flexible'),
             'location' => str($this->location)->lower()->replace(' ', '-')->toString(),
             'vehicle' => '4x4',
             'is_bestseller' => $this->is_bestseller,
             'is_choice' => $this->is_travellers_choice,
             'location_tag' => $this->location_badge ?: $this->location,
+            'promotion_label' => $this->promotion_label,
             'image' => $image ? (str_starts_with($image, 'images/') ? $image : 'storage/'.$image) : 'images/desert-safari.png',
             'gallery' => $this->images->pluck('path')->prepend($image)->filter()->map(static fn (string $path): string => str_starts_with($path, 'images/') ? $path : 'storage/'.$path)->unique()->values()->all(),
             'url' => route('tours.show', $this),

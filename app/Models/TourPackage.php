@@ -13,11 +13,11 @@ class TourPackage extends Model
     /** @use HasFactory<TourPackageFactory> */
     use HasFactory;
 
-    protected $fillable = ['tour_id', 'name', 'description', 'is_active', 'display_order'];
+    protected $fillable = ['tour_id', 'name', 'description', 'is_active', 'is_recommended', 'badge_label', 'display_order'];
 
     protected function casts(): array
     {
-        return ['is_active' => 'boolean'];
+        return ['is_active' => 'boolean', 'is_recommended' => 'boolean'];
     }
 
     public function tour(): BelongsTo

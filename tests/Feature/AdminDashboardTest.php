@@ -31,13 +31,48 @@ class AdminDashboardTest extends TestCase
             ->assertSee('admin-dashboard');
     }
 
-    public function test_authenticated_users_can_open_the_admin_dashboard(): void
+    public function test_normal_authenticated_users_are_forbidden_from_the_admin_dashboard(): void
     {
         $user = User::factory()->create();
 
         $this->actingAs($user)
             ->get('/admin')
-            ->assertOk()
-            ->assertSee('Recent bookings');
+            ->assertForbidden();
+    }
+
+    public function test_normal_authenticated_users_are_forbidden_from_admin_crud_routes(): void
+    {
+        $user = User::factory()->create();
+
+        $this->actingAs($user)
+            ->get(route('admin.attractions.index'))
+            ->assertForbidden();
+    }
+
+    public function test_administrators_can_open_admin_crud_routes(): void
+    {
+        $admin = User::factory()->create(['is_admin' => true]);
+
+        $this->actingAs($admin)
+            ->get(route('admin.attractions.index'))
+            ->assertOk();
+    }
+
+    public function test_dashboard_route_redirects_administrators_to_the_admin_dashboard(): void
+    {
+        $admin = User::factory()->create(['is_admin' => true]);
+
+        $this->actingAs($admin)
+            ->get('/dashboard')
+            ->assertRedirect(route('admin.dashboard', absolute: false));
+    }
+
+    public function test_dashboard_route_redirects_normal_users_to_the_home_page(): void
+    {
+        $user = User::factory()->create();
+
+        $this->actingAs($user)
+            ->get('/dashboard')
+            ->assertRedirect(route('home', absolute: false));
     }
 }

@@ -13,7 +13,7 @@ class AttractionCrudTest extends TestCase
 
     public function test_admin_can_create_update_and_delete_an_attraction(): void
     {
-        $user = User::factory()->create(['email_verified_at' => now()]);
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
 
         $this->actingAs($user)->post(route('admin.attractions.store'), [
             'title' => 'Dubai Museum Experience', 'attraction_type' => 'Culture',

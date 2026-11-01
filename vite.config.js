@@ -7,6 +7,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/css/admin-dashboard.css',
+                'resources/css/auth.css',
+                'resources/css/company-pages.css',
                 'resources/js/admin-sidebar.js',
                 'resources/js/app.js',
                 'resources/css/desert-adventures/page.css',

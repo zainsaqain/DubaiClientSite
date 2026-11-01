@@ -45,7 +45,7 @@
         <div class="da-card-bottom">
             <div class="da-card-price-wrap">
                 <small>From</small>
-                <strong>PKR {{ $adventure['pkr_price'] ?? number_format($adventure['price'] * 103) }}</strong>
+                <strong>{{ $adventure['price_label'] ?? ('PKR '.($adventure['pkr_price'] ?? number_format($adventure['price'] * 103))) }}</strong>
             </div>
             <a href="{{ isset($adventure['route']) ? route($adventure['route']) : (isset($adventure['url']) ? url($adventure['url']) : '#') }}" class="da-book-button">Book now</a>
         </div>

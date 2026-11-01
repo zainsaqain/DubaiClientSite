@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\TourCategory;
 use App\Models\TourSubcategory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -14,9 +15,26 @@ use Illuminate\View\View;
 
 class TourSubcategoryController extends Controller
 {
-    public function index(): View
+    public function index(Request $request): View
     {
-        return view('admin.tour-subcategories.index', ['subcategories' => TourSubcategory::query()->with('category')->withCount('tours')->orderBy('display_order')->paginate(15)]);
+        $search = trim((string) $request->query('search', ''));
+
+        $subcategories = TourSubcategory::query()
+            ->with('category')
+            ->withCount('tours')
+            ->when($search !== '', function (Builder $query) use ($search): void {
+                $query->where(function (Builder $searchQuery) use ($search): void {
+                    $searchQuery
+                        ->where('name', 'like', '%'.$search.'%')
+                        ->orWhere('slug', 'like', '%'.$search.'%')
+                        ->orWhereHas('category', fn (Builder $categoryQuery): Builder => $categoryQuery->where('name', 'like', '%'.$search.'%'));
+                });
+            })
+            ->orderBy('display_order')
+            ->paginate(15)
+            ->withQueryString();
+
+        return view('admin.tour-subcategories.index', compact('search', 'subcategories'));
     }
 
     public function create(): View

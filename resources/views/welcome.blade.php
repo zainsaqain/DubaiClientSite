@@ -98,7 +98,7 @@ $heroSlides = $heroSlides ?? [
     ],
 ];
 
-$desertSafarisList = [
+$desertSafarisList = $desertSafarisList ?? [
     [
         'category' => 'Desert Safaris',
         'title' => 'The Fort - Lisaili Desert Experience',
@@ -161,7 +161,7 @@ $desertSafarisList = [
     ],
 ];
 
-$experienceCategories = [
+$experienceCategories = $experienceCategories ?? [
     [
         'title' => 'Desert Safaris',
         'description' => 'Golden dunes, sunset dining and desert stories.',
@@ -200,7 +200,7 @@ $experienceCategories = [
     ],
 ];
 
-$trendingAttractionsList = [
+$trendingAttractionsList = $trendingAttractionsList ?? [
     [
         'category' => 'Desert Safaris',
         'title' => 'Evening Desert Safari in Dubai',
@@ -246,7 +246,7 @@ $cityTourPromos = $cityTourPromos ?? [
     ],
 ];
 
-$topCityToursList = [
+$topCityToursList = $topCityToursList ?? [
     [
         'title' => 'Old Dubai Heritage Walk',
         'image' => asset('images/desert-camp-experience.png'),
@@ -287,7 +287,7 @@ $guestStories = [
     ],
 ];
 
-$dubaiMoments = [
+$dubaiMoments = $dubaiMoments ?? [
     [
         'title' => 'Golden-hour desert',
         'label' => 'Desert escape',
@@ -364,7 +364,7 @@ $dubaiMoments = [
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4.3A8.4 8.4 0 1 1 20.5 11.7Z"/><path d="M8.6 7.9c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.3 0 .5.5 1 1.3 1.8 2.4 2.3.2.1.4.1.5 0l.8-.9c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.5-.3.2-.7.4-1.2.4-.7 0-1.5-.2-2.7-.8a10.3 10.3 0 0 1-4.3-4.1c-.8-1.2-1-2.1-1-2.8 0-.4.2-.8.4-1.1Z"/></svg>
                         <span><small>Talk to a local expert</small><b>WhatsApp us</b></span>
                     </a>
-                    <button class="header-search" type="button" aria-label="Search experiences" onclick="document.getElementById('booking')?.scrollIntoView({behavior: 'smooth'})">
+                    <button class="header-search" type="button" aria-label="Search experiences" onclick="window.location.href='{{ route('tours.search') }}'">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.4 4.4"/></svg>
                         <span>Search experiences</span>
                     </button>
@@ -435,14 +435,14 @@ $dubaiMoments = [
 
                 <div class="account-links">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="account-link">
+                        <a href="{{ auth()->user()->is_admin ? route('admin.dashboard') : route('profile.edit') }}" class="account-link">
                             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>
                             <span>My account</span>
                         </a>
                     @else
                         <a href="{{ route('login') }}" class="account-link">
                             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg>
-                            <span>Sign in</span>
+                            <span>My account</span>
                         </a>
                     @endauth
                     <a class="header-action" href="#wishlist" aria-label="Wishlist, 0 items">
@@ -487,9 +487,9 @@ $dubaiMoments = [
 
                 <div class="mobile-menu-actions">
                     @auth
-                        <a href="{{ url('/dashboard') }}">My account</a>
+                        <a href="{{ auth()->user()->is_admin ? route('admin.dashboard') : route('profile.edit') }}">My account</a>
                     @else
-                        <a href="{{ route('login') }}">Sign in / Create account</a>
+                        <a href="{{ route('login') }}">My account</a>
                     @endauth
                     <a class="mobile-plan-trip" href="#booking">Plan your trip <span aria-hidden="true">→</span></a>
                 </div>
@@ -822,7 +822,7 @@ $dubaiMoments = [
 
                 <!-- Footer View All Action -->
                 <div class="safaris-footer-action">
-                    <a href="#desert-adventures" class="view-all-safaris-btn">
+                    <a href="{{ route('tour-categories.show', ['category' => 'desert-adventures']) }}" class="view-all-safaris-btn">
                         <span>View all Desert Safaris</span>
                     </a>
                 </div>
@@ -910,13 +910,13 @@ $dubaiMoments = [
                                 <span class="trending-attraction-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Dubai</span>
                                 <div class="trending-attraction-footer">
                                     <span>From <b>{{ $attraction['price'] }}</b></span>
-                                    <a href="#booking">Book now <span aria-hidden="true">→</span></a>
+                                    <a href="{{ $attraction['url'] }}">Book now <span aria-hidden="true">→</span></a>
                                 </div>
                             </div>
                         </article>
                     @endforeach
                 </div>
-                <a class="trending-view-more" href="#booking">Explore all attractions <span aria-hidden="true">→</span></a>
+                <a class="trending-view-more" href="{{ route('tour-categories.show', ['category' => 'attractions']) }}">Explore all attractions <span aria-hidden="true">→</span></a>
             </div>
         </section>
 
@@ -983,13 +983,13 @@ $dubaiMoments = [
                                 <span class="top-city-tour-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Dubai, UAE</span>
                                 <div class="top-city-tour-footer">
                                     <span>From <b>{{ $tour['price'] }}</b></span>
-                                    <a href="#booking">Book now</a>
+                                    <a href="{{ $tour['url'] }}">Book now</a>
                                 </div>
                             </div>
                         </article>
                     @endforeach
                 </div>
-                <a class="top-city-tours-view-all" href="#booking">View all City Tours <span aria-hidden="true">→</span></a>
+                <a class="top-city-tours-view-all" href="{{ route('tour-categories.show', ['category' => 'city-tours']) }}">View all City Tours <span aria-hidden="true">→</span></a>
             </div>
         </section>
 
@@ -1052,7 +1052,7 @@ $dubaiMoments = [
 
                 <div class="moments-gallery">
                     @foreach($dubaiMoments as $index => $moment)
-                        <a class="moment-card {{ $moment['class'] }}" href="#booking" aria-label="Explore {{ $moment['title'] }}">
+                        <a class="moment-card {{ $moment['class'] }}" href="{{ $moment['url'] ?? '#booking' }}" aria-label="Explore {{ $moment['title'] }}">
                             <img src="{{ $moment['image'] }}" alt="{{ $moment['title'] }}" loading="lazy">
                             <span class="moment-card-shade" aria-hidden="true"></span>
                             <span class="moment-number">0{{ $index + 1 }}</span>

@@ -13,7 +13,7 @@
             <a class="brand" href="{{ url('/') }}" aria-label="Waheed Murad Tourism home"><span class="brand-mark"><img src="{{ asset('images/waheed-murad-tourism-logo.jpeg') }}" alt="Waheed Murad Tourism"></span><span class="brand-copy"><strong>Waheed Murad</strong><small>Tourism</small></span></a>
             <div class="desktop-tools">
                 <a class="quick-link" href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat with local travel expert"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4.3A8.4 8.4 0 1 1 20.5 11.7Z"/><path d="M8.6 7.9c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.3 0 .5.5 1 1.3 1.8 2.4 2.3.2.1.4.1.5 0l.8-.9c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.5-.3.2-.7.4-1.2.4-.7 0-1.5-.2-2.7-.8a10.3 10.3 0 0 1-4.3-4.1c-.8-1.2-1-2.1-1-2.8 0-.4.2-.8.4-1.1Z"/></svg><span><small>Talk to a local expert</small><b>WhatsApp us</b></span></a>
-                <button class="header-search" type="button" aria-label="Search experiences" onclick="window.location.href='{{ url('/') }}#booking'"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.4 4.4"/></svg><span>Search experiences</span></button>
+                <button class="header-search" type="button" aria-label="Search experiences" onclick="window.location.href='{{ route('tours.search') }}'"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 4.4 4.4"/></svg><span>Search experiences</span></button>
                 <a class="plan-trip" href="{{ url('/') }}#booking">Plan your trip <span aria-hidden="true">→</span></a>
             </div>
             <div class="mobile-quick-actions" aria-label="Quick actions">
@@ -33,9 +33,9 @@
             </div>
             <div class="account-links">
                 @auth
-                    <a href="{{ url('/dashboard') }}" class="account-link"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span>My account</span></a>
+                    <a href="{{ auth()->user()->is_admin ? route('admin.dashboard') : route('profile.edit') }}" class="account-link"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span>My account</span></a>
                 @else
-                    <a href="{{ route('login') }}" class="account-link"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span>Sign in</span></a>
+                    <a href="{{ route('login') }}" class="account-link"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span>My account</span></a>
                 @endauth
                 <a class="header-action" href="{{ url('/') }}#wishlist" aria-label="Wishlist, 0 items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.9a5.3 5.3 0 0 0-7.5 0L12 6.2l-1.3-1.3a5.3 5.3 0 0 0-7.5 0L3.2 12.4 12 21l8.8-8.6a5.3 5.3 0 0 0 0-7.5Z"/></svg><b>0</b></span><span>Wishlist</span></a>
                 <a class="header-action" href="{{ url('/') }}#cart" aria-label="Cart, 0 items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 11H6.2l-.7-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><b>0</b></span><span>Cart</span></a>
@@ -59,9 +59,9 @@
             </nav>
             <div class="mobile-menu-actions">
                 @auth
-                    <a href="{{ url('/dashboard') }}">My account</a>
+                    <a href="{{ auth()->user()->is_admin ? route('admin.dashboard') : route('profile.edit') }}">My account</a>
                 @else
-                    <a href="{{ route('login') }}">Sign in / Create account</a>
+                    <a href="{{ route('login') }}">My account</a>
                 @endauth
                 <a class="mobile-plan-trip" href="{{ url('/') }}#booking">Plan your trip <span aria-hidden="true">→</span></a>
             </div>

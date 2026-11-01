@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', 'Waheed Murad Tourism')</title>
+    <meta name="description" content="@yield('meta_description', 'Discover curated Dubai experiences with Waheed Murad Tourism.')">
     @vite(['resources/css/app.css', 'resources/js/site-shell.js'])
     @stack('page-assets')
 </head>
