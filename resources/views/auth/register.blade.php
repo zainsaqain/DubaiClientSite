@@ -1,52 +1,38 @@
 <x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
+    <div class="wmt-auth-heading">
+        <p>CREATE ACCOUNT</p>
+        <h1>Start your<br><em>admin journey.</em></h1>
+        <span>Create your account to manage Waheed Murad Tourism.</span>
+    </div>
+
+    <form method="POST" action="{{ route('register') }}" class="wmt-auth-form">
         @csrf
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+        <div class="wmt-auth-field">
+            <label for="name">Full name</label>
+            <input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus autocomplete="name" placeholder="Your full name">
+            @error('name')<p class="wmt-auth-error">{{ $message }}</p>@enderror
         </div>
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        <div class="wmt-auth-field">
+            <label for="email">Email address</label>
+            <input id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="username" placeholder="you@company.com">
+            @error('email')<p class="wmt-auth-error">{{ $message }}</p>@enderror
         </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        <div class="wmt-auth-field">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" required autocomplete="new-password" placeholder="Create a password">
+            @error('password')<p class="wmt-auth-error">{{ $message }}</p>@enderror
         </div>
 
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        <div class="wmt-auth-field">
+            <label for="password_confirmation">Confirm password</label>
+            <input id="password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm your password">
+            @error('password_confirmation')<p class="wmt-auth-error">{{ $message }}</p>@enderror
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
+        <button type="submit" class="wmt-auth-submit">Create account <span>→</span></button>
+        <p class="wmt-auth-switch">Already registered? <a href="{{ route('login') }}">Sign in instead</a></p>
     </form>
 </x-guest-layout>

@@ -5,26 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>Account Access | Waheed Murad Tourism</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/css/auth.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+    <body class="wmt-auth-body">
+        <div class="wmt-auth-shell">
+            <section class="wmt-auth-visual" aria-label="Waheed Murad Tourism">
+                <a class="wmt-auth-brand" href="{{ route('home') }}">
+                    <img src="{{ asset('images/waheed-murad-tourism-logo.jpeg') }}" alt="Waheed Murad Tourism">
+                    <span><strong>WAHEED MURAD</strong><small>TOURISM</small></span>
                 </a>
-            </div>
+                <div class="wmt-auth-visual-copy">
+                    <p>WAHEED MURAD TOURISM</p>
+                    <h1>Every journey,<br><em>beautifully managed.</em></h1>
+                    <span>Dubai experiences, thoughtfully curated for every guest.</span>
+                </div>
+                <div class="wmt-auth-visual-note"><b>✦</b> Your trusted Dubai travel partner</div>
+            </section>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                {{ $slot }}
-            </div>
+            <main class="wmt-auth-main">
+                <a class="wmt-auth-mobile-brand" href="{{ route('home') }}">
+                    <img src="{{ asset('images/waheed-murad-tourism-logo.jpeg') }}" alt="Waheed Murad Tourism">
+                    <span>WAHEED MURAD <small>TOURISM</small></span>
+                </a>
+                <div class="wmt-auth-card">{{ $slot }}</div>
+            </main>
         </div>
     </body>
 </html>
