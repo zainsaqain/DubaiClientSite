@@ -9,7 +9,9 @@ use App\Http\Controllers\Admin\HomePromoCardController;
 use App\Http\Controllers\Admin\HomeSignatureJourneyController;
 use App\Http\Controllers\Admin\HomeTestimonialController;
 use App\Http\Controllers\Admin\SportsEventController;
+use App\Http\Controllers\Admin\TourCategoryContentBlockController;
 use App\Http\Controllers\Admin\TourCategoryController;
+use App\Http\Controllers\Admin\TourCategoryFaqController;
 use App\Http\Controllers\Admin\TourController;
 use App\Http\Controllers\Admin\TourFeatureController;
 use App\Http\Controllers\Admin\TourSubcategoryController;
@@ -24,6 +26,8 @@ use App\Models\CruiseBoatTour;
 use App\Models\DesertAdventure;
 use App\Models\SportsEvent;
 use App\Models\Tour;
+use App\Models\TourCategory;
+use App\Models\TourSubcategory;
 use App\Models\Transfer;
 use App\Models\WaterparkThemePark;
 use App\Models\WhyUsFeature;
@@ -83,7 +87,7 @@ Route::get('/experiences/{category:slug}/{subcategory:slug}', [PublicCatalogueCo
 Route::get('/tours/{tour:slug}', function (Tour $tour) {
     abort_unless($tour->isPublic(), 404);
     $tour->load(['category', 'subcategory', 'images', 'features', 'itineraries', 'packages.prices', 'prices.package', 'availabilities']);
-    $relatedTours = Tour::query()->public()->with(['category', 'subcategory'])
+    $relatedTours = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
         ->whereKeyNot($tour->id)
         ->where(function ($query) use ($tour): void {
             $query->where('tour_subcategory_id', $tour->tour_subcategory_id)
@@ -91,23 +95,16 @@ Route::get('/tours/{tour:slug}', function (Tour $tour) {
         })
         ->orderBy('display_order')->limit(4)->get();
 
-    return view('pages.tour-detail', compact('tour', 'relatedTours'));
+    $recentTours = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
+        ->whereKeyNot($tour->id)
+        ->orderByDesc('updated_at')
+        ->limit(24)
+        ->get();
+
+    return view('pages.tour-detail', compact('tour', 'relatedTours', 'recentTours'));
 })->name('tours.show');
 
-Route::get('/desert-adventures', function () use ($mergeCatalogue) {
-    $managedAdventures = DesertAdventure::query()
-        ->where('is_active', true)
-        ->latest()
-        ->get()
-        ->map(fn (DesertAdventure $adventure) => $adventure->toCatalogueArray())
-        ->all();
-
-    $tourManagerAdventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
-        ->whereHas('category', fn ($query) => $query->where('slug', 'desert-adventures'))
-        ->orderBy('display_order')->get()->map(fn (Tour $tour) => $tour->toCatalogueArray())->all();
-
-    return view('pages.desert-adventures', ['adventures' => $mergeCatalogue($tourManagerAdventures, $managedAdventures ?: config('desert-adventures.adventures', []), true)]);
-})->name('desert-adventures');
+Route::get('/desert-adventures', [PublicCatalogueController::class, 'desertAdventures'])->name('desert-adventures');
 Route::get('/attractions', function () use ($mergeCatalogue, $tourListing) {
     $attractions = Attraction::query()->where('is_active', true)->latest()->get()
         ->map(fn (Attraction $attraction) => $attraction->toPublicArray())->all();
@@ -118,14 +115,32 @@ Route::get('/attractions', function () use ($mergeCatalogue, $tourListing) {
     return view('pages.attractions', compact('attractions'));
 })->name('attractions');
 Route::get('/city-tours', function () use ($mergeCatalogue, $tourListing) {
+    $category = TourCategory::query()
+        ->where('slug', 'city-tours')
+        ->where('is_active', true)
+        ->with([
+            'contentBlocks' => static function ($query): void {
+                $query->where('is_active', true)->orderBy('display_order');
+            },
+            'faqs' => static function ($query): void {
+                $query->where('is_active', true)->orderBy('display_order');
+            },
+            'subcategories' => static function ($query): void {
+                $query->where('is_active', true)->orderBy('display_order');
+            },
+        ])
+        ->first();
+
     $tours = CityTour::query()->where('is_active', true)->latest()->get()
         ->map(fn (CityTour $tour) => $tour->toPublicArray())->all();
 
     $managed = Tour::query()->public()->with(['category', 'subcategory'])->whereHas('category', fn ($query) => $query->where('slug', 'city-tours'))->orderBy('display_order')->get()->map($tourListing)->all();
     $tours = $mergeCatalogue($managed, $tours);
 
-    return view('pages.city-tours', compact('tours'));
+    return view('pages.city-tours', compact('category', 'tours'));
 })->name('city-tours');
+Route::get('/city-tours/{subcategory:slug}', [PublicCatalogueController::class, 'cityTourDestination'])
+    ->name('city-tours.destination');
 
 Route::get('/sports-events', function () use ($mergeCatalogue, $tourListing) {
     $events = SportsEvent::query()
@@ -182,20 +197,30 @@ Route::view('/travel-agent-partners', 'pages.travel-agent-partners')->name('trav
 
 Route::view('/dune-buggies', 'pages.dune-buggies')->name('dune-buggies');
 
-Route::get('/desert-adventures/desert-safaris', function () use ($mergeCatalogue) {
-    $adventures = DesertAdventure::query()
+Route::get('/desert-adventures/desert-safaris', function () {
+    $category = TourCategory::query()
+        ->where('slug', 'desert-adventures')
         ->where('is_active', true)
-        ->where('category', 'Desert Safaris')
-        ->latest()
+        ->firstOrFail();
+
+    $subcategory = TourSubcategory::query()
+        ->where('tour_category_id', $category->id)
+        ->where('slug', 'desert-safaris')
+        ->where('is_active', true)
+        ->firstOrFail();
+
+    $adventures = Tour::query()
+        ->public()
+        ->with(['category', 'subcategory', 'images', 'prices'])
+        ->where('tour_category_id', $category->id)
+        ->where('tour_subcategory_id', $subcategory->id)
+        ->orderByDesc('is_featured')
+        ->orderBy('display_order')
         ->get()
-        ->map(fn (DesertAdventure $adventure) => $adventure->toCatalogueArray())
+        ->map(fn (Tour $tour) => $tour->toCatalogueArray())
         ->all();
 
-    $tourManagerAdventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
-        ->whereHas('subcategory', fn ($query) => $query->where('slug', 'desert-safaris'))
-        ->orderBy('display_order')->get()->map(fn (Tour $tour) => $tour->toCatalogueArray())->all();
-
-    return view('pages.desert-safaris', ['adventures' => $mergeCatalogue($tourManagerAdventures, $adventures ?: config('desert-safaris.adventures', []), true)]);
+    return view('pages.desert-safaris', compact('adventures'));
 })->name('desert-safaris');
 Route::view('/desert-adventures/desert-safaris/morning-desert-adventure', 'pages.morning-desert-adventure')->name('morning-desert-adventure');
 Route::get('/desert-adventures/desert-safaris/evening-desert-safari', function () {
@@ -281,6 +306,8 @@ Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->as('admin.')-
     Route::get('tours/subcategories/options', [TourController::class, 'subcategories'])->name('tours.subcategories');
     Route::resource('tours', TourController::class);
     Route::resource('tour-categories', TourCategoryController::class)->except('show');
+    Route::resource('category-content-blocks', TourCategoryContentBlockController::class)->except('show');
+    Route::resource('category-faqs', TourCategoryFaqController::class)->except('show');
     Route::resource('tour-subcategories', TourSubcategoryController::class)->except('show');
     Route::resource('tour-features', TourFeatureController::class)->only(['index', 'store', 'update', 'destroy']);
     Route::resource('desert-adventures', DesertAdventureController::class)->except('show');
@@ -298,3 +325,7 @@ Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->as('admin.')-
 });
 
 require __DIR__.'/auth.php';
+
+Route::get('/{catalogueSlug}', [PublicCatalogueController::class, 'catalogueShortcut'])
+    ->where('catalogueSlug', '[A-Za-z0-9-]+')
+    ->name('catalogue.shortcut');

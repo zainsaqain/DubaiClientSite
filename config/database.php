@@ -64,6 +64,31 @@ return [
             ]) : [],
         ],
 
+        /*
+         * This connection intentionally remains separate from the legacy
+         * catalogue database configured above. The new catalogue is built in
+         * isolation until an explicit future cutover is approved.
+         */
+        'tourism_v2' => [
+            'driver' => 'mysql',
+            'url' => env('TOURISM_V2_DB_URL'),
+            'host' => env('TOURISM_V2_DB_HOST', env('DB_HOST', '127.0.0.1')),
+            'port' => env('TOURISM_V2_DB_PORT', env('DB_PORT', '3306')),
+            'database' => env('TOURISM_V2_DB_DATABASE', 'dubai_client_site_v2'),
+            'username' => env('TOURISM_V2_DB_USERNAME', env('DB_USERNAME', 'root')),
+            'password' => env('TOURISM_V2_DB_PASSWORD', env('DB_PASSWORD', '')),
+            'unix_socket' => env('TOURISM_V2_DB_SOCKET', env('DB_SOCKET', '')),
+            'charset' => env('TOURISM_V2_DB_CHARSET', env('DB_CHARSET', 'utf8mb4')),
+            'collation' => env('TOURISM_V2_DB_COLLATION', env('DB_COLLATION', 'utf8mb4_unicode_ci')),
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => env('TOURISM_V2_DB_ENGINE', env('DB_ENGINE')),
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                Mysql::ATTR_SSL_CA => env('TOURISM_V2_MYSQL_ATTR_SSL_CA', env('MYSQL_ATTR_SSL_CA')),
+            ]) : [],
+        ],
+
         'mariadb' => [
             'driver' => 'mariadb',
             'url' => env('DB_URL'),

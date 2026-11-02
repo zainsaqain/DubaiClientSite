@@ -99,25 +99,26 @@ class Tour extends Model
     public function toCatalogueArray(): array
     {
         $image = $this->thumbnail ?: $this->main_image;
+        $lowestPrice = $this->relationLoaded('prices')
+            ? $this->prices->where('is_active', true)->pluck('adult_price')->filter()->min()
+            : null;
         $categoryName = $this->subcategory?->name ?? $this->category?->name ?? 'Tours';
-        $category = match ($categoryName) {
-            'Desert Safaris' => 'safari',
-            'Desert Experiences' => 'experience',
-            'Dune Buggies' => 'buggy',
-            default => 'school',
-        };
+        $category = $this->subcategory?->slug ?? $this->category?->slug ?? 'tours';
 
         return [
             'title' => $this->name,
             'description' => $this->short_description ?: 'Explore a memorable experience with Waheed Murad Tourism.',
-            'price' => (float) $this->starting_price,
-            'price_label' => $this->currency.' '.number_format((float) $this->starting_price),
-            'pkr_price' => number_format((float) $this->starting_price * 103),
+            'price' => (float) ($lowestPrice ?? $this->starting_price),
+            'price_label' => $this->currency.' '.number_format((float) ($lowestPrice ?? $this->starting_price)),
+            'pkr_price' => number_format((float) ($lowestPrice ?? $this->starting_price) * 103),
             'category' => $category,
             'category_name' => $categoryName,
             'time' => $this->experience_time ?: ($this->duration ? $this->duration.' '.$this->duration_unit : 'flexible'),
             'location' => str($this->location)->lower()->replace(' ', '-')->toString(),
-            'vehicle' => '4x4',
+            'vehicle' => $this->relationLoaded('prices')
+                ? ($this->prices->pluck('vehicle_type')->filter()->first() ?: 'standard')
+                : 'standard',
+            'languages' => $this->languages ?? [],
             'is_bestseller' => $this->is_bestseller,
             'is_choice' => $this->is_travellers_choice,
             'location_tag' => $this->location_badge ?: $this->location,

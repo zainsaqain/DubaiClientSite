@@ -12,8 +12,17 @@
     $visibleFeatures = $tour->features->where('is_active', true);
     $activePackages = $tour->packages->where('is_active', true);
     $activePrices = $tour->prices->where('is_active', true);
-    $categoryUrl = $tour->category ? route('tour-categories.show', $tour->category) : route('tours.search');
-    $subcategoryUrl = $tour->category && $tour->subcategory ? route('tour-subcategories.show', [$tour->category, $tour->subcategory]) : null;
+    $bookingPrices = $activePrices->values();
+    $defaultBookingPrice = $bookingPrices->first();
+    $bookingCurrency = $defaultBookingPrice?->currency ?: $tour->currency;
+    $isDesertAdventure = $tour->category?->slug === 'desert-adventures';
+    $isCityTour = $tour->category?->slug === 'city-tours';
+    $categoryUrl = $tour->category
+        ? ($isDesertAdventure ? route('desert-adventures') : ($isCityTour ? route('city-tours') : route('tour-categories.show', $tour->category)))
+        : route('tours.search');
+    $subcategoryUrl = $tour->category && $tour->subcategory
+        ? ($isDesertAdventure ? url('/desert-adventures/'.$tour->subcategory->slug) : ($isCityTour ? route('city-tours.destination', $tour->subcategory) : route('tour-subcategories.show', [$tour->category, $tour->subcategory])))
+        : null;
 @endphp
 
 <section class="da-product-page da-container">
@@ -23,7 +32,7 @@
         <div>
             <span>{{ $tour->subcategory?->name ?? $tour->category?->name }} · {{ $tour->location }}</span>
             <h1>{{ $tour->name }}</h1>
-            <p>By Waheed Murad Tourism</p>
+            <p>By WaheDed Murad Tourism</p>
         </div>
         <div class="da-product-awards" aria-label="Experience badges">
             @if($tour->is_bestseller)<span>Bestseller</span>@endif
@@ -78,20 +87,54 @@
             @if($tour->youtube_url)<a class="da-video-preview" href="{{ $tour->youtube_url }}" target="_blank" rel="noopener"><img src="{{ $tour->imageUrl($tour->main_image) }}" alt="{{ $tour->name }} video preview"><span>▶</span><strong>Watch {{ $tour->name }} video</strong></a>@endif
         </div>
 
-        <aside class="da-booking-card">
+        <aside class="da-booking-card" data-booking-card data-currency="{{ $bookingCurrency }}">
             <h2>Select Date and Travelers</h2>
-            <div class="da-booking-input-wrap"><span>▣</span><input type="date" min="{{ now()->toDateString() }}" aria-label="Select date"></div>
-            <div class="da-booking-input-wrap"><span>♧</span><input type="number" min="1" value="1" aria-label="Number of guests"></div>
-            <div class="da-booking-accordion-row"><span>Choose Your Vehicle</span><b>⌄</b></div>
-            @forelse ($activePackages as $package)
-                <div class="da-booking-accordion-row da-package-summary"><span><strong>{{ $package->name }}</strong>@if ($package->description)<small>{{ $package->description }}</small>@endif</span><b>{{ $package->prices->where('is_active', true)->min('adult_price') !== null ? $package->prices->where('is_active', true)->first()->currency.' '.number_format((float) $package->prices->where('is_active', true)->min('adult_price')) : '' }}</b></div>
-            @empty
-                @foreach ($activePrices->whereNull('tour_package_id') as $price)
-                    <div class="da-booking-accordion-row da-package-summary"><span><strong>{{ ucfirst($price->vehicle_type) }}</strong><small>{{ $price->minimum_guests }} {{ Str::plural('guest', $price->minimum_guests) }} minimum</small></span><b>{{ $price->currency }} {{ number_format((float) $price->adult_price) }}</b></div>
+            <div class="da-booking-input-wrap"><span>▣</span><input data-booking-date type="date" min="{{ now()->toDateString() }}" aria-label="Select date"></div>
+            <button type="button" class="da-booking-input-wrap da-traveler-toggle" data-traveler-toggle aria-expanded="false">
+                <span>♧</span><strong data-traveler-summary>1 adult</strong>
+            </button>
+            <div class="da-traveler-picker" data-traveler-picker hidden>
+                @foreach ([['adults', 'Adults', 1], ['children', 'Children', 0], ['infants', 'Infants', 0]] as [$key, $label, $minimum])
+                    <div class="da-traveler-row">
+                        <span><strong>{{ $label }}</strong><small>{{ $key === 'children' ? 'Ages 5 to 11' : ($key === 'infants' ? 'Below 5 years' : 'Age 12+') }}</small></span>
+                        <div>
+                            <button type="button" data-quantity="{{ $key }}" data-quantity-action="decrease" aria-label="Remove {{ Str::lower($label) }}">−</button>
+                            <output data-quantity-output="{{ $key }}">{{ $minimum }}</output>
+                            <button type="button" data-quantity="{{ $key }}" data-quantity-action="increase" aria-label="Add {{ Str::lower($label) }}">+</button>
+                        </div>
+                    </div>
                 @endforeach
-            @endforelse
-            <button type="button" class="da-check-avail-btn">Check Availability</button>
+                <button type="button" class="da-traveler-confirm" data-traveler-confirm>Confirm</button>
+            </div>
+
+            @if ($bookingPrices->isNotEmpty())
+                <details class="da-booking-options" open>
+                    <summary>Choose Your Vehicle <b>⌄</b></summary>
+                    @foreach ($bookingPrices as $price)
+                        @php
+                            $priceLabel = $price->vehicle_label ?: ($price->package?->name ?: ucfirst($price->vehicle_type ?: 'Tour option'));
+                            $priceDescription = $price->description ?: $price->package?->description;
+                        @endphp
+                        <label class="da-booking-option">
+                            <input type="radio" name="booking_price" value="{{ $price->id }}" data-booking-service-choice data-adult-price="{{ $price->adult_price }}" data-child-price="{{ $price->child_price ?? 0 }}" data-infant-price="{{ $price->infant_price ?? 0 }}" @checked($loop->first)>
+                            <span><strong>{{ $priceLabel }}</strong>@if ($priceDescription)<small>{{ $priceDescription }}</small>@endif</span>
+                            <b>{{ $price->currency }} {{ number_format((float) $price->adult_price) }}</b>
+                        </label>
+                    @endforeach
+                </details>
+                <select data-booking-service hidden aria-hidden="true">
+                    @foreach ($bookingPrices as $price)<option value="{{ $price->adult_price }}" data-child-price="{{ $price->child_price ?? 0 }}" data-infant-price="{{ $price->infant_price ?? 0 }}" @selected($loop->first)>{{ $price->id }}</option>@endforeach
+                </select>
+            @else
+                <p class="da-booking-empty">Pricing will be confirmed by our travel team.</p>
+            @endif
+            <p class="da-booking-total">Estimated total: <strong data-booking-total>{{ $bookingCurrency }} {{ number_format((float) ($defaultBookingPrice?->adult_price ?? $tour->starting_price)) }}</strong></p>
+            <button type="button" class="da-check-avail-btn" data-check-availability>Check Availability</button>
+            <p class="da-booking-status" data-booking-status aria-live="polite"></p>
         </aside>
     </div>
+
+    <x-desert-adventures.related-experiences :products="$relatedTours" />
+    <x-desert-adventures.recently-viewed :products="$recentTours" :current-product-key="$tour->slug" />
 </section>
 @endsection

@@ -10,6 +10,7 @@ use App\Models\Tour;
 use App\Models\TourCategory;
 use App\Models\TourSubcategory;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
 use Illuminate\Validation\Rule;
@@ -52,7 +53,9 @@ class PublicCatalogueController extends Controller
                         'title' => $category->name,
                         'description' => $category->description,
                         'image' => $representativeTour?->imageUrl(),
-                        'url' => route('tour-categories.show', $category),
+                        'url' => $category->slug === 'desert-adventures'
+                            ? route('desert-adventures')
+                            : ($category->slug === 'city-tours' ? route('city-tours') : route('tour-categories.show', $category)),
                     ];
                 })
                 ->all(),
@@ -93,9 +96,17 @@ class PublicCatalogueController extends Controller
         ]);
     }
 
-    public function category(Request $request, TourCategory $category): View
+    public function category(Request $request, TourCategory $category): View|RedirectResponse
     {
         abort_unless($category->is_active, 404);
+
+        if ($category->slug === 'desert-adventures') {
+            return redirect()->route('desert-adventures', status: 301);
+        }
+
+        if ($category->slug === 'city-tours') {
+            return redirect()->route('city-tours', status: 301);
+        }
 
         $subcategories = $category->subcategories()
             ->where('is_active', true)
@@ -112,7 +123,29 @@ class PublicCatalogueController extends Controller
         );
     }
 
-    public function subcategory(Request $request, TourCategory $category, TourSubcategory $subcategory): View
+    public function catalogueShortcut(Request $request, string $catalogueSlug): View|RedirectResponse
+    {
+        $category = TourCategory::query()
+            ->where('slug', $catalogueSlug)
+            ->where('is_active', true)
+            ->first();
+
+        if ($category instanceof TourCategory) {
+            return $this->category($request, $category);
+        }
+
+        $subcategory = TourSubcategory::query()
+            ->with('category')
+            ->where('slug', $catalogueSlug)
+            ->where('is_active', true)
+            ->firstOrFail();
+
+        abort_unless($subcategory->category?->is_active, 404);
+
+        return $this->subcategory($request, $subcategory->category, $subcategory);
+    }
+
+    public function subcategory(Request $request, TourCategory $category, TourSubcategory $subcategory): View|RedirectResponse
     {
         abort_unless(
             $category->is_active
@@ -120,6 +153,14 @@ class PublicCatalogueController extends Controller
             && $subcategory->tour_category_id === $category->id,
             404,
         );
+
+        if ($category->slug === 'desert-adventures') {
+            return redirect('/desert-adventures/'.$subcategory->slug, 301);
+        }
+
+        if ($category->slug === 'city-tours') {
+            return redirect()->route('city-tours.destination', $subcategory, status: 301);
+        }
 
         return $this->catalogue(
             $request,
@@ -131,6 +172,83 @@ class PublicCatalogueController extends Controller
             $subcategory,
             collect(),
         );
+    }
+
+    public function desertAdventures(Request $request): View
+    {
+        $category = TourCategory::query()
+            ->where('slug', 'desert-adventures')
+            ->where('is_active', true)
+            ->with([
+                'contentBlocks' => fn ($query) => $query->where('is_active', true),
+                'faqs' => fn ($query) => $query->where('is_active', true),
+                'subcategories' => fn ($query) => $query
+                    ->where('is_active', true)
+                    ->whereHas('tours', fn (Builder $tourQuery): Builder => $tourQuery->public())
+                    ->withCount(['tours' => fn (Builder $tourQuery): Builder => $tourQuery->public()])
+                    ->orderBy('display_order'),
+            ])
+            ->firstOrFail();
+
+        $tours = Tour::query()
+            ->public()
+            ->where('tour_category_id', $category->id)
+            ->whereHas('subcategory', fn (Builder $subcategoryQuery): Builder => $subcategoryQuery
+                ->where('tour_category_id', $category->id)
+                ->where('is_active', true))
+            ->with(['category', 'subcategory', 'images', 'prices'])
+            ->orderByDesc('is_featured')
+            ->orderBy('display_order')
+            ->get();
+
+        $eligibleTourCounts = $tours->countBy('tour_subcategory_id');
+
+        $category->subcategories = $category->subcategories
+            ->filter(fn (TourSubcategory $subcategory): bool => $eligibleTourCounts->has($subcategory->id))
+            ->each(function (TourSubcategory $subcategory) use ($tours, $eligibleTourCounts): void {
+                $subcategory->tours_count = $eligibleTourCounts->get($subcategory->id, 0);
+                $subcategory->setRelation(
+                    'tours',
+                    $tours
+                        ->where('tour_subcategory_id', $subcategory->id)
+                        ->take(1)
+                        ->values(),
+                );
+            })
+            ->values();
+
+        return view('pages.desert-adventures', [
+            'adventures' => $tours->map(fn (Tour $tour): array => $tour->toCatalogueArray())->all(),
+            'category' => $category,
+            'contentBlocks' => $category->contentBlocks,
+            'faqs' => $category->faqs,
+            'locations' => $tours->pluck('location')->filter()->countBy()->sortKeys(),
+            'subcategories' => $category->subcategories,
+        ]);
+    }
+
+    public function cityTourDestination(TourSubcategory $subcategory): View
+    {
+        $category = TourCategory::query()
+            ->where('slug', 'city-tours')
+            ->where('is_active', true)
+            ->firstOrFail();
+
+        abort_unless(
+            $subcategory->tour_category_id === $category->id && $subcategory->is_active,
+            404,
+        );
+
+        $tours = Tour::query()
+            ->public()
+            ->where('tour_category_id', $category->id)
+            ->where('tour_subcategory_id', $subcategory->id)
+            ->with(['category', 'subcategory', 'images', 'prices'])
+            ->orderByDesc('is_featured')
+            ->orderBy('display_order')
+            ->get();
+
+        return view('pages.abu-dhabi-city-tours', compact('category', 'subcategory', 'tours'));
     }
 
     public function search(Request $request): View

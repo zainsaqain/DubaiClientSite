@@ -68,15 +68,21 @@ document.querySelector('[data-video-preview]')?.addEventListener('click', (event
 const bookingCard = document.querySelector('[data-booking-card]');
 
 if (bookingCard) {
-    const quantities = { adults: 1, children: 0 };
+    const quantities = { adults: 1, children: 0, infants: 0 };
     const serviceSelect = bookingCard.querySelector('[data-booking-service]');
     const totalOutput = bookingCard.querySelector('[data-booking-total]');
     const status = bookingCard.querySelector('[data-booking-status]');
     const currency = bookingCard.dataset.currency ?? 'AED';
+    const travelerToggle = bookingCard.querySelector('[data-traveler-toggle]');
+    const travelerPicker = bookingCard.querySelector('[data-traveler-picker]');
+    const travelerSummary = bookingCard.querySelector('[data-traveler-summary]');
 
     const refreshBookingTotal = () => {
-        const servicePrice = Number(serviceSelect?.value ?? 0);
-        const total = (servicePrice * quantities.adults) + Math.round(servicePrice * 0.5 * quantities.children);
+        const selectedOption = serviceSelect?.selectedOptions[0];
+        const adultPrice = Number(serviceSelect?.value ?? 0);
+        const childPrice = Number(selectedOption?.dataset.childPrice ?? 0);
+        const infantPrice = Number(selectedOption?.dataset.infantPrice ?? 0);
+        const total = (adultPrice * quantities.adults) + (childPrice * quantities.children) + (infantPrice * quantities.infants);
 
         bookingCard.querySelectorAll('[data-quantity-output]').forEach((output) => {
             output.textContent = quantities[output.dataset.quantityOutput];
@@ -84,6 +90,14 @@ if (bookingCard) {
 
         if (totalOutput) {
             totalOutput.textContent = `${currency} ${new Intl.NumberFormat('en-US').format(total)}`;
+        }
+
+        if (travelerSummary) {
+            const travelerLabels = { adults: 'adult', children: 'child', infants: 'infant' };
+            const travellers = Object.entries(quantities)
+                .filter(([, quantity]) => quantity > 0)
+                .map(([type, quantity]) => `${quantity} ${travelerLabels[type]}${quantity === 1 ? '' : 's'}`);
+            travelerSummary.textContent = travellers.join(', ');
         }
     };
 
@@ -98,6 +112,31 @@ if (bookingCard) {
     });
 
     serviceSelect?.addEventListener('change', refreshBookingTotal);
+    bookingCard.querySelectorAll('[data-booking-service-choice]').forEach((choice, index) => {
+        choice.addEventListener('change', () => {
+            if (!choice.checked || !serviceSelect) {
+                return;
+            }
+
+            serviceSelect.selectedIndex = index;
+            refreshBookingTotal();
+        });
+    });
+
+    travelerToggle?.addEventListener('click', () => {
+        const isOpen = travelerPicker?.hidden;
+        if (travelerPicker) {
+            travelerPicker.hidden = !isOpen;
+        }
+        travelerToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    bookingCard.querySelector('[data-traveler-confirm]')?.addEventListener('click', () => {
+        if (travelerPicker) {
+            travelerPicker.hidden = true;
+        }
+        travelerToggle?.setAttribute('aria-expanded', 'false');
+    });
     bookingCard.querySelector('[data-check-availability]')?.addEventListener('click', () => {
         const selectedDate = bookingCard.querySelector('[data-booking-date]')?.value;
         if (status) {

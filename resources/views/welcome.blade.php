@@ -331,6 +331,9 @@ $dubaiMoments = $dubaiMoments ?? [
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/site-shell.js'])
 </head>
 <body class="wmt-site">
+    {{-- The shared header keeps the public navigation and database-driven category menus consistent on every page. --}}
+    @include('components.site.header')
+    {{--
     <header class="site-header" id="top">
         <div class="color-ribbon" aria-hidden="true">
             <span></span><span></span><span></span><span></span><span></span><span></span>
@@ -498,6 +501,7 @@ $dubaiMoments = $dubaiMoments ?? [
             </aside>
         </div>
     </header>
+    --}}
 
     <main class="site-canvas" aria-label="Waheed Murad Tourism">
         <!-- ==========================================

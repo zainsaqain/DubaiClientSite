@@ -17,7 +17,7 @@
         </div>
         <div class="mobile-submenu-content">
             <p class="mobile-submenu-eyebrow">Discover the desert</p>
-            <h2>Desert Adventures</h2>
+            <h2>Desert Advbgentures</h2>
 
             @foreach ($menu['categories'] as $category)
                 <a class="mobile-submenu-category" href="{{ $urlFor($category) }}">

@@ -32,6 +32,76 @@
             </div>
         </div>
 
-        <section class="city-tours-callout"><div><span>YOUR UAE, YOUR WAY</span><h2>Every city has a story worth discovering.</h2><p>Choose a relaxed private journey or a complete full-day experience, with local experts who bring every destination to life.</p></div><a href="{{ url('/') }}#booking">Start planning <span aria-hidden="true">→</span></a></section>
+    </section>
+
+    @php
+        $fallbackStories = [
+            ['heading' => 'City experiences designed around you', 'body' => 'Explore the UAE through city tours that bring together landmark visits, cultural discoveries and time to enjoy each destination at your own pace.', 'image' => 'images/abu-dhabi/abu-dhabi-corniche.png', 'alt' => 'UAE city skyline'],
+            ['heading' => 'Local insight for every itinerary', 'body' => 'Each experience can be reviewed alongside its tour details, location, inclusions and available options before you decide which city adventure is right for you.', 'image' => 'images/abu-dhabi/abu-dhabi-mosque.png', 'alt' => 'Abu Dhabi mosque'],
+            ['heading' => 'More to discover across the UAE', 'body' => 'Browse active city-tour subcategories to find experiences focused on the places, attractions and travel styles you want to explore next.', 'image' => 'images/abu-dhabi/abu-dhabi-museum.png', 'alt' => 'Abu Dhabi museum'],
+        ];
+        $fallbackFaqs = [
+            ['question' => 'How long does a city tour last?', 'answer' => 'Tour duration is shown on each tour page and can vary by itinerary and selected option.'],
+            ['question' => 'What is included in a city tour?', 'answer' => 'Review the individual tour page for its current inclusions, options and practical information before booking.'],
+            ['question' => 'Can I choose a city-tour destination?', 'answer' => 'Use the destination cards above to browse the active city-tour subcategories available on the website.'],
+        ];
+    @endphp
+
+    <section class="da-abu-dhabi-page city-tours-reference-content">
+        <section class="da-container da-abu-story" aria-labelledby="city-tours-story-heading">
+            <div class="da-abu-story-heading">
+                <h2 id="city-tours-story-heading">City Tours with <span>Waheed Murad Tourism</span></h2>
+            </div>
+
+            @if ($category && $category->contentBlocks->isNotEmpty())
+                @foreach ($category->contentBlocks as $block)
+                    @php
+                        $fallback = $fallbackStories[$loop->index % count($fallbackStories)];
+                        $blockImage = $block->image
+                            ? (str_starts_with($block->image, 'images/') ? asset($block->image) : asset('storage/'.$block->image))
+                            : asset($fallback['image']);
+                    @endphp
+                    <article class="da-abu-story-panel {{ in_array($block->layout, ['image_right', 'right'], true) ? 'da-abu-story-panel--reverse' : '' }}">
+                        <img class="da-abu-story-image" src="{{ $blockImage }}" alt="{{ $block->image_alt ?: $fallback['alt'] }}">
+                        <div><h3>{{ $block->heading }}</h3><p>{{ $block->body }}</p></div>
+                    </article>
+                @endforeach
+            @else
+                @foreach ($fallbackStories as $index => $story)
+                    <article class="da-abu-story-panel {{ $index % 2 === 1 ? 'da-abu-story-panel--reverse' : '' }}">
+                        <img class="da-abu-story-image" src="{{ asset($story['image']) }}" alt="{{ $story['alt'] }}">
+                        <div><h3>{{ $story['heading'] }}</h3><p>{{ $story['body'] }}</p></div>
+                    </article>
+                @endforeach
+            @endif
+        </section>
+
+        @if ($category && $category->subcategories->isNotEmpty())
+            <section class="da-container city-tours-destination-section" aria-labelledby="city-tours-destinations-heading">
+                <div class="da-abu-section-heading"><h2 id="city-tours-destinations-heading">City Tours across the <span>UAE</span></h2></div>
+                <div class="city-tours-destination-grid">
+                    @foreach ($category->subcategories as $destination)
+                        <article>
+                            <h3>{{ $destination->name }} City Tours</h3>
+                            <p>{{ \Illuminate\Support\Str::limit($destination->description ?: 'Explore the available experiences in this city-tour destination.', 110) }}</p>
+                            <a href="{{ route('city-tours.destination', $destination) }}">View tours <span aria-hidden="true">→</span></a>
+                        </article>
+                    @endforeach
+                </div>
+            </section>
+        @endif
+
+        <section class="da-container da-abu-faq" aria-labelledby="city-tours-faq-heading">
+            <h2 id="city-tours-faq-heading">Frequently asked <span>questions</span></h2>
+            @if ($category && $category->faqs->isNotEmpty())
+                @foreach ($category->faqs as $faq)
+                    <details><summary>{{ $faq->question }} <span aria-hidden="true">+</span></summary><p>{{ $faq->answer }}</p></details>
+                @endforeach
+            @else
+                @foreach ($fallbackFaqs as $faq)
+                    <details><summary>{{ $faq['question'] }} <span aria-hidden="true">+</span></summary><p>{{ $faq['answer'] }}</p></details>
+                @endforeach
+            @endif
+        </section>
     </section>
 @endsection

@@ -7,6 +7,8 @@ use App\Models\TourCategory;
 use App\Models\TourSubcategory;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
 
 class CategoryManagementTest extends TestCase
@@ -54,6 +56,61 @@ class CategoryManagementTest extends TestCase
             'name' => 'Duplicate Category',
             'slug' => 'dubai-experiences',
         ])->assertSessionHasErrors('slug');
+    }
+
+    public function test_administrator_can_upload_an_image_for_a_category_that_does_not_have_one_yet(): void
+    {
+        Storage::fake('public');
+
+        $admin = User::factory()->create(['is_admin' => true]);
+        $category = TourCategory::query()->create([
+            'name' => 'Desert Adventures',
+            'slug' => 'desert-adventures',
+            'is_active' => true,
+        ]);
+
+        $this->actingAs($admin)->put(route('admin.tour-categories.update', $category), [
+            'name' => 'Desert Adventures',
+            'slug' => 'desert-adventures',
+            'image' => UploadedFile::fake()->image('desert.jpg'),
+            'is_active' => true,
+        ])->assertRedirect(route('admin.tour-categories.index'));
+
+        $category->refresh();
+
+        $this->assertNotNull($category->image);
+        Storage::disk('public')->assertExists($category->image);
+    }
+
+    public function test_administrator_can_upload_an_image_for_a_subcategory_that_does_not_have_one_yet(): void
+    {
+        Storage::fake('public');
+
+        $admin = User::factory()->create(['is_admin' => true]);
+        $category = TourCategory::query()->create([
+            'name' => 'Attractions',
+            'slug' => 'attractions',
+            'is_active' => true,
+        ]);
+        $subcategory = TourSubcategory::query()->create([
+            'tour_category_id' => $category->id,
+            'name' => 'Entry Tickets',
+            'slug' => 'entry-tickets',
+            'is_active' => true,
+        ]);
+
+        $this->actingAs($admin)->put(route('admin.tour-subcategories.update', $subcategory), [
+            'tour_category_id' => $category->id,
+            'name' => 'Entry Tickets',
+            'slug' => 'entry-tickets',
+            'image' => UploadedFile::fake()->image('tickets.jpg'),
+            'is_active' => true,
+        ])->assertRedirect(route('admin.tour-subcategories.index'));
+
+        $subcategory->refresh();
+
+        $this->assertNotNull($subcategory->image);
+        Storage::disk('public')->assertExists($subcategory->image);
     }
 
     public function test_administrator_can_assign_subcategories_to_a_parent_and_cannot_delete_referenced_hierarchy(): void

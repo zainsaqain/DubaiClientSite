@@ -3,11 +3,10 @@
 @section('title', 'Desert Adventures | Waheed Murad')
 
 @section('content')
-    @php($adventures = $adventures ?? config('desert-adventures.adventures', []))
     <section class="da-intro da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'Desert Adventures']]" />
-        <h1>Desert Adventures</h1>
-        <p>We have an incredible choice of desert adventures in Waheed Murad. Head out on an exciting excursion to the Dubai Desert Conservation Reserve (DDCR) with our discover desert hiking, soaring wildlife and culture. Push your heart-racing desert dune buggies, and more memorable desert experiences. Discover the wonders of the desert with us today.</p>
+        <h1>{{ $category->name }}</h1>
+        <p>{{ $category->description }}</p>
         <h2 class="da-section-title">All Desert <span>Adventures</span></h2>
     </section>
 
@@ -15,8 +14,8 @@
         <aside class="da-filter-sidebar" data-filters>
             <div class="da-filter-heading"><strong>Filter by</strong><button type="button" data-filter-toggle aria-expanded="false">Filters <b>⌄</b></button></div>
             <div class="da-filter-groups" data-filter-groups>
-                <details open><summary>Category <b>⌃</b></summary><label><input type="checkbox" value="safari" data-filter="category"> Desert Safaris</label><label><input type="checkbox" value="experience" data-filter="category"> Desert Experiences</label><label><input type="checkbox" value="buggy" data-filter="category"> Dune Buggies</label></details>
-                <details open><summary>Location <b>⌃</b></summary><label><input type="checkbox" value="dubai" data-filter="location"> Dubai</label><label><input type="checkbox" value="lisaili" data-filter="location"> Ras Al Khaimah / Lisaili</label></details>
+                <details open><summary>Category <b>⌃</b></summary>@foreach($subcategories as $subcategory)<label><input type="checkbox" value="{{ $subcategory->slug }}" data-filter="category"> {{ $subcategory->name }} ({{ $subcategory->tours_count }})</label>@endforeach</details>
+                <details open><summary>Location <b>⌃</b></summary>@foreach($locations as $location => $count)<label><input type="checkbox" value="{{ \Illuminate\Support\Str::slug($location) }}" data-filter="location"> {{ $location }} ({{ $count }})</label>@endforeach</details>
                 <details><summary>Time <b>⌄</b></summary><label><input type="checkbox" value="morning" data-filter="time"> Morning</label><label><input type="checkbox" value="evening" data-filter="time"> Evening</label></details>
                 <details><summary>Price <b>⌄</b></summary><label><input type="radio" name="price" value="500" data-price-filter> Under AED 500</label><label><input type="radio" name="price" value="2000" data-price-filter> AED 500–2,000</label><label><input type="radio" name="price" value="99999" data-price-filter> AED 2,000+</label></details>
                 <details><summary>Language <b>⌄</b></summary><label><input type="checkbox"> English</label><label><input type="checkbox"> Arabic</label></details>
@@ -35,12 +34,22 @@
         </div>
     </section>
 
-    <section class="da-desert-story da-container">
+    @if($contentBlocks->isNotEmpty())<section class="da-desert-story da-container">
         <h2 class="da-section-title da-story-title">Desert Adventures with <span>Waheed Murad</span></h2>
-        <article class="da-story-row"><img src="{{ asset('images/desert-safari.png') }}" alt="Desert guides smiling together" loading="lazy"><div><h3>An award-winning team of desert experts</h3><p>For over 25 years, our desert guides have created unforgettable adventures for visitors from across the world. Friends and solo travellers. Whether you’re seeking thrills, culture, relaxation or all three, our experienced team makes every journey special.</p></div></article>
-        <article class="da-story-row da-story-row--reverse"><div><h3>The Dubai Desert Conservation Reserve</h3><p>The Dubai Desert Conservation Reserve is a protected setting for our desert adventures. It is home to an extraordinary variety of wildlife and plants, and offers an escape into the landscape that makes Dubai so unique.</p></div><img src="{{ asset('images/desert-oasis-morning.png') }}" alt="Wildlife walking in the desert" loading="lazy"></article>
-        <article class="da-story-row"><img src="{{ asset('images/desert-dune-drive.png') }}" alt="Traveller enjoying a desert sunset" loading="lazy"><div><h3>A commitment to the desert</h3><p>Our desert adventures are underpinned by sustainability efforts as we endeavour to preserve the unspoilt beauty of the DDCR. Our sustainable adventure experiences are designed to protect this land while creating meaningful memories for generations to come.</p></div></article>
-    </section>
+        @foreach($contentBlocks as $block)
+            <article class="da-story-row {{ $block->layout === 'image_right' ? 'da-story-row--reverse' : '' }}">
+                @if($block->layout === 'image_right')
+                    <div><h3>{{ $block->heading }}</h3><p>{{ $block->body }}</p></div>
+                @endif
+                @if($block->image)
+                    <img src="{{ str_starts_with($block->image, 'images/') ? asset($block->image) : asset('storage/'.$block->image) }}" alt="{{ $block->image_alt }}" loading="lazy">
+                @endif
+                @if($block->layout !== 'image_right')
+                    <div><h3>{{ $block->heading }}</h3><p>{{ $block->body }}</p></div>
+                @endif
+            </article>
+        @endforeach
+    </section>@endif
 
     <section class="da-explore" aria-labelledby="explore-desert-adventures">
         <div class="da-container">
@@ -53,22 +62,9 @@
                 <a href="#all-desert-adventures">Browse all adventures <i>→</i></a>
             </div>
 
-            <div class="da-explore-grid">
-                <a href="{{ route('desert-safaris') }}" class="da-explore-card">
-                    <img src="{{ asset('images/desert-safari.png') }}" alt="Guests enjoying a Desert Safari in Dubai" loading="lazy">
-                    <b>01</b><span><small>SUNSET &amp; SUNRISE</small><strong>Desert Safaris</strong><em>Explore safaris <i>→</i></em></span>
-                </a>
-                <a href="{{ route('dune-buggies-category') }}" class="da-explore-card">
-                    <img src="{{ asset('images/desert-buggy-adventure.png') }}" alt="Dune buggies in the Dubai desert" loading="lazy">
-                    <b>02</b><span><small>ADRENALINE AWAITS</small><strong>Dune Buggies</strong><em>Explore buggies <i>→</i></em></span>
-                </a>
-                <a href="{{ route('desert-experiences') }}" class="da-explore-card">
-                    <img src="{{ asset('images/desert-camp-experience.png') }}" alt="Exclusive desert camp experience in Dubai" loading="lazy">
-                    <b>03</b><span><small>MADE FOR MEMORIES</small><strong>Desert Experiences</strong><em>Explore experiences <i>→</i></em></span>
-                </a>
-            </div>
+            <div class="da-explore-grid">@foreach($subcategories->take(3) as $index => $subcategory)@php($tour = $subcategory->tours->first())<a href="{{ url('/desert-adventures/'.$subcategory->slug) }}" class="da-explore-card">@if($tour)<img src="{{ $tour->imageUrl() }}" alt="{{ $subcategory->name }}" loading="lazy">@endif<b>{{ str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT) }}</b><span><small>{{ $subcategory->description ?: 'DISCOVER DUBAI' }}</small><strong>{{ $subcategory->name }}</strong><em>Explore <i>→</i></em></span></a>@endforeach</div>
         </div>
     </section>
 
-    <section class="da-container da-faq"><h2 class="da-section-title">Desert Adventures: Frequently asked <span>questions</span></h2><div class="da-faq-list"><details><summary>Where is the desert in Dubai?<b>+</b></summary><p>Dubai’s most accessible desert landscapes are a short drive from the city, with the Dubai Desert Conservation Reserve offering a protected and memorable setting.</p></details><details><summary>Can I go to the Dubai desert on my own?<b>+</b></summary><p>Guided adventures are the easiest way to explore responsibly, with expert drivers, carefully planned routes and local insight included.</p></details><details><summary>Is it cooler in the desert in Dubai?<b>+</b></summary><p>Desert temperatures are generally most comfortable at sunrise and after sunset, which is why morning and evening adventures are so popular.</p></details><details><summary>Why is the Dubai desert famous?<b>+</b></summary><p>Its sweeping dunes, wildlife, Bedouin heritage and warm hospitality make the desert one of Dubai’s most distinctive experiences.</p></details></div></section>
+    @if($faqs->isNotEmpty())<section class="da-container da-faq"><h2 class="da-section-title">{{ $category->name }}: Frequently asked <span>questions</span></h2><div class="da-faq-list">@foreach($faqs as $faq)<details><summary>{{ $faq->question }}<b>+</b></summary><p>{{ $faq->answer }}</p></details>@endforeach</div></section>@endif
 @endsection

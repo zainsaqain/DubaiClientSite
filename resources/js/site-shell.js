@@ -3,7 +3,7 @@ const mobileNavigation = document.querySelector('.mobile-navigation');
 const mobileDesertMenuTrigger = document.querySelector('.mobile-menu-trigger');
 const mobileDesertSubmenu = document.querySelector('.mobile-submenu-panel');
 const desktopMediaQuery = window.matchMedia('(min-width: 901px)');
-const megaMenuItems = Array.from(document.querySelectorAll('[data-mega-menu], [data-attractions-mega-menu], [data-city-tours-mega-menu], [data-why-us-mega-menu]'));
+const megaMenuItems = Array.from(document.querySelectorAll('[data-mega-menu], [data-attractions-mega-menu], [data-city-tours-mega-menu], [data-why-us-mega-menu], [data-category-mega-menu]'));
 
 let megaMenuCloseTimer;
 

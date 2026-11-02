@@ -58,51 +58,6 @@
             </div>
         </details>
 
-        <details class="wmt-admin-menu" {{ request()->routeIs('admin.desert-adventures.*') || request()->routeIs('admin.sports-events.*') || request()->routeIs('admin.cruise-boat-tours.*') || request()->routeIs('admin.attractions.*') || request()->routeIs('admin.city-tours.*') || request()->routeIs('admin.waterparks-theme-parks.*') || request()->routeIs('admin.transfers.*') || request()->routeIs('admin.why-us.*') ? 'open' : '' }}>
-            <summary><i>▦</i><span>Category</span><b>⌄</b></summary>
-            <div class="wmt-admin-menu-panel">
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.desert-adventures.*') ? 'open' : '' }}>
-                    <summary><span>Desert Adventures</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.desert-adventures.index') }}" class="{{ request()->routeIs('admin.desert-adventures.index') ? 'is-active' : '' }}">All adventures</a>
-                    <a href="{{ route('admin.desert-adventures.create') }}" class="{{ request()->routeIs('admin.desert-adventures.create') ? 'is-active' : '' }}">Create adventure</a>
-                </details>
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.sports-events.*') ? 'open' : '' }}>
-                    <summary><span>Sports Events</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.sports-events.index') }}" class="{{ request()->routeIs('admin.sports-events.index') ? 'is-active' : '' }}">All events</a>
-                    <a href="{{ route('admin.sports-events.create') }}" class="{{ request()->routeIs('admin.sports-events.create') ? 'is-active' : '' }}">Create event</a>
-                </details>
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.cruise-boat-tours.*') ? 'open' : '' }}>
-                    <summary><span>Cruise &amp; Boat Tours</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.cruise-boat-tours.index') }}" class="{{ request()->routeIs('admin.cruise-boat-tours.index') ? 'is-active' : '' }}">All tours</a>
-                    <a href="{{ route('admin.cruise-boat-tours.create') }}" class="{{ request()->routeIs('admin.cruise-boat-tours.create') ? 'is-active' : '' }}">Create tour</a>
-                </details>
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.attractions.*') ? 'open' : '' }}>
-                    <summary><span>Attractions</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.attractions.index') }}" class="{{ request()->routeIs('admin.attractions.index') ? 'is-active' : '' }}">All attractions</a>
-                    <a href="{{ route('admin.attractions.create') }}" class="{{ request()->routeIs('admin.attractions.create') ? 'is-active' : '' }}">Create attraction</a>
-                </details>
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.city-tours.*') ? 'open' : '' }}>
-                    <summary><span>City Tours</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.city-tours.index') }}" class="{{ request()->routeIs('admin.city-tours.index') ? 'is-active' : '' }}">All city tours</a>
-                    <a href="{{ route('admin.city-tours.create') }}" class="{{ request()->routeIs('admin.city-tours.create') ? 'is-active' : '' }}">Create city tour</a>
-                </details>
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.waterparks-theme-parks.*') ? 'open' : '' }}>
-                    <summary><span>Waterparks &amp; Theme Parks</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.waterparks-theme-parks.index') }}" class="{{ request()->routeIs('admin.waterparks-theme-parks.index') ? 'is-active' : '' }}">All park experiences</a>
-                    <a href="{{ route('admin.waterparks-theme-parks.create') }}" class="{{ request()->routeIs('admin.waterparks-theme-parks.create') ? 'is-active' : '' }}">Create experience</a>
-                </details>
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.transfers.*') ? 'open' : '' }}>
-                    <summary><span>Transfers</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.transfers.index') }}" class="{{ request()->routeIs('admin.transfers.index') ? 'is-active' : '' }}">All transfers</a>
-                    <a href="{{ route('admin.transfers.create') }}" class="{{ request()->routeIs('admin.transfers.create') ? 'is-active' : '' }}">Create transfer</a>
-                </details>
-                <details class="wmt-admin-submenu" {{ request()->routeIs('admin.why-us.*') ? 'open' : '' }}>
-                    <summary><span>Why Us</span><b>⌄</b></summary>
-                    <a href="{{ route('admin.why-us.index') }}" class="{{ request()->routeIs('admin.why-us.index') ? 'is-active' : '' }}">All sections</a>
-                    <a href="{{ route('admin.why-us.create') }}" class="{{ request()->routeIs('admin.why-us.create') ? 'is-active' : '' }}">Create section</a>
-                </details>
-            </div>
-        </details>
     </nav>
 
     <p class="wmt-admin-label">MANAGEMENT</p>

@@ -28,4 +28,14 @@ class TourCategory extends Model
     {
         return $this->hasMany(Tour::class);
     }
+
+    public function contentBlocks(): HasMany
+    {
+        return $this->hasMany(TourCategoryContentBlock::class)->orderBy('display_order');
+    }
+
+    public function faqs(): HasMany
+    {
+        return $this->hasMany(TourCategoryFaq::class)->orderBy('display_order');
+    }
 }

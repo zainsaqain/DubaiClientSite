@@ -64,7 +64,9 @@ class TourCategoryController extends Controller
         if ($tourCategory->tours()->exists() || $tourCategory->subcategories()->exists()) {
             return back()->with('error', 'This category has tours or subcategories. Set it inactive instead of deleting it.');
         }
-        Storage::disk('public')->delete($tourCategory->image);
+        if (is_string($tourCategory->image) && $tourCategory->image !== '') {
+            Storage::disk('public')->delete($tourCategory->image);
+        }
         $tourCategory->delete();
 
         return redirect()->route('admin.tour-categories.index')->with('success', 'Category deleted successfully.');
@@ -76,7 +78,10 @@ class TourCategoryController extends Controller
         $data['slug'] = $data['slug'] ?: Str::slug($data['name']);
         $data['is_active'] = $request->boolean('is_active');
         if ($request->hasFile('image')) {
-            Storage::disk('public')->delete($category->image);
+            if (is_string($category->image) && $category->image !== '') {
+                Storage::disk('public')->delete($category->image);
+            }
+
             $data['image'] = $request->file('image')->store('tour-categories', 'public');
         }
         $category->fill($data)->save();

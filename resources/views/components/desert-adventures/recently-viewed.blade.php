@@ -7,8 +7,9 @@
     <p class="da-recently-viewed-empty" data-recently-viewed-empty>Open another experience to see it here.</p>
     <div class="da-product-preview-track" data-recently-viewed-list>
         @foreach ($products as $key => $recentProduct)
-            @if ($key !== $currentProductKey)
-                <x-desert-adventures.product-preview-card :product="$recentProduct" data-recent-product="{{ $key }}" hidden />
+            @php($recentProductKey = $recentProduct instanceof \App\Models\Tour ? $recentProduct->slug : $key)
+            @if ($recentProductKey !== $currentProductKey)
+                <x-desert-adventures.product-preview-card :product="$recentProduct" data-recent-product="{{ $recentProductKey }}" hidden />
             @endif
         @endforeach
     </div>
