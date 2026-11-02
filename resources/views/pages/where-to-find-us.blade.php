@@ -35,7 +35,7 @@
 
             <section class="company-find-contact" aria-label="Contact Waheed Murad Tourism">
                 <div><h2>Next Step</h2><a href="{{ route('home') }}#booking">Make an enquiry</a></div>
-                <div><h2>Customer Support</h2><p><a href="tel:+971500000000">+971 50 000 0000</a><br><a href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer">WhatsApp our travel desk</a></p><p><a href="mailto:hello@waheedmuradtourism.com">hello@waheedmuradtourism.com</a></p></div>
+                <div><h2>Customer Support</h2><p><a href="tel:+971502299598">+971 50 229 9598</a><br><a href="https://wa.me/971502299598" target="_blank" rel="noopener noreferrer">WhatsApp our travel desk</a></p><p><a href="mailto:hello@waheedmuradtourism.com">hello@waheedmuradtourism.com</a></p></div>
                 <div><h2>Address</h2><p>Downtown Dubai<br>Dubai, United Arab Emirates</p><p>Daily support for guests across Dubai.</p></div>
                 <div><h2>Email Routing</h2><p><a href="mailto:hello@waheedmuradtourism.com">Bookings &amp; enquiries</a></p><p><a href="mailto:hello@waheedmuradtourism.com">Travel trade partnerships</a></p></div>
             </section>
