@@ -3,35 +3,140 @@
 @section('title', 'Dubai City Tours | Waheed Murad Tourism')
 
 @section('content')
-    <section class="sports-events-page city-tours-page da-container">
+    @php
+        $catalogueTours = collect($tours)->map(function (array $tour): array {
+            $rawPrice = $tour['price'] ?? 0;
+            $price = is_numeric($rawPrice)
+                ? (float) $rawPrice
+                : (float) preg_replace('/[^\d.]/', '', str_replace(',', '', (string) $rawPrice));
+            $location = trim((string) ($tour['location_tag'] ?? $tour['location'] ?? 'Dubai')) ?: 'Dubai';
+            $tourLanguages = $tour['languages'] ?? ['English'];
+            $tourLanguages = is_array($tourLanguages) ? $tourLanguages : [$tourLanguages];
+            $tourLanguages = array_values(array_filter($tourLanguages));
+
+            return [
+                ...$tour,
+                'category' => \Illuminate\Support\Str::slug((string) ($tour['category'] ?? 'city-tours')),
+                'time' => \Illuminate\Support\Str::slug((string) ($tour['time'] ?? $tour['experience_time'] ?? 'flexible')),
+                'location' => \Illuminate\Support\Str::slug($location),
+                'location_tag' => $location,
+                'vehicle' => \Illuminate\Support\Str::slug((string) ($tour['vehicle'] ?? 'standard')),
+                'language' => \Illuminate\Support\Str::slug((string) ($tourLanguages[0] ?? 'English')),
+                'price' => $price,
+                'price_label' => $tour['price_label'] ?? (is_string($rawPrice) && ! is_numeric($rawPrice) ? $rawPrice : 'PKR '.number_format($price)),
+                'gallery' => is_array($tour['gallery'] ?? null) ? $tour['gallery'] : [$tour['image'] ?? 'images/dubai-adventure.png'],
+            ];
+        })->values();
+
+        $locations = $catalogueTours->groupBy('location')->map(function ($group, $slug): array {
+            return ['slug' => $slug, 'label' => $group->first()['location_tag'] ?? \Illuminate\Support\Str::headline((string) $slug), 'count' => $group->count()];
+        })->sortBy('label')->values();
+        $times = $catalogueTours->groupBy('time')->map(function ($group, $slug): array {
+            return ['slug' => $slug, 'label' => \Illuminate\Support\Str::headline(str_replace('-', ' ', (string) $slug)), 'count' => $group->count()];
+        })->sortBy('label')->values();
+        $catalogueLanguages = $catalogueTours->groupBy('language')->map(function ($group, $slug): array {
+            return ['slug' => $slug, 'label' => \Illuminate\Support\Str::headline(str_replace('-', ' ', (string) $slug)), 'count' => $group->count()];
+        })->sortBy('label')->values();
+        $vehicles = $catalogueTours->groupBy('vehicle')->map(function ($group, $slug): array {
+            return ['slug' => $slug, 'label' => \Illuminate\Support\Str::headline(str_replace('-', ' ', (string) $slug)), 'count' => $group->count()];
+        })->sortBy('label')->values();
+        $highestPrice = max(1, (int) $catalogueTours->max('price'));
+        $priceStep = max(1, (int) ceil($highestPrice / 3));
+        $priceRanges = [
+            ['minimum' => 0, 'maximum' => $priceStep, 'label' => 'Up to PKR '.number_format($priceStep)],
+            ['minimum' => $priceStep + 1, 'maximum' => $priceStep * 2, 'label' => 'PKR '.number_format($priceStep + 1).'–'.number_format($priceStep * 2)],
+            ['minimum' => ($priceStep * 2) + 1, 'maximum' => $highestPrice, 'label' => 'PKR '.number_format(($priceStep * 2) + 1).'+'],
+        ];
+    @endphp
+
+    <section class="da-intro da-container">
         <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'City Tours']]" />
+        <h1>{{ $category?->name ?? 'City Tours' }}</h1>
+        <p>{{ $category?->description ?: 'At Waheed Murad Tourism, choose from city tours across Dubai and the UAE, designed around the landmarks, culture and experiences you want to discover.' }}</p>
+        <h2 class="da-section-title">All City <span>Tours</span></h2>
+    </section>
 
-        <div class="sports-events-heading city-tours-heading"><div><span class="sports-events-eyebrow">DISCOVER THE UAE</span><h1>Dubai <span>City Tours</span></h1><p>Discover stories, culture and extraordinary views with thoughtfully planned city tours across Dubai and the UAE.</p></div><a href="{{ url('/') }}#booking" class="sports-events-plan">Plan your city day <span aria-hidden="true">→</span></a></div>
-
-        <div class="city-tours-highlights" aria-label="City tour highlights"><span><b>⌖</b>Dubai &amp; Abu Dhabi</span><span><b>✦</b>Expert local guides</span><span><b>◷</b>Flexible itineraries</span><span><b>♥</b>Private options</span></div>
-
-        <div class="sports-events-layout">
-            <aside class="sports-events-filter" aria-label="City tour filters">
-                <div class="sports-filter-heading"><strong>Find your city tour</strong><span>{{ count($tours) }} experiences</span></div>
-                <details open><summary>Category <b>⌃</b></summary><label><input type="checkbox" checked> City tours</label><label><input type="checkbox"> Private tours</label></details>
-                <details open><summary>Destination <b>⌃</b></summary><label><input type="checkbox"> Dubai</label><label><input type="checkbox"> Abu Dhabi</label><label><input type="checkbox"> Sharjah &amp; Al Ain</label></details>
-                <details open><summary>Tour style <b>⌃</b></summary><label><input type="checkbox"> Full day</label><label><input type="checkbox"> Heritage &amp; culture</label><label><input type="checkbox"> Private guide</label></details>
-                <div class="sports-filter-help"><span aria-hidden="true">✦</span><p>Need help choosing?<br><a href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer">Ask our local team</a></p></div>
-            </aside>
-
-            <div class="sports-events-results">
-                <div class="sports-results-bar"><strong><span>{{ count($tours) }}</span> city tours to explore</strong><label>Sort by <select><option>Most popular</option><option>Price: Low to high</option><option>Price: High to low</option></select></label></div>
-                <div class="sports-event-list">
-                    @forelse ($tours as $tour)
-                        <article class="sports-event-card city-tour-card"><img src="{{ asset($tour['image']) }}" alt="{{ $tour['title'] }}" loading="lazy"><div class="sports-event-copy"><span>{{ $tour['tag'] }}</span><h2>{{ $tour['title'] }}</h2><p>{{ $tour['description'] }}</p><small>⌖ {{ $tour['location'] }}</small></div><div class="sports-event-action"><small>From</small><strong>{{ $tour['price'] }}</strong><a href="{{ $tour['url'] ?? url('/') }}#booking">Book now <span aria-hidden="true">→</span></a></div></article>
+    <section class="da-container da-catalogue" id="all-city-tours" aria-label="All city tours">
+        <aside class="da-filter-sidebar" data-filters>
+            <div class="da-filter-heading">
+                <strong>Filter by</strong>
+                <button type="button" data-filter-toggle aria-expanded="false">Filters <b>⌄</b></button>
+            </div>
+            <div class="da-filter-groups" data-filter-groups>
+                <details open>
+                    <summary>Category <b>⌃</b></summary>
+                    <p class="da-filter-parent">{{ $category?->name ?? 'City Tours' }}</p>
+                </details>
+                <details open>
+                    <summary>Location <b>⌃</b></summary>
+                    @forelse ($locations as $location)
+                        <label><input type="checkbox" value="{{ $location['slug'] }}" data-filter="location" data-filter-label="{{ $location['label'] }}"> {{ $location['label'] }} ({{ $location['count'] }})</label>
                     @empty
-                        <div class="sports-filter-help"><span aria-hidden="true">✦</span><p>There are no live city tours yet. Please check back soon.</p></div>
+                        <p class="da-filter-parent">No locations available</p>
                     @endforelse
-                </div>
-                <p class="sports-events-note">You’ve explored all {{ count($tours) }} city tours.</p>
+                </details>
+                <details open>
+                    <summary>Time <b>⌃</b></summary>
+                    @forelse ($times as $time)
+                        <label><input type="checkbox" value="{{ $time['slug'] }}" data-filter="time" data-filter-label="{{ $time['label'] }}"> {{ $time['label'] }} ({{ $time['count'] }})</label>
+                    @empty
+                        <p class="da-filter-parent">No time filters available</p>
+                    @endforelse
+                </details>
+                <details open>
+                    <summary>Price <b>⌃</b></summary>
+                    @foreach ($priceRanges as $range)
+                        <label><input type="radio" name="price" data-price-filter data-price-min="{{ $range['minimum'] }}" data-price-max="{{ $range['maximum'] }}" data-filter-label="{{ $range['label'] }}"> {{ $range['label'] }}</label>
+                    @endforeach
+                </details>
+                <details open>
+                    <summary>Language <b>⌃</b></summary>
+                    @forelse ($catalogueLanguages as $language)
+                        <label><input type="checkbox" value="{{ $language['slug'] }}" data-filter="language" data-filter-label="{{ $language['label'] }}"> {{ $language['label'] }} ({{ $language['count'] }})</label>
+                    @empty
+                        <p class="da-filter-parent">No languages available</p>
+                    @endforelse
+                </details>
+                <details>
+                    <summary>Vehicle Options <b>⌄</b></summary>
+                    @forelse ($vehicles as $vehicle)
+                        <label><input type="checkbox" value="{{ $vehicle['slug'] }}" data-filter="vehicle" data-filter-label="{{ $vehicle['label'] }}"> {{ $vehicle['label'] }} ({{ $vehicle['count'] }})</label>
+                    @empty
+                        <p class="da-filter-parent">No vehicle options available</p>
+                    @endforelse
+                </details>
+            </div>
+        </aside>
+
+        <div class="da-results">
+            <div class="da-results-top">
+                <strong><span data-product-count>{{ $catalogueTours->count() }}</span> products found</strong>
+                <label>Sort by
+                    <select data-sort>
+                        <option value="popular">Most Popular</option>
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="az">Name: A–Z</option>
+                    </select>
+                </label>
+            </div>
+            <div class="da-active-filter-summary" data-active-filter-summary hidden>
+                <span>Filters: <b data-active-filter-label></b></span>
+                <button type="button" data-clear-filters>Clear all filters</button>
+            </div>
+            <div class="da-adventure-list" data-adventure-list>
+                @forelse ($catalogueTours as $adventure)
+                    <x-desert-adventures.adventure-card :adventure="$adventure" />
+                @empty
+                    <p class="da-catalogue-empty">There are no live city tours yet. Please check back soon.</p>
+                @endforelse
+            </div>
+            <p class="da-no-results" data-no-results hidden>No city tours match your filters. <button type="button" data-clear-filters>Clear filters</button></p>
+            <div class="da-show-more-wrap">
+                <span data-showing-count>Showing {{ min(6, $catalogueTours->count()) }} of {{ $catalogueTours->count() }} products</span>
+                <button type="button" data-show-more>Show more</button>
             </div>
         </div>
-
     </section>
 
     @php

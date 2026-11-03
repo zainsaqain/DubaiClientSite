@@ -1,4 +1,4 @@
-<article class="da-adventure-card" data-adventure data-category="{{ $adventure['category'] }}" data-time="{{ $adventure['time'] }}" data-location="{{ $adventure['location'] }}" data-vehicle="{{ $adventure['vehicle'] }}" data-price="{{ $adventure['price'] }}" data-title="{{ strtolower($adventure['title']) }}">
+<article class="da-adventure-card" data-adventure data-category="{{ $adventure['category'] }}" data-time="{{ $adventure['time'] }}" data-location="{{ $adventure['location'] }}" data-vehicle="{{ $adventure['vehicle'] }}" data-language="{{ $adventure['language'] ?? '' }}" data-price="{{ $adventure['price'] }}" data-title="{{ strtolower($adventure['title']) }}">
     <div class="da-card-image" data-card-carousel>
         @php($gallery = $adventure['gallery'] ?? [$adventure['image']])
         <div class="da-card-slides">

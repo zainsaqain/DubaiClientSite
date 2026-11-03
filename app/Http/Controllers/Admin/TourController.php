@@ -112,8 +112,50 @@ class TourController extends Controller
         ]);
     }
 
+    private function removeEmptyPriceRows(Request $request): void
+    {
+        $prices = [];
+
+        foreach ($request->input('prices', []) as $price) {
+            if (! is_array($price) || ! $this->containsPriceDetails($price)) {
+                continue;
+            }
+
+            $prices[] = $price;
+        }
+
+        $request->merge(['prices' => $prices]);
+    }
+
+    /**
+     * @param  array<string, mixed>  $price
+     */
+    private function containsPriceDetails(array $price): bool
+    {
+        foreach ([
+            'package_index',
+            'vehicle_label',
+            'description',
+            'adult_price',
+            'child_price',
+            'child_min_age',
+            'child_max_age',
+            'infant_price',
+            'infant_max_age',
+            'maximum_guests',
+        ] as $field) {
+            if (filled($price[$field] ?? null)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     private function persist(Request $request, Tour $tour): void
     {
+        $this->removeEmptyPriceRows($request);
+
         $data = $request->validate([
             'name' => ['required', 'string', 'max:180'],
             'slug' => ['nullable', 'string', 'max:190', Rule::unique('tours', 'slug')->ignore($tour)],

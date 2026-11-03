@@ -134,6 +134,42 @@ class TourCatalogueFieldsTest extends TestCase
         $this->assertDatabaseHas('tours', ['name' => 'Flexible Desert Safari']);
     }
 
+    public function test_an_empty_price_row_does_not_block_a_tour_save(): void
+    {
+        $admin = User::factory()->create(['is_admin' => true]);
+        $category = TourCategory::query()->create([
+            'name' => 'Desert Adventures',
+            'slug' => 'desert-adventures',
+            'is_active' => true,
+        ]);
+
+        $this->actingAs($admin)->post(route('admin.tours.store'), [
+            'name' => 'Safari Without Pricing Options',
+            'tour_category_id' => $category->id,
+            'location' => 'Dubai',
+            'starting_price' => 299,
+            'currency' => 'AED',
+            'status' => 'active',
+            'prices' => [[
+                'package_index' => '',
+                'vehicle_type' => 'shared',
+                'vehicle_label' => '',
+                'description' => '',
+                'adult_price' => '',
+                'child_price' => '',
+                'child_min_age' => '',
+                'child_max_age' => '',
+                'infant_price' => '',
+                'infant_max_age' => '',
+                'minimum_guests' => 1,
+                'maximum_guests' => '',
+            ]],
+        ])->assertRedirect(route('admin.tours.index'));
+
+        $this->assertDatabaseHas('tours', ['name' => 'Safari Without Pricing Options']);
+        $this->assertDatabaseCount('tour_prices', 0);
+    }
+
     public function test_administrator_can_upload_a_thumbnail_when_the_tour_has_no_existing_image(): void
     {
         Storage::fake('public');
