@@ -6,6 +6,7 @@ use App\Models\Tour;
 use App\Models\TourCategory;
 use App\Models\TourSubcategory;
 use App\Models\User;
+use Database\Seeders\TheFortLisailiDesertExperienceSeeder;
 use Database\Seeders\TourManagementSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -80,5 +81,29 @@ class TourManagementTest extends TestCase
         $this->assertDatabaseHas('tour_features', ['name' => 'Camel Ride', 'icon' => 'camel', 'is_active' => true]);
         $this->assertDatabaseCount('tour_itineraries', 7);
         $this->get('/tours/evening-desert-safari-in-dubai')->assertOk()->assertSee('BBQ dinner and entertainment')->assertSee('Camel Ride');
+    }
+
+    public function test_fort_lisaili_tour_is_seeded_with_its_gallery_itinerary_and_package_prices(): void
+    {
+        $category = TourCategory::query()->create(['name' => 'Desert Adventures', 'slug' => 'desert-adventures', 'is_active' => true]);
+        $subcategory = TourSubcategory::query()->create(['tour_category_id' => $category->id, 'name' => 'Desert Safaris', 'slug' => 'desert-safaris', 'is_active' => true]);
+
+        $this->seed(TheFortLisailiDesertExperienceSeeder::class);
+
+        $tour = Tour::query()->where('slug', 'the-fort-lisaili-desert-experience')->firstOrFail();
+
+        $this->assertSame($category->id, $tour->tour_category_id);
+        $this->assertSame($subcategory->id, $tour->tour_subcategory_id);
+        $this->assertSame('7618.00', $tour->starting_price);
+        $this->assertDatabaseCount('tour_images', 2);
+        $this->assertDatabaseCount('tour_itineraries', 7);
+        $this->assertDatabaseCount('tour_packages', 5);
+        $this->assertDatabaseCount('tour_prices', 5);
+
+        $this->get('/tours/the-fort-lisaili-desert-experience')
+            ->assertOk()
+            ->assertSee('The Fort - Lisaili Desert Experience')
+            ->assertSee('Sunset stop at the Aperol Spritz bar')
+            ->assertSee('Exclusive Transfer');
     }
 }

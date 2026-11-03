@@ -20,6 +20,9 @@
 .da-section-title { margin: 42px 0 28px; color: var(--da-blue); font-size: clamp(28px, 2.9vw, 42px); font-weight: 750; letter-spacing: -.05em; text-align: center; text-shadow: 0 2px 16px rgba(6, 71, 167, .06); }
 .da-section-title span { display: inline-block; padding: 1px 8px 3px; color: #fff; background: var(--da-red); border-radius: 6px; font-size: .78em; transform: rotate(-2deg); }
 .da-catalogue { display: grid; grid-template-columns: 320px minmax(0, 1fr); align-items: start; gap: 26px; }
+.da-filter-parent { margin: 0; padding: 8px 24px 21px; color: #37485c; font-size: 15px; font-weight: 700; }
+.da-active-filter-summary { display: flex; align-items: center; gap: 14px; min-height: 44px; padding: 10px 0 16px; color: #53657a; border-bottom: 1px solid #e7edf3; font-size: 14px; }
+.da-active-filter-summary button { padding: 0; color: var(--da-blue); border: 0; background: transparent; font: inherit; font-weight: 800; text-decoration: underline; cursor: pointer; }
 .da-filter-sidebar { position: sticky; top: 90px; overflow: hidden; background: linear-gradient(145deg, #ffffff, #fbfcfe); border: 1px solid #dce5ee; border-radius: 14px; box-shadow: 0 14px 30px rgba(30, 62, 97, .07); }
 .da-filter-heading { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; color: var(--da-blue); font-size: 20px; }
 .da-filter-heading button { display: none; }

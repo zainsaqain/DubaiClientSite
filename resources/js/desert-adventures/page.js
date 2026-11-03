@@ -6,27 +6,47 @@ const resultCount = document.querySelector('[data-product-count]');
 const showingCount = document.querySelector('[data-showing-count]');
 const showMore = document.querySelector('[data-show-more]');
 const noResults = document.querySelector('[data-no-results]');
+const activeFilterSummary = document.querySelector('[data-active-filter-summary]');
+const activeFilterLabel = document.querySelector('[data-active-filter-label]');
 let visibleLimit = 6;
 
 const refreshCards = () => {
-    const activeFilters = ['category', 'location', 'time', 'vehicle'].reduce((filters, type) => {
+    const activeFilters = ['category', 'location', 'time', 'language', 'vehicle'].reduce((filters, type) => {
         filters[type] = queryAll(`[data-filter="${type}"]:checked`).map((input) => input.value);
         return filters;
     }, {});
-    const price = document.querySelector('[data-price-filter]:checked')?.value;
+    const selectedPrice = document.querySelector('[data-price-filter]:checked');
+    const priceRange = selectedPrice
+        ? {
+              minimum: Number(selectedPrice.dataset.priceMin ?? 0),
+              maximum: Number(selectedPrice.dataset.priceMax ?? selectedPrice.value),
+              label: selectedPrice.dataset.filterLabel ?? selectedPrice.closest('label')?.textContent?.trim() ?? '',
+          }
+        : null;
     const search = document.querySelector('[data-adventure-search]')?.value.trim().toLowerCase() ?? '';
-    const matches = cards.filter((card) => Object.entries(activeFilters).every(([type, values]) => values.length === 0 || values.includes(card.dataset[type])) && (!price || Number(card.dataset.price) <= Number(price)) && (!search || card.dataset.title.includes(search)));
+    const matches = cards.filter((card) => {
+        const filtersMatch = Object.entries(activeFilters).every(([type, values]) => values.length === 0 || values.includes(card.dataset[type]));
+        const priceMatches = !priceRange || (Number(card.dataset.price) >= priceRange.minimum && Number(card.dataset.price) <= priceRange.maximum);
+
+        return filtersMatch && priceMatches && (!search || card.dataset.title.includes(search));
+    });
+    const selectedLabels = [
+        ...queryAll('[data-filter]:checked').map((input) => input.dataset.filterLabel ?? input.closest('label')?.textContent?.trim() ?? ''),
+        ...(priceRange?.label ? [priceRange.label] : []),
+    ].filter(Boolean);
     cards.forEach((card) => { card.hidden = !matches.includes(card) || matches.indexOf(card) >= visibleLimit; });
     if (resultCount) { resultCount.textContent = matches.length; }
     if (showingCount) { showingCount.textContent = `Showing ${Math.min(matches.length, visibleLimit)} of ${matches.length} products`; }
     if (showMore) { showMore.hidden = matches.length <= visibleLimit; }
     if (noResults) { noResults.hidden = matches.length !== 0; }
+    if (activeFilterSummary) { activeFilterSummary.hidden = selectedLabels.length === 0; }
+    if (activeFilterLabel) { activeFilterLabel.textContent = selectedLabels.join(', '); }
 };
 
 queryAll('[data-filter], [data-price-filter]').forEach((input) => input.addEventListener('change', () => { visibleLimit = 6; refreshCards(); }));
 document.querySelector('[data-adventure-search]')?.addEventListener('input', () => { visibleLimit = 6; refreshCards(); });
 showMore?.addEventListener('click', () => { visibleLimit += 6; refreshCards(); });
-document.querySelector('[data-clear-filters]')?.addEventListener('click', () => { queryAll('[data-filter], [data-price-filter]').forEach((input) => { input.checked = false; }); visibleLimit = 6; refreshCards(); });
+queryAll('[data-clear-filters]').forEach((button) => button.addEventListener('click', () => { queryAll('[data-filter], [data-price-filter]').forEach((input) => { input.checked = false; }); visibleLimit = 6; refreshCards(); }));
 document.querySelector('[data-sort]')?.addEventListener('change', (event) => {
     const cardsToSort = [...cards];
     const compare = { low: (a, b) => a.dataset.price - b.dataset.price, high: (a, b) => b.dataset.price - a.dataset.price, az: (a, b) => a.dataset.title.localeCompare(b.dataset.title), popular: () => 0 }[event.target.value];
