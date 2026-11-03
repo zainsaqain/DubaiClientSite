@@ -15,8 +15,9 @@ class MorningDesertAdventureSeeder extends Seeder
     public function run(): void
     {
         DB::transaction(function (): void {
-            $tour = Tour::query()->whereKey(3)->where('slug', 'morning-desert-adventure')->firstOrFail();
-
+            $tour = Tour::query()
+                ->where('slug', 'morning-desert-adventure')
+                ->firstOrFail();
             $tour->update([
                 'short_description' => 'Explore Dubai’s desert landscape on a guided safari with dune driving, wildlife viewing, camel rides and a Bedouin-inspired camp experience.',
                 'about' => 'A full desert journey combining guided transfer, dune terrain, wildlife moments, camel rides and a camp-style dining experience.',
@@ -28,8 +29,8 @@ class MorningDesertAdventureSeeder extends Seeder
                 'languages' => ['English'],
                 'starting_price' => 49937,
                 'currency' => 'PKR',
-                'thumbnail' => 'tours/morning-desert-adventure/hero.webp',
-                'main_image' => 'tours/morning-desert-adventure/hero.webp',
+                'thumbnail' => 'images/safaris/morning-desert-adventure.jpg',
+                'main_image' => 'images/safaris/morning-desert-adventure.jpg',
                 'image_alt' => 'Desert safari guests beside a 4x4 at sunset',
                 'pickup_information' => 'Hotel or residence pick-up included from anywhere in Dubai.',
                 'highlights' => "Desert dune drive\nWildlife viewing\nCamel ride\nFalcon encounter\nBBQ buffet and camp entertainment",
@@ -48,8 +49,8 @@ class MorningDesertAdventureSeeder extends Seeder
 
             $tour->images()->delete();
             $tour->images()->createMany([
-                ['path' => 'tours/morning-desert-adventure/desert-camp.jpg', 'alt' => 'Wide view of a desert camp', 'caption' => 'Desert camp', 'display_order' => 1],
-                ['path' => 'tours/morning-desert-adventure/desert-lounge.webp', 'alt' => 'Desert lounge setup', 'caption' => 'Desert lounge', 'display_order' => 2],
+                ['path' => 'images/safaris/wide-view-of-desert-camp.jpg', 'alt' => 'Wide view of a desert camp', 'caption' => 'Desert camp', 'display_order' => 1],
+                ['path' => 'images/safaris/family-sandboarding.jpg', 'alt' => 'Desert lounge setup', 'caption' => 'Desert lounge', 'display_order' => 2],
             ]);
 
             $featureDefinitions = [

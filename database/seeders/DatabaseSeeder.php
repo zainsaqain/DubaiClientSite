@@ -17,25 +17,28 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-
+        User::firstOrCreate(
+            ['email' => 'test@example.com'],
+            User::factory()->make(['name' => 'Test User'])->getAttributes(),
+        );
         $this->call([
-            DesertAdventureSeeder::class,
-            SportsEventSeeder::class,
-            CruiseBoatTourSeeder::class,
+            CatalogueCategorySeeder::class,
+            CategoryPageContentSeeder::class,
+            TourManagementSeeder::class,
             AttractionSeeder::class,
             CityTourSeeder::class,
-            WaterparkThemeParkSeeder::class,
+            CruiseBoatTourSeeder::class,
+            DesertAdventureSeeder::class,
+            EveningDesertSafariSeeder::class,
+            SportsEventSeeder::class,
             TransferSeeder::class,
-            WhyUsFeatureSeeder::class,
+            WaterparkThemeParkSeeder::class,
             HeroSlideSeeder::class,
             HomePromoCardSeeder::class,
             HomeSignatureJourneySeeder::class,
             HomeTestimonialSeeder::class,
-            TourManagementSeeder::class,
+            WhyUsFeatureSeeder::class,
+            RepairTourImagePathsSeeder::class,
         ]);
     }
 }

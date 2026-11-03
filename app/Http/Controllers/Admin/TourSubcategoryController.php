@@ -64,15 +64,22 @@ class TourSubcategoryController extends Controller
 
     public function destroy(TourSubcategory $tourSubcategory): RedirectResponse
     {
-        if ($tourSubcategory->tours()->exists()) {
-            return back()->with('error', 'This subcategory has tours. Set it inactive instead of deleting it.');
-        }
+        $linkedTourCount = $tourSubcategory->tours()->count();
+        $tourSubcategory->tours()->update(['tour_subcategory_id' => null]);
+
         if (is_string($tourSubcategory->image) && $tourSubcategory->image !== '') {
             Storage::disk('public')->delete($tourSubcategory->image);
         }
         $tourSubcategory->delete();
 
-        return redirect()->route('admin.tour-subcategories.index')->with('success', 'Subcategory deleted successfully.');
+        return redirect()
+            ->route('admin.tour-subcategories.index')
+            ->with(
+                'success',
+                $linkedTourCount > 0
+                    ? 'Subcategory deleted successfully. Linked tours are now uncategorized.'
+                    : 'Subcategory deleted successfully.'
+            );
     }
 
     private function form(TourSubcategory $subcategory): View

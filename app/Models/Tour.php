@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Storage;
 
 class Tour extends Model
 {
@@ -88,11 +89,19 @@ class Tour extends Model
     {
         $path ??= $this->thumbnail ?: $this->main_image;
 
-        if (! $path) {
+        if (blank($path)) {
             return asset('images/desert-safari.png');
         }
 
-        return str_starts_with($path, 'images/') ? asset($path) : asset('storage/'.$path);
+        if (Storage::disk('public')->exists($path)) {
+            return asset('storage/'.$path);
+        }
+
+        if (is_file(public_path($path))) {
+            return asset($path);
+        }
+
+        return asset('images/desert-safari.png');
     }
 
     /** @return array<string, mixed> */
@@ -123,8 +132,8 @@ class Tour extends Model
             'is_choice' => $this->is_travellers_choice,
             'location_tag' => $this->location_badge ?: $this->location,
             'promotion_label' => $this->promotion_label,
-            'image' => $image ? (str_starts_with($image, 'images/') ? $image : 'storage/'.$image) : 'images/desert-safari.png',
-            'gallery' => $this->images->pluck('path')->prepend($image)->filter()->map(static fn (string $path): string => str_starts_with($path, 'images/') ? $path : 'storage/'.$path)->unique()->values()->all(),
+            'image' => $this->imageUrl($image),
+            'gallery' => $this->images->pluck('path')->prepend($image)->filter()->map(fn (string $path): string => $this->imageUrl($path))->unique()->values()->all(),
             'url' => route('tours.show', $this),
         ];
     }

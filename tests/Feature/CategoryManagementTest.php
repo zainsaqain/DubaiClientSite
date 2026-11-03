@@ -113,7 +113,7 @@ class CategoryManagementTest extends TestCase
         Storage::disk('public')->assertExists($subcategory->image);
     }
 
-    public function test_administrator_can_assign_subcategories_to_a_parent_and_cannot_delete_referenced_hierarchy(): void
+    public function test_administrator_can_assign_subcategories_to_a_parent_and_delete_a_subcategory_without_deleting_linked_tours(): void
     {
         $admin = User::factory()->create(['is_admin' => true]);
         $category = TourCategory::query()->create([
@@ -147,7 +147,7 @@ class CategoryManagementTest extends TestCase
             'slug' => 'desert-safaris',
         ])->assertSessionHasErrors('slug');
 
-        Tour::query()->create([
+        $tour = Tour::query()->create([
             'tour_category_id' => $category->id,
             'tour_subcategory_id' => $subcategory->id,
             'name' => 'Protected Safari',
@@ -159,8 +159,12 @@ class CategoryManagementTest extends TestCase
         ]);
 
         $this->actingAs($admin)->delete(route('admin.tour-subcategories.destroy', $subcategory))
-            ->assertSessionHas('error');
-        $this->assertDatabaseHas('tour_subcategories', ['id' => $subcategory->id]);
+            ->assertRedirect(route('admin.tour-subcategories.index'));
+        $this->assertDatabaseMissing('tour_subcategories', ['id' => $subcategory->id]);
+        $this->assertDatabaseHas('tours', [
+            'id' => $tour->id,
+            'tour_subcategory_id' => null,
+        ]);
 
         $this->actingAs($admin)->delete(route('admin.tour-categories.destroy', $category))
             ->assertSessionHas('error');

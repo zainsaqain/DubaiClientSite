@@ -12,9 +12,7 @@
                         : ($category->slug === 'city-tours'
                             ? route('city-tours.destination', $subcategory)
                             : route('tour-subcategories.show', [$category, $subcategory]));
-                    $image = $subcategory->image
-                        ? (str_starts_with($subcategory->image, 'images/') ? asset($subcategory->image) : asset('storage/'.$subcategory->image))
-                        : $representativeTour?->imageUrl();
+        $image = $subcategory->imageUrl() ?? $representativeTour?->imageUrl();
                 @endphp
                 <a class="mega-category" href="{{ $subcategoryUrl }}">
                     <img class="category-orb" src="{{ $image ?: asset('images/desert-safari.png') }}" alt="{{ $subcategory->name }}">
