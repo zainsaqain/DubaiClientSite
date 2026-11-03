@@ -194,6 +194,11 @@ Route::get('/why-us', function () {
 Route::view('/about-us', 'pages.about-us')->name('about-us');
 Route::view('/where-to-find-us', 'pages.where-to-find-us')->name('where-to-find-us');
 Route::view('/travel-agent-partners', 'pages.travel-agent-partners')->name('travel-agent-partners');
+Route::view('/meetings-incentives-events', 'pages.meetings-incentives-events')->name('meetings-incentives-events');
+Route::view('/signature-events', 'pages.signature-events')->name('signature-events');
+Route::view('/guidelines', 'pages.guidelines')->name('guidelines');
+Route::view('/cancellation-refund-policy', 'pages.cancellation-refund-policy')->name('cancellation-refund-policy');
+Route::view('/terms-and-conditions', 'pages.terms-and-conditions')->name('terms-and-conditions');
 
 Route::view('/dune-buggies', 'pages.dune-buggies')->name('dune-buggies');
 

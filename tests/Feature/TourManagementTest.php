@@ -78,7 +78,7 @@ class TourManagementTest extends TestCase
         $this->assertSame(6, $tour->duration);
         $this->assertSame('hours', $tour->duration_unit);
         $this->assertSame('49937.00', $tour->starting_price);
-        $this->assertDatabaseHas('tour_features', ['name' => 'Camel Ride', 'icon' => '🐪', 'is_active' => true]);
+        $this->assertDatabaseHas('tour_features', ['name' => 'Camel Ride', 'icon' => 'camel', 'is_active' => true]);
         $this->assertDatabaseCount('tour_itineraries', 7);
         $this->get('/tours/evening-desert-safari-in-dubai')->assertOk()->assertSee('BBQ dinner and entertainment')->assertSee('Camel Ride');
     }

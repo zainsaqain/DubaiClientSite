@@ -117,7 +117,7 @@ $desertSafarisList = $desertSafarisList ?? [
         'travellers_choice' => true,
         'location' => 'Dubai',
         'price' => 'PKR 49,937',
-        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book Evening Desert Safari in Dubai'),
+        'url' => 'https://wa.me/971502299598?text=' . urlencode('Hi, I would like to book Evening Desert Safari in Dubai'),
     ],
     [
         'category' => 'Desert Safaris',
@@ -127,7 +127,7 @@ $desertSafarisList = $desertSafarisList ?? [
         'travellers_choice' => true,
         'location' => 'Dubai',
         'price' => 'PKR 36,856',
-        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book Morning Desert Adventure'),
+        'url' => 'https://wa.me/971502299598?text=' . urlencode('Hi, I would like to book Morning Desert Adventure'),
     ],
     [
         'category' => 'Dune buggies',
@@ -137,7 +137,7 @@ $desertSafarisList = $desertSafarisList ?? [
         'travellers_choice' => true,
         'location' => 'Dubai',
         'price' => 'PKR 61,558',
-        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book Dune Buggy Adventure in Dubai'),
+        'url' => 'https://wa.me/971502299598?text=' . urlencode('Hi, I would like to book Dune Buggy Adventure in Dubai'),
     ],
     [
         'category' => 'Desert Experiences',
@@ -147,7 +147,7 @@ $desertSafarisList = $desertSafarisList ?? [
         'travellers_choice' => true,
         'location' => 'Dubai',
         'price' => 'PKR 230,446',
-        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book the Exclusive Desert Experience'),
+        'url' => 'https://wa.me/971502299598?text=' . urlencode('Hi, I would like to book the Exclusive Desert Experience'),
     ],
     [
         'category' => 'Desert Experiences',
@@ -157,7 +157,7 @@ $desertSafarisList = $desertSafarisList ?? [
         'travellers_choice' => false,
         'location' => 'Dubai',
         'price' => 'PKR 38,395',
-        'url' => 'https://wa.me/971500000000?text=' . urlencode('Hi, I would like to book a Camel Ride in Dubai'),
+        'url' => 'https://wa.me/971502299598?text=' . urlencode('Hi, I would like to book a Camel Ride in Dubai'),
     ],
 ];
 
@@ -363,7 +363,7 @@ $dubaiMoments = $dubaiMoments ?? [
                 </a>
 
                 <div class="desktop-tools">
-                    <a class="quick-link" href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat with local travel expert">
+                    <a class="quick-link" href="https://wa.me/971502299598?text=Hello%20Waheed%20Murad%20Tourism%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat with local travel expert">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4.3A8.4 8.4 0 1 1 20.5 11.7Z"/><path d="M8.6 7.9c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.3 0 .5.5 1 1.3 1.8 2.4 2.3.2.1.4.1.5 0l.8-.9c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.5-.3.2-.7.4-1.2.4-.7 0-1.5-.2-2.7-.8a10.3 10.3 0 0 1-4.3-4.1c-.8-1.2-1-2.1-1-2.8 0-.4.2-.8.4-1.1Z"/></svg>
                         <span><small>Talk to a local expert</small><b>WhatsApp us</b></span>
                     </a>
@@ -387,7 +387,7 @@ $dubaiMoments = $dubaiMoments ?? [
                             <b>0</b>
                         </span>
                     </a>
-                    <a class="mobile-icon-link whatsapp-mobile" href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+                    <a class="mobile-icon-link whatsapp-mobile" href="https://wa.me/971502299598?text=Hello%20Waheed%20Murad%20Tourism%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
                         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4.3A8.4 8.4 0 1 1 20.5 11.7Z"/><path d="M8.6 7.9c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.3 0 .5.5 1 1.3 1.8 2.4 2.3.2.1.4.1.5 0l.8-.9c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.5-.3.2-.7.4-1.2.4-.7 0-1.5-.2-2.7-.8a10.3 10.3 0 0 1-4.3-4.1c-.8-1.2-1-2.1-1-2.8 0-.4.2-.8.4-1.1Z"/></svg>
                     </a>
                 </div>
@@ -1072,86 +1072,12 @@ $dubaiMoments = $dubaiMoments ?? [
         </section>
     </main>
 
-    <a class="floating-whatsapp" href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer" aria-label="Chat with Waheed Murad Tourism on WhatsApp">
+    <a class="floating-whatsapp" href="https://wa.me/971502299598?text=Hello%20Waheed%20Murad%20Tourism%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" aria-label="Chat with Waheed Murad Tourism on WhatsApp">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.4 11.5a8.25 8.25 0 0 1-12.17 7.28L4 20l1.28-4.02A8.25 8.25 0 1 1 20.4 11.5Z"/><path d="M8.7 8.3c.22-.5.43-.52.65-.53h.55c.17 0 .37.07.44.34l.55 1.52c.08.22.04.45-.1.62l-.43.5c-.13.15-.08.3.02.44.3.51.79 1.12 1.7 1.55.15.07.26.06.36-.05l.56-.66c.14-.17.34-.2.54-.13l1.46.69c.23.11.3.25.27.47-.07.65-.42 1.19-.95 1.48-.3.16-.67.26-1.13.16-1.26-.28-2.9-1.31-4.02-2.6-1.13-1.3-1.73-2.82-1.62-3.82.05-.45.2-.84.38-1.13Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Chat on WhatsApp</span>
+        <span>WhatsApp us</span>
     </a>
 
-    <!-- ==========================================
-         SITE FOOTER (#contact)
-         ========================================== -->
-    <footer class="site-footer" id="contact">
-        <div class="footer-ribbon" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-        <div class="header-container footer-top">
-            <div class="footer-grid">
-                <div class="footer-brand-column">
-                    <a class="footer-brand" href="{{ url('/') }}" aria-label="Waheed Murad Tourism home">
-                        <img src="{{ asset('images/waheed-murad-tourism-logo.jpeg') }}" alt="Waheed Murad Tourism">
-                        <span><strong>Waheed Murad</strong><small>Tourism</small></span>
-                    </a>
-                    <p class="footer-subscribe-copy">Get Dubai ideas, seasonal offers and travel inspiration in your inbox.</p>
-                    <a class="footer-subscribe-button" href="#booking">Get travel updates <span aria-hidden="true">→</span></a>
-                    <div class="footer-socials" aria-label="Social media links">
-                        <a href="#contact" aria-label="Instagram">ig</a>
-                        <a href="#contact" aria-label="Facebook">f</a>
-                        <a href="#contact" aria-label="Trip advisor">ta</a>
-                        <a href="#contact" aria-label="LinkedIn">in</a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contact us</h4>
-                    <ul class="footer-contact-list">
-                        <li><span aria-hidden="true">☎</span><a href="tel:+971500000000">+971 50 000 0000</a></li>
-                        <li><span aria-hidden="true">◉</span><a href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer">WhatsApp our travel desk</a></li>
-                        <li><span aria-hidden="true">✉</span><a href="mailto:hello@waheedmuradtourism.com">hello@waheedmuradtourism.com</a></li>
-                        <li><span aria-hidden="true">⌖</span><a href="#contact">Downtown Dubai, UAE</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Explore Dubai</h4>
-                    <ul class="footer-links">
-                        <li><a href="#desert-safaris">Desert Safaris</a></li>
-                        <li><a href="#attractions">Attractions</a></li>
-                        <li><a href="#city-tours">City Tours</a></li>
-                        <li><a href="#cruise-boat-tours">Cruise &amp; Boat Tours</a></li>
-                        <li><a href="#waterparks-theme-parks">Water &amp; Theme Parks</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Waheed Murad Tourism</h4>
-                    <ul class="footer-links">
-                        <li><a href="{{ route('why-us') }}">About us</a></li>
-                        <li><a href="{{ route('why-us') }}">Why Choose Us</a></li>
-                        <li><a href="#contact">Partner with us</a></li>
-                        <li><a href="#booking">Plan your trip</a></li>
-                        <li><a href="#contact">Travel support</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Travel information</h4>
-                    <ul class="footer-links">
-                        <li><a href="#contact">Booking guidelines</a></li>
-                        <li><a href="#contact">Cancellation policy</a></li>
-                        <li><a href="#contact">Terms &amp; conditions</a></li>
-                        <li><a href="#contact">Privacy policy</a></li>
-                        <li><a href="#contact">Frequently asked questions</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="header-container footer-bottom">
-            <div class="footer-meta-selects"><span>English ▾</span><span>PKR ▾</span></div>
-            <span>&copy; {{ date('Y') }} Waheed Murad Tourism. All rights reserved.</span>
-            <span>Dubai, United Arab Emirates</span>
-        </div>
-    </footer>
+    @include('components.site.footer')
 
 </body>
 </html>
