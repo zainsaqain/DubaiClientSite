@@ -47,8 +47,8 @@ class EveningDesertSafariSeeder extends Seeder
                     'starting_price' => 49937,
                     'currency' => 'PKR',
                     'status' => 'active',
-                    'thumbnail' => 'tours/evening-desert-safari-in-dubai/sunset-4x4.webp',
-                    'main_image' => 'tours/evening-desert-safari-in-dubai/sunset-4x4.webp',
+                    'thumbnail' => 'images/safaris/evening-desert-safari.jpg',
+                    'main_image' => 'images/safaris/evening-desert-safari.jpg',
                     'image_alt' => 'Guests beside a 4x4 in the Dubai desert at sunset',
                     'pickup_information' => 'Hotel or residence pick-up included from anywhere in Dubai.',
                     'highlights' => "Dune and wildlife drive\nSunset stop and falcon encounter\nCamel rides and optional sandboarding\nBBQ buffet at a Bedouin-inspired camp\nLive belly dance, Tanoura and fire-show entertainment",
@@ -69,13 +69,13 @@ class EveningDesertSafariSeeder extends Seeder
 
             $tour->images()->delete();
             $tour->images()->createMany([
-                ['path' => 'tours/evening-desert-safari-in-dubai/desert-camp-aerial.jpg', 'alt' => 'Aerial view of a desert camp', 'caption' => 'Desert camp view', 'display_order' => 1],
-                ['path' => 'tours/evening-desert-safari-in-dubai/desert-refreshments.webp', 'alt' => 'Desert refreshments setup', 'caption' => 'Desert refreshments', 'display_order' => 2],
-                ['path' => 'tours/evening-desert-safari-in-dubai/dune-drive.webp', 'alt' => '4x4 dune drive near the desert camp', 'caption' => 'Dune drive', 'display_order' => 3],
-                ['path' => 'tours/evening-desert-safari-in-dubai/bbq-buffet.jpg', 'alt' => 'Family enjoying a desert buffet', 'caption' => 'BBQ buffet', 'display_order' => 4],
-                ['path' => 'tours/evening-desert-safari-in-dubai/belly-dance.webp', 'alt' => 'Evening dance performance at the camp', 'caption' => 'Live entertainment', 'display_order' => 5],
-                ['path' => 'tours/evening-desert-safari-in-dubai/tanoura-performance.jpg', 'alt' => 'Tanoura performance at night', 'caption' => 'Tanoura performance', 'display_order' => 6],
-                ['path' => 'tours/evening-desert-safari-in-dubai/fire-show.jpg', 'alt' => 'Fire show during a desert dinner', 'caption' => 'Fire show', 'display_order' => 7],
+                ['path' => 'images/safaris/wide-view-of-desert-camp.jpg', 'alt' => 'Aerial view of a desert camp', 'caption' => 'Desert camp view', 'display_order' => 1],
+                ['path' => 'images/safaris/evening-desert-safari.jpg', 'alt' => 'Desert refreshments setup', 'caption' => 'Desert refreshments', 'display_order' => 2],
+                ['path' => 'images/safaris/evening-desert-safari.jpg', 'alt' => '4x4 dune drive near the desert camp', 'caption' => 'Dune drive', 'display_order' => 3],
+                ['path' => 'images/safaris/family-sandboarding.jpg', 'alt' => 'Family enjoying a desert buffet', 'caption' => 'BBQ buffet', 'display_order' => 4],
+                ['path' => 'images/safaris/evening-desert-safari.jpg', 'alt' => 'Evening dance performance at the camp', 'caption' => 'Live entertainment', 'display_order' => 5],
+                ['path' => 'images/safaris/family-sandboarding.jpg', 'alt' => 'Tanoura performance at night', 'caption' => 'Tanoura performance', 'display_order' => 6],
+                ['path' => 'images/safaris/lisaili-desert-experience.jpg', 'alt' => 'Fire show during a desert dinner', 'caption' => 'Fire show', 'display_order' => 7],
             ]);
 
             $featureDefinitions = [

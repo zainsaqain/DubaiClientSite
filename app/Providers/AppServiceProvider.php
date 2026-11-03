@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
 
         View::composer('components.site.header', function ($view): void {
-            $view->with('navigationCategories', TourCategory::query()
+            $navigationCategories = TourCategory::query()
                 ->where('is_active', true)
                 ->with([
                     'subcategories' => fn ($query) => $query
@@ -47,7 +48,11 @@ class AppServiceProvider extends ServiceProvider
                         ->limit(5),
                 ])
                 ->orderBy('display_order')
-                ->get());
+                ->get()
+                ->unique(static fn (TourCategory $category): string => Str::lower(trim($category->name)))
+                ->values();
+
+            $view->with('navigationCategories', $navigationCategories);
         });
     }
 }

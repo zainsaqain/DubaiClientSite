@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Storage;
 
 class TourSubcategory extends Model
 {
@@ -18,6 +19,19 @@ class TourSubcategory extends Model
     protected function casts(): array
     {
         return ['is_active' => 'boolean'];
+    }
+
+    public function imageUrl(): ?string
+    {
+        if (blank($this->image)) {
+            return null;
+        }
+
+        if (Storage::disk('public')->exists($this->image)) {
+            return asset('storage/'.$this->image);
+        }
+
+        return is_file(public_path($this->image)) ? asset($this->image) : null;
     }
 
     public function category(): BelongsTo
