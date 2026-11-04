@@ -2,6 +2,8 @@
 
 namespace Tests\Feature;
 
+use App\Models\Attraction;
+use App\Models\SportsEvent;
 use App\Models\Tour;
 use App\Models\TourCategory;
 use App\Models\TourCategoryContentBlock;
@@ -19,6 +21,35 @@ use Tests\TestCase;
 class PublicCatalogueTest extends TestCase
 {
     use RefreshDatabase;
+
+    public function test_attractions_and_sports_events_render_the_shared_live_filter_markup(): void
+    {
+        Attraction::query()->create([
+            'title' => 'Palm View',
+            'attraction_type' => 'Sky views',
+            'description' => 'A view across Palm Jumeirah.',
+            'location' => 'Palm Jumeirah',
+            'price' => 12500,
+            'is_active' => true,
+        ]);
+        SportsEvent::query()->create([
+            'title' => 'Dubai Golf Day',
+            'event_type' => 'Golf',
+            'description' => 'An outdoor golf experience.',
+            'location' => 'Dubai',
+            'price' => 21000,
+            'is_active' => true,
+        ]);
+
+        foreach (['attractions' => 'Palm View', 'sports-events' => 'Dubai Golf Day'] as $route => $title) {
+            $this->get(route($route))
+                ->assertOk()
+                ->assertSee($title)
+                ->assertSee('data-adventure-list', false)
+                ->assertSee('data-filter="location"', false)
+                ->assertSee('data-sort', false);
+        }
+    }
 
     public function test_mobile_navigation_opens_a_submenu_only_for_categories_that_have_subcategories(): void
     {

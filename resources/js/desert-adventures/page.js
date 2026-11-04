@@ -1,7 +1,7 @@
 const queryAll = (selector) => Array.from(document.querySelectorAll(selector));
 
-const cards = queryAll('[data-adventure]');
 const list = document.querySelector('[data-adventure-list]');
+const cards = list ? Array.from(list.querySelectorAll('[data-adventure]')) : [];
 const resultCount = document.querySelector('[data-product-count]');
 const showingCount = document.querySelector('[data-showing-count]');
 const showMore = document.querySelector('[data-show-more]');
@@ -11,7 +11,7 @@ const activeFilterLabel = document.querySelector('[data-active-filter-label]');
 let visibleLimit = 6;
 
 const refreshCards = () => {
-    const activeFilters = ['category', 'location', 'time', 'language', 'vehicle'].reduce((filters, type) => {
+    const activeFilters = ['category', 'location', 'time', 'language', 'vehicle', 'type'].reduce((filters, type) => {
         filters[type] = queryAll(`[data-filter="${type}"]:checked`).map((input) => input.value);
         return filters;
     }, {});
