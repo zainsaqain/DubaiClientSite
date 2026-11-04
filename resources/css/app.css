@@ -207,7 +207,7 @@ button { font: inherit; }
     .mobile-menu-actions > a:not(.mobile-plan-trip) { padding: 3px 0; color: #29475e; font-size: 14px; font-weight: 700; text-decoration: none; }
     .mobile-menu-actions .mobile-plan-trip { justify-content: center; padding: 13px 16px; color: #fff; border: 0; }
     .mobile-submenu-panel { position: absolute; z-index: 2; inset: 0; display: flex; flex-direction: column; overflow-y: auto; background: #fff; transform: translateX(102%); transition: transform .3s cubic-bezier(.2, .8, .2, 1); }
-    .mobile-navigation.is-submenu-open .mobile-submenu-panel { transform: translateX(0); }
+    .mobile-navigation.is-submenu-open .mobile-submenu-panel[aria-hidden="false"] { transform: translateX(0); }
     .mobile-submenu-bar { min-height: 61px; padding: 0 16px; }
     .mobile-menu-back { display: inline-flex; align-items: center; gap: 7px; padding: 8px; color: #244761; border: 0; background: transparent; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
     .mobile-menu-back span { font-size: 28px; font-weight: 300; line-height: 12px; }
@@ -1144,16 +1144,28 @@ button { font: inherit; }
     line-height: 1.65;
 }
 
+.experiences-showcase-arrows { display: flex; flex: 0 0 auto; gap: 10px; }
+.experiences-showcase-arrows button { display: grid; width: 42px; height: 42px; padding: 0; place-items: center; color: #0b4774; border: 1.5px solid #0b4774; border-radius: 50%; background: #fff; cursor: pointer; transition: color .2s ease, background .2s ease, transform .2s ease; }
+.experiences-showcase-arrows button:hover, .experiences-showcase-arrows button:focus-visible { color: #fff; outline: none; background: #0b4774; transform: translateY(-2px); }
+.experiences-showcase-arrows svg { width: 18px; height: 18px; }
+
 .experiences-category-grid {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    display: flex;
     gap: 18px;
+    padding: 4px 2px 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 }
+.experiences-category-grid::-webkit-scrollbar { display: none; }
 
 .experience-category-card {
     display: block;
-    min-width: 0;
+    flex: 0 0 calc((100% - 90px) / 6);
+    min-width: 190px;
     color: var(--navy);
+    scroll-snap-align: start;
     text-align: center;
     text-decoration: none;
 }
@@ -1216,10 +1228,7 @@ button { font: inherit; }
 }
 
 .experience-category-copy small {
-    min-height: 34px;
-    color: #718293;
-    font-size: 11px;
-    line-height: 1.45;
+    display: none;
 }
 
 .experience-category-card:hover .experience-category-image-wrap,
@@ -1238,7 +1247,7 @@ button { font: inherit; }
 .experience-category-card:focus-visible { outline: 3px solid rgba(255, 184, 77, .7); outline-offset: 6px; border-radius: 6px; }
 
 @media (max-width: 1100px) {
-    .experiences-category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px 20px; }
+    .experience-category-card { flex-basis: min(250px, 29vw); }
     .experience-category-image-wrap { max-width: 250px; margin: 0 auto; }
 }
 
@@ -1247,7 +1256,11 @@ button { font: inherit; }
     .experiences-showcase-heading { display: block; margin-bottom: 30px; }
     .experiences-showcase-heading h2 { font-size: 2.6rem; }
     .experiences-showcase-heading p { margin-top: 18px; font-size: 14px; }
-    .experiences-category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 15px; }
+    .experiences-showcase-heading { position: relative; padding-right: 94px; }
+    .experiences-showcase-arrows { position: absolute; top: 0; right: 0; gap: 7px; }
+    .experiences-showcase-arrows button { width: 38px; height: 38px; }
+    .experiences-category-grid { gap: 15px; }
+    .experience-category-card { flex-basis: min(190px, 62vw); }
     .experience-category-image-wrap { max-width: none; }
     .experience-category-copy { padding-top: 12px; }
     .experience-category-copy b { font-size: 16px; }
@@ -1708,12 +1721,20 @@ button { font: inherit; }
 .top-city-tours-track {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    display: flex;
     gap: 20px;
+    padding: 4px 2px 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 }
+.top-city-tours-track::-webkit-scrollbar { display: none; }
 
 .top-city-tour-card {
+    flex: 0 0 calc((100% - 60px) / 4);
+    min-width: 250px;
+    scroll-snap-align: start;
     overflow: hidden;
     border: 1px solid #dbe6eb;
     border-radius: 14px;
@@ -1809,8 +1830,6 @@ button { font: inherit; }
 .top-city-tours-view-all:hover { color: #fff; background: #0b4774; }
 
 @media (max-width: 1024px) {
-    .top-city-tours-track { display: flex; padding: 4px 2px 14px; overflow-x: auto; gap: 16px; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-    .top-city-tours-track::-webkit-scrollbar { display: none; }
     .top-city-tour-card { flex: 0 0 min(290px, 74vw); scroll-snap-align: start; }
 }
 

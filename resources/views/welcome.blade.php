@@ -834,7 +834,16 @@ $dubaiMoments = $dubaiMoments ?? [
         </section>
 
         <!-- Signature experiences (replaces the former airport transfer cards) -->
-        <section class="experiences-showcase" id="experiences" aria-labelledby="experiences-heading">
+        <section class="experiences-showcase" id="experiences" aria-labelledby="experiences-heading" x-data="{
+            scrollLeft() {
+                const track = this.$refs.experiencesTrack;
+                track?.scrollBy({ left: -(track.firstElementChild?.offsetWidth + 18 || 280), behavior: 'smooth' });
+            },
+            scrollRight() {
+                const track = this.$refs.experiencesTrack;
+                track?.scrollBy({ left: track.firstElementChild?.offsetWidth + 18 || 280, behavior: 'smooth' });
+            }
+        }">
             <span id="transfers" class="section-anchor" aria-hidden="true"></span>
             <div class="header-container">
                 <div class="experiences-showcase-heading">
@@ -843,9 +852,13 @@ $dubaiMoments = $dubaiMoments ?? [
                         <h2 id="experiences-heading">Our <span>experiences</span></h2>
                     </div>
                     <p>From desert horizons to world-famous attractions, find the Dubai experience made for you.</p>
+                    <div class="experiences-showcase-arrows" aria-label="Our experiences navigation">
+                        <button type="button" @click="scrollLeft()" aria-label="Previous experiences"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+                        <button type="button" @click="scrollRight()" aria-label="Next experiences"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+                    </div>
                 </div>
 
-                <div class="experiences-category-grid">
+                <div class="experiences-category-grid" x-ref="experiencesTrack">
                     @foreach($experienceCategories as $experience)
                         <a class="experience-category-card" href="{{ $experience['url'] }}">
                             <span class="experience-category-image-wrap">

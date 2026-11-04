@@ -1,0 +1,1283 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "slug": "waterparks-and-theme-parks",
+      "name": "Waterparks & Theme Parks",
+      "description": "Waterpark, theme park and indoor snow experiences in Dubai.",
+      "display_order": 6,
+      "image": "images/parks-transfers/dubai-parks-and-resorts/01.jpg"
+    },
+    {
+      "slug": "transfers",
+      "name": "Transfers",
+      "description": "Private Dubai airport transfers and one-way transfers from Dubai or Abu Dhabi to Muscat.",
+      "display_order": 7,
+      "image": "images/parks-transfers/dubai-airport-transfers/01.jpg"
+    }
+  ],
+  "subcategories": [],
+  "tours": [
+    {
+      "slug": "dubai-parks-and-resorts",
+      "category_slug": "waterparks-and-theme-parks",
+      "name": "Dubai Parks and Resorts",
+      "short_description": "Dubai Parks and Resorts is home to a world of incredible adventure across multiple theme parks and waterparks.",
+      "about": "Dubai Parks and Resorts is home to a world of incredible adventure across multiple theme parks and waterparks. From LEGOLAND and MOTIONGATE to Real Madrid World, there’s a fun-filled day out waiting for the entire family!",
+      "full_description": "Explore theme parks, water attractions and dining at Dubai Parks and Resorts. MOTIONGATE draws on Hollywood films; LEGOLAND offers LEGO adventures; Real Madrid World celebrates football. Choose a single park or two parks on the same day.",
+      "location": "Dubai",
+      "duration": 8,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "Arabic",
+        "English"
+      ],
+      "starting_price": 22699,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/parks-transfers/dubai-parks-and-resorts/01.jpg",
+      "main_image": "images/parks-transfers/dubai-parks-and-resorts/01.jpg",
+      "image_alt": "Guests walking through the themed streets at Dubai Parks and Resorts",
+      "pickup_information": "Transfers to and from your hotel or residence are not included.",
+      "highlights": "Theme parks, water attractions, shops and restaurants\nHollywood, LEGO and football experiences\nTwo-park day-ticket option",
+      "know_before_you_go": "Check current park hours before travelling. Published hours: MOTIONGATE Sun–Thu 11:00–20:00, Fri–Sat until 21:00; Real Madrid Sun–Thu 12:00–21:00, Fri–Sat until 22:00; LEGOLAND 11:00–20:00; Water Park Thu–Tue 10:00–17:30, closed Wednesday. Attractions stop 30 minutes before closing. Enter through Riverland; maps and entertainment schedules are available. Open-dated tickets last 90 days. Severe weather may close attractions without refunds.",
+      "age_policy": "Children younger than three enter free.",
+      "cancellation_policy": "Tickets cannot be refunded, transferred or extended.",
+      "additional_notes": "What's included:\nAdmission to your chosen Dubai Parks and Resorts park(s)\nUnlimited access to all attractions in your chosen park, depending on park schedules\nUnlimited access to the rides and entertainment at your chosen parks\nFree parking\nComplimentary buggy service during the summer months\nWhat's not included:\nTransfers to and from your hotel or residence\nAny food and drink purchases\nSouvenir photos\nVenue map: https://maps.google.com/?daddr=24.923946,55.0060946",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 1,
+      "youtube_url": null,
+      "features": [
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-dress-code-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-seasonality-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-family-friendly-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages No",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-f-b-icon.png",
+          "inclusion_status": "excluded"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/parks-transfers/dubai-parks-and-resorts/01.jpg",
+          "alt": "Guests walking through the themed streets at Dubai Parks and Resorts",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw1f202966/images/large/Generic-DPR-2-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/dubai-parks-and-resorts/02.jpg",
+          "alt": "Themed waterfront buildings at Dubai Parks and Resorts",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd1a43141/images/large/Generic-DPR-7-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/dubai-parks-and-resorts/03.jpg",
+          "alt": "Visitors enjoying a ride through a brightly lit tunnel",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw754de1a5/images/large/large/img_1586869873_1586870202__heroimagemadagascarmadpursuit",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/dubai-parks-and-resorts/04.jpg",
+          "alt": "Dubai Parks and Resorts gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6cbf10b9/images/large/large/img_1586869873_1586869900__bollywoodboulevardfamily",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/parks-transfers/dubai-parks-and-resorts/05.jpg",
+          "alt": "Dubai Parks and Resorts gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwdbe29a73/images/large/large/img_1586869873_1586870009__brainysmurf",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/parks-transfers/dubai-parks-and-resorts/06.jpg",
+          "alt": "Dubai Parks and Resorts gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw56b6697a/images/large/large/img_1586869873_1586870033__dancers",
+          "visible_in_screenshot": false
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "One Park Pass - MOTIONGATE Dubai",
+          "description": "Admission according to the selected pass. PKR 22,699 per adult.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "One Park Pass - LEGOLAND Dubai",
+          "description": "Admission according to the selected pass. PKR 22,699 per adult.",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "One Park Pass - LEGOLAND Water Park",
+          "description": "Admission according to the selected pass. Sold out in the supplied screenshot; no price published.",
+          "display_order": 3,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": "Sold out in source screenshot"
+        },
+        {
+          "name": "One Park Pass - Real Madrid World",
+          "description": "Admission according to the selected pass. Sold out in the supplied screenshot; no price published.",
+          "display_order": 4,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": "Sold out in source screenshot"
+        },
+        {
+          "name": "Two Park Pass - Dubai Parks and Resorts",
+          "description": "Admission according to the selected pass. PKR 27,315 per adult.",
+          "display_order": 5,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "One Park Pass - MOTIONGATE Dubai",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult.",
+          "adult_price": 22699,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "One Park Pass - LEGOLAND Dubai",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult.",
+          "adult_price": 22699,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Two Park Pass - Dubai Parks and Resorts",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult.",
+          "adult_price": 27315,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/waterparks-and-theme-parks/aa-dubai-parks-and-resorts.html",
+        "screenshot": "image(20261102-202332).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "One Park Pass - MOTIONGATE Dubai",
+            "amount": 22699,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "listed"
+          },
+          {
+            "package_name": "One Park Pass - LEGOLAND Dubai",
+            "amount": 22699,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "listed"
+          },
+          {
+            "package_name": "One Park Pass - LEGOLAND Water Park",
+            "amount": null,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "sold_out"
+          },
+          {
+            "package_name": "One Park Pass - Real Madrid World",
+            "amount": null,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "sold_out"
+          },
+          {
+            "package_name": "Two Park Pass - Dubai Parks and Resorts",
+            "amount": 27315,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "listed"
+          }
+        ],
+        "discrepancies": [
+          "LEGOLAND Water Park and Real Madrid World are shown sold out in the screenshot. They are retained without invented prices."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=24.923946,55.0060946"
+          }
+        ],
+        "supplementary_fields": [
+          "full_description",
+          "highlights",
+          "know_before_you_go",
+          "age_policy",
+          "cancellation_policy"
+        ],
+        "supplementary_note": "Collapsed panels were verified on the official product page and concisely paraphrased.",
+        "duration_origin": "Published About badge",
+        "displayed_starting_price": {
+          "amount": 22699,
+          "currency": "PKR",
+          "origin": "Supplied screenshot"
+        }
+      }
+    },
+    {
+      "slug": "atlantis-aquaventure",
+      "category_slug": "waterparks-and-theme-parks",
+      "name": "Atlantis Aquaventure",
+      "short_description": "Slide into a pool of fun and meet the magical creatures of the sea.",
+      "about": "Slide into a pool of fun and meet the magical creatures of the sea. Get your pulse racing on any of the 105 slides and attractions or kick back on the beautiful private beach at, Atlantis Aquaventure, the largest waterpark in the Middle East & Europe.",
+      "full_description": "The Trident Has Risen! Get splashin’ at the largest waterpark in the world with the launch of Trident Tower, Splashers Lagoon and Splashers Cove, NOW open with 28 new record-breaking waterslides and attractions.\n\nAquaventure Waterpark promises a world of excitement to make you feel #DifferentInWater in more ways than one.\n\nGet your pulse racing with 105 slides and incredible attractions and experiences, make your way through the Raging Rapids and relax on 1km of private beach.\n\nYoung families will enjoy the safety of Splashers’ Kids Play Area, a dream attraction for families for non-stop splashin’ FUN, while animal lovers can get up close with dolphins, sea lions, sharks and stingrays.\n\nEnjoy over 22 fun-filled hectares of record-breaking fun for all ages.",
+      "location": "Dubai",
+      "duration": 1,
+      "duration_unit": "days",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 27700,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/parks-transfers/atlantis-aquaventure/01.jpg",
+      "main_image": "images/parks-transfers/atlantis-aquaventure/01.jpg",
+      "image_alt": "Guests enjoying a water slide at Atlantis Aquaventure",
+      "pickup_information": "Transfers to and from your hotel or residence are not included.",
+      "highlights": "Day pass to Aquaventure Water park - largest water park in the Middle East & Europe.\nRecord-breaking waterslides at the all-new Trident Tower\nOver 30 Rides and Attractions - Enjoy over 22 fun-filled hectares of record braking fun for all ages.\nSplashers Kids' Play Area - A dream attraction for children for non-stop splashin' FUN.\nLost Chambers Aquarium with over 65,000 marine creatures\nInteractive, educational and entertaining Aquatheatre show",
+      "know_before_you_go": "Suitable for all ages. Participants under 12 years old must be accompanied by a paying adult (18 years and above). A maximum of 3 children under 12 years per adult is accepted. Select an adult ticket if you are 3 feet 11 inches (120 cm) or taller; otherwise, select a child ticket.\nLocker and towel rentals are available within the waterpark.\nVisitors are not allowed to bring food, beverages or glassware into the waterpark. Aquaventure Waterpark reserves the right to inspect all bags for any such items. Appropriate swimwear is required when using the facilities within Aquaventure and the beach thongs, transparent bathing suites, underwear, denims, very loose clothing such as abaya, dishdash or similar are not permitted in the water.\nRegular nappies/diapers are not allowed in any pool or attraction. Swim nappies / diapers are available in all gift shops.\nIf you are pregnant or has any severe medical conditions, you should carefully consider whether to participate.\nYou must be able to understand the safety instructions, which are conducted in English.\nGuests with Dolphin Bay and Sea Lion bookings made on the mentioned closure dates will receive an Aquaventure Waterpark voucher once guests checks-in for the activity. Guests may use this voucher to access the Aquaventure Waterpark on a different day within 1 month from the time it was issued.\nFor Aquaventure Super Pass, the tickets need to be redeemed at the Aquaventure first in order to get access for both areas. The guest then have to keep the wristband with them in order to gain entry to Lost Chambers should they decide to visit the Aquarium after enjoying the park.\nFor those who have booked Aquaventure Super Pass or Lost Chambers Pass, we recommend to visit the Aquarium in the morning between 10:00 AM – 01:00 PM to avoid inconvenience.\nOperating timings of Aquaventure Waterpark are from 10AM until 6PM\nPlease note that in high season such as school holidays, winter holidays or Easter holidays the queues to the rides might be long. Depending on availability the AquaXpress can be purchased at the entrance or at the guest service kiosk inside the park.",
+      "age_policy": "Suitable for all ages. Participants under 12 years old must be accompanied by a paying adult (18 years and above). A maximum of 3 children under 12 years per adult is accepted. Select an adult ticket if you are 3 feet 11 inches (120 cm) or taller; otherwise, select a child ticket.",
+      "cancellation_policy": "Tickets for Atlantis Aquaventure cannot be cancelled, transferred or refunded",
+      "additional_notes": "Historical entertainment listed in the screenshot (confirm current availability):\nLive DJ sets\nFun challenges & exciting prizes\nUnmatched sunset vibes across the waterpark\nIncluded according to the package selected:\nUnlimited access to all rides and attractions\nUnlimited access to Aquaventure Private Beach\nSame day admission to Aquaventure\nThe Lost Chamber Aquarium (Available only for the Super Pass)\nWhat's not included:\nLocker Rentals and Towels\nSouvenir photos\nFood and beverages\nTransfers\nOpening times:\nMonday to Sunday: 10:00 - 18:00\nHistorical entertainment qualification: a retrieved official-page snapshot limits the DJ/challenge evening offer to Saturdays through 27 September 2025. Confirm any current entertainment before booking.\nVenue map: https://maps.google.com/?daddr=25.1339856,55.1217917\nThis product is not available for online bookings. Request a callback or WhatsApp +971 42748803 to book.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 2,
+      "youtube_url": null,
+      "features": [
+        {
+          "name": "Dress code Appropriate swimwear",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-dress-code-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-seasonality-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-family-friendly-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages No",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-f-b-icon.png",
+          "inclusion_status": "excluded"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/parks-transfers/atlantis-aquaventure/01.jpg",
+          "alt": "Guests enjoying a water slide at Atlantis Aquaventure",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw4e1ede2e/images/large/Atlantis_1-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/atlantis-aquaventure/02.jpg",
+          "alt": "Guests inside a water slide launch capsule",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw289828b1/images/large/Atlantis_2-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/atlantis-aquaventure/03.jpg",
+          "alt": "Children playing in the Aquaventure waterpark splash area",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwc415dec7/images/large/Atlantis_3-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/atlantis-aquaventure/04.jpg",
+          "alt": "Atlantis Aquaventure gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwfffdbd27/images/large/Atlantis_4-large.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/parks-transfers/atlantis-aquaventure/05.jpg",
+          "alt": "Atlantis Aquaventure gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw4ddad721/images/large/Atlantis_5-large.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/parks-transfers/atlantis-aquaventure/06.jpg",
+          "alt": "Atlantis Aquaventure gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw40f48885/images/large/Atlantis_6-large.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Aquaventure Day Pass",
+          "description": "Same-day park admission, rides and private-beach access according to the booked ticket. Final price requires confirmation.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Aquaventure Super Pass",
+          "description": "Park admission with The Lost Chamber Aquarium as specified in the source. Keep your wristband for aquarium access. Final price requires confirmation.",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/waterparks-and-theme-parks/aa-atlantis-aquaventure.html",
+        "screenshot": "image(20261102-202359).png",
+        "booking_mode": "callback",
+        "package_quotes": [],
+        "discrepancies": [
+          "The screenshot lists DJ sets, challenges and sunset entertainment without a visible validity date. Retrieved page text limits that promotion to 2025; it is not guaranteed as a current inclusion.",
+          "The callback headline PKR 27,700 does not identify Day Pass versus Super Pass or an adult tariff. No guessed package rate is seeded."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.1339856,55.1217917"
+          }
+        ],
+        "duration_origin": "Published About badge",
+        "displayed_starting_price": {
+          "amount": 27700,
+          "currency": "PKR",
+          "origin": "Supplied screenshot"
+        }
+      }
+    },
+    {
+      "slug": "img-worlds-of-adventure",
+      "category_slug": "waterparks-and-theme-parks",
+      "name": "IMG Worlds of Adventure",
+      "short_description": "Thrilling rides, numerous roller coasters, live shows and amazing attractions - all crammed into five action-packed zones.",
+      "about": "Thrilling rides, numerous roller coasters, live shows and amazing attractions - all crammed into five action-packed zones. Discover Marvel, explore the Lost Valley and Dinosaur Adventure, Cartoon Network, IMG Boulevard and The Haunted Hotel.\n\nThe newest addition to the awesome experiences is the Kids Zone ready to welcome the younger family members.",
+      "full_description": "IMG Worlds of Adventure is Dubai s first mega-themed entertainment destination promising visitors from around the world the excitement of five epic adventure zones in one location.\n\nTwo of the five zones represent renowned global brands Cartoon Network and Marvel, while The Haunted Hotel, IMG Boulevard and the Lost Valley – Dinosaur Adventure zones are original concepts created by the IMG Group. IMG Worlds of Adventure is the largest temperature-controlled indoor themed entertainment destination in the world, covering an area in excess of 1.5 million square feet.",
+      "location": "Dubai",
+      "duration": null,
+      "duration_unit": null,
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 28085,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/parks-transfers/img-worlds-of-adventure/01.jpg",
+      "main_image": "images/parks-transfers/img-worlds-of-adventure/01.jpg",
+      "image_alt": "Guests riding a dinosaur-themed roller coaster at IMG Worlds of Adventure",
+      "pickup_information": "Transfers to and from your hotel or residence are not included.",
+      "highlights": "Discover five epic adventure zones based on the park's top themes - Marvel, Cartoon Network, IMG Boulevard, The Lost Valley and Haunted Hotel\nMeet your favourite superheroes, Cartoon Network characters, and even dinosaurs, who have come to life at this exciting park\nExplore over 1.5 million square feet of theme park featuring a unique array of 22 adrenaline-filled rides, roller coasters and thrilling rides\nExplore themed lunches, indulge in some novelty shopping and discover the fascinating artwork at the shops within the world’s largest indoor theme park",
+      "know_before_you_go": "Ensure that you are carrying a valid ID of the members in your group if you select any reduced price tickets during checkout.\nChildren below 1.05 meters in height are eligible for free entry to the Park.\nOpening hours are subject to change. Closing times indicate the times queues close.\nAttraction queues will close at park closing time (not the ride) with the exception of the Haunted Hotel which has limited capacity and will close up to 2 hours before park closing time should the queue line reach its maximum capacity.\nHaunted Hotel is only open to guests aged 15 and older. Aged 15 to 18 years must present their ID card at the attraction entrance.",
+      "age_policy": "Children below 1.05 meters in height are eligible for free entry to the Park.\nHaunted Hotel is only open to guests aged 15 and older. Aged 15 to 18 years must present their ID card at the attraction entrance.",
+      "cancellation_policy": "Once purchased, tickets cannot be amended, cancelled or refunded.",
+      "additional_notes": "What's included:\nEntry ticket to the park\nFree entry for children under 105 cm\nAll rides and attractions\nFree parking\nWhat's not included:\nTransfers\nFood and drinks\nKids Zone access must be purchased separately at the park\nIron Man experience and arcade games\nRetail items (available to purchase)\nSouvenir photos (available to purchase)\nVenue map: https://maps.google.com/?daddr=25.074454,55.3052614",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 3,
+      "youtube_url": null,
+      "features": [
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-dress-code-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-seasonality-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-family-friendly-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages No",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-f-b-icon.png",
+          "inclusion_status": "excluded"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/parks-transfers/img-worlds-of-adventure/01.jpg",
+          "alt": "Guests riding a dinosaur-themed roller coaster at IMG Worlds of Adventure",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwe4a3566a/images/large/IMG-World-5-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/img-worlds-of-adventure/02.jpg",
+          "alt": "Visitors aboard a themed ride at IMG Worlds of Adventure",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwcf6708c0/images/large/IMG-Worlds-of-Adventure-1-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/img-worlds-of-adventure/03.jpg",
+          "alt": "Guests wearing 3D glasses during an indoor attraction",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9ac1b445/images/large/IMG-Worlds-of-Adventure-2-large.jpg",
+          "visible_in_screenshot": true
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "IMG - General Admission",
+          "description": "Entry to the park, rides and attractions with free parking. Kids Zone and other listed extras cost separately. PKR 28,085 per adult.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "IMG - General Admission",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult.",
+          "adult_price": 28085,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/waterparks-and-theme-parks/aa-img-worlds-of-adventure.html",
+        "screenshot": "image(20261102-202431).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "IMG - General Admission",
+            "amount": 28085,
+            "currency": "PKR",
+            "price_basis": "per_person"
+          }
+        ],
+        "discrepancies": [],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.074454,55.3052614"
+          }
+        ],
+        "duration_origin": "Not published",
+        "displayed_starting_price": {
+          "amount": 28085,
+          "currency": "PKR",
+          "origin": "Supplied screenshot"
+        }
+      }
+    },
+    {
+      "slug": "ski-dubai",
+      "category_slug": "waterparks-and-theme-parks",
+      "name": "Ski Dubai",
+      "short_description": "Why not hit the ski slopes, make a couple of snow angels and build a snowman in the middle of the desert? You can, because anything is possible when in the UAE!.",
+      "about": "Why not hit the ski slopes, make a couple of snow angels and build a snowman in the middle of the desert? You can, because anything is possible when in the UAE!",
+      "full_description": "Enjoy an indoor snow resort with skiing, snowboarding and snow play. Activities depend on the pass selected.",
+      "location": "Dubai",
+      "duration": 1,
+      "duration_unit": "days",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 19236,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/parks-transfers/ski-dubai/01.jpg",
+      "main_image": "images/parks-transfers/ski-dubai/01.jpg",
+      "image_alt": "Indoor ski slope and chairlifts at Ski Dubai",
+      "pickup_information": "Transfers to and from your hotel or residence are not included.",
+      "highlights": "Indoor snow activities\nSkiing and snowboarding\nChairlift and 40-minute penguin encounter where included in the selected pass",
+      "know_before_you_go": "Bring ID or a passport and sign the required safety waiver. An access-card deposit of AED 25 per guest is refundable. Under-13s must wear helmets. Changing a ski lesson or penguin encounter depends on availability and costs AED 50 per ticket; call 600 599905. Published hours differ between the page panels and can change on holidays; confirm before travel.",
+      "age_policy": "Under-twos cannot enter. Guests younger than 14 need supervision by someone aged at least 16.",
+      "cancellation_policy": "Cancel at least 48 hours before the activity for a full refund.",
+      "additional_notes": "Published opening times: The daily schedule lists Mon–Thu 10:00–23:00, Fri 10:00–00:00, weekends 09:00–00:00. Another panel gives weekday closing as midnight and last entry as 22:30.\nWhat's included:\nUnlimited snow fun activities and rides\nWhat's not included:\nTransfers\nFood and drinks\nSouvenirs\nVenue map: https://maps.google.com/?daddr=25.117204,55.1983112",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 4,
+      "youtube_url": null,
+      "features": [
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-dress-code-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-seasonality-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-family-friendly-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages Depending on package",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-f-b-icon.png",
+          "inclusion_status": "optional"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/parks-transfers/ski-dubai/01.jpg",
+          "alt": "Indoor ski slope and chairlifts at Ski Dubai",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw47a6754c/images/large/Ski_Dubai_1232x1232_1.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/ski-dubai/02.jpg",
+          "alt": "Snow-covered indoor village at Ski Dubai",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw43bc9a5a/images/large/Ski_Dubai_1232x1232_2.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/ski-dubai/03.jpg",
+          "alt": "Children enjoying a snow tubing activity",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwffd02f76/images/large/Ski_Dubai_1232x1232_3.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/ski-dubai/04.jpg",
+          "alt": "Ski Dubai gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw407f4e2e/images/large/Ski_Dubai_1232x1232_4.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Ski Dubai - 2 Hours Slope Pass",
+          "description": "PKR 19,236 per adult. Activities depend on this selected pass.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Ski Dubai - Snow Fun",
+          "description": "PKR 20,390 per adult. Activities depend on this selected pass. Not available for the selected passengers in the screenshot.",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": "Unavailable for displayed selection"
+        },
+        {
+          "name": "Ski Dubai - Snow Plus",
+          "description": "PKR 25,007 per adult. Activities depend on this selected pass. Not available for the selected passengers in the screenshot.",
+          "display_order": 3,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": "Unavailable for displayed selection"
+        },
+        {
+          "name": "Ski Dubai - Full Day Slope Pass",
+          "description": "PKR 28,831 per adult. Activities depend on this selected pass.",
+          "display_order": 4,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Ski Dubai - Snow Premium",
+          "description": "PKR 35,779 per adult. Activities depend on this selected pass.",
+          "display_order": 5,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "Ski Dubai - 2 Hours Slope Pass",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult.",
+          "adult_price": 19236,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Ski Dubai - Snow Fun",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult. Not available for the selected passengers in the screenshot.",
+          "adult_price": 20390,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Ski Dubai - Snow Plus",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult. Not available for the selected passengers in the screenshot.",
+          "adult_price": 25007,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Ski Dubai - Full Day Slope Pass",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult.",
+          "adult_price": 28831,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Ski Dubai - Snow Premium",
+          "vehicle_type": "shared",
+          "vehicle_label": "Park admission (no transfer included)",
+          "description": "Screenshot price per adult.",
+          "adult_price": 35779,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/waterparks-and-theme-parks/aa-ski-dubai.html",
+        "screenshot": "image(20261102-202459).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "Ski Dubai - 2 Hours Slope Pass",
+            "amount": 19236,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "listed"
+          },
+          {
+            "package_name": "Ski Dubai - Snow Fun",
+            "amount": 20390,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "unavailable_for_displayed_selection"
+          },
+          {
+            "package_name": "Ski Dubai - Snow Plus",
+            "amount": 25007,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "unavailable_for_displayed_selection"
+          },
+          {
+            "package_name": "Ski Dubai - Full Day Slope Pass",
+            "amount": 28831,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "listed"
+          },
+          {
+            "package_name": "Ski Dubai - Snow Premium",
+            "amount": 35779,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "availability_at_capture": "listed"
+          }
+        ],
+        "discrepancies": [
+          "The tour About badge says one day; the first Slope Pass allows two hours. Package duration must be respected.",
+          "Snow Fun and Snow Plus show an unavailable-for-selected-passengers message, not a universal sold-out statement.",
+          "The source lists conflicting opening hours in different panels. Both are retained in notes for confirmation.",
+          "Generic penguin/ride highlights are package dependent; they are not promises for every slope-only pass."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.117204,55.1983112"
+          }
+        ],
+        "supplementary_fields": [
+          "full_description",
+          "highlights",
+          "know_before_you_go",
+          "age_policy",
+          "cancellation_policy",
+          "opening_times"
+        ],
+        "supplementary_note": "Collapsed panels were verified on the official product page and concisely paraphrased.",
+        "duration_origin": "Published About badge",
+        "displayed_starting_price": {
+          "amount": 19236,
+          "currency": "PKR",
+          "origin": "Supplied screenshot"
+        }
+      }
+    },
+    {
+      "slug": "wild-wadi-waterpark",
+      "category_slug": "waterparks-and-theme-parks",
+      "name": "Wild Wadi Waterpark",
+      "short_description": "Wild Wadi is all about fun and making our guests’ day memorable.",
+      "about": "Wild Wadi is all about fun and making our guests’ day memorable.",
+      "full_description": "Located by the stunning Burj Al Arab, the Wild Wadi Waterpark is a fun-themed park, based on popular characters from Arabian folklore, Juha & Sinbad. The park is filled with 30+ rides and attractions and is the perfect family getaway! Up the excitement at the stormy Tantrum Alley and take an exhilarating plunge down 105-foot Jumeirah Sceirah. Float along lazily on Juha’s Journey, or take on the more thrilling rides. There is something for everyone here.\n\nYou can also browse for souvenirs or other articles in the shops on the premises of the Wild Wadi Water Park.",
+      "location": "Dubai",
+      "duration": 8,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "Arabic",
+        "English"
+      ],
+      "starting_price": 19929,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/parks-transfers/wild-wadi-waterpark/01.jpg",
+      "main_image": "images/parks-transfers/wild-wadi-waterpark/01.jpg",
+      "image_alt": "Visitors on a Wild Wadi water ride with Burj Al Arab beyond",
+      "pickup_information": "Transfers to and from your hotel or residence are not included.",
+      "highlights": "Heated/cooled wave pool\nMultiple water slides\nTwo artificial surfing machines\n18 m (59 ft) waterfall that goes off every ten minutes\nTwo gift shops\nThree restaurants\nTwo snack stands",
+      "know_before_you_go": "Appropriate swimwear MUST be worn at all times regardless of age. Fully body swim suits and long sleeved rash vests are acceptable on all rides. Management reserves the right to determine whether or not swimwear is appropriate\nWild Wad accepts no responsibility any loss or damage of any personal items.\nChildren under age 13 MUST be accompanied by an adult. Infants below two years are free of charge.\nGuests are not allowed to take pictures of any guests except of their own friends or family members.",
+      "age_policy": "Children under age 13 MUST be accompanied by an adult. Infants below two years are free of charge.",
+      "cancellation_policy": "These tickets cannot be cancelled. However, tickets will be ‘Open Dated‘ & valid for entry on any date until 8 August 2025",
+      "additional_notes": "What's included:\nAccess to Wild Wadi\nWhat's not included:\nTransfers\nFood and beverages\nHistorical source validity: the copied cancellation text ends ticket validity on 8 August 2025. This past date is preserved as source content and does not establish present-day validity.\nVenue map: https://maps.google.com/?daddr=25.1411914,55.1852468\nThis product is not available for online bookings. Request a callback or WhatsApp +971 42748803 to book.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 5,
+      "youtube_url": null,
+      "features": [
+        {
+          "name": "Dress code Appropriate swimwear",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-dress-code-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-seasonality-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-family-friendly-icon.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages No",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/parks-transfers/safari-f-b-icon.png",
+          "inclusion_status": "excluded"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/parks-transfers/wild-wadi-waterpark/01.jpg",
+          "alt": "Visitors on a Wild Wadi water ride with Burj Al Arab beyond",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwa38fef19/images/large/WildWadi_4-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/wild-wadi-waterpark/02.jpg",
+          "alt": "Guests riding a water slide at Wild Wadi",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw066f7121/images/large/WildWadi_1-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/wild-wadi-waterpark/03.jpg",
+          "alt": "Wild Wadi pools and water attractions",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw20ec6c8d/images/large/WildWadi_2-large.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/wild-wadi-waterpark/04.jpg",
+          "alt": "Wild Wadi Waterpark gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw7d309879/images/large/WildWadi_3-large.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/parks-transfers/wild-wadi-waterpark/05.jpg",
+          "alt": "Wild Wadi Waterpark gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwafbce6fb/images/large/WildWadi_5-large.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Wild Wadi Admission",
+          "description": "Access to Wild Wadi. Final ticket price and current validity require callback confirmation.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/waterparks-and-theme-parks/aa-wild-wadi.html",
+        "screenshot": "image(20261102-202537).png",
+        "booking_mode": "callback",
+        "package_quotes": [],
+        "discrepancies": [
+          "The source cancellation policy contains an expired 2025 ticket validity date. It is preserved, not silently changed to a new year. No selected adult ticket rate is published in the callback screenshot."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.1411914,55.1852468"
+          }
+        ],
+        "duration_origin": "Published About badge",
+        "displayed_starting_price": {
+          "amount": 19929,
+          "currency": "PKR",
+          "origin": "Supplied screenshot"
+        }
+      }
+    },
+    {
+      "slug": "private-transfers-to-muscat",
+      "category_slug": "transfers",
+      "name": "Private transfers to Muscat",
+      "short_description": "Pre-book your journey to Muscat with our one-way private transfers from Dubai and Abu Dhabi.",
+      "about": "Pre-book your journey to Muscat with our one-way private transfers from Dubai and Abu Dhabi.",
+      "full_description": "Our one-way private transfers from Dubai and Abu Dhabi will take you to any hotel or the airport in Muscat in a vehicle of your choice. Choose from the following options for your journey:\n\n4x4 Lexus:\n\nCan host 3 adults // 2 adults + 1 infant or child // 1 adult + 2 infants\n\nCan accommodate 2 large suitcases and 2 pieces of hand luggage\n\nAED 4,595 per vehicle\n\nApprox. 8 hours travel time\n\nGMC:\n\nCan host 6 adults // 5 adults + 1 infant or child // 4 adults + 2 infants or children // 3 adults + 3 infants or children // 2 adults + 4 infants or children\n\nCan accommodate 6 large suitcases and 4 pieces of hand luggage\n\nAED 8,535 per vehicle\n\nApprox. 8 hours travel time\n\nMercedes Viano:\n\nCan host 4 adults // 3 adults + 1 infant or child // 2 adults + 2 infants or children // 1 adult + 3 infants or children\n\nCan accommodate 3 large suitcases and 3 pieces of hand luggage\n\nAED 8,535 per vehicle\n\nApprox. 8 hours travel time\n\n45-seater coach:\n\nCan host up to 45 passengers, with luggage storage for each passenger\n\nAED 13,125 per vehicle\n\nApprox. 12 hours travel time",
+      "location": "Muscat",
+      "duration": 8,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [],
+      "starting_price": 353560,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/parks-transfers/private-transfers-to-muscat/01.jpg",
+      "main_image": "images/parks-transfers/private-transfers-to-muscat/01.jpg",
+      "image_alt": "Rocky mountains overlooking the blue waters near Muscat",
+      "pickup_information": "One-way private transfer from Dubai or Abu Dhabi to any hotel or the airport in Muscat.",
+      "highlights": "Private one-way transfer\nDubai and Abu Dhabi departures\nMuscat hotel or airport destination\n4x4 Lexus, GMC, Mercedes Viano or 45-seater coach",
+      "know_before_you_go": null,
+      "age_policy": null,
+      "cancellation_policy": null,
+      "additional_notes": "Prices are per vehicle, not per person.\nApproximate journey: 8 hours for Lexus, GMC and Mercedes Viano; 12 hours for the 45-seater coach.\nThis product is not available for online bookings. Request a callback or WhatsApp +971 42748803 to book.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": null,
+      "promotion_label": null,
+      "display_order": 1,
+      "youtube_url": null,
+      "features": [],
+      "images": [
+        {
+          "path": "images/parks-transfers/private-transfers-to-muscat/01.jpg",
+          "alt": "Rocky mountains overlooking the blue waters near Muscat",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw09fdf445/images/arabian-adventures/hi-res/countries/oman/oman-mountains-by-the-sea-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/private-transfers-to-muscat/02.jpg",
+          "alt": "Muscat coastline with mountains and waterfront road",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbd8624a2/images/arabian-adventures/hi-res/countries/oman/wide-view-of-muscat-fort-by-the-sea-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/private-transfers-to-muscat/03.jpg",
+          "alt": "Blue water beside the rugged Muscat coastline",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw651847d0/images/arabian-adventures/hi-res/countries/oman/muscat-corniche-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/private-transfers-to-muscat/04.jpg",
+          "alt": "Private transfers to Muscat gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwe4ea37fc/images/arabian-adventures/hi-res/countries/oman/oman-mountains-1920x1080.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "4x4 Lexus",
+          "description": "One-way private transfer from Dubai or Abu Dhabi to a Muscat hotel or airport.\nCan host 3 adults // 2 adults + 1 infant or child // 1 adult + 2 infants\nCan accommodate 2 large suitcases and 2 pieces of hand luggage\nAED 4,595 per vehicle\nApprox. 8 hours travel time",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "GMC",
+          "description": "One-way private transfer from Dubai or Abu Dhabi to a Muscat hotel or airport.\nCan host 6 adults // 5 adults + 1 infant or child // 4 adults + 2 infants or children // 3 adults + 3 infants or children // 2 adults + 4 infants or children\nCan accommodate 6 large suitcases and 4 pieces of hand luggage\nAED 8,535 per vehicle\nApprox. 8 hours travel time",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Mercedes Viano",
+          "description": "One-way private transfer from Dubai or Abu Dhabi to a Muscat hotel or airport.\nCan host 4 adults // 3 adults + 1 infant or child // 2 adults + 2 infants or children // 1 adult + 3 infants or children\nCan accommodate 3 large suitcases and 3 pieces of hand luggage\nAED 8,535 per vehicle\nApprox. 8 hours travel time",
+          "display_order": 3,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "45-seater coach",
+          "description": "One-way private transfer from Dubai or Abu Dhabi to a Muscat hotel or airport.\nCan host up to 45 passengers, with luggage storage for each passenger\nAED 13,125 per vehicle\nApprox. 12 hours travel time",
+          "display_order": 4,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/transfers/muscat-transfer-services.html",
+        "screenshot": "image(20261102-202837).png",
+        "booking_mode": "callback",
+        "package_quotes": [
+          {
+            "package_name": "4x4 Lexus",
+            "amount": 4595,
+            "currency": "AED",
+            "price_basis": "per_vehicle",
+            "maximum_passengers": 3,
+            "duration": 8,
+            "duration_unit": "hours",
+            "luggage_and_seating": "Can host 3 adults // 2 adults + 1 infant or child // 1 adult + 2 infants\nCan accommodate 2 large suitcases and 2 pieces of hand luggage"
+          },
+          {
+            "package_name": "GMC",
+            "amount": 8535,
+            "currency": "AED",
+            "price_basis": "per_vehicle",
+            "maximum_passengers": 6,
+            "duration": 8,
+            "duration_unit": "hours",
+            "luggage_and_seating": "Can host 6 adults // 5 adults + 1 infant or child // 4 adults + 2 infants or children // 3 adults + 3 infants or children // 2 adults + 4 infants or children\nCan accommodate 6 large suitcases and 4 pieces of hand luggage"
+          },
+          {
+            "package_name": "Mercedes Viano",
+            "amount": 8535,
+            "currency": "AED",
+            "price_basis": "per_vehicle",
+            "maximum_passengers": 4,
+            "duration": 8,
+            "duration_unit": "hours",
+            "luggage_and_seating": "Can host 4 adults // 3 adults + 1 infant or child // 2 adults + 2 infants or children // 1 adult + 3 infants or children\nCan accommodate 3 large suitcases and 3 pieces of hand luggage"
+          },
+          {
+            "package_name": "45-seater coach",
+            "amount": 13125,
+            "currency": "AED",
+            "price_basis": "per_vehicle",
+            "maximum_passengers": 45,
+            "duration": 12,
+            "duration_unit": "hours",
+            "luggage_and_seating": "Can host up to 45 passengers, with luggage storage for each passenger\nAED 13,125 per vehicle"
+          }
+        ],
+        "discrepancies": [
+          "The supplied tour_prices table only has per-person adult/child/infant columns. Vehicle quotes and capacities are stored in the database through package descriptions and the full description, with structured metadata in JSON. They are not mislabelled as adult_price."
+        ],
+        "links": [],
+        "duration_origin": "Approximate smaller-vehicle travel time in Full description; coach is 12 hours",
+        "headline_price_basis": "per_vehicle",
+        "displayed_starting_price": {
+          "amount": 353560,
+          "currency": "PKR",
+          "origin": "Supplied screenshot"
+        }
+      }
+    },
+    {
+      "slug": "dubai-airport-transfers",
+      "category_slug": "transfers",
+      "name": "Dubai Airport Transfers",
+      "short_description": "Schedule your one-way private transfer to or from any terminal at Dubai International airport.",
+      "about": "Schedule your one-way private transfer to or from any terminal at Dubai International airport. Travel in comfort and enjoy your pre-booked pick up or drop-off between the airport and any hotel or residence in Dubai for the fixed price of AED 125.",
+      "full_description": "Enjoy convenient transfers in Dubai. Our pre-booked service includes pick up or drop-off between any terminal at Dubai International airport and any hotel or residential address across the city.\n\nOur airport transfers are reserved just for you and your group, so you don’t need to share with any other passengers. The service is also door-to-door with a fixed price, making your journey easy and stress-free.\n\nTo request this service, please enter your details and a member of our team will be in touch with you to confirm your booking.\n\nPlease note, this service is only available in Dubai. Pick up and drop-offs in other emirates are not available.",
+      "location": "Dubai",
+      "duration": null,
+      "duration_unit": null,
+      "experience_time": null,
+      "languages": [],
+      "starting_price": 9618,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/parks-transfers/dubai-airport-transfers/01.jpg",
+      "main_image": "images/parks-transfers/dubai-airport-transfers/01.jpg",
+      "image_alt": "Passengers welcomed beside an airport transfer van",
+      "pickup_information": "Door-to-door transfer between DXB Terminals 1, 2 or 3 and Dubai city hotels/residences. Book at least 24 hours in advance; maximum 4 passengers.",
+      "highlights": "Door-to-door service\nPrivate vehicle for up to 4 passengers\nDXB terminals 1, 2 and 3\nVIP arrival support at Terminal 3",
+      "know_before_you_go": "Valid for Dubai city locations only\nMaximum 4 passengers per vehicle\nLuggage allowance: up to 3 large suitcases + 3 hand luggage per vehicle\nBookings must be made at least 24 hours in advance\nBaby car seats are available on request\nTransfers valid to/from DXB airport terminals 1, 2, and 3\nIf you’re arriving at Dubai International Terminal 3, you’ll need to wait for your assigned vehicle at the Arabian Adventures desk at the Emirates Hotel Lounge located in the arrivals hall. A member of our team will have a name board ready to welcome you after you exit the baggage claim area and be available to assist you\nIf you’re arriving at Terminals 1 or 2, your driver will meet you at the arrivals hall and assist you to your assigned vehicle\nFor arrival assistance, please contact our airport team on 050 456 6716",
+      "age_policy": null,
+      "cancellation_policy": "Non‑refundable within 24 hours of pickup",
+      "additional_notes": "What's included:\nDoor-to-door service\nPrivate vehicle for up to 4 passengers\nVIP arrival support at DXB Terminal 3\nTrusted Arabian Adventures drivers and assistants\nFixed price AED 125 per vehicle, not per adult.\nVIP arrival support is specified for DXB Terminal 3; Terminal 1/2 meeting arrangements differ as described above.\nThis product is not available for online bookings. Request a callback or WhatsApp +971 42748803 to book.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": null,
+      "promotion_label": null,
+      "display_order": 2,
+      "youtube_url": null,
+      "features": [],
+      "images": [
+        {
+          "path": "images/parks-transfers/dubai-airport-transfers/01.jpg",
+          "alt": "Passengers welcomed beside an airport transfer van",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9310c986/images/arabian-adventures/hi-res/arabian-adventures-cars/arabian-adventures-representative-helping-passengers-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/dubai-airport-transfers/02.jpg",
+          "alt": "Guests with a private transfer vehicle",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw0299bc00/images/arabian-adventures/hi-res/arabian-adventures-cars/arabian-adventure-representative-with-family-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/parks-transfers/dubai-airport-transfers/03.jpg",
+          "alt": "Family seated inside a private transfer vehicle",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2af0635f/images/arabian-adventures/hi-res/arabian-adventures-cars/family-entering-a-car-1920x1080.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "One-way Private Dubai Airport Transfer",
+          "description": "AED 125 per private vehicle, one way, for up to 4 passengers. Dubai city addresses and DXB Terminals 1, 2 or 3 only. Up to 3 large suitcases and 3 pieces of hand luggage.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/transfers/dubai-airport-transfers.html",
+        "screenshot": "image(20261102-203218).png",
+        "booking_mode": "callback",
+        "package_quotes": [
+          {
+            "package_name": "One-way Private Dubai Airport Transfer",
+            "amount": 125,
+            "currency": "AED",
+            "price_basis": "per_vehicle",
+            "maximum_passengers": 4,
+            "large_suitcases": 3,
+            "hand_luggage": 3
+          }
+        ],
+        "discrepancies": [
+          "No journey duration, language badge or per-adult tariff is provided. These are not invented. The private vehicle quote is retained in its package description."
+        ],
+        "links": [],
+        "duration_origin": "Not published",
+        "headline_price_basis": "per_vehicle",
+        "displayed_starting_price": {
+          "amount": 9618,
+          "currency": "PKR",
+          "origin": "Supplied screenshot"
+        }
+      }
+    }
+  ]
+}

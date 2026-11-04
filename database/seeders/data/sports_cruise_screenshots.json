@@ -1,0 +1,1869 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "slug": "sports-events",
+      "name": "Sports Events",
+      "description": "Golf, rugby and motorsport events and experiences in Dubai and Abu Dhabi.",
+      "display_order": 3,
+      "image": "images/sports-cruises/dp-world-tour-championship/01.jpg"
+    },
+    {
+      "slug": "cruise-and-boat-tours",
+      "name": "Cruise and Boat Tours",
+      "description": "Yacht, dhow, speedboat and Abra sightseeing cruises in Dubai.",
+      "display_order": 5,
+      "image": "images/sports-cruises/luxury-cruise/01.jpg"
+    }
+  ],
+  "subcategories": [],
+  "tours": [
+    {
+      "slug": "dp-world-tour-championship",
+      "category_slug": "sports-events",
+      "name": "DP World Tour Championship",
+      "short_description": "Dubai calls for the world's best golfers at this iconic, exhilarating golf tournament.",
+      "about": "Dubai calls for the world's best golfers at this iconic, exhilarating golf tournament. A standout event in the city's sporting calendar, the DP World Tour Championship, taking place from November 12 to 15, 2026, marks the end of the season and the conclusion to the Race to Dubai, with an elite field of golfers competing for the famous Harry Vardon Trophy at the beautiful Jumeirah Golf Estates.",
+      "full_description": "Ticket and hotel packages\n\nPackage 1: General admission package\n\n5-night stay for two people at a 3-star Dubai hotel on double occupancy basis\n\nCheck-in: 11th November; check-out: 16th November\n\nDaily breakfast at hotel\n\nGeneral Admission 1-Day ticket for the deciding day’s play (Sunday 15th)\n\nAccess to the Championship Village\n\nAll taxes and service fees\n\nPrice starting from AED 1,300 per person\n\nPackage 2: General admission+ package\n\n5-night stay for two people at a 4-star hotel in Dubai on double occupancy basis\n\nCheck-in: 11th November; check-out: 16th November\n\nDaily breakfast at hotel\n\nTicket+ 1-Day ticket for the deciding day’s play (Sunday 15th)\n\nGuaranteed access to the Greatest Bar on Earth\n\nPrime views of the 17th hole and 18th hole tee box and fairway\n\nPriority access to dedicated food and beverage counters\n\nAll taxes and service fees\n\nPrice starting from AED 1,550 per person\n\nPackage 3: Earth Lounge package\n\nEarth Lounge 1-Day ticket for the deciding day’s play (Sunday 15th)\n\nAccess to a prime positioned balcony overlooking the closing stages of play\n\nBreakfast, lunch options and afternoon snacks\n\nFree flowing beverages throughout the afternoon\n\nComplimentary on-site parking with shuttle service to and from the Earth Lounge\n\nAll taxes and service fees\n\nPrice starting from AED 4,990 per person\n\nPackage 4: Championship Chalet package\n\n5-night stay for two people at a 4-star hotel in Dubai on double occupancy basis\n\nCheck-in: 11th November; check-out: 16th November\n\nDaily breakfast at hotel\n\nChampionship Chalet 1-Day ticket for the deciding day’s play (Sunday 15th)\n\nAccess to a spacious air-conditioned chalet throughout Sunday\n\nExclusive access to a viewing platform at the 1st tee\n\nAccess to live cooking stations, with breakfast, lunch and afternoon tea also served\n\nFree flowing beverages\n\nAccess to a prime positioned balcony overlooking the 18th green\n\nComplimentary Wi-Fi\n\nComplimentary on-site parking with shuttle service to and from the Championship Chalet\n\nAll taxes and service fees\n\nPrice starting from AED 6,300 per person",
+      "location": "Dubai",
+      "duration": 4,
+      "duration_unit": "days",
+      "experience_time": null,
+      "languages": [],
+      "starting_price": 100028,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/dp-world-tour-championship/01.jpg",
+      "main_image": "images/sports-cruises/dp-world-tour-championship/01.jpg",
+      "image_alt": "Golfer playing towards the DP World Tour Championship hospitality building",
+      "pickup_information": null,
+      "highlights": "Package 1: General admission package\nPackage 2: General admission+ package\nPackage 3: Earth Lounge package\nPackage 4: Championship Chalet package",
+      "know_before_you_go": "Tickets are free for Thursday when you pre-register\nTickets for children aged 17 and under are free when pre-registered\nThis experience is accessible for people of determination\nTravel insurance is recommended for visitors from outside of the UAE\nDP World Tour Terms & Conditions (Opens an external website in a new tab)",
+      "age_policy": "Guests of all ages are welcome",
+      "cancellation_policy": "Bookings are non-cancellable, non-refundable, and non-amendable once confirmed\nIf the event is cancelled or postponed, we will work closely with our suppliers and event partners to explore the best available options and communicate these to customers as they become available\nCustomers are advised to refer to the relevant event organiser's terms & conditions (Opens an external website in a new tab) for specific policies relating to event cancellations, postponements, refunds, and ticket validity",
+      "additional_notes": "Event dates: 2026-11-12 to 2026-11-15. Package nights and ticket days are stated individually in each package.\nOnline booking unavailable on the supplied page. Request a callback or email sports@arabian-adventures.com.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": null,
+      "promotion_label": null,
+      "display_order": 1,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/dp-world-tour-championship/01.jpg",
+          "alt": "Golfer playing towards the DP World Tour Championship hospitality building",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw0def6944/images/arabian-adventures/hi-res/sports-events/a-golfer-at-dp-world-championship-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/dp-world-tour-championship/02.jpg",
+          "alt": "Crowds beside the Race Ends Here stage at the DP World Tour Championship",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd3024f58/images/arabian-adventures/hi-res/sports-events/fans-at-dp-world-championship-tour-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/dp-world-tour-championship/03.jpg",
+          "alt": "Spectators watching golf beside the DP World Tour hospitality building",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw4a8432fb/images/arabian-adventures/hi-res/sports-events/fans-on-a-golf-course-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/dp-world-tour-championship/04.jpg",
+          "alt": "DP World Tour Championship gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw94774072/images/arabian-adventures/hi-res/sports-events/fans-on-a-golf-course-by-a-lake-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/dp-world-tour-championship/05.jpg",
+          "alt": "DP World Tour Championship gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwdfa8e13a/images/arabian-adventures/hi-res/sports-events/seating-zone-by-the-lake-1920x1080.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "features": [],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "General admission package",
+          "description": "5-night stay for two people at a 3-star Dubai hotel on double occupancy basis\nCheck-in: 11th November; check-out: 16th November\nDaily breakfast at hotel\nGeneral Admission 1-Day ticket for the deciding day’s play (Sunday 15th)\nAccess to the Championship Village\nAll taxes and service fees\nPrice starting from AED 1,300 per person",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "General admission+ package",
+          "description": "5-night stay for two people at a 4-star hotel in Dubai on double occupancy basis\nCheck-in: 11th November; check-out: 16th November\nDaily breakfast at hotel\nTicket+ 1-Day ticket for the deciding day’s play (Sunday 15th)\nGuaranteed access to the Greatest Bar on Earth\nPrime views of the 17th hole and 18th hole tee box and fairway\nPriority access to dedicated food and beverage counters\nAll taxes and service fees\nPrice starting from AED 1,550 per person",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Earth Lounge package",
+          "description": "Earth Lounge 1-Day ticket for the deciding day’s play (Sunday 15th)\nAccess to a prime positioned balcony overlooking the closing stages of play\nBreakfast, lunch options and afternoon snacks\nFree flowing beverages throughout the afternoon\nComplimentary on-site parking with shuttle service to and from the Earth Lounge\nAll taxes and service fees\nPrice starting from AED 4,990 per person",
+          "display_order": 3,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Championship Chalet package",
+          "description": "5-night stay for two people at a 4-star hotel in Dubai on double occupancy basis\nCheck-in: 11th November; check-out: 16th November\nDaily breakfast at hotel\nChampionship Chalet 1-Day ticket for the deciding day’s play (Sunday 15th)\nAccess to a spacious air-conditioned chalet throughout Sunday\nExclusive access to a viewing platform at the 1st tee\nAccess to live cooking stations, with breakfast, lunch and afternoon tea also served\nFree flowing beverages\nAccess to a prime positioned balcony overlooking the 18th green\nComplimentary Wi-Fi\nComplimentary on-site parking with shuttle service to and from the Championship Chalet\nAll taxes and service fees\nPrice starting from AED 6,300 per person",
+          "display_order": 4,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "General admission package",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 1300,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "General admission+ package",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 1550,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Earth Lounge package",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 4990,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Championship Chalet package",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 6300,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/sports-events/dp-world-tour-championship.html",
+        "screenshot": "image(20261102-201547).png",
+        "booking_mode": "callback",
+        "package_quotes": [
+          {
+            "package_name": "General admission package",
+            "amount": 1300,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "General admission+ package",
+            "amount": 1550,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "Earth Lounge package",
+            "amount": 4990,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "Championship Chalet package",
+            "amount": 6300,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          }
+        ],
+        "discrepancies": [
+          "Free preregistered child event admission does not establish a free hotel package or a zero child tariff."
+        ],
+        "links": [
+          {
+            "text": "DP World Tour Terms & Conditions (Opens an external website in a new tab)",
+            "url": "https://www.europeantour.com/dpworld-tour/news/articles/detail/ticket-terms-and-conditions/"
+          },
+          {
+            "text": "terms & conditions (Opens an external website in a new tab)",
+            "url": "https://www.europeantour.com/dpworld-tour/news/articles/detail/ticket-terms-and-conditions/"
+          }
+        ],
+        "event_dates": {
+          "start": "2026-11-12",
+          "end": "2026-11-15"
+        },
+        "duration_origin": "Inclusive span of explicitly published event dates, not the length of every hotel/ticket package.",
+        "visible_sections": {
+          "Know before you go": [
+            "Tickets are free for Thursday when you pre-register",
+            "Tickets for children aged 17 and under are free when pre-registered",
+            "This experience is accessible for people of determination",
+            "Travel insurance is recommended for visitors from outside of the UAE",
+            "DP World Tour Terms & Conditions (Opens an external website in a new tab)"
+          ],
+          "Age policy": [
+            "Guests of all ages are welcome"
+          ],
+          "Cancellation policy": [
+            "Bookings are non-cancellable, non-refundable, and non-amendable once confirmed",
+            "If the event is cancelled or postponed, we will work closely with our suppliers and event partners to explore the best available options and communicate these to customers as they become available",
+            "Customers are advised to refer to the relevant event organiser's terms & conditions (Opens an external website in a new tab) for specific policies relating to event cancellations, postponements, refunds, and ticket validity"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets",
+      "category_slug": "sports-events",
+      "name": "Formula 1® Etihad Airways Abu Dhabi Grand Prix 2026 Tickets",
+      "short_description": "teamLab Phenomena Abu Dhabi\n\nFerrari World Yas Island\n\nSeaWorld Yas Island\n\nWarner Bros.",
+      "about": "teamLab Phenomena Abu Dhabi\n\nFerrari World Yas Island\n\nSeaWorld Yas Island\n\nWarner Bros. World Yas Island\n\nYas Waterworld Yas Island",
+      "full_description": "Ticket options\n\nWest Grandstand\n\nThe West Grandstand offers prime viewing access to the circuit's longest straight, with cars surging past at incredible speeds before braking sharply for turns 6 and 7. The seat is perfect for fans looking to feel the pace of racing at full throttle, experiencing the epic power of the cars battling for victory. Between track sessions, you can step away from your seat and explore a world of F1 fandom across the circuit's Oasis areas and official F1 Fanzone\n\nWest Grandstand 4-day ticket\n\nAccess to the F1 Fanzone\n\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\n\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\n\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\n\nPrice: AED 3,894 per person\n\nWest Club Grandstand\n\nWest Club Grandstand pairs high-speed racing with comfortable air-conditioned lounges to create a delightfully balanced fan experience. From here, you can feel every pulse of the battle on track while enjoying a la carte dining and paid bar in the lounge area. Tickets for the West Club also include unlimited access to the F1 Fanzone and Oasis areas, as well as the after-race concerts.\n\nWest Club Grandstand 4-day ticket\n\nExclusive access to air-conditioned lounge with à la carte dining and paid bar\n\nAccess to the F1 Fanzone\n\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\n\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\n\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\n\nPrice: AED 4,804 per person\n\nMain Grandstand\n\nThe Main Grandstand offers front-row access to the biggest moments of the Abu Dhabi race weekend. From lights out to the chequered flag, here you will have the best view of the starting grid, pit stop action, finish line drama and everything in between. Away from the track, you can enjoy access to the F1 Fanzone throughout the weekend.\n\nMain Grandstand 4-day ticket\n\nAccess to the F1 Fanzone\n\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\n\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\n\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\n\nPrice: AED 5,592 per person\n\nNorth Yas Suite Premium\n\nThe North Yas Suite Premium is the home of excitement, luxury and comfort in equal measure. Overlooking turn 5, the suite offers balcony views over the circuit's tightest hairpin, so you can admire the technical abilities of the world's best drivers from a comfortable and convenient vantage point. There is also a premium bar serving drinks before, during and after the race, with dining options also available throughout the day.\n\nNorth Yas Suite Premium 4-day ticket\n\nAccess to a plush indoor lounge with a balcony overlooking turn 5\n\nPremium dining with soft drinks and a paid bar\n\nAccess to the F1 Fanzone\n\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\n\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\n\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\n\nPrice: AED 6,872 per person",
+      "location": "Abu Dhabi",
+      "duration": 4,
+      "duration_unit": "days",
+      "experience_time": null,
+      "languages": [],
+      "starting_price": 299622,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets/01.jpg",
+      "main_image": "images/sports-cruises/formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets/01.jpg",
+      "image_alt": "Spectators watching Formula 1 cars at Yas Marina Circuit",
+      "pickup_information": null,
+      "highlights": "West Grandstand\nWest Club Grandstand\nMain Grandstand\nNorth Yas Suite Premium",
+      "know_before_you_go": "We highly recommend over-ear headphones for any young racing fans attending the event",
+      "age_policy": "Guests of all ages are welcome",
+      "cancellation_policy": "Bookings are non-cancellable, non-refundable, and non-amendable once confirmed\nIf the event is cancelled or postponed, we will work closely with our suppliers and event partners to explore the best available options and communicate these to customers as they become available\nCustomers are advised to refer to the relevant event organiser's terms & conditions (Opens an external website in a new tab) for specific policies relating to event cancellations, postponements, refunds, and ticket validity\nTerms and Conditions | Formula 1® Etihad Airways Abu Dhabi Grand Prix 2026",
+      "additional_notes": "Event dates: 2026-12-03 to 2026-12-06. Package nights and ticket days are stated individually in each package.\nVenue map: https://maps.google.com/?daddr=24.476779,54.606315\nFood & Beverages Depending on ticket option: Availability does not mean included catering; use the selected package inclusions.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Abu Dhabi",
+      "promotion_label": null,
+      "display_order": 2,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets/01.jpg",
+          "alt": "Spectators watching Formula 1 cars at Yas Marina Circuit",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6215fedc/images/arabian-adventures/hi-res/sports-events/fans-watching-racing-track-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets/02.jpg",
+          "alt": "Live concert stage at the Abu Dhabi Grand Prix",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw16ecad4a/images/arabian-adventures/hi-res/sports-events/priceless-plate-event-on-stage-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets/03.jpg",
+          "alt": "Yas Marina Circuit illuminated at night with fireworks",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwfe18c571/images/arabian-adventures/hi-res/sports-events/aerial-view-of-etihad-arena-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets/04.jpg",
+          "alt": "Formula 1® Etihad Airways Abu Dhabi Grand Prix 2026 Tickets gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw0ea50463/images/arabian-adventures/hi-res/sports-events/fireworks-at-race-track-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/formula-1-etihad-airways-abu-dhabi-grand-prix-2026-tickets/05.jpg",
+          "alt": "Formula 1® Etihad Airways Abu Dhabi Grand Prix 2026 Tickets gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw7633d542/images/arabian-adventures/hi-res/sports-events/blue-race-car-on-track-1920x1080.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "features": [
+        {
+          "name": "Event dates 3-6th December 2026",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-seasonality-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-dress-code-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-family-friendly-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Food & Beverages Depending on ticket option",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-f-b-icon.png",
+          "inclusion_status": "optional",
+          "source_qualification": "Availability does not mean included catering; use the selected package inclusions."
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "West Grandstand",
+          "description": "The West Grandstand offers prime viewing access to the circuit's longest straight, with cars surging past at incredible speeds before braking sharply for turns 6 and 7. The seat is perfect for fans looking to feel the pace of racing at full throttle, experiencing the epic power of the cars battling for victory. Between track sessions, you can step away from your seat and explore a world of F1 fandom across the circuit's Oasis areas and official F1 Fanzone\nWest Grandstand 4-day ticket\nAccess to the F1 Fanzone\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\nPrice: AED 3,894 per person",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "West Club Grandstand",
+          "description": "West Club Grandstand pairs high-speed racing with comfortable air-conditioned lounges to create a delightfully balanced fan experience. From here, you can feel every pulse of the battle on track while enjoying a la carte dining and paid bar in the lounge area. Tickets for the West Club also include unlimited access to the F1 Fanzone and Oasis areas, as well as the after-race concerts.\nWest Club Grandstand 4-day ticket\nExclusive access to air-conditioned lounge with à la carte dining and paid bar\nAccess to the F1 Fanzone\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\nPrice: AED 4,804 per person",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Main Grandstand",
+          "description": "The Main Grandstand offers front-row access to the biggest moments of the Abu Dhabi race weekend. From lights out to the chequered flag, here you will have the best view of the starting grid, pit stop action, finish line drama and everything in between. Away from the track, you can enjoy access to the F1 Fanzone throughout the weekend.\nMain Grandstand 4-day ticket\nAccess to the F1 Fanzone\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\nPrice: AED 5,592 per person",
+          "display_order": 3,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "North Yas Suite Premium",
+          "description": "The North Yas Suite Premium is the home of excitement, luxury and comfort in equal measure. Overlooking turn 5, the suite offers balcony views over the circuit's tightest hairpin, so you can admire the technical abilities of the world's best drivers from a comfortable and convenient vantage point. There is also a premium bar serving drinks before, during and after the race, with dining options also available throughout the day.\nNorth Yas Suite Premium 4-day ticket\nAccess to a plush indoor lounge with a balcony overlooking turn 5\nPremium dining with soft drinks and a paid bar\nAccess to the F1 Fanzone\n1-day access to teamLab Phenomena Abu Dhabi or any one Yas Island Theme Park\nComplimentary entry to Louvre Abu Dhabi and Qasr Al Watan\nGeneral admission to all after-race concerts at Etihad Park on a first-come, first-served basis\nPrice: AED 6,872 per person",
+          "display_order": 4,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "West Grandstand",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 3894,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "West Grandstand",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot four-day ticket price per adult; retained separately from the published AED quote.",
+          "adult_price": 299622,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "West Club Grandstand",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 4804,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "West Club Grandstand",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot four-day ticket price per adult; retained separately from the published AED quote.",
+          "adult_price": 369642,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Main Grandstand",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 5592,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Main Grandstand",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot four-day ticket price per adult; retained separately from the published AED quote.",
+          "adult_price": 430274,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "North Yas Suite Premium",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 6872,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "North Yas Suite Premium",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot four-day ticket price per adult; retained separately from the published AED quote.",
+          "adult_price": 528763,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/sports-events/formula-1-abu-dhabi-grand-prix-tickets.html",
+        "screenshot": "image(20261102-201620).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "West Grandstand",
+            "amount": 3894,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "West Grandstand",
+            "amount": 299622,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot package selector"
+          },
+          {
+            "package_name": "West Club Grandstand",
+            "amount": 4804,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "West Club Grandstand",
+            "amount": 369642,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot package selector"
+          },
+          {
+            "package_name": "Main Grandstand",
+            "amount": 5592,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "Main Grandstand",
+            "amount": 430274,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot package selector"
+          },
+          {
+            "package_name": "North Yas Suite Premium",
+            "amount": 6872,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "North Yas Suite Premium",
+            "amount": 528763,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot package selector"
+          }
+        ],
+        "discrepancies": [],
+        "links": [
+          {
+            "text": "terms & conditions (Opens an external website in a new tab)",
+            "url": "https://www.abudhabigp.com/en/terms-and-conditions"
+          },
+          {
+            "text": "Terms and Conditions | Formula 1® Etihad Airways Abu Dhabi Grand Prix 2026",
+            "url": "https://www.abudhabigp.com/en/terms-and-conditions"
+          },
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=24.476779,54.606315"
+          }
+        ],
+        "event_dates": {
+          "start": "2026-12-03",
+          "end": "2026-12-06"
+        },
+        "duration_origin": "Inclusive span of explicitly published event dates, not the length of every hotel/ticket package.",
+        "visible_sections": {
+          "Know before you go": [
+            "We highly recommend over-ear headphones for any young racing fans attending the event"
+          ],
+          "Age policy": [
+            "Guests of all ages are welcome"
+          ],
+          "Cancellation policy": [
+            "Bookings are non-cancellable, non-refundable, and non-amendable once confirmed",
+            "If the event is cancelled or postponed, we will work closely with our suppliers and event partners to explore the best available options and communicate these to customers as they become available",
+            "Customers are advised to refer to the relevant event organiser's terms & conditions (Opens an external website in a new tab) for specific policies relating to event cancellations, postponements, refunds, and ticket validity",
+            "Terms and Conditions | Formula 1® Etihad Airways Abu Dhabi Grand Prix 2026"
+          ]
+        }
+      }
+    },
+    {
+      "slug": "emirates-dubai-7s",
+      "category_slug": "sports-events",
+      "name": "Emirates Dubai 7s",
+      "short_description": "The Emirates 7s is a true festival of sport, headlined by a fast-paced rugby tournament with teams from around the world competing for the top prize.",
+      "about": "The Emirates 7s is a true festival of sport, headlined by a fast-paced rugby tournament with teams from around the world competing for the top prize. Taking place from November 27 to 29, 2026 at The Sevens Stadium, this family-friendly event is complete with cricket, padel and netball competitions, games, gourmet food and beverage spots, and live music from top artists. Book your ticket and hotel package with Arabian Adventures and enjoy this incredible weekend of sport and entertainment.",
+      "full_description": "Ticket and hotel packages\n\nPackage 1: General admission package\n\n3-night stay for two people at a 3-star hotel in Dubai on double occupancy basis\n\nCheck-in: 27th November; check-out: 30th November\n\nDaily breakfast at hotel\n\nGeneral Admission - Weekend Pass\n\nAll taxes and service fees\n\nPrice starting from AED 1,500 per person\n\nPackage 2: Reserved seating package\n\n3-night stay for two people at a 4-star hotel in Dubai on double occupancy basis\n\nCheck-in: 27th November; check-out: 30th November\n\nDaily breakfast at hotel\n\nReserved Grandstand Seating - Standard - Weekend Pass. View venue map.\n\nUnlimited access to your Grandstand seat throughout the weekend\n\nAll taxes and service fees\n\nPrice starting from AED 1,800 per person\n\nPackage 3: Hospitality package\n\n3-night stay for two people at a 5-star hotel in Abu Dhabi on double occupancy basis\n\nCheck-in: 27th November; check-out: 30th November\n\nDaily breakfast at hotel\n\nSunroom Hospitality - Weekend Pass\n\nShaded premium seating in the North Grandstand of pitch 1. View venue map.\n\nAccess to VIP-only Grandstand bar\n\nAccess to the VIP hospitality area\n\nAll-day free flowing beverages and food\n\nAll taxes and service fees\n\nPrice starting from AED 5,300 per person",
+      "location": "Dubai",
+      "duration": 3,
+      "duration_unit": "days",
+      "experience_time": null,
+      "languages": [],
+      "starting_price": 115417,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/emirates-dubai-7s/01.jpg",
+      "main_image": "images/sports-cruises/emirates-dubai-7s/01.jpg",
+      "image_alt": "Rugby match and spectators at The Sevens Stadium",
+      "pickup_information": null,
+      "highlights": "Package 1: General admission package\nPackage 2: Reserved seating package\nPackage 3: Hospitality package",
+      "know_before_you_go": "All ticket types are available to people of determination\nTravel insurance is recommended for visitors from outside of the UAE\nEmirates Dubai 7s Terms & Conditions (Opens an external website in a new tab)",
+      "age_policy": "Guests of all ages are welcome",
+      "cancellation_policy": "Bookings are non-cancellable, non-refundable, and non-amendable once confirmed\nIf the event is cancelled or postponed, we will work closely with our suppliers and event partners to explore the best available options and communicate these to customers as they become available\nCustomers are advised to refer to the relevant event organiser's terms & conditions (Opens an external website in a new tab) for specific policies relating to event cancellations, postponements, refunds, and ticket validity",
+      "additional_notes": "Event dates: 2026-11-27 to 2026-11-29. Package nights and ticket days are stated individually in each package.\nOnline booking unavailable on the supplied page. Request a callback or email sports@arabian-adventures.com.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": null,
+      "promotion_label": null,
+      "display_order": 3,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/01.jpg",
+          "alt": "Rugby match and spectators at The Sevens Stadium",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6df15d12/images/arabian-adventures/hi-res/sports-events/people-at-a-rugby-game-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/02.jpg",
+          "alt": "Three rugby players holding a ball at the Emirates Dubai 7s",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwea10ed01/images/arabian-adventures/hi-res/sports-events/south-africa-rugby-team-members-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/03.jpg",
+          "alt": "Netball match beside a clubhouse at the Emirates Dubai 7s",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw994eb494/images/arabian-adventures/hi-res/sports-events/basket-ball-game-at-7-stadiums-1920x1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/04.jpg",
+          "alt": "Emirates Dubai 7s gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw880bc1a8/images/arabian-adventures/hi-res/sports-events/night-concert-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/05.jpg",
+          "alt": "Emirates Dubai 7s gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb74378fe/images/arabian-adventures/hi-res/sports-events/men-wearing-white-suites-and-pink-shirts-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/06.jpg",
+          "alt": "Emirates Dubai 7s gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9cfe08d7/images/arabian-adventures/hi-res/sports-events/basket-ball-game-at-sunset-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/07.jpg",
+          "alt": "Emirates Dubai 7s gallery photograph 7",
+          "caption": null,
+          "display_order": 7,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6c8f00e1/images/arabian-adventures/hi-res/sports-events/player-carrying-the-ball-forward-in-a-rugby-game-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/08.jpg",
+          "alt": "Emirates Dubai 7s gallery photograph 8",
+          "caption": null,
+          "display_order": 8,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw29b13501/images/arabian-adventures/hi-res/sports-events/players-playing-cricket-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/emirates-dubai-7s/09.jpg",
+          "alt": "Emirates Dubai 7s gallery photograph 9",
+          "caption": null,
+          "display_order": 9,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw632ef5ae/images/arabian-adventures/hi-res/sports-events/women-netball-team-1920x1080.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "features": [],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "General admission package",
+          "description": "3-night stay for two people at a 3-star hotel in Dubai on double occupancy basis\nCheck-in: 27th November; check-out: 30th November\nDaily breakfast at hotel\nGeneral Admission - Weekend Pass\nAll taxes and service fees\nPrice starting from AED 1,500 per person",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Reserved seating package",
+          "description": "3-night stay for two people at a 4-star hotel in Dubai on double occupancy basis\nCheck-in: 27th November; check-out: 30th November\nDaily breakfast at hotel\nReserved Grandstand Seating - Standard - Weekend Pass. View venue map.\nUnlimited access to your Grandstand seat throughout the weekend\nAll taxes and service fees\nPrice starting from AED 1,800 per person",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        },
+        {
+          "name": "Hospitality package",
+          "description": "3-night stay for two people at a 5-star hotel in Abu Dhabi on double occupancy basis\nCheck-in: 27th November; check-out: 30th November\nDaily breakfast at hotel\nSunroom Hospitality - Weekend Pass\nShaded premium seating in the North Grandstand of pitch 1. View venue map.\nAccess to VIP-only Grandstand bar\nAccess to the VIP hospitality area\nAll-day free flowing beverages and food\nAll taxes and service fees\nPrice starting from AED 5,300 per person",
+          "display_order": 3,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "General admission package",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 1500,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Reserved seating package",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 1800,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        },
+        {
+          "package_name": "Hospitality package",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Published package quote per person; hotel packages use double occupancy where stated.",
+          "adult_price": 5300,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "AED",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/sports-events/emirates-dubai-7s.html",
+        "screenshot": "image(20261102-201639).png",
+        "booking_mode": "callback",
+        "package_quotes": [
+          {
+            "package_name": "General admission package",
+            "amount": 1500,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "Reserved seating package",
+            "amount": 1800,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          },
+          {
+            "package_name": "Hospitality package",
+            "amount": 5300,
+            "currency": "AED",
+            "price_basis": "per_person",
+            "origin": "Visible package description"
+          }
+        ],
+        "discrepancies": [
+          "The Hospitality package explicitly says a 5-star hotel in Abu Dhabi although the event is in Dubai. This source detail is preserved."
+        ],
+        "links": [
+          {
+            "text": "View venue map. (Opens an external website in a new tab)",
+            "url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/vea61eba3b38e950244ef68b4e14316b5f231316a/images/arabian-adventures/hi-res/sports-events/reserved-seat-map.png"
+          },
+          {
+            "text": "View venue map. (Opens an external website in a new tab)",
+            "url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/vea61eba3b38e950244ef68b4e14316b5f231316a/images/arabian-adventures/hi-res/sports-events/reserved-seat-map.png"
+          },
+          {
+            "text": "Emirates Dubai 7s Terms & Conditions (Opens an external website in a new tab)",
+            "url": "https://emiratesdubai7s.com/covid-19-terms-conditions/"
+          },
+          {
+            "text": "terms & conditions (Opens an external website in a new tab)",
+            "url": "https://emiratesdubai7s.com/covid-19-terms-conditions/"
+          }
+        ],
+        "event_dates": {
+          "start": "2026-11-27",
+          "end": "2026-11-29"
+        },
+        "duration_origin": "Inclusive span of explicitly published event dates, not the length of every hotel/ticket package.",
+        "visible_sections": {
+          "Know before you go": [
+            "All ticket types are available to people of determination",
+            "Travel insurance is recommended for visitors from outside of the UAE",
+            "Emirates Dubai 7s Terms & Conditions (Opens an external website in a new tab)"
+          ],
+          "Age policy": [
+            "Guests of all ages are welcome"
+          ],
+          "Cancellation policy": [
+            "Bookings are non-cancellable, non-refundable, and non-amendable once confirmed",
+            "If the event is cancelled or postponed, we will work closely with our suppliers and event partners to explore the best available options and communicate these to customers as they become available",
+            "Customers are advised to refer to the relevant event organiser's terms & conditions (Opens an external website in a new tab) for specific policies relating to event cancellations, postponements, refunds, and ticket validity"
+          ]
+        },
+        "venue_map_path": "images/sports-cruises/emirates-dubai-7s/reserved-seat-map.png"
+      }
+    },
+    {
+      "slug": "topgolf",
+      "category_slug": "sports-events",
+      "name": "Topgolf",
+      "short_description": "Why not kick things up a notch with a friendly golfing competition? Grab your golf clubs and companions and get ready to make your gathering a real hole in one.\n\nKindly note this booking is for 1 hour of game time only.",
+      "about": "Why not kick things up a notch with a friendly golfing competition? Grab your golf clubs and companions and get ready to make your gathering a real hole in one.\n\nKindly note this booking is for 1 hour of game time only. This booking does not guarantee a bay reservation for a specific time. There is a possibility that visitors may have to wait for an available bay upon arrival. During peak hours, longer wait times are to be expected.",
+      "full_description": "Play interactive golf games overlooking Dubai Marina, with options for different abilities and a social setting for families and friends.",
+      "location": "Dubai",
+      "duration": 1,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 13850,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/topgolf/01.jpg",
+      "main_image": "images/sports-cruises/topgolf/01.jpg",
+      "image_alt": "Guests playing in Topgolf Dubai hitting bays",
+      "pickup_information": null,
+      "highlights": "Interactive golf games\nGuidance from venue staff\nFood and drinks available at an extra cost",
+      "know_before_you_go": "The voucher covers up to six players and lasts three months within its purchased day/time entitlement. Bring its QR code. Bays are assigned on arrival and depend on availability; waits can reach four hours. Wear casual clothing.",
+      "age_policy": null,
+      "cancellation_policy": "Purchased tickets cannot be refunded.",
+      "additional_notes": "What is included:\nFree club rental\nEach bay sits 1-6 guests\nUnlimited balls for one hour\nWhat is not included:\nPriority queue/ fast pass not included\nFood and beverages not included\nAED 20 per player, a game play card ‘Lifetime Membership’ activation fee not included\nAny gaming extension charges are not included\nVenue map: https://maps.google.com/?daddr=25.082185623005277,55.161223025467024\nFood & Beverages Yes: Availability does not mean included catering; use the selected package inclusions.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 4,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/topgolf/01.jpg",
+          "alt": "Guests playing in Topgolf Dubai hitting bays",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd6244cf7/images/large/large/img_1667799758_1667799913__211122_topgolf11",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/topgolf/02.png",
+          "alt": "Topgolf driving range with the Dubai skyline beyond",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw918d636a/images/large/large/priohub_25158",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/topgolf/03.jpg",
+          "alt": "Illuminated Topgolf Dubai bays in the evening",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw576e87fe/images/large/large/img_1667799758_1667799927__211122_topgolf2",
+          "visible_in_screenshot": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-dress-code-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-seasonality-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-family-friendly-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Food & Beverages Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-f-b-icon.png",
+          "inclusion_status": "optional",
+          "source_qualification": "Availability does not mean included catering; use the selected package inclusions."
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Topgolf Dubai 1-Hour Gameplay Voucher (Off-Peak/Weekday - Monday to Thursday) (10:00 AM - 17:00 PM)",
+          "description": "PKR 13,850 per voucher for up to six players. One hour of gameplay; no reserved bay or guaranteed start time.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/sports-events/aa-topgolf.html",
+        "screenshot": "image(20261102-201706).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "Topgolf Dubai 1-Hour Gameplay Voucher (Off-Peak/Weekday - Monday to Thursday) (10:00 AM - 17:00 PM)",
+            "amount": 13850,
+            "currency": "PKR",
+            "price_basis": "per_voucher",
+            "maximum_players": 6
+          }
+        ],
+        "discrepancies": [
+          "The gameplay voucher covers up to six players; the schema has only per-person price columns. Its price is preserved in the package and source quote, not mislabelled as adult_price."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.082185623005277,55.161223025467024"
+          }
+        ],
+        "supplementary_fields": [
+          "full_description",
+          "highlights",
+          "know_before_you_go",
+          "cancellation_policy"
+        ],
+        "supplementary_note": "Collapsed content was verified against the official page and concisely paraphrased.",
+        "visible_sections": {
+          "What's included": [
+            "What is included:",
+            "Free club rental",
+            "Each bay sits 1-6 guests",
+            "Unlimited balls for one hour",
+            "What is not included:",
+            "Priority queue/ fast pass not included",
+            "Food and beverages not included",
+            "AED 20 per player, a game play card ‘Lifetime Membership’ activation fee not included",
+            "Any gaming extension charges are not included"
+          ]
+        },
+        "duration_origin": "Published About duration badge"
+      }
+    },
+    {
+      "slug": "luxury-cruise",
+      "category_slug": "cruise-and-boat-tours",
+      "name": "Luxury Cruise",
+      "short_description": "Discover Dubai in style with the award-winning Xclusive Yachts.",
+      "about": "Discover Dubai in style with the award-winning Xclusive Yachts. Step onboard your own luxury yacht and take in the city’s iconic landmarks. Spot the towering Ain Wheel from the water, as well as the sail-shaped Burj Al Arab. Enjoy complimentary food and drinks along the way to make the most of the scenic backdrop. Morning, lunchtime, and sunset cruise slots are available – a perfect addition to your itinerary.",
+      "full_description": "Cruise from Dubai Marina past JBR, Ain Dubai and Burj Al Arab. The three-hour afternoon route also reaches Atlantis The Palm. Food and drinks depend on the sailing selected.",
+      "location": "Dubai",
+      "duration": 3,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 16158,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/luxury-cruise/01.jpg",
+      "main_image": "images/sports-cruises/luxury-cruise/01.jpg",
+      "image_alt": "Guests relaxing aboard a luxury yacht in Dubai Marina",
+      "pickup_information": "Transfers to and from Dubai Marina are not included.",
+      "highlights": "Dubai coastal landmarks from a yacht\nOnboard food, drinks and photo stops",
+      "know_before_you_go": "Bring identification and your booking confirmation. Dress smart casually, remove shoes on boarding and avoid bikinis. Alcohol is prohibited.",
+      "age_policy": null,
+      "cancellation_policy": "Cancel at least 24 hours before sailing for a full refund.",
+      "additional_notes": "What is included:\nComplimentary soft drinks\nLive BBQ dinner for afternoon and sunset cruise\nBreakfast stations for morning cruise\nExtended tour around Palm Jumeirah to Atlantis The Palm for 3hr afternoon tour only\nWhat is not included:\nTransfers to and from Dubai Marina\nPublished sailing slots: Breakfast 09:00–11:00; lunch 11:30–13:30; afternoon 14:00–17:00; sunset 17:30–19:30; moonlight 20:00–22:00; twilight 21:00–23:00.\nVenue map: https://maps.google.com/?daddr=25.0748943,55.13687119999999",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 1,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/luxury-cruise/01.jpg",
+          "alt": "Guests relaxing aboard a luxury yacht in Dubai Marina",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw34426e5f/images/large/large/img_1641343915_1641344054__yacht2",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/luxury-cruise/02.jpg",
+          "alt": "Barbecue food served aboard a yacht",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwe9194bc6/images/large/large/img_1583371337_1583371360__22",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/luxury-cruise/03.jpg",
+          "alt": "Xclusive Yachts crew welcoming guests aboard",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwa601694b/images/large/large/img_1583371337_1583371367__33",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/luxury-cruise/04.jpg",
+          "alt": "Luxury Cruise gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw36eeb9df/images/large/large/img_1583371395_1583371407__55",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/luxury-cruise/05.jpg",
+          "alt": "Luxury Cruise gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw349602aa/images/large/large/img_1641343915_1641344057__yacht3",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/luxury-cruise/06.jpg",
+          "alt": "Luxury Cruise gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwc9ae912f/images/large/large/img_1646646427_1646646524__ys2",
+          "visible_in_screenshot": false
+        }
+      ],
+      "features": [
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-dress-code-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-seasonality-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-family-friendly-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Food & Beverages Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-f-b-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "2-Hour Dubai Marina Moonlight Yacht Tour with Live BBQ",
+          "description": "Two-hour moonlight sailing at 20:00 with live BBQ. Screenshot quote PKR 16,158 for the displayed one-adult selection.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "2-Hour Dubai Marina Moonlight Yacht Tour with Live BBQ",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot service price for one adult; selected moonlight service lasts two hours.",
+          "adult_price": 16158,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/cruise-and-boat-tours/luxury-cruise.html",
+        "screenshot": "image(20261102-201855).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "2-Hour Dubai Marina Moonlight Yacht Tour with Live BBQ",
+            "amount": 16158,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot service selector"
+          }
+        ],
+        "discrepancies": [
+          "The About badge says 3 hours; the selected moonlight service says 2 hours. The tour keeps the headline duration and the package states its own duration.",
+          "The screenshot service quote is PKR 16,158, while the cart total rounds to PKR 16,159. The service quote is used."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.0748943,55.13687119999999"
+          }
+        ],
+        "supplementary_fields": [
+          "full_description",
+          "highlights",
+          "know_before_you_go",
+          "cancellation_policy"
+        ],
+        "supplementary_note": "Collapsed content was verified against the official page and concisely paraphrased.",
+        "visible_sections": {
+          "What's included": [
+            "What is included:",
+            "Complimentary soft drinks",
+            "Live BBQ dinner for afternoon and sunset cruise",
+            "Breakfast stations for morning cruise",
+            "Extended tour around Palm Jumeirah to Atlantis The Palm for 3hr afternoon tour only",
+            "What is not included:",
+            "Transfers to and from Dubai Marina",
+            "Published sailing slots: Breakfast 09:00–11:00; lunch 11:30–13:30; afternoon 14:00–17:00; sunset 17:30–19:30; moonlight 20:00–22:00; twilight 21:00–23:00."
+          ]
+        },
+        "duration_origin": "Published About duration badge"
+      }
+    },
+    {
+      "slug": "dubai-marina-dhow-cruise",
+      "category_slug": "cruise-and-boat-tours",
+      "name": "Dubai Marina Dhow Cruise",
+      "short_description": "Set sail along the shimmering waters of the Dubai Marina Harbour.",
+      "about": "Set sail along the shimmering waters of the Dubai Marina Harbour. Indulge in a decadent 5-star dinner buffet aboard the luxurious dhow cruise tour. Relax in luxury as you explore serene waters and take in views of the harbour. Perfect photos are guaranteed aboard this traditional wooden boat. On your tour, you’ll also get to see Bluewaters Island, the Ain Wheel and the landmark Address Beach Resort.",
+      "full_description": "Take in Dubai Marina, Bluewaters, Ain Dubai and Address Beach Resort aboard a traditional wooden dhow. The cruise and catering depend on the booked option.",
+      "location": "Dubai",
+      "duration": 1,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 10157,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/dubai-marina-dhow-cruise/01.jpg",
+      "main_image": "images/sports-cruises/dubai-marina-dhow-cruise/01.jpg",
+      "image_alt": "Traditional wooden dhow sailing at sunset",
+      "pickup_information": "Pick-up and drop-off can be arranged at extra cost.",
+      "highlights": "Dubai waterfront scenery from a traditional dhow",
+      "know_before_you_go": "Arrive 30 minutes before boarding at Dubai Marina Harbour, Station P1, Gate AA. Shared return transfers cost extra. Ask about dietary meals when booking a catered option. Bad weather may lead to rescheduling or a refund if the supplier cancels.",
+      "age_policy": null,
+      "cancellation_policy": "Cancel before 10:00 on the sailing day for a full refund. Late cancellation and missed departures are not refundable.",
+      "additional_notes": "What is included:\nSoft drinks and water\nOne-hour sightseeing cruise\nWhat is not included:\nFood and alcoholic drinks\nPick-up and drop-off are not included but can be arranged for an extra charge\nVenue map: https://maps.google.com/?daddr=25.0957875,55.1388906\nFood & Beverages Yes: Availability does not mean included catering; use the selected package inclusions.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 2,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/dubai-marina-dhow-cruise/01.jpg",
+          "alt": "Traditional wooden dhow sailing at sunset",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9066d939/images/large/large/img_1667802988_1667803043__marina",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/dubai-marina-dhow-cruise/02.jpg",
+          "alt": "Illuminated dhow beside the Dubai skyline at night",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw1fa8be86/images/large/large/img_1667802988_1667803140__marinadinnerprofile",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/dubai-marina-dhow-cruise/03.jpg",
+          "alt": "Guests dining on an illuminated dhow deck",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb1dadf86/images/large/large/img_1667802988_1667803166__marinadinner1",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/dubai-marina-dhow-cruise/04.jpg",
+          "alt": "Dubai Marina Dhow Cruise gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw7ce0cd95/images/large/large/img_1667802988_1667803198__marinadinner3",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/dubai-marina-dhow-cruise/05.jpg",
+          "alt": "Dubai Marina Dhow Cruise gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2bc4c383/images/large/large/priohub_17315",
+          "visible_in_screenshot": false
+        }
+      ],
+      "features": [
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-dress-code-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-seasonality-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-family-friendly-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Food & Beverages Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-f-b-icon.png",
+          "inclusion_status": "optional",
+          "source_qualification": "Availability does not mean included catering; use the selected package inclusions."
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Marina Sightseeing Dhow Cruise Tour",
+          "description": "One-hour sightseeing cruise. Soft drinks and water included; food and alcoholic drinks excluded. Screenshot PKR 10,157 for one adult.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "Marina Sightseeing Dhow Cruise Tour",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot selected one-adult sightseeing service; dinner is not included in this option.",
+          "adult_price": 10157,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/cruise-and-boat-tours/dubai-marina-dhow-cruise.html",
+        "screenshot": "image(20261102-201933).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "Marina Sightseeing Dhow Cruise Tour",
+            "amount": 10157,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot service selector"
+          }
+        ],
+        "discrepancies": [
+          "The About copy promotes a dinner buffet, while the supplied selected sightseeing option excludes food. The screenshot selected-option inclusions take precedence over current generic website inclusions."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.0957875,55.1388906"
+          }
+        ],
+        "supplementary_fields": [
+          "full_description",
+          "highlights",
+          "know_before_you_go",
+          "cancellation_policy"
+        ],
+        "supplementary_note": "Collapsed content was verified against the official page and concisely paraphrased.",
+        "visible_sections": {
+          "What's included": [
+            "What is included:",
+            "Soft drinks and water",
+            "One-hour sightseeing cruise",
+            "What is not included:",
+            "Food and alcoholic drinks",
+            "Pick-up and drop-off are not included but can be arranged for an extra charge"
+          ]
+        },
+        "duration_origin": "Published About duration badge"
+      }
+    },
+    {
+      "slug": "black-boats-atlantis-tour",
+      "category_slug": "cruise-and-boat-tours",
+      "name": "Black Boats Atlantis Tour",
+      "short_description": "There’s no better place to be than on Dubai’s crystal-blue waters.",
+      "about": "There’s no better place to be than on Dubai’s crystal-blue waters. And, in the company of The Black Boats, you can take your time at sea up a notch. Venture along the shores of Dubai Marina, towards Atlantis The Palm, and past the Palm Jumeirah. In 60 minutes, you’ll see every major sight in the city with one of Dubai’s most popular boat tour operators.",
+      "full_description": "Depart Dubai Marina Yacht Club for a speedboat trip past JBR, Ain Dubai and Palm Jumeirah, stopping by Atlantis before returning.",
+      "location": "Dubai",
+      "duration": 60,
+      "duration_unit": "minutes",
+      "experience_time": null,
+      "languages": [
+        "Arabic",
+        "English",
+        "Spanish",
+        "French"
+      ],
+      "starting_price": 11157,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/black-boats-atlantis-tour/01.jpg",
+      "main_image": "images/sports-cruises/black-boats-atlantis-tour/01.jpg",
+      "image_alt": "Passengers wearing life jackets aboard a Black Boats speedboat",
+      "pickup_information": null,
+      "highlights": "Seasonality Year round\nDress code Comfortable clothing\nFamily Friendly Yes",
+      "know_before_you_go": "Bring your ticket and ID or passport, arriving 15 minutes early beside Vida Hotel at Dubai Marina Yacht Club. Published departures are 08:30, 10:30, 17:30 and 18:45; confirm availability and weather. Boat movements may be unsuitable for some health conditions; ask the operator. The advertised child offer was limited to 1 March–15 September 2025, ages 3–12, with equal paying adults.",
+      "age_policy": null,
+      "cancellation_policy": "Full refunds apply when cancelling at least 24 hours before departure or when sailing restrictions cause cancellation.",
+      "additional_notes": "What is included:\nA ticket on board a Black Boats Atlantis Tour\nWhat is not included:\nAccess to the Black Boats Burj Al Arab Tour\nAny other purchases made in relation to the Black Boats Atlantis Tour\nVenue map: https://maps.google.com/?daddr=25.0723338,55.1363075",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 3,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/black-boats-atlantis-tour/01.jpg",
+          "alt": "Passengers wearing life jackets aboard a Black Boats speedboat",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9295b85c/images/hi-res/The-black-boats/IMGR220 - 1920x1080_AA Website new attractions - TBB_1.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/black-boats-atlantis-tour/02.jpg",
+          "alt": "Two passengers with Atlantis The Palm in the background",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwdb79814b/images/hi-res/The-black-boats/IMGR226 - 1920x1080_Black Boats.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/black-boats-atlantis-tour/03.jpg",
+          "alt": "Black Boats speedboat travelling along the Dubai waterfront",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwae854ebc/images/hi-res/The-black-boats/IMGR220 - 1920x1080_AA Website new attractions - TBB_2.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/black-boats-atlantis-tour/04.jpg",
+          "alt": "Black Boats Atlantis Tour gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw1ee739fb/images/hi-res/The-black-boats/IMGR220 - 1920x1080_AA Website new attractions - TBB_3.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/black-boats-atlantis-tour/05.jpg",
+          "alt": "Black Boats Atlantis Tour gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw10c91062/images/hi-res/The-black-boats/IMGR220 - 1920x1080_AA Website new attractions - TBB_4.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/black-boats-atlantis-tour/06.jpg",
+          "alt": "Black Boats Atlantis Tour gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwcdf0c5c9/images/hi-res/The-black-boats/IMGR220 - 1920x1080_AA Website new attractions - TBB_5.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "features": [
+        {
+          "name": "Seasonality Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-seasonality-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Dress code Comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress code-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-dress-code-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Family Friendly Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family Friendly-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-family-friendly-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Food & Beverages No",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-f-b-icon.png",
+          "inclusion_status": "excluded",
+          "source_qualification": null
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "60 min Atlantis Tour - Kids Go For Free Summer Offer",
+          "description": "60-minute Atlantis Tour. Screenshot PKR 11,157 per adult. Offer dates require reconfirmation; no free child tariff is seeded.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "60 min Atlantis Tour - Kids Go For Free Summer Offer",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot per-adult Atlantis Tour quote. Historical child promotion is not a current child price.",
+          "adult_price": 11157,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/cruise-and-boat-tours/aa-the-black-boats.html",
+        "screenshot": "image(20261102-202015).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "60 min Atlantis Tour - Kids Go For Free Summer Offer",
+            "amount": 11157,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot service selector"
+          }
+        ],
+        "discrepancies": [
+          "The selector retains a summer offer, but the source conditions refer to 2025. New package/rate remains inactive, with child pricing unset."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.0723338,55.1363075"
+          }
+        ],
+        "supplementary_fields": [
+          "full_description",
+          "know_before_you_go",
+          "cancellation_policy"
+        ],
+        "supplementary_note": "Collapsed content was verified against the official page and concisely paraphrased.",
+        "visible_sections": {
+          "What's included": [
+            "What is included:",
+            "A ticket on board a Black Boats Atlantis Tour",
+            "What is not included:",
+            "Access to the Black Boats Burj Al Arab Tour",
+            "Any other purchases made in relation to the Black Boats Atlantis Tour"
+          ]
+        },
+        "duration_origin": "About text (60 minutes)"
+      }
+    },
+    {
+      "slug": "abra-tours",
+      "category_slug": "cruise-and-boat-tours",
+      "name": "Abra Tours",
+      "short_description": "In Dubai, spending time on the water is a must.",
+      "about": "In Dubai, spending time on the water is a must. Nothing quenches the heat like the sea breeze. So why not explore the city’s rich maritime heritage on an Abra boat tour? Experience miles of glorious coastline and witness iconic sights like Ain Dubai, Dubai Marina and Atlantis the Palm.\n\nAn Abra boat ride around Dubai is the perfect addition to your itinerary.",
+      "full_description": "Follow Dubai’s coast aboard an Abra with views of Atlantis, Ain Dubai, JBR and the Marina. Water, toilets and shower facilities are available aboard.",
+      "location": "Dubai",
+      "duration": 2,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "Arabic",
+        "English"
+      ],
+      "starting_price": 6771,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/sports-cruises/abra-tours/01.jpg",
+      "main_image": "images/sports-cruises/abra-tours/01.jpg",
+      "image_alt": "Abra boat cruising beside Ain Dubai",
+      "pickup_information": "Transfers are not included. Depart from Dubai Harbour.",
+      "highlights": "Year round\nType of Tour: Shared\nDeparture: From Dubai Harbour\nPhoto Opportunities: Ain Dubai, Atlantis The Palm and more\nDress Code: Comfortable clothing\nFamily Friendly: Yes",
+      "know_before_you_go": "Arrive 30 minutes early at Dubai Harbour. Parking and the nearby Mina Seyahi tram station provide access. A safety briefing precedes departure. Bring suitable clothing and a light layer; personal food and drinks are allowed. Ask the crew about assistance for pregnant or disabled guests.",
+      "age_policy": "There is no minimum age.",
+      "cancellation_policy": "Give the operator at least 48 hours’ cancellation notice. Later cancellations may not receive a refund; late arrivals and no-shows owe the full charge.",
+      "additional_notes": "Transfers are not included.\nThe feature strip marks food and beverages as not included; supplementary operator details specify bottled water is supplied.\nVenue map: https://maps.google.com/?daddr=25.0877138,55.1460248",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 4,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/sports-cruises/abra-tours/01.jpg",
+          "alt": "Abra boat cruising beside Ain Dubai",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw53ce1d01/images/hi-res/Abra Tours/1.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/abra-tours/02.jpg",
+          "alt": "Family enjoying views aboard an Abra boat",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd67bd7c4/images/hi-res/Abra Tours/2.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/abra-tours/03.jpg",
+          "alt": "Abra boat passing Dubai Marina buildings",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw5ba8ae8e/images/arabian-adventures/hi-res/yachts-and-boats/abra-tours-in-dubai-marina-1920 × 1080.jpg",
+          "visible_in_screenshot": true
+        },
+        {
+          "path": "images/sports-cruises/abra-tours/04.jpg",
+          "alt": "Abra Tours gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw91179d11/images/arabian-adventures/hi-res/yachts-and-boats/abra-tours-boat-near-ain-dubai.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/abra-tours/05.jpg",
+          "alt": "Abra Tours gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2d8cc5d4/images/arabian-adventures/hi-res/yachts-and-boats/a-couple-posing-for-a-photo-on-the-yacht-1920x1080.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/abra-tours/06.jpg",
+          "alt": "Abra Tours gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw18193073/images/hi-res/Abra Tours/7.jpg",
+          "visible_in_screenshot": false
+        },
+        {
+          "path": "images/sports-cruises/abra-tours/07.jpg",
+          "alt": "Abra Tours gallery photograph 7",
+          "caption": null,
+          "display_order": 7,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw5190fb3d/images/arabian-adventures/hi-res/yachts-and-boats/shaded-yacht-deck-with-blue-seats-1920x1080.jpg",
+          "visible_in_screenshot": false
+        }
+      ],
+      "features": [
+        {
+          "name": "Year round",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbe106b42/safari-seasonality-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-seasonality-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Transfers: Not included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png",
+          "icon": "images/tour-icons/sports-cruises/evening-transfer-icon1.png",
+          "inclusion_status": "excluded",
+          "source_qualification": null
+        },
+        {
+          "name": "Type of Tour: Shared",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2ff21635/safari-knowledgeable-tour-guide-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-knowledgeable-tour-guide-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Departure: From Dubai Harbour",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw80319364/safari-sheikh-zayed-grand-mosque-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-sheikh-zayed-grand-mosque-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Photo Opportunities: Ain Dubai, Atlantis The Palm and more",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw499e11d0/burj-arab-photo-stop.png",
+          "icon": "images/tour-icons/sports-cruises/burj-arab-photo-stop.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Dress Code: Comfortable clothing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwde179c67/safari-dress%20code-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-dress-code-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Family Friendly: Yes",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8080a480/safari-family%20Friendly-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-family-friendly-icon.png",
+          "inclusion_status": "included",
+          "source_qualification": null
+        },
+        {
+          "name": "Food & Beverages: Not included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwba30ede3/safari-f&b-icon.png",
+          "icon": "images/tour-icons/sports-cruises/safari-f-b-icon.png",
+          "inclusion_status": "excluded",
+          "source_qualification": null
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Arrive at Dubai Harbour",
+          "description": "Abra Tours depart from Dubai Harbour, between berths B-D59 – 67.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Board your Abra boat",
+          "description": "You’ll be greeted by your friendly tour team and shown to your seats.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Listen to the safety demonstration",
+          "description": "Before you set off, your Captain will do a brief safety demonstration and explain how to use any equipment.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Relax and enjoy the tour",
+          "description": "Your Abra boat tour will take around 2 hours. You’ll follow the Dubai coastline to Atlantis the Palm, Ain Dubai and Dubai Marina. Make sure to snap some photos along the way.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Drop-off",
+          "description": "You’ll be returned to Dubai Harbour, where you’ll depart your Abra boat. The rest of the day is up to you. Why not book a city tour to explore more of Dubai on foot?",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Marina Promenade Cruise",
+          "description": "Shared two-hour Abra tour departing Dubai Harbour. Screenshot quote PKR 6,771 per adult.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "Marina Promenade Cruise",
+          "vehicle_type": "shared",
+          "vehicle_label": "Ticket / shared experience (no transfer implied)",
+          "description": "Screenshot Marina Promenade Cruise quote per adult.",
+          "adult_price": 6771,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/cruise-and-boat-tours/aa-abra-tours-marina-promenade-cruise.html",
+        "screenshot": "image(20261102-202043).png",
+        "booking_mode": "online",
+        "package_quotes": [
+          {
+            "package_name": "Marina Promenade Cruise",
+            "amount": 6771,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "origin": "Screenshot service selector"
+          }
+        ],
+        "discrepancies": [
+          "Food and beverages are marked not included in the feature strip, while the detailed page supplies bottled water. Do not advertise a meal or other drinks as included."
+        ],
+        "links": [
+          {
+            "text": "Open in Google Maps",
+            "url": "https://maps.google.com/?daddr=25.0877138,55.1460248"
+          }
+        ],
+        "supplementary_fields": [
+          "full_description",
+          "know_before_you_go",
+          "age_policy",
+          "cancellation_policy"
+        ],
+        "supplementary_note": "Collapsed content was verified against the official page and concisely paraphrased.",
+        "visible_sections": {
+          "What's included": []
+        },
+        "duration_origin": "Published About duration badge"
+      }
+    }
+  ]
+}

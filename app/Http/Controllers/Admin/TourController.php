@@ -10,6 +10,7 @@ use App\Models\TourSubcategory;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -78,15 +79,28 @@ class TourController extends Controller
 
     public function destroy(Tour $tour): RedirectResponse
     {
-        DB::transaction(function () use ($tour): void {
-            foreach ($tour->images as $image) {
-                Storage::disk('public')->delete($image->path);
-            }
-            Storage::disk('public')->delete(array_filter([$tour->thumbnail, $tour->main_image]));
-            $tour->delete();
-        });
+        $imagePaths = $this->deleteTours(collect([$tour]));
+        Storage::disk('public')->delete($imagePaths);
 
         return redirect()->route('admin.tours.index')->with('success', 'Tour removed successfully.');
+    }
+
+    public function destroyMany(Request $request): RedirectResponse
+    {
+        $validated = $request->validate([
+            'tour_ids' => ['required', 'array', 'min:1'],
+            'tour_ids.*' => ['integer', 'distinct', 'exists:tours,id'],
+        ]);
+        $tours = Tour::query()
+            ->with('images')
+            ->whereKey($validated['tour_ids'])
+            ->get();
+
+        $imagePaths = $this->deleteTours($tours);
+        Storage::disk('public')->delete($imagePaths);
+
+        return redirect()->route('admin.tours.index', $request->only(['search', 'category', 'status']))
+            ->with('success', $tours->count().' tours removed successfully.');
     }
 
     public function subcategories(Request $request): JsonResponse
@@ -110,6 +124,36 @@ class TourController extends Controller
                 : collect(),
             'features' => TourFeature::query()->where('is_active', true)->orderBy('name')->get(),
         ]);
+    }
+
+    /**
+     * @param  Collection<int, Tour>  $tours
+     * @return array<int, string>
+     */
+    private function deleteTours(Collection $tours): array
+    {
+        $imagePaths = $tours
+            ->flatMap(fn (Tour $tour) => $tour->images
+                ->pluck('path')
+                ->push($tour->thumbnail, $tour->main_image))
+            ->filter()
+            ->unique()
+            ->values()
+            ->all();
+
+        DB::transaction(function () use ($tours): void {
+            foreach ($tours as $tour) {
+                $tour->prices()->delete();
+                $tour->packages()->delete();
+                $tour->availabilities()->delete();
+                $tour->itineraries()->delete();
+                $tour->features()->detach();
+                $tour->images()->delete();
+                $tour->delete();
+            }
+        });
+
+        return $imagePaths;
     }
 
     private function removeEmptyPriceRows(Request $request): void
