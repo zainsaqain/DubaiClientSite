@@ -22,6 +22,7 @@ use App\Http\Controllers\Admin\WaterparkThemeParkController;
 use App\Http\Controllers\Admin\WhyUsFeatureController;
 use App\Http\Controllers\BankTransferPaymentController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\CustomerAccountController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicCatalogueController;
 use App\Models\Attraction;
@@ -112,7 +113,7 @@ Route::get('/dashboard', function () {
         return redirect()->route('admin.dashboard');
     }
 
-    return redirect()->route('home');
+    return redirect()->route('account.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::view('/admin', 'admin.dashboard.index')
@@ -348,6 +349,11 @@ Route::view('/desert-adventures/school-trips/morning-wildlife-safari', 'pages.ad
 Route::view('/blogs', 'pages.blogs')->name('blogs');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/my-account', [CustomerAccountController::class, 'dashboard'])->name('account.dashboard');
+    Route::get('/my-account/profile', [CustomerAccountController::class, 'profile'])->name('account.profile');
+    Route::patch('/my-account/profile', [CustomerAccountController::class, 'updateProfile'])->name('account.profile.update');
+    Route::get('/my-account/orders', [CustomerAccountController::class, 'orders'])->name('account.orders');
+    Route::get('/my-account/wishlist', [CustomerAccountController::class, 'wishlist'])->name('account.wishlist');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
