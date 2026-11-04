@@ -46,6 +46,8 @@
         <a href="{{ route('admin.dashboard') }}#experiences"><i>✦</i> Experiences</a>
         <a href="{{ route('admin.dashboard') }}#guests"><i>◎</i> Guests</a>
         <a href="{{ route('admin.dashboard') }}#reports"><i>⌁</i> Reports</a>
+        <a href="{{ route('admin.bank-transfer-payments.index') }}" class="{{ request()->routeIs('admin.bank-transfer-payments.*') ? 'is-active' : '' }}"><i>¤</i> Bank transfer payments</a>
+        <a href="{{ route('admin.bank-transfer-settings.edit') }}" class="{{ request()->routeIs('admin.bank-transfer-settings.*') ? 'is-active' : '' }}"><i>⚙</i> Bank transfer settings</a>
 
         <details class="wmt-admin-menu" {{ request()->routeIs('admin.tours.*') || request()->routeIs('admin.tour-categories.*') || request()->routeIs('admin.tour-subcategories.*') || request()->routeIs('admin.tour-features.*') ? 'open' : '' }}>
             <summary><i>✦</i><span>Tours Management</span><b>⌄</b></summary>

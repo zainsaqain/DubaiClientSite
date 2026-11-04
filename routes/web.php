@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\AttractionController;
+use App\Http\Controllers\Admin\BankTransferPaymentController as AdminBankTransferPaymentController;
+use App\Http\Controllers\Admin\BankTransferSettingController;
 use App\Http\Controllers\Admin\CityTourController;
 use App\Http\Controllers\Admin\CruiseBoatTourController;
 use App\Http\Controllers\Admin\DesertAdventureController;
@@ -18,6 +20,8 @@ use App\Http\Controllers\Admin\TourSubcategoryController;
 use App\Http\Controllers\Admin\TransferController;
 use App\Http\Controllers\Admin\WaterparkThemeParkController;
 use App\Http\Controllers\Admin\WhyUsFeatureController;
+use App\Http\Controllers\BankTransferPaymentController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicCatalogueController;
 use App\Models\Attraction;
@@ -138,6 +142,14 @@ Route::get('/tours/{tour:slug}', function (Tour $tour) {
 
     return view('pages.tour-detail', compact('tour', 'relatedTours', 'recentTours'));
 })->name('tours.show');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/tours/{tour:slug}/checkout', [CheckoutController::class, 'create'])->name('checkout.create');
+    Route::post('/tours/{tour:slug}/checkout', [CheckoutController::class, 'store'])->middleware('throttle:10,1')->name('checkout.store');
+    Route::get('/orders/{booking}/bank-transfer', [BankTransferPaymentController::class, 'show'])->name('bank-transfer.show');
+    Route::post('/orders/{booking}/bank-transfer', [BankTransferPaymentController::class, 'submit'])->middleware('throttle:10,1')->name('bank-transfer.submit');
+    Route::get('/orders/{booking}/bank-transfer/screenshot', [BankTransferPaymentController::class, 'screenshot'])->name('bank-transfer.screenshot');
+});
 
 Route::get('/desert-adventures', [PublicCatalogueController::class, 'desertAdventures'])->name('desert-adventures');
 Route::get('/attractions', function () use ($mergeCatalogue, $tourListing) {
@@ -342,6 +354,14 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->as('admin.')->group(function () {
+    Route::get('bank-transfer-payments', [AdminBankTransferPaymentController::class, 'index'])->name('bank-transfer-payments.index');
+    Route::get('bank-transfer-payments/{payment}', [AdminBankTransferPaymentController::class, 'show'])->name('bank-transfer-payments.show');
+    Route::patch('bank-transfer-payments/{payment}/approve', [AdminBankTransferPaymentController::class, 'approve'])->name('bank-transfer-payments.approve');
+    Route::patch('bank-transfer-payments/{payment}/reject', [AdminBankTransferPaymentController::class, 'reject'])->name('bank-transfer-payments.reject');
+    Route::patch('bank-transfer-payments/{payment}/request-information', [AdminBankTransferPaymentController::class, 'requestInformation'])->name('bank-transfer-payments.request-information');
+    Route::get('bank-transfer-settings', [BankTransferSettingController::class, 'edit'])->name('bank-transfer-settings.edit');
+    Route::put('bank-transfer-settings', [BankTransferSettingController::class, 'update'])->name('bank-transfer-settings.update');
+    Route::delete('bank-transfer-settings', [BankTransferSettingController::class, 'destroy'])->name('bank-transfer-settings.destroy');
     Route::get('tours/subcategories/options', [TourController::class, 'subcategories'])->name('tours.subcategories');
     Route::delete('tours', [TourController::class, 'destroyMany'])->name('tours.destroy-many');
     Route::resource('tours', TourController::class);

@@ -131,6 +131,7 @@
             <p class="da-booking-total">Estimated total: <strong data-booking-total>{{ $bookingCurrency }} {{ number_format((float) ($defaultBookingPrice?->adult_price ?? $tour->starting_price)) }}</strong></p>
             <button type="button" class="da-check-avail-btn" data-check-availability>Check Availability</button>
             <p class="da-booking-status" data-booking-status aria-live="polite"></p>
+            <a class="da-check-avail-btn" style="display:block;text-align:center;text-decoration:none;margin-top:12px" href="{{ route('checkout.create', $tour) }}">Book with bank transfer</a>
         </aside>
     </div>
 
