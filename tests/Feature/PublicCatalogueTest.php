@@ -10,12 +10,28 @@ use App\Models\TourImage;
 use App\Models\TourPackage;
 use App\Models\TourPrice;
 use App\Models\TourSubcategory;
+use App\Models\Transfer;
+use App\Models\CruiseBoatTour;
+use App\Models\WaterparkThemePark;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class PublicCatalogueTest extends TestCase
 {
     use RefreshDatabase;
+
+    public function test_mobile_navigation_opens_a_submenu_only_for_categories_that_have_subcategories(): void
+    {
+        $categoryWithSubcategories = $this->createCategory('desert-adventures', 'Desert Adventures');
+        $this->createSubcategory($categoryWithSubcategories, 'desert-safaris', 'Desert Safaris');
+        $categoryWithoutSubcategories = $this->createCategory('transfers', 'Transfers');
+
+        $this->get(url('/'))
+            ->assertOk()
+            ->assertSee('data-mobile-submenu-target="mobile-category-menu-'.$categoryWithSubcategories->id.'"', false)
+            ->assertSee('id="mobile-category-menu-'.$categoryWithSubcategories->id.'"', false)
+            ->assertDontSee('data-mobile-submenu-target="mobile-category-menu-'.$categoryWithoutSubcategories->id.'"', false);
+    }
 
     public function test_active_category_and_subcategory_pages_only_render_eligible_tours(): void
     {
@@ -276,7 +292,11 @@ class PublicCatalogueTest extends TestCase
             ->assertOk()
             ->assertSee($visibleTour->name)
             ->assertDontSee('Inactive Home Safari')
-            ->assertSee(route('tours.show', $visibleTour), false);
+            ->assertSee(route('tours.show', $visibleTour), false)
+            ->assertSee('x-ref="experiencesTrack"', false)
+            ->assertSee('Previous experiences')
+            ->assertSee('x-ref="cityToursTrack"', false)
+            ->assertSee('Previous city tours');
     }
 
     public function test_shared_header_lists_active_categories_and_subcategories_before_tours_are_added(): void
@@ -294,6 +314,35 @@ class PublicCatalogueTest extends TestCase
             ->assertSee($cityTours->name)
             ->assertSee($abuDhabi->name)
             ->assertSee(route('city-tours.destination', $abuDhabi), false);
+    }
+
+    public function test_speciality_catalogues_use_the_shared_filterable_listing_and_empty_categories_have_no_dropdown(): void
+    {
+        Transfer::query()->create(['title' => 'Airport Transfer', 'transfer_type' => 'Airport', 'description' => 'Private airport pickup.', 'location' => 'Dubai', 'price' => 12000, 'is_active' => true]);
+        CruiseBoatTour::query()->create(['title' => 'Marina Cruise', 'tour_type' => 'Dinner cruise', 'description' => 'A Dubai Marina dinner cruise.', 'location' => 'Dubai Marina', 'price' => 30000, 'is_active' => true]);
+        WaterparkThemePark::query()->create(['title' => 'Waterpark Day Pass', 'park_type' => 'Waterpark', 'description' => 'A family waterpark day.', 'location' => 'Dubai', 'price' => 25000, 'is_active' => true]);
+        $this->createCategory('transfers', 'Transfers');
+
+        foreach ([
+            ['route' => 'transfers', 'title' => 'Airport Transfer'],
+            ['route' => 'cruise-boat-tours', 'title' => 'Marina Cruise'],
+            ['route' => 'waterparks-theme-parks', 'title' => 'Waterpark Day Pass'],
+        ] as $page) {
+            $this->get(route($page['route']))
+                ->assertOk()
+                ->assertSee($page['title'])
+                ->assertSee('data-adventure-list', false)
+                ->assertSee('data-filter="location"', false)
+                ->assertSee('data-sort', false);
+        }
+
+        $this->get('/cruise-and-boat-tours')->assertRedirect('/cruise-boat-tours');
+        $this->get('/waterparks-and-theme-parks')->assertRedirect('/waterparks-theme-parks');
+
+        $this->get(route('home'))
+            ->assertOk()
+            ->assertSee('Transfers')
+            ->assertDontSee('data-category-mega-menu', false);
     }
 
     public function test_category_listing_paginates_active_tours(): void

@@ -1,0 +1,1672 @@
+{
+  "schema_version": 1,
+  "category": {
+    "slug": "desert-adventures",
+    "name": "Desert Adventures"
+  },
+  "subcategory": {
+    "slug": "desert-experiences",
+    "name": "Desert Experiences",
+    "description": "Camel rides, private desert dining, balloon combinations and Wadi Adventures."
+  },
+  "listing_source": "https://www.arabian-adventures.com/ae/english/desert-experiences",
+  "tours": [
+    {
+      "slug": "camel-ride",
+      "name": "Camel Ride",
+      "short_description": "Immerse yourself in Bedouin culture as you take a leisurely journey through the stunning Dubai desert with an Arabian camel.",
+      "about": "Immerse yourself in Bedouin culture as you take a leisurely journey through the stunning Dubai desert with an Arabian camel.",
+      "full_description": "A ride on an Arabian camel is an unforgettable introduction of desert life and Bedouin culture. Our Camel Ride experience offers an incredible morning with one of Arabia’s greatest companions, complete with wildlife spotting and a tranquil lakeside stop.\n\nYour experience will begin with pick-up from your hotel or residence in Dubai and a drive to the Dubai Desert Conservation Reserve (DDCR) in an air-conditioned 4x4 vehicle.\n\nHere, you will first meet the majestic Arabian camel that will transport you across the desert on a breathtaking journey through the DDCR’s beautiful rolling dunes.\n\nLed by an expert camel shepherd at a calm, steady pace, you’ll have plenty of time to spot the fascinating wildlife that inhabits the desert while capturing plenty of Instagram-worthy photo opportunities.\n\nAfter a picturesque 45-minute ride, you’ll reach our designated breakfast spot. At this peaceful location, you’ll enjoy delightful views of the sun glistening over the desert.\n\nAfter breakfast, you have the option of either taking the return 45-minute camel ride back through the desert or be collected from your breakfast stop and driven back to your hotel or residence.",
+      "location": "Dubai",
+      "duration": 4,
+      "duration_unit": "hours",
+      "experience_time": "morning",
+      "languages": [
+        "English"
+      ],
+      "starting_price": 38395,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/desert-experiences/camel-ride/01.webp",
+      "main_image": "images/desert-experiences/camel-ride/01.webp",
+      "image_alt": "Guests taking a guided camel ride across desert dunes",
+      "pickup_information": "Hotel or residence pick-up included from anywhere in Dubai",
+      "highlights": "Shared or private transfer\nCamel ride\nBreakfast box\nBubbles or date juice\nWildlife\nBird watching\nLakeside stop\nPhoto opportunity",
+      "know_before_you_go": "In the summer months, this tour operates in the afternoon\nWe recommend wearing comfortable clothing and walking shoes for this activity. As you will be spending time in the desert, we also suggest wearing suncream, and bringing sunglasses and a hat\nWhile we endeavour to show you as much wildlife as possible, we cannot predict the movements of every species. Therefore, if some of the animals change their plans, we can’t guarantee you’ll spot them\nWe will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp to share your requirements, or complete a contact form\nWe do not recommend this activity for expectant mothers, or guests who have a history of heart ailments, back or neck problems\nRestrooms are available during this activity",
+      "age_policy": "The following age brackets apply for booking purposes:\nAdults: 12 years old and above\nChildren: 5-11 years old\nInfants: Below 5 years old\nThe minimum age to join the Camel Ride is 3 years old. Children under the age of 11 must be accompanied by an adult throughout the experience\nA private vehicle must be booked for infants or those under 135cm height. Details must be shared with our team at the time of booking",
+      "cancellation_policy": "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts\nFull payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity\nIn exceptional circumstances, we may have to amend the Camel Ride schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible",
+      "additional_notes": "In the summer months, this tour operates in the afternoon.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": true,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 6,
+      "youtube_url": "https://www.youtube.com/watch?v=qpNdg6F3T0g",
+      "images": [
+        {
+          "path": "images/desert-experiences/camel-ride/01.webp",
+          "alt": "Guests taking a guided camel ride across desert dunes",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf7ca1d8e/images/large/morning-camel-ride-1232x1232_april-23.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/camel-ride/02.webp",
+          "alt": "Aerial view of a lake in the Dubai desert",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw7afb67f8/images/large/camel-ride-lake2-1232x1232.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/camel-ride/03.webp",
+          "alt": "Guest meeting an Arabian camel",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6bef7cec/images/large/camel-ride-breakfast-lake1-1232x1232.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/camel-ride/04.webp",
+          "alt": "Camel Ride gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwcf531a05/images/large/Evening_Desert-Safari-camel-ride-lg-1232x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/camel-ride/05.webp",
+          "alt": "Camel Ride gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw1b234ede/images/large/camel-ride-Impala-April23-160 x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/camel-ride/06.webp",
+          "alt": "Camel Ride gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw348e07d9/images/large/camel-ride-lake2-Wildlife2-1232x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Shared or private transfer",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png",
+          "icon": "images/tour-icons/desert-experiences/evening-transfer-icon1.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Camel ride",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf792b680/evening-camel- ride-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-camel-ride-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Breakfast box",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw35d3a90f/safari-breakfast-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-breakfast-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Bubbles or date juice",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2347a088/safari-unlimited-premium-beverages-and-bubbles-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-unlimited-premium-beverages-and-bubbles-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Wildlife",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw46799d39/safari-wildlife-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-wildlife-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Bird watching",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbef50178/safari-Wildlife-icon-bird.png",
+          "icon": "images/tour-icons/desert-experiences/safari-wildlife-icon-bird.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Lakeside stop",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw84c85fd7/safari-al-ain-oasis-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-al-ain-oasis-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Photo opportunity",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw5299ab2c/safari-photo-stop-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-photo-stop-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup and journey to the desert",
+          "description": "For morning bookings, pickup is estimated to be 8:30am. For afternoon bookings, pickup is estimated to be 3:30pm. Times may vary depending on operational requirements.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 2,
+          "title": "Dubai Desert Conservation Reserve Visitor Centre",
+          "description": "Start your adventure with an interactive, immersive overview of our protected conservation reserve.",
+          "duration": 15,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "15 minutes"
+        },
+        {
+          "display_order": 3,
+          "title": "Camel ride across the desert",
+          "description": "Take a walk with the ‘ships of the desert’ and explore the stunning desert landscape around you.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 4,
+          "title": "Breakfast stop",
+          "description": "Enjoy a unique breakfast experience at a peaceful location.",
+          "duration": 60,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "60 minutes"
+        },
+        {
+          "display_order": 5,
+          "title": "Return camel ride",
+          "description": "Take the return journey to the DDCR Visitor Centre admiring the beautiful views along the way.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 6,
+          "title": "Return journey to your accommodation",
+          "description": "For morning bookings, dropoff is estimated to be 11:30am. For afternoon bookings, dropoff is estimated to be 8pm. Times may vary depending on operational requirements.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        }
+      ],
+      "packages": [
+        {
+          "name": "Shared Vehicle",
+          "description": "Hotel pick-up and drop-off in a shared vehicle in a 4-wheel drive (Toyota Land Cruiser or similar). Price: PKR 38,395 per adult.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": {
+            "package_name": "Shared Vehicle",
+            "amount": 38395,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "minimum_guests": 1,
+            "maximum_guests": null,
+            "source": "screenshot"
+          },
+          "origin": "screenshot"
+        },
+        {
+          "name": "Private Vehicle 1-6 Guests",
+          "description": "Hotel pick-up and drop-off in a shared vehicle in a 4-wheel drive (Toyota Land Cruiser or similar). Price: PKR 153,130 per vehicle.",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": {
+            "package_name": "Private Vehicle 1-6 Guests",
+            "amount": 153130,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 1,
+            "maximum_guests": 6,
+            "source": "screenshot"
+          },
+          "origin": "screenshot"
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "Shared Vehicle",
+          "vehicle_type": "shared",
+          "vehicle_label": "Shared Vehicle",
+          "description": "Per-adult screenshot quotation. Child and infant tariffs are not supplied.",
+          "adult_price": 38395,
+          "child_price": null,
+          "child_min_age": 5,
+          "child_max_age": 11,
+          "infant_price": null,
+          "infant_max_age": 4,
+          "minimum_guests": 1,
+          "maximum_guests": null,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "screenshot": "image(20261102-194633).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-experiences/aa-camel-trekking-in-dubai.html",
+        "booking_mode": "online",
+        "price_status": "Screenshot PKR amount, not a live quotation",
+        "package_quotes": [
+          {
+            "package_name": "Shared Vehicle",
+            "amount": 38395,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "minimum_guests": 1,
+            "maximum_guests": null,
+            "source": "screenshot"
+          },
+          {
+            "package_name": "Private Vehicle 1-6 Guests",
+            "amount": 153130,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 1,
+            "maximum_guests": 6,
+            "source": "screenshot"
+          }
+        ],
+        "sections": {
+          "About": [
+            "Immerse yourself in Bedouin culture as you take a leisurely journey through the stunning Dubai desert with an Arabian camel."
+          ],
+          "Full description": [
+            "A ride on an Arabian camel is an unforgettable introduction of desert life and Bedouin culture. Our Camel Ride experience offers an incredible morning with one of Arabia’s greatest companions, complete with wildlife spotting and a tranquil lakeside stop.",
+            "Your experience will begin with pick-up from your hotel or residence in Dubai and a drive to the Dubai Desert Conservation Reserve (DDCR) in an air-conditioned 4x4 vehicle.",
+            "Here, you will first meet the majestic Arabian camel that will transport you across the desert on a breathtaking journey through the DDCR’s beautiful rolling dunes.",
+            "Led by an expert camel shepherd at a calm, steady pace, you’ll have plenty of time to spot the fascinating wildlife that inhabits the desert while capturing plenty of Instagram-worthy photo opportunities.",
+            "After a picturesque 45-minute ride, you’ll reach our designated breakfast spot. At this peaceful location, you’ll enjoy delightful views of the sun glistening over the desert.",
+            "After breakfast, you have the option of either taking the return 45-minute camel ride back through the desert or be collected from your breakfast stop and driven back to your hotel or residence."
+          ],
+          "Experience Itinerary": [
+            "1 Pickup and journey to the desert For morning bookings, pickup is estimated to be 8:30am. For afternoon bookings, pickup is estimated to be 3:30pm. Times may vary depending on operational requirements. 45 minutes",
+            "2 Dubai Desert Conservation Reserve Visitor Centre Start your adventure with an interactive, immersive overview of our protected conservation reserve. 15 minutes",
+            "3 Camel ride across the desert Take a walk with the ‘ships of the desert’ and explore the stunning desert landscape around you. 45 minutes",
+            "4 Breakfast stop Enjoy a unique breakfast experience at a peaceful location. 60 minutes",
+            "5 Return camel ride Take the return journey to the DDCR Visitor Centre admiring the beautiful views along the way. 45 minutes",
+            "6 Return journey to your accommodation For morning bookings, dropoff is estimated to be 11:30am. For afternoon bookings, dropoff is estimated to be 8pm. Times may vary depending on operational requirements. 45 minutes"
+          ],
+          "Know before you go": [
+            "In the summer months, this tour operates in the afternoon",
+            "We recommend wearing comfortable clothing and walking shoes for this activity. As you will be spending time in the desert, we also suggest wearing suncream, and bringing sunglasses and a hat",
+            "While we endeavour to show you as much wildlife as possible, we cannot predict the movements of every species. Therefore, if some of the animals change their plans, we can’t guarantee you’ll spot them",
+            "We will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp to share your requirements, or complete a contact form",
+            "We do not recommend this activity for expectant mothers, or guests who have a history of heart ailments, back or neck problems",
+            "Restrooms are available during this activity"
+          ],
+          "Age policy": [
+            "The following age brackets apply for booking purposes:",
+            "Adults: 12 years old and above",
+            "Children: 5-11 years old",
+            "Infants: Below 5 years old",
+            "The minimum age to join the Camel Ride is 3 years old. Children under the age of 11 must be accompanied by an adult throughout the experience",
+            "A private vehicle must be booked for infants or those under 135cm height. Details must be shared with our team at the time of booking"
+          ],
+          "Cancellation policy": [
+            "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts",
+            "Full payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity",
+            "In exceptional circumstances, we may have to amend the Camel Ride schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible"
+          ]
+        },
+        "supplementary_policy_sections": [],
+        "supplementary_policy_format": null,
+        "highlights_origin": "derived from the visible feature cards; no separate Highlights accordion is shown",
+        "dining_menu_path": null,
+        "dining_menu_source_url": null,
+        "discrepancies": [
+          "The Private Vehicle card repeats the shared-vehicle wording in its description. Its private title and per-vehicle selling basis are preserved separately.",
+          "The 4-hour headline and six timed itinerary steps totaling 255 minutes are both retained. Morning and seasonal afternoon schedules are described in the source."
+        ],
+        "gallery_scope": "First three match the uploaded screenshot; later images supplement it from the original product gallery.",
+        "feature_order": [
+          "Shared or private transfer",
+          "Camel ride",
+          "Breakfast box",
+          "Bubbles or date juice",
+          "Wildlife",
+          "Bird watching",
+          "Lakeside stop",
+          "Photo opportunity"
+        ]
+      }
+    },
+    {
+      "slug": "exclusive-desert-experience",
+      "name": "Exclusive Desert Experience",
+      "short_description": "Escape to your own private Bedouin-inspired dining space for a dining experience in the heart of the desert.",
+      "about": "Escape to your own private Bedouin-inspired dining space for a dining experience in the heart of the desert. Secluded and atmospheric, this experience offers an incredible, unique space for couples celebrating an anniversary, a family coming together for a birthday, or friends gathering to enjoy a special evening together.",
+      "full_description": "The Exclusive Desert Experience is a secluded, curated dining experience nestled in the heart of the Dubai Desert Conservation Reserve (DDCR). Privacy and exclusivity are central to your itinerary, and the surrounding landscapes provide an idyllic backdrop for your evening of delicious dining and shared moments together.\n\nYour journey begins with a private transfer from your accommodation in Dubai to the DDCR. You will be picked up by one of our friendly and knowledgeable guides in an air-conditioned 4x4 vehicle and enjoy a comfortable journey to the desert.\n\nFrom here, it’s time to drive across the beautiful rolling desert dunes as your dedicated guide helps you spot a range of local wildlife. You’ll then get the opportunity to enjoy a short ride on an Arabian camel and further admire the stunning desert landscape.\n\nThen, still in the exclusive company of your group, you’ll be taken to a secluded location to admire a breathtaking desert sunset. Here, you can take time to bask in the beauty of this incredible spectacle.\n\nAfter the sun has set, your Bedouin-inspired dining space is waiting for you. Unlimited soft drinks are included as part of your package, with premium beverages and shisha available if you wish. To round off an incredible trip to the desert, you’ll have time to stargaze under the mesmerising blanket of stars above you.\n\nYour return transfer will also be in complete privacy, with one of our experts driving you back from the camp.",
+      "location": "Dubai",
+      "duration": 6,
+      "duration_unit": "hours",
+      "experience_time": "evening",
+      "languages": [
+        "English"
+      ],
+      "starting_price": 230446,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/desert-experiences/exclusive-desert-experience/01.webp",
+      "main_image": "images/desert-experiences/exclusive-desert-experience/01.webp",
+      "image_alt": "Guests enjoying a private sunset lounge in the desert",
+      "pickup_information": "Hotel or residence pick-up included from anywhere in Dubai",
+      "highlights": "Private Transfer\nExpert Safari Guide\nDesert Dune Drive\nCamel Ride\nWildlife\nPhoto Opportunity\nSunset Stop & Stargazing\nPersonal Waiter Service\nPrivate Three-Course Dinner\nBubbles\nUnlimited Soft Drinks & Premium Beverages\nShisha (optional)",
+      "know_before_you_go": "A private outing for up to six guests.\nChoose breathable clothes, sturdy footwear, sunscreen, sunglasses and a hat; desert evenings can turn cold.\nShare dietary and health needs in advance. Pregnancy or existing medical conditions exclude dune driving; other activities may remain possible.\nWildlife sightings are unpredictable. Campsite restrooms are available.\nAdult-beverage service may change on religious dates.\nBackground music is provided. Live shows are extra arrangements available on request.\nAn overnight extension can be requested.",
+      "age_policy": "Booking bands: adults 12+, children 5-11, infants under 5.\nA private vehicle is required for children aged 2-5 or anyone shorter than 135 cm; share details when booking.",
+      "cancellation_policy": "Give at least 24 hours notice; later cancellations are non-refundable.\nPayment is due two days before departure. Unpaid bookings can be cancelled.\nExceptional circumstances may require rescheduling or cancellation; changes are communicated beforehand when possible.",
+      "additional_notes": "",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": true,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 7,
+      "youtube_url": "https://www.youtube.com/watch?v=E4UwIilDuvE",
+      "images": [
+        {
+          "path": "images/desert-experiences/exclusive-desert-experience/01.webp",
+          "alt": "Guests enjoying a private sunset lounge in the desert",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw47b336cf/images/arabian-adventures/hi-res/luxury-desert-safaris/couple-at-a-luxury-desert-setup-1920x1080.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/exclusive-desert-experience/02.webp",
+          "alt": "Safari vehicle parked on desert dunes",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf9dcf370/images/arabian-adventures/hi-res/arabian-adventures-cars/arabian-adventures-vehicle-1920x1080.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/exclusive-desert-experience/03.webp",
+          "alt": "Guests riding a camel towards a private desert lounge",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6e85ac57/images/arabian-adventures/hi-res/desert-activities/couple-on-a-camel-ride-1920x1080.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/exclusive-desert-experience/04.webp",
+          "alt": "Exclusive Desert Experience gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw297df561/images/hi-res/04-enhanced-nr-1182x709.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/exclusive-desert-experience/05.webp",
+          "alt": "Exclusive Desert Experience gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2ad71f16/images/arabian-adventures/hi-res/luxury-desert-safaris/dinner-at-the-desert-1920x1080.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/exclusive-desert-experience/06.webp",
+          "alt": "Exclusive Desert Experience gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw89e233e5/images/arabian-adventures/hi-res/desert-activities/couple-by-a-bonfire-1920x1080.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Private Transfer",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png",
+          "icon": "images/tour-icons/desert-experiences/evening-transfer-icon1.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Expert Safari Guide",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2ff21635/safari-knowledgeable-tour-guide-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-knowledgeable-tour-guide-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Desert Dune Drive",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw0a12f8f4/evening-dune-drive-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-dune-drive-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Camel Ride",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf792b680/evening-camel- ride-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-camel-ride-icon.png",
+          "inclusion_status": "optional",
+          "notes": "The itinerary describes this ride as optional."
+        },
+        {
+          "name": "Wildlife",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw46799d39/safari-wildlife-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-wildlife-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Photo Opportunity",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw5299ab2c/safari-photo-stop-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-photo-stop-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Sunset Stop & Stargazing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw3ac15ce8/evening-sunset Stop-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-sunset-stop-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Personal Waiter Service",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw689cc722/safari-personal-waiter-service-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-personal-waiter-service-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Private Three-Course Dinner",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbbc4ca62/safari-bbq-dinner-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-bbq-dinner-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Bubbles",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2347a088/safari-unlimited-premium-beverages-and-bubbles-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-unlimited-premium-beverages-and-bubbles-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Unlimited Soft Drinks & Premium Beverages",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw08b46131/evening-unlimited-soft-drinks-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-unlimited-soft-drinks-icon.png",
+          "inclusion_status": "optional",
+          "notes": "Soft drinks are included; the full description treats premium beverages as an optional selection. The source uses one combined icon card."
+        },
+        {
+          "name": "Shisha (optional)",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb98220d8/evening-shisha-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-shisha-icon.png",
+          "inclusion_status": "optional",
+          "notes": null
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup and journey to the desert",
+          "description": "Pickup is estimated to be 4pm. Times may vary depending on operational requirements.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 2,
+          "title": "Dubai Desert Conservation Reserve Visitor Centre",
+          "description": "Start your experience with an interactive, immersive overview of our protected conservation reserve.",
+          "duration": 15,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "15 minutes"
+        },
+        {
+          "display_order": 3,
+          "title": "Dune and wildlife drive",
+          "description": "Experience a drive across the dunes while spotting native wildlife roaming freely across the reserve.",
+          "duration": 30,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "30 minutes"
+        },
+        {
+          "display_order": 4,
+          "title": "Camel ride experience",
+          "description": "Take an optional short ride with the ‘ships of the desert’ to your private sunset lounge.",
+          "duration": 20,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "20 minutes"
+        },
+        {
+          "display_order": 5,
+          "title": "Private sunset lounge experience",
+          "description": "Watch the sunset over the desert with a drink in your hand at your own private lounge.\nAt your own pace.",
+          "duration": null,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "At your own pace"
+        },
+        {
+          "display_order": 6,
+          "title": "3-course signature Arabic dinner",
+          "description": "Savour a delicious 3-course premium menu of traditional Arabic dishes among the peace and privacy of your unique dining space.",
+          "duration": 90,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "90 minutes"
+        },
+        {
+          "display_order": 7,
+          "title": "Return journey to your accommodation",
+          "description": "Dropoff is estimated to be 10pm. Times may vary depending on operational requirements.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Dinner 1-2 Guests",
+          "description": "Hotel pick-up and drop-off in a private 4-wheel drive (Toyota Land Cruiser or similar). Price: PKR 230,446 per vehicle.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": {
+            "package_name": "Private Dinner 1-2 Guests",
+            "amount": 230446,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 1,
+            "maximum_guests": 2,
+            "source": "screenshot"
+          },
+          "origin": "screenshot"
+        },
+        {
+          "name": "Private Dinner 3-4 Guests",
+          "description": "Hotel pick-up and drop-off in a private 4-wheel drive (Toyota Land Cruiser or similar). Price: PKR 328,187 per vehicle.",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": {
+            "package_name": "Private Dinner 3-4 Guests",
+            "amount": 328187,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 3,
+            "maximum_guests": 4,
+            "source": "screenshot"
+          },
+          "origin": "screenshot"
+        },
+        {
+          "name": "Private Dinner 5-6 Guests",
+          "description": "Hotel pick-up and drop-off in a private 4-wheel drive (Toyota Land Cruiser or similar). Price: PKR 443,122 per vehicle.",
+          "display_order": 3,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": {
+            "package_name": "Private Dinner 5-6 Guests",
+            "amount": 443122,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 5,
+            "maximum_guests": 6,
+            "source": "screenshot"
+          },
+          "origin": "screenshot"
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "screenshot": "image(20261102-194634).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-experiences/aa-exclusive-desert-experience.html",
+        "booking_mode": "online",
+        "price_status": "Screenshot PKR amount, not a live quotation",
+        "package_quotes": [
+          {
+            "package_name": "Private Dinner 1-2 Guests",
+            "amount": 230446,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 1,
+            "maximum_guests": 2,
+            "source": "screenshot"
+          },
+          {
+            "package_name": "Private Dinner 3-4 Guests",
+            "amount": 328187,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 3,
+            "maximum_guests": 4,
+            "source": "screenshot"
+          },
+          {
+            "package_name": "Private Dinner 5-6 Guests",
+            "amount": 443122,
+            "currency": "PKR",
+            "price_basis": "per_vehicle",
+            "minimum_guests": 5,
+            "maximum_guests": 6,
+            "source": "screenshot"
+          }
+        ],
+        "sections": {
+          "About": [
+            "Escape to your own private Bedouin-inspired dining space for a dining experience in the heart of the desert. Secluded and atmospheric, this experience offers an incredible, unique space for couples celebrating an anniversary, a family coming together for a birthday, or friends gathering to enjoy a special evening together."
+          ],
+          "Full description": [
+            "The Exclusive Desert Experience is a secluded, curated dining experience nestled in the heart of the Dubai Desert Conservation Reserve (DDCR). Privacy and exclusivity are central to your itinerary, and the surrounding landscapes provide an idyllic backdrop for your evening of delicious dining and shared moments together.",
+            "Your journey begins with a private transfer from your accommodation in Dubai to the DDCR. You will be picked up by one of our friendly and knowledgeable guides in an air-conditioned 4x4 vehicle and enjoy a comfortable journey to the desert.",
+            "From here, it’s time to drive across the beautiful rolling desert dunes as your dedicated guide helps you spot a range of local wildlife. You’ll then get the opportunity to enjoy a short ride on an Arabian camel and further admire the stunning desert landscape.",
+            "Then, still in the exclusive company of your group, you’ll be taken to a secluded location to admire a breathtaking desert sunset. Here, you can take time to bask in the beauty of this incredible spectacle.",
+            "After the sun has set, your Bedouin-inspired dining space is waiting for you. Unlimited soft drinks are included as part of your package, with premium beverages and shisha available if you wish. To round off an incredible trip to the desert, you’ll have time to stargaze under the mesmerising blanket of stars above you.",
+            "Your return transfer will also be in complete privacy, with one of our experts driving you back from the camp."
+          ],
+          "Experience Itinerary": [
+            "1 Pickup and journey to the desert Pickup is estimated to be 4pm. Times may vary depending on operational requirements. 45 minutes",
+            "2 Dubai Desert Conservation Reserve Visitor Centre Start your experience with an interactive, immersive overview of our protected conservation reserve. 15 minutes",
+            "3 Dune and wildlife drive Experience a drive across the dunes while spotting native wildlife roaming freely across the reserve. 30 minutes",
+            "4 Camel ride experience Take an optional short ride with the ‘ships of the desert’ to your private sunset lounge. 20 minutes",
+            "5 Private sunset lounge experience Watch the sunset over the desert with a drink in your hand at your own private lounge. At your own pace",
+            "6 3-course signature Arabic dinner Savour a delicious 3-course premium menu of traditional Arabic dishes among the peace and privacy of your unique dining space. 90 minutes",
+            "7 Return journey to your accommodation Dropoff is estimated to be 10pm. Times may vary depending on operational requirements. 45 minutes"
+          ]
+        },
+        "supplementary_policy_sections": [
+          "Know before you go",
+          "Age policy",
+          "Cancellation policy"
+        ],
+        "supplementary_policy_format": "Concise paraphrase of the official page; these accordions are collapsed in the uploaded screenshot.",
+        "highlights_origin": "derived from the visible feature cards; no separate Highlights accordion is shown",
+        "dining_menu_path": null,
+        "dining_menu_source_url": null,
+        "discrepancies": [
+          "The combined drink icon mentions premium beverages, while the full description makes these a selection. Soft drinks remain included; the combined card is conservatively stored as optional.",
+          "The 3-4 and 5-6 guest cards are disabled for the screenshot selection of two adults; this does not establish permanent unavailability."
+        ],
+        "gallery_scope": "First three match the uploaded screenshot; later images supplement it from the original product gallery.",
+        "feature_order": [
+          "Private Transfer",
+          "Expert Safari Guide",
+          "Desert Dune Drive",
+          "Camel Ride",
+          "Wildlife",
+          "Photo Opportunity",
+          "Sunset Stop & Stargazing",
+          "Personal Waiter Service",
+          "Private Three-Course Dinner",
+          "Bubbles",
+          "Unlimited Soft Drinks & Premium Beverages",
+          "Shisha (optional)"
+        ],
+        "policy_summaries_in": {
+          "Know before you go": "know_before_you_go",
+          "Age policy": "age_policy",
+          "Cancellation policy": "cancellation_policy"
+        }
+      }
+    },
+    {
+      "slug": "the-veuve-clicquot-desert-experience",
+      "name": "The Veuve Clicquot Desert Experience",
+      "short_description": "The Veuve Clicquot Desert Experience is a first-of-its-kind evening of premium dining underneath the Dubai sunset.",
+      "about": "The Veuve Clicquot Desert Experience is a first-of-its-kind evening of premium dining underneath the Dubai sunset. The centrepiece of the experience is a multi-course menu, served alongside a selection of premium beverages specifically matched to each course, hosted by your personal chef and sommelier in a secluded corner of the desert. This experience brings together the natural beauty of the desert dunes and the exclusivity of private dining in a truly spectacular setting.",
+      "full_description": "The Veuve Clicquot Desert Experience by Arabian Adventures is a first-of its kind evening of premium dining in the Dubai desert. The experience is inspired by the world of exclusive dining and the natural beauty of the desert, aligning both elements to create an incredible night underneath the sunset.\n\nThis experience is inspired by the concept of exclusivity. Throughout your evening, there are so many moments to enjoy for yourself and your group, whether it's the multi-course menu prepared and served by your private chef, your bespoke dining space that’s private to you and your party of guests, or simply the moments you will share together.\n\nThe evening’s setting is a bespoke dining space, tucked away in a secluded corner of the desert. After guests take a moment to relax at the Sundowner Lounge with a glass of sparkling bubbles, a Bedouin-inspired dining area will play host to the remainder of the evening. The Sundowner Lounge can be reached by a short camel trek upon arrival, and is the perfect place to set the chilled, serene atmosphere for the remainder of the evening.\n\nThe multi-course menu of the Veuve Clicquot Desert Experience is crafted by a private chef, with the menu itself elevated by a selection of premium beverages chosen to enhance every dish with their own unique flavour profiles. A personal sommelier will also be on hand to demonstrate how the characteristics of each beverage align perfectly with every plate.\n\nThroughout the evening, you will have the opportunity to take in the world around you and delight your senses with the aromas of your food, the alignment between plate and glass, the sound of silence across the desert plains, and the feeling of experiencing something that's truly out of the ordinary.\n\nThe Veuve Clicquot Desert Experience is available for groups of up to eight guests. Whether you enjoy this experience as a couple for an anniversary, a food lover or wine connoisseur seeking premium dining away from the usual restaurant setting, a group of friends celebrating a special occasion, this incredible evening will be sure to meet and exceed any expectations you had about dining in the desert.",
+      "location": "Dubai",
+      "duration": 6,
+      "duration_unit": "hours",
+      "experience_time": "evening",
+      "languages": [
+        "English"
+      ],
+      "starting_price": 258534,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/desert-experiences/the-veuve-clicquot-desert-experience/01.webp",
+      "main_image": "images/desert-experiences/the-veuve-clicquot-desert-experience/01.webp",
+      "image_alt": "Guests beside a luxury 4x4 in the desert",
+      "pickup_information": "Private VIP transfers in a luxury car.",
+      "highlights": "A one-of-a-kind experience shared with your group of guests\nA multi-course menu prepared by a private chef\nA selection of premium beverages specially paired to your dining menu and served by a private sommelier\nA bespoke dining space in a secluded corner of the desert\nA special Veuve Clicquot playlist to create a serene atmosphere\nIncredible sunset views from the Sundowner Lounge",
+      "know_before_you_go": "This experience is exclusive to your party only, with space to comfortably accommodate up to eight guests\nGuests have access to nearby restrooms throughout the evening\nPlease let our team know about any dietary requirements in your group at least 48 hours prior to your experience\nA portion of the Veuve Clicquot Experience fee will be donated to supporting local conservation projects in the DDCR",
+      "age_policy": "The Veuve Clicquot Desert Experience is for guests aged 21 and above.",
+      "cancellation_policy": "Cancellations must be made at least 48 hours prior to your experience for a full refund. If a cancellation is made within 48 hours of the scheduled experience, a 100% no-show fee will be applied.",
+      "additional_notes": "Guests must be aged 21 or above. Please share dietary requirements at least 48 hours before the experience.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": true,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 8,
+      "youtube_url": "https://www.youtube.com/watch?v=pc-yDPWhV6M",
+      "images": [
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/01.webp",
+          "alt": "Guests beside a luxury 4x4 in the desert",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8aec6308/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_1.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/02.webp",
+          "alt": "Guests meeting an Arabian camel",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw265bd544/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_13.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/03.webp",
+          "alt": "Camel trek across the Dubai desert",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw50de30fb/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_4.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/04.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw3d3dbcdc/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_10.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/05.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw36fae344/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_14.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/06.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw5387ee9b/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_11.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/07.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 7",
+          "caption": null,
+          "display_order": 7,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwfc17f8b0/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_16.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/08.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 8",
+          "caption": null,
+          "display_order": 8,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwc38482ab/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_5.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/09.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 9",
+          "caption": null,
+          "display_order": 9,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw3ea8af73/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_3.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/10.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 10",
+          "caption": null,
+          "display_order": 10,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw7ef307b2/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_12.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/11.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 11",
+          "caption": null,
+          "display_order": 11,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw4f3c03c7/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_6.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/12.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 12",
+          "caption": null,
+          "display_order": 12,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw7205ffe4/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_2.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/the-veuve-clicquot-desert-experience/13.webp",
+          "alt": "The Veuve Clicquot Desert Experience gallery photograph 13",
+          "caption": null,
+          "display_order": 13,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw8104d9a1/images/webp-optimised-desktop/vc-new/IMGR253 - AA VC Image_1920x1080_7.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Private champagne reception",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2347a088/safari-unlimited-premium-beverages-and-bubbles-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-unlimited-premium-beverages-and-bubbles-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Picturesque sunset views",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw5299ab2c/safari-photo-stop-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-photo-stop-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "4 Course dining menu",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9e14dc7b/safari-traditional-middle-east-cuisine-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-traditional-middle-east-cuisine-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Premium wine pairing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwc3b68fc9/evening-premium-beverages-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-premium-beverages-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Private chef and sommelier",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw689cc722/safari-personal-waiter-service-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-personal-waiter-service-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Sunset camel ride",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf792b680/evening-camel- ride-icon.png",
+          "icon": "images/tour-icons/desert-experiences/evening-camel-ride-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "VIP transfers in a luxury car",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png",
+          "icon": "images/tour-icons/desert-experiences/evening-transfer-icon1.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Stargazing",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwfe10ba0b/safari-Walking Night Safari-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-walking-night-safari-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup and journey to the desert",
+          "description": "Pickup is estimated to be 2:30pm. Times may vary depending on operational requirements.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 2,
+          "title": "Dubai Desert Conservation Reserve Visitor Centre",
+          "description": "Start your experience with an interactive, immersive overview of our protected conservation reserve.",
+          "duration": 15,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "15 minutes"
+        },
+        {
+          "display_order": 3,
+          "title": "Wildlife drive",
+          "description": "Spot native wildlife on a fascinating drive across the reserve.",
+          "duration": 30,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "30 minutes"
+        },
+        {
+          "display_order": 4,
+          "title": "Camel ride experience",
+          "description": "Discover the desert on a unique ride aboard an Arabian camel.",
+          "duration": 20,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "20 minutes"
+        },
+        {
+          "display_order": 5,
+          "title": "Private desert lounge sunset experience",
+          "description": "Enjoy the perfect view of sunset from your own private lounge space.",
+          "duration": 60,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "60 minutes"
+        },
+        {
+          "display_order": 6,
+          "title": "Walk to your private dining set-up",
+          "description": "Take a short stroll across the sand from your tranquil lounge to your private dining space.\nAt your own pace.",
+          "duration": null,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "At your own pace"
+        },
+        {
+          "display_order": 7,
+          "title": "4 course premium 'chef's table' dining menu with specialist wine pairings",
+          "description": "Savour every course of your premium menu, crafted by your personal chef and paired specially with a selection of premium beverages.",
+          "duration": 90,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "90 minutes"
+        },
+        {
+          "display_order": 8,
+          "title": "Campfire and stargazing",
+          "description": "Conclude your evening with memorable moments watching the stars and feeling the warmth of the campfire.\nAt your own pace.",
+          "duration": null,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "At your own pace"
+        },
+        {
+          "display_order": 9,
+          "title": "Return journey to your accommodation",
+          "description": "Dropoff is estimated to be 9:30pm. Times may vary depending on operational requirements.",
+          "duration": null,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Veuve Clicquot Desert Experience",
+          "description": "Private dining with a chef and sommelier, for guests aged 21 and above. Minimum two adults; up to eight guests. Price: PKR 258,534 per adult.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": {
+            "package_name": "Veuve Clicquot Desert Experience",
+            "amount": 258534,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "minimum_guests": 2,
+            "maximum_guests": 8,
+            "source": "screenshot headline marked per person; minimum two adults corroborated by original service card"
+          },
+          "origin": "official service label; headline price from screenshot"
+        }
+      ],
+      "prices": [
+        {
+          "package_name": "Veuve Clicquot Desert Experience",
+          "vehicle_type": "private",
+          "vehicle_label": "Luxury private transfer",
+          "description": "Per-adult screenshot quotation. Guests must be 21+. Minimum two adults. Source price-display wording requires confirmation.",
+          "adult_price": 258534,
+          "child_price": null,
+          "child_min_age": null,
+          "child_max_age": null,
+          "infant_price": null,
+          "infant_max_age": null,
+          "minimum_guests": 2,
+          "maximum_guests": 8,
+          "currency": "PKR",
+          "is_active": false,
+          "price_basis": "per_person"
+        }
+      ],
+      "_source": {
+        "screenshot": "image(20261102-194524).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-experiences/aa-veuve-clicquot-desert-experience.html",
+        "booking_mode": "online",
+        "price_status": "Screenshot PKR amount, not a live quotation",
+        "package_quotes": [
+          {
+            "package_name": "Veuve Clicquot Desert Experience",
+            "amount": 258534,
+            "currency": "PKR",
+            "price_basis": "per_person",
+            "minimum_guests": 2,
+            "maximum_guests": 8,
+            "source": "screenshot headline marked per person; minimum two adults corroborated by original service card"
+          }
+        ],
+        "sections": {
+          "About": [
+            "The Veuve Clicquot Desert Experience is a first-of-its-kind evening of premium dining underneath the Dubai sunset. The centrepiece of the experience is a multi-course menu, served alongside a selection of premium beverages specifically matched to each course, hosted by your personal chef and sommelier in a secluded corner of the desert. This experience brings together the natural beauty of the desert dunes and the exclusivity of private dining in a truly spectacular setting."
+          ],
+          "Full description": [
+            "The Veuve Clicquot Desert Experience by Arabian Adventures is a first-of its kind evening of premium dining in the Dubai desert. The experience is inspired by the world of exclusive dining and the natural beauty of the desert, aligning both elements to create an incredible night underneath the sunset.",
+            "This experience is inspired by the concept of exclusivity. Throughout your evening, there are so many moments to enjoy for yourself and your group, whether it's the multi-course menu prepared and served by your private chef, your bespoke dining space that’s private to you and your party of guests, or simply the moments you will share together.",
+            "The evening’s setting is a bespoke dining space, tucked away in a secluded corner of the desert. After guests take a moment to relax at the Sundowner Lounge with a glass of sparkling bubbles, a Bedouin-inspired dining area will play host to the remainder of the evening. The Sundowner Lounge can be reached by a short camel trek upon arrival, and is the perfect place to set the chilled, serene atmosphere for the remainder of the evening.",
+            "The multi-course menu of the Veuve Clicquot Desert Experience is crafted by a private chef, with the menu itself elevated by a selection of premium beverages chosen to enhance every dish with their own unique flavour profiles. A personal sommelier will also be on hand to demonstrate how the characteristics of each beverage align perfectly with every plate.",
+            "Throughout the evening, you will have the opportunity to take in the world around you and delight your senses with the aromas of your food, the alignment between plate and glass, the sound of silence across the desert plains, and the feeling of experiencing something that's truly out of the ordinary.",
+            "The Veuve Clicquot Desert Experience is available for groups of up to eight guests. Whether you enjoy this experience as a couple for an anniversary, a food lover or wine connoisseur seeking premium dining away from the usual restaurant setting, a group of friends celebrating a special occasion, this incredible evening will be sure to meet and exceed any expectations you had about dining in the desert."
+          ],
+          "Experience Itinerary": [
+            "1 Pickup and journey to the desert Pickup is estimated to be 2:30pm. Times may vary depending on operational requirements. 45 minutes",
+            "2 Dubai Desert Conservation Reserve Visitor Centre Start your experience with an interactive, immersive overview of our protected conservation reserve. 15 minutes",
+            "3 Wildlife drive Spot native wildlife on a fascinating drive across the reserve. 30 minutes",
+            "4 Camel ride experience Discover the desert on a unique ride aboard an Arabian camel. 20 minutes",
+            "5 Private desert lounge sunset experience Enjoy the perfect view of sunset from your own private lounge space. 60 minutes",
+            "6 Walk to your private dining set-up Take a short stroll across the sand from your tranquil lounge to your private dining space. At your own pace",
+            "7 4 course premium 'chef's table' dining menu with specialist wine pairings Savour every course of your premium menu, crafted by your personal chef and paired specially with a selection of premium beverages. 90 minutes",
+            "8 Campfire and stargazing Conclude your evening with memorable moments watching the stars and feeling the warmth of the campfire. At your own pace",
+            "9 Return journey to your accommodation Dropoff is estimated to be 9:30pm. Times may vary depending on operational requirements."
+          ],
+          "Highlights": [
+            "A one-of-a-kind experience shared with your group of guests",
+            "A multi-course menu prepared by a private chef",
+            "A selection of premium beverages specially paired to your dining menu and served by a private sommelier",
+            "A bespoke dining space in a secluded corner of the desert",
+            "A special Veuve Clicquot playlist to create a serene atmosphere",
+            "Incredible sunset views from the Sundowner Lounge"
+          ],
+          "Know before you go": [
+            "This experience is exclusive to your party only, with space to comfortably accommodate up to eight guests",
+            "Guests have access to nearby restrooms throughout the evening",
+            "Please let our team know about any dietary requirements in your group at least 48 hours prior to your experience",
+            "A portion of the Veuve Clicquot Experience fee will be donated to supporting local conservation projects in the DDCR"
+          ],
+          "Age policy": [
+            "The Veuve Clicquot Desert Experience is for guests aged 21 and above."
+          ],
+          "Cancellation policy": [
+            "Cancellations must be made at least 48 hours prior to your experience for a full refund. If a cancellation is made within 48 hours of the scheduled experience, a 100% no-show fee will be applied."
+          ]
+        },
+        "supplementary_policy_sections": [],
+        "supplementary_policy_format": null,
+        "highlights_origin": "source Highlights accordion",
+        "dining_menu_path": "documents/desert-experiences/veuve-clicquot-dining-menu.pdf",
+        "dining_menu_source_url": "https://image.e.arabian-adventures.com/lib/fe5915707c6c05747011/m/1/1893088a-4c63-4539-9b12-8388f57a7a17.pdf",
+        "discrepancies": [
+          "Uploaded screenshot estimates pickup at 2:30pm; the current official page says 3:30pm. The screenshot value is retained; operational pickup must be reconfirmed.",
+          "The official service description says the displayed price is for two adults, while both the source headline and unit label say per person/per adult. The quoted amount is retained with these source labels and remains inactive pending confirmation."
+        ],
+        "gallery_scope": "First three match the uploaded screenshot; later images supplement it from the original product gallery.",
+        "feature_order": [
+          "Private champagne reception",
+          "Picturesque sunset views",
+          "4 Course dining menu",
+          "Premium wine pairing",
+          "Private chef and sommelier",
+          "Sunset camel ride",
+          "VIP transfers in a luxury car",
+          "Stargazing"
+        ]
+      }
+    },
+    {
+      "slug": "morning-desert-adventure-hot-air-balloon-combo",
+      "name": "Morning Desert Adventure & Hot Air Balloon Combo",
+      "short_description": "Take your Morning Desert Adventure to another level and add a hot air balloon experience to your spectacular early start.",
+      "about": "Take your Morning Desert Adventure to another level and add a hot air balloon experience to your spectacular early start. As the city starts to wake, you'll head to the skies and take the perfect vantage point for a desert sunrise. After your hot air balloon experience, you will take to the dunes for a full itinerary of activities throughout the morning, including a thrilling dune drive, peaceful camel trek, wildlife spotting opportunities and breakfast in the desert.",
+      "full_description": "A Morning Desert Adventure showcases the natural wonder that the desert brings.\n\nThis experience is a spectacular break from the morning routine and includes unforgettable activities you will always remember, including a hot air balloon ride over the desert at sunrise and a range of activities that will bring you closer to the magic of the dunes.\n\nStarting before daybreak, the Morning Desert Adventure begins with the trip of a lifetime on a Hero hot air balloon.\n\nHero Air Balloon are specialists in immersive, one-of-a-kind experiences, and their exclusive access to the Dubai Desert Conservation Reserve provides guests with incredible views across some of the most captivating landscapes in the world.\n\nYou will take in the desert sunrise from a truly unique vantage point when you start the day with this phenomenal activity.\n\nOnce you have seen one of the world’s best sunrises, you will be transferred to the starting point of your Morning Desert Adventure.\n\nA thrilling dune drive follows, where you'll feel every element of the rugged desert terrain as we take you up, down and across the dunes.\n\nThe camel ride and sandboarding sessions are both calming and thrilling and are unique experiences you’ll only be able to enjoy in the desert.\n\nBreakfast on the dunes is included as part of your adventure, so you can enjoy a once-in-a-lifetime first meal of the day.\n\nThroughout your Morning Desert Adventure, there will be plenty of opportunities to spot the local wildlife that call the Dubai Desert Conservation Reserve their home.\n\nPlease note: For pickups from Abu Dhabi, Ras al Khaimah, Umm al Quwain, Al Ain, and Fujairah, private vehicle bookings will be subject to an AED 200 surcharge per vehicle, and shared vehicle bookings will be subject to an AED 200 surcharge per booking.",
+      "location": "Dubai",
+      "duration": null,
+      "duration_unit": "hours",
+      "experience_time": "morning",
+      "languages": [],
+      "starting_price": 153584,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/01.webp",
+      "main_image": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/01.webp",
+      "image_alt": "Couple enjoying breakfast at a desert dining table",
+      "pickup_information": "Transfers to and from the Morning Desert Adventure from your hotel or residence.",
+      "highlights": "A thrilling dune drive through the Dubai Desert Conservation Reserve\nWalking across the dunes on an Arabian Camel\nEnjoying a breakfast box underneath the morning sunshine\nSpotting the native wildlife of the DDCR roaming through their natural habitat\nSurfing the dunes during an optional sandboarding session\nSpectacular views along the horizon from your hot air balloon\nDrone show and inflight falcon show",
+      "know_before_you_go": "Morning Desert Adventure:\nWe recommend wearing comfortable clothing, including sneakers/walking shoes and modest dress.\nTemperatures in the desert can fluctuate quickly. Warm afternoons can turn into cool evenings, particularly in winter.\nWe recommend wearing sunscreen for your activity and packing a pair of sunglasses and a hat.\nWe will accommodate special dietary requirements when shared in advance. Please contact our team via WhatsApp on +971 4 274 8803 or complete the form linked here .\nPlease inform our team of any existing medical conditions before joining. Where necessary, we will make alternative arrangements for certain activities to ensure guest comfort.\nExpectant mothers and guests with existing medical conditions will be required to skip the 4x4 dune drive for their comfort.\nTransfers to and from Abu Dhabi, Ras al Khaimah, Umm al Quwain, Al Ain, and Fujairah are subject to an AED 200 surcharge per vehicle for private vehicle bookings and AED 200 per booking for shared vehicle bookings.\nHero Balloon Experience – Terms and Conditions:\nAll bookings require Emirates ID numbers or Passport Numbers for each passenger at the time of booking, per Gulf Civil Aviation Authority (GCAA) regulations.\nItineraries may change due to weather, seasonal conditions, or Conservation Reserve requirements.\nGuests acknowledge and accept inherent risks in activities, including injury, illness, or loss. Participation is voluntary.\nNo child under the age of 5 years can be accepted for a hot air balloon flight.\nChildren 5 years or older pay full adult fare.\nChildren may be required to be seated in booster seats or other child-safety-accredited seating.\nFitness Requirements:\nHot Air Balloon guests must be able to safely jump in and out of the balloon basket.\nThe company assumes no responsibility for health conditions; participation is at guests’ own risk.\nPregnant Guests:\nHot Air Ballooning is not recommended for pregnant guests.\nOnly permitted within the first trimester; not allowed in the second or third trimester.\nGuests who had major surgery, a broken leg/arm in the last 6 months, or suffer from chronic back/neck pain should not participate.\nSmoking is prohibited inside tour vehicles.\nThe possession of alcohol inside all tourist vehicles is prohibited under UAE law.\nThe company reserves the right to refuse guests whose behavior disrupts the group.\nVehicles may be equipped with dashcams for safety and training purposes.\nDrones are not permitted due to UAE aviation regulations.\nGuests consent to photos or videos being taken and used for promotional purposes.",
+      "age_policy": "Adults: 12+\nChildren: 5-11",
+      "cancellation_policy": "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts\nFull payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity\nIn exceptional circumstances, we may have to amend the Morning Desert Adventure schedule, or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible\nCancellation Policy for Hot Air Balloons\nCancellations made at least 24 hours before tour departure: Eligible for a full refund.\nCancellations made under 24 hours before tour departure: Not eligible for a refund.\nNo refunds for failure to join a tour, late arrival, or early departure.\nTours may be canceled if minimum guest numbers are not met. Guests will be offered an alternative tour or a full refund.\nA full refund or alternate booking date will be offered if a tour is canceled due to inclement weather.",
+      "additional_notes": "What's included:\nTransfers to and from the Morning Desert Adventure from your hotel or residence\nEarly wakeup call & transfer to Hot Air Balloon take off location\nDrone show\n45 min Hot Air Balloon ride over the Dubai Desert\nIn-flight falcon show\nTransfers from the hot air balloon to the desert to begin your Morning Desert Adventure\nBreakfast box and refreshments throughout your adventure\nA Camel Ride experience on board an Arabian Camel\nSandboarding session\nWildlife spotting opportunities throughout your morning adventure\nThis product is not available for online bookings. Please request a callback or WhatsApp +971 42748803 to book this tour.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": true,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 9,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/01.webp",
+          "alt": "Couple enjoying breakfast at a desert dining table",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwfbb5770c/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_1-min (1).webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/02.webp",
+          "alt": "Hot air balloon above the Dubai desert at sunrise",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw355b7a2c/images/webp-optimised-desktop/morningxballoon/morning-desert-safari-balloon-3-1920x1080.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/03.webp",
+          "alt": "Safari vehicle driving across the dunes",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw3626d6c7/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_3-min.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/04.webp",
+          "alt": "Morning Desert Adventure & Hot Air Balloon Combo gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw007f158f/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_4-min.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/05.webp",
+          "alt": "Morning Desert Adventure & Hot Air Balloon Combo gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw537e14bf/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_5-min.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/06.webp",
+          "alt": "Morning Desert Adventure & Hot Air Balloon Combo gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwfd19d476/images/webp-optimised-desktop/morningxballoon/morning-desert-safari-balloon-2-1920x1080.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/07.webp",
+          "alt": "Morning Desert Adventure & Hot Air Balloon Combo gallery photograph 7",
+          "caption": null,
+          "display_order": 7,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd453c5ad/images/webp-optimised-desktop/morningxballoon/morning-desert-safari-balloon-4-1920x1080.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/morning-desert-adventure-hot-air-balloon-combo/08.webp",
+          "alt": "Morning Desert Adventure & Hot Air Balloon Combo gallery photograph 8",
+          "caption": null,
+          "display_order": 8,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwaeca1809/images/webp-optimised-desktop/morningxballoon/morning-desert-safari-balloon-5-1920x1080.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "features": [],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Morning Desert Adventure & Hot Air Balloon Combo",
+          "description": "Hot air balloon experience followed by a Morning Desert Adventure. Request a callback to confirm the selected vehicle, group size and final quotation.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": null,
+          "origin": "database grouping using exact source tour title"
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "screenshot": "image(20261102-194656).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-experiences/aa-morning-safari-hot-air-balloon.html",
+        "booking_mode": "callback",
+        "price_status": "Screenshot PKR amount, not a live quotation",
+        "package_quotes": [],
+        "sections": {
+          "About": [
+            "Take your Morning Desert Adventure to another level and add a hot air balloon experience to your spectacular early start. As the city starts to wake, you'll head to the skies and take the perfect vantage point for a desert sunrise. After your hot air balloon experience, you will take to the dunes for a full itinerary of activities throughout the morning, including a thrilling dune drive, peaceful camel trek, wildlife spotting opportunities and breakfast in the desert."
+          ],
+          "Full description": [
+            "A Morning Desert Adventure showcases the natural wonder that the desert brings.",
+            "This experience is a spectacular break from the morning routine and includes unforgettable activities you will always remember, including a hot air balloon ride over the desert at sunrise and a range of activities that will bring you closer to the magic of the dunes.",
+            "Starting before daybreak, the Morning Desert Adventure begins with the trip of a lifetime on a Hero hot air balloon.",
+            "Hero Air Balloon are specialists in immersive, one-of-a-kind experiences, and their exclusive access to the Dubai Desert Conservation Reserve provides guests with incredible views across some of the most captivating landscapes in the world.",
+            "You will take in the desert sunrise from a truly unique vantage point when you start the day with this phenomenal activity.",
+            "Once you have seen one of the world’s best sunrises, you will be transferred to the starting point of your Morning Desert Adventure.",
+            "A thrilling dune drive follows, where you'll feel every element of the rugged desert terrain as we take you up, down and across the dunes.",
+            "The camel ride and sandboarding sessions are both calming and thrilling and are unique experiences you’ll only be able to enjoy in the desert.",
+            "Breakfast on the dunes is included as part of your adventure, so you can enjoy a once-in-a-lifetime first meal of the day.",
+            "Throughout your Morning Desert Adventure, there will be plenty of opportunities to spot the local wildlife that call the Dubai Desert Conservation Reserve their home.",
+            "Please note: For pickups from Abu Dhabi, Ras al Khaimah, Umm al Quwain, Al Ain, and Fujairah, private vehicle bookings will be subject to an AED 200 surcharge per vehicle, and shared vehicle bookings will be subject to an AED 200 surcharge per booking."
+          ],
+          "What's included": [
+            "Transfers to and from the Morning Desert Adventure from your hotel or residence",
+            "Early wakeup call & transfer to Hot Air Balloon take off location",
+            "Drone show",
+            "45 min Hot Air Balloon ride over the Dubai Desert",
+            "In-flight falcon show",
+            "Transfers from the hot air balloon to the desert to begin your Morning Desert Adventure",
+            "Breakfast box and refreshments throughout your adventure",
+            "A Camel Ride experience on board an Arabian Camel",
+            "Sandboarding session",
+            "Wildlife spotting opportunities throughout your morning adventure"
+          ],
+          "Highlights": [
+            "A thrilling dune drive through the Dubai Desert Conservation Reserve",
+            "Walking across the dunes on an Arabian Camel",
+            "Enjoying a breakfast box underneath the morning sunshine",
+            "Spotting the native wildlife of the DDCR roaming through their natural habitat",
+            "Surfing the dunes during an optional sandboarding session",
+            "Spectacular views along the horizon from your hot air balloon",
+            "Drone show and inflight falcon show"
+          ],
+          "Know before you go": [
+            "Morning Desert Adventure:",
+            "We recommend wearing comfortable clothing, including sneakers/walking shoes and modest dress.",
+            "Temperatures in the desert can fluctuate quickly. Warm afternoons can turn into cool evenings, particularly in winter.",
+            "We recommend wearing sunscreen for your activity and packing a pair of sunglasses and a hat.",
+            "We will accommodate special dietary requirements when shared in advance. Please contact our team via WhatsApp on +971 4 274 8803 or complete the form linked here .",
+            "Please inform our team of any existing medical conditions before joining. Where necessary, we will make alternative arrangements for certain activities to ensure guest comfort.",
+            "Expectant mothers and guests with existing medical conditions will be required to skip the 4x4 dune drive for their comfort.",
+            "Transfers to and from Abu Dhabi, Ras al Khaimah, Umm al Quwain, Al Ain, and Fujairah are subject to an AED 200 surcharge per vehicle for private vehicle bookings and AED 200 per booking for shared vehicle bookings.",
+            "Hero Balloon Experience – Terms and Conditions:",
+            "All bookings require Emirates ID numbers or Passport Numbers for each passenger at the time of booking, per Gulf Civil Aviation Authority (GCAA) regulations.",
+            "Itineraries may change due to weather, seasonal conditions, or Conservation Reserve requirements.",
+            "Guests acknowledge and accept inherent risks in activities, including injury, illness, or loss. Participation is voluntary.",
+            "No child under the age of 5 years can be accepted for a hot air balloon flight.",
+            "Children 5 years or older pay full adult fare.",
+            "Children may be required to be seated in booster seats or other child-safety-accredited seating.",
+            "Fitness Requirements:",
+            "Hot Air Balloon guests must be able to safely jump in and out of the balloon basket.",
+            "The company assumes no responsibility for health conditions; participation is at guests’ own risk.",
+            "Pregnant Guests:",
+            "Hot Air Ballooning is not recommended for pregnant guests.",
+            "Only permitted within the first trimester; not allowed in the second or third trimester.",
+            "Guests who had major surgery, a broken leg/arm in the last 6 months, or suffer from chronic back/neck pain should not participate.",
+            "Smoking is prohibited inside tour vehicles.",
+            "The possession of alcohol inside all tourist vehicles is prohibited under UAE law.",
+            "The company reserves the right to refuse guests whose behavior disrupts the group.",
+            "Vehicles may be equipped with dashcams for safety and training purposes.",
+            "Drones are not permitted due to UAE aviation regulations.",
+            "Guests consent to photos or videos being taken and used for promotional purposes."
+          ],
+          "Age policy": [
+            "Adults: 12+",
+            "Children: 5-11"
+          ],
+          "Cancellation policy": [
+            "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts",
+            "Full payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity",
+            "In exceptional circumstances, we may have to amend the Morning Desert Adventure schedule, or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible",
+            "Cancellation Policy for Hot Air Balloons",
+            "Cancellations made at least 24 hours before tour departure: Eligible for a full refund.",
+            "Cancellations made under 24 hours before tour departure: Not eligible for a refund.",
+            "No refunds for failure to join a tour, late arrival, or early departure.",
+            "Tours may be canceled if minimum guest numbers are not met. Guests will be offered an alternative tour or a full refund.",
+            "A full refund or alternate booking date will be offered if a tour is canceled due to inclement weather."
+          ]
+        },
+        "supplementary_policy_sections": [],
+        "supplementary_policy_format": null,
+        "highlights_origin": "source Highlights accordion",
+        "dining_menu_path": null,
+        "dining_menu_source_url": null,
+        "discrepancies": [
+          "No total duration, language badge, numbered itinerary, or icon strip is displayed. These are not copied from the separate Morning Desert Adventure product.",
+          "The source discourages ballooning during pregnancy while also describing a first-trimester exception. Both source statements are retained for operator clarification."
+        ],
+        "gallery_scope": "First three match the uploaded screenshot; later images supplement it from the original product gallery.",
+        "feature_order": []
+      }
+    },
+    {
+      "slug": "wadi-adventures",
+      "name": "Wadi Adventures",
+      "short_description": "Discover the beauty of the UAE spanning far beyond the desert.",
+      "about": "Discover the beauty of the UAE spanning far beyond the desert. Away from the dunes and the downtown lights, there’s a world of incredible natural wonder that can only be found by those who set out to discover it. Rugged mountains, hidden pools, and a day of breathtaking scenery await on a Wadi Adventure.",
+      "full_description": "There are so many hidden gems to be found across the UAE, with many discovered when spending a day on a Wadi Adventure. When you head out of the city and into the country, you will find stunning mountainous landscapes that are eye-catching and breathtaking in equal measure. What’s more, there’s an array of historical sites that tell the story of the UAE, from a time long before how it currently looks today.\n\nThe Wadi Adventure tour is a memorable adventure that uncovers the natural beauty of the UAE. Starting from your hotel or residence, the tour takes you on a trip across some of the most beautiful, cultural and enriching sights the country offers.\n\nThe tour begins in Sharjah, at Fossil Rock. Owing to its name, Fossil Rock is a landmark where fossils millions of years old can be held in your hands. This first stop of the tour sets the tone for the rest of your journey, as there is vast outstanding beauty and incredible heritage to be discovered here.\n\nFrom here, the tour continues to the Mleiha Archaeological Centre, where the country’s caves, wadis and archaeological sites are showcased across an eye-catching exhibition. There will be plenty of photo opportunities available at Wadi Shawka Pools, before heading across to Buhais Geology Park.\n\nBuhais Geology Park is an education centre assembled next to a series of tombs and other historical landmarks. Here, you will find remnants of the country’s ancient past, and signs of civilisation from many centuries ago. A scenic drive over to Wadi Helo for a leisurely exploration will then follow, on our way to the East Coast of the UAE for a picturesque lunch stop.\n\nThe Wadi Adventures tour is for lovers of history, nature, and experiencing the path less travelled. While the bright lights of downtown and the golden sandy beaches are Dubai’s signature appeal, a day away from the mainstream will leave you feeling charmed and enriched.",
+      "location": "Ras Al Khaimah",
+      "duration": 8,
+      "duration_unit": "hours",
+      "experience_time": "morning",
+      "languages": [
+        "English"
+      ],
+      "starting_price": 233329,
+      "currency": "PKR",
+      "status": "active",
+      "thumbnail": "images/desert-experiences/wadi-adventures/01.webp",
+      "main_image": "images/desert-experiences/wadi-adventures/01.webp",
+      "image_alt": "Arabian Adventures guide welcoming guests beside a 4x4",
+      "pickup_information": "Hotel or residence pick-up included from anywhere in Dubai",
+      "highlights": "Transfers Shared or Private\nLunch\nExplore wadis and fossil rock\nMleiha Archaeological site",
+      "know_before_you_go": "Pickup from your hotel or residence will be between 8am – 9am. A time will be confirmed with you prior to the activity, and we request for your group to be ready 15 minutes prior to the confirmed pickup time\nBoth shared and private vehicle options are available for the Wadi Adventures tour. Our vehicles accommodate up to 4 people\nThis is a full-day tour, which will involve outdoor activity for most of the day. We advise bringing suncream, sunglasses and a hat\nDuring the Wadi Adventures tour, we will be visiting sites with historical and cultural significance. We request that you adhere to the modest dress code requirements\nFood, beverages, and entrance tickets to any venues are included as part of your experience\nWe do not recommend this activity for guests who are pregnant or have pre-existing medical conditions\nIf you have any special dietary requirements or alternative meal requests, please contact our team via WhatsApp on +971 4 274 8803 or via the form here, and we will work to accommodate your request\nDuring the Holy Month of Ramadan, water will continue to be available to guests. However, we kindly request that it is consumed in our vehicles during daylight hours. Water may not be consumed outside during daylight hours, however there will be plenty of opportunities to drink in the vehicles throughout your experience. Speak to your tour guide if you have any questions.",
+      "age_policy": "Adults: 12+\nChildren: 6-11\nA private vehicle must be booked for children aged between 2-5, or under 135cm, and details shared with our team at the time of booking",
+      "cancellation_policy": "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts\nFull payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity\nIn exceptional circumstances, we may have to amend the Wadi Adventures schedule, or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible",
+      "additional_notes": "Both shared and private vehicle options are available. Vehicles accommodate up to four people. Food, beverages and venue entrance tickets are included.",
+      "is_featured": false,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": true,
+      "location_badge": "Ras Al Khaimah",
+      "promotion_label": null,
+      "display_order": 10,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/desert-experiences/wadi-adventures/01.webp",
+          "alt": "Arabian Adventures guide welcoming guests beside a 4x4",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9e91a05d/images/arabian-adventures/hi-res/arabian-adventures-cars/arabian-adventure-representative-picking-up-family-1920x1080.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/wadi-adventures/02.webp",
+          "alt": "Fossil Rock and the surrounding dunes",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2315f090/images/hi-res/06-shutterstock1-1182x709.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/wadi-adventures/03.webp",
+          "alt": "Historic archaeological site visited during Wadi Adventures",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw11e51ca8/images/large/wadi-wonder-mleiha-archaeological-centre-1232x1232.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/wadi-adventures/04.webp",
+          "alt": "Wadi Adventures gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbea9a667/images/large/wadi-wonder-wadi-shawka-1232x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/wadi-adventures/05.webp",
+          "alt": "Wadi Adventures gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw80cda62c/images/large/wadi-wonder-buhais-geology-park-1232x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/desert-experiences/wadi-adventures/06.webp",
+          "alt": "Wadi Adventures gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw62368b19/images/hi-res/06-shutterstock-1182x709.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "features": [
+        {
+          "name": "Transfers Shared or Private",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png",
+          "icon": "images/tour-icons/desert-experiences/evening-transfer-icon1.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Lunch",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9e14dc7b/safari-traditional-middle-east-cuisine-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-traditional-middle-east-cuisine-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Explore wadis and fossil rock",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw987f5db7/safari-mleiha-rchaeological-site-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-mleiha-rchaeological-site-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        },
+        {
+          "name": "Mleiha Archaeological site",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw987f5db7/safari-mleiha-rchaeological-site-icon.png",
+          "icon": "images/tour-icons/desert-experiences/safari-mleiha-rchaeological-site-icon.png",
+          "inclusion_status": "included",
+          "notes": null
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup and journey to the desert",
+          "description": "Pickup is estimated to be 8am. Times may vary depending on operational requirements.",
+          "duration": 60,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "60 minutes"
+        },
+        {
+          "display_order": 2,
+          "title": "Buhais Geology Park",
+          "description": "Walk along breathtaking scenic trails and feel like you’re discovering another planet.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 3,
+          "title": "Mleiha Archaeological Centre",
+          "description": "Visit this purpose-built centre located on the site of a Bronze Age tomb.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 4,
+          "title": "Fossil Rock",
+          "description": "Take a short drive to this rugged, mountainous landmark, with views as far as the eye can see.",
+          "duration": 30,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "30 minutes"
+        },
+        {
+          "display_order": 5,
+          "title": "Wadi Shawka Pools",
+          "description": "Venture into the mountains and discover hidden water pools nestled among rugged terrain.",
+          "duration": 60,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "60 minutes"
+        },
+        {
+          "display_order": 6,
+          "title": "Picturesque lunch stop",
+          "description": "Enjoy a lunch break surrounded by rugged mountain views.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "45 minutes"
+        },
+        {
+          "display_order": 7,
+          "title": "Sweet Valley at Wadi Helo",
+          "description": "Walk among history and enjoy incredible views that showcase the old next to the new.",
+          "duration": 60,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": "60 minutes"
+        },
+        {
+          "display_order": 8,
+          "title": "Return journey to your accommodation",
+          "description": "Dropoff is estimated to be 6:00pm. Times may vary depending on operational requirements.",
+          "duration": null,
+          "duration_unit": "minutes",
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Shared Vehicle",
+          "description": "Shared transfers for Wadi Adventures. Vehicles accommodate up to four people.",
+          "display_order": 1,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": null,
+          "origin": "vehicle type stated in Know before you go; expanded service selector is not visible"
+        },
+        {
+          "name": "Private Vehicle",
+          "description": "Private transfers for Wadi Adventures. Vehicles accommodate up to four people.",
+          "display_order": 2,
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "quote": null,
+          "origin": "vehicle type stated in Know before you go; expanded service selector is not visible"
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "screenshot": "image(20261102-194734).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-experiences/aa-wadi-adventures.html",
+        "booking_mode": "online",
+        "price_status": "Screenshot PKR amount, not a live quotation",
+        "package_quotes": [],
+        "sections": {
+          "About": [
+            "Discover the beauty of the UAE spanning far beyond the desert. Away from the dunes and the downtown lights, there’s a world of incredible natural wonder that can only be found by those who set out to discover it. Rugged mountains, hidden pools, and a day of breathtaking scenery await on a Wadi Adventure."
+          ],
+          "Full description": [
+            "There are so many hidden gems to be found across the UAE, with many discovered when spending a day on a Wadi Adventure. When you head out of the city and into the country, you will find stunning mountainous landscapes that are eye-catching and breathtaking in equal measure. What’s more, there’s an array of historical sites that tell the story of the UAE, from a time long before how it currently looks today.",
+            "The Wadi Adventure tour is a memorable adventure that uncovers the natural beauty of the UAE. Starting from your hotel or residence, the tour takes you on a trip across some of the most beautiful, cultural and enriching sights the country offers.",
+            "The tour begins in Sharjah, at Fossil Rock. Owing to its name, Fossil Rock is a landmark where fossils millions of years old can be held in your hands. This first stop of the tour sets the tone for the rest of your journey, as there is vast outstanding beauty and incredible heritage to be discovered here.",
+            "From here, the tour continues to the Mleiha Archaeological Centre, where the country’s caves, wadis and archaeological sites are showcased across an eye-catching exhibition. There will be plenty of photo opportunities available at Wadi Shawka Pools, before heading across to Buhais Geology Park.",
+            "Buhais Geology Park is an education centre assembled next to a series of tombs and other historical landmarks. Here, you will find remnants of the country’s ancient past, and signs of civilisation from many centuries ago. A scenic drive over to Wadi Helo for a leisurely exploration will then follow, on our way to the East Coast of the UAE for a picturesque lunch stop.",
+            "The Wadi Adventures tour is for lovers of history, nature, and experiencing the path less travelled. While the bright lights of downtown and the golden sandy beaches are Dubai’s signature appeal, a day away from the mainstream will leave you feeling charmed and enriched."
+          ],
+          "Experience Itinerary": [
+            "1 Pickup and journey to the desert Pickup is estimated to be 8am. Times may vary depending on operational requirements. 60 minutes",
+            "2 Buhais Geology Park Walk along breathtaking scenic trails and feel like you’re discovering another planet. 45 minutes",
+            "3 Mleiha Archaeological Centre Visit this purpose-built centre located on the site of a Bronze Age tomb. 45 minutes",
+            "4 Fossil Rock Take a short drive to this rugged, mountainous landmark, with views as far as the eye can see. 30 minutes",
+            "5 Wadi Shawka Pools Venture into the mountains and discover hidden water pools nestled among rugged terrain. 60 minutes",
+            "6 Picturesque lunch stop Enjoy a lunch break surrounded by rugged mountain views. 45 minutes",
+            "7 Sweet Valley at Wadi Helo Walk among history and enjoy incredible views that showcase the old next to the new. 60 minutes",
+            "8 Return journey to your accommodation Dropoff is estimated to be 6:00pm. Times may vary depending on operational requirements."
+          ],
+          "Know before you go": [
+            "Pickup from your hotel or residence will be between 8am – 9am. A time will be confirmed with you prior to the activity, and we request for your group to be ready 15 minutes prior to the confirmed pickup time",
+            "Both shared and private vehicle options are available for the Wadi Adventures tour. Our vehicles accommodate up to 4 people",
+            "This is a full-day tour, which will involve outdoor activity for most of the day. We advise bringing suncream, sunglasses and a hat",
+            "During the Wadi Adventures tour, we will be visiting sites with historical and cultural significance. We request that you adhere to the modest dress code requirements",
+            "Food, beverages, and entrance tickets to any venues are included as part of your experience",
+            "We do not recommend this activity for guests who are pregnant or have pre-existing medical conditions",
+            "If you have any special dietary requirements or alternative meal requests, please contact our team via WhatsApp on +971 4 274 8803 or via the form here, and we will work to accommodate your request",
+            "During the Holy Month of Ramadan, water will continue to be available to guests. However, we kindly request that it is consumed in our vehicles during daylight hours. Water may not be consumed outside during daylight hours, however there will be plenty of opportunities to drink in the vehicles throughout your experience. Speak to your tour guide if you have any questions."
+          ],
+          "Age policy": [
+            "Adults: 12+",
+            "Children: 6-11",
+            "A private vehicle must be booked for children aged between 2-5, or under 135cm, and details shared with our team at the time of booking"
+          ],
+          "Cancellation policy": [
+            "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts",
+            "Full payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity",
+            "In exceptional circumstances, we may have to amend the Wadi Adventures schedule, or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible"
+          ]
+        },
+        "supplementary_policy_sections": [],
+        "supplementary_policy_format": null,
+        "highlights_origin": "derived from the visible feature cards; no separate Highlights accordion is shown",
+        "dining_menu_path": null,
+        "dining_menu_source_url": null,
+        "discrepancies": [
+          "The source location badge is Ras Al Khaimah, although the narrative and itinerary describe stops around Sharjah and the East Coast. The badge and itinerary are preserved without relabeling.",
+          "The 8-hour headline and estimated 8am pickup / 6pm dropoff are source values and are not recalculated into a different duration."
+        ],
+        "gallery_scope": "First three match the uploaded screenshot; later images supplement it from the original product gallery.",
+        "feature_order": [
+          "Transfers Shared or Private",
+          "Lunch",
+          "Explore wadis and fossil rock",
+          "Mleiha Archaeological site"
+        ]
+      }
+    }
+  ]
+}

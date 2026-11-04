@@ -1,0 +1,852 @@
+{
+  "schema_version": 1,
+  "category": {
+    "slug": "desert-adventures",
+    "name": "Desert Adventures"
+  },
+  "subcategory": {
+    "slug": "desert-safaris",
+    "name": "Desert Safaris"
+  },
+  "tours": [
+    {
+      "slug": "morning-desert-adventure",
+      "name": "Morning Desert Adventure",
+      "starting_price": 36856,
+      "currency": "PKR",
+      "duration": 4,
+      "duration_unit": "hours",
+      "experience_time": "morning",
+      "location": "Dubai",
+      "languages": [
+        "English"
+      ],
+      "pickup_information": "Hotel or residence pick-up included from anywhere in Dubai",
+      "about": "Experience the spectacular Dubai desert in the tranquillity of the morning hours, with an action-packed itinerary culminating in an idyllic breakfast stop.",
+      "short_description": "Experience the spectacular Dubai desert in the tranquillity of the morning hours, with an action-packed itinerary culminating in an idyllic breakfast stop.",
+      "full_description": "Complete with a thrilling drive through the dunes, an unforgettable camel ride and a picturesque breakfast stop, our Morning Desert Adventure is a spectacular reason to start your day early in Dubai.\n\nYour experience will begin with pick-up from your hotel or residence in Dubai. You’ll be taken to the staggeringly beautiful Dubai Desert Conservation Reserve (DDCR) in an air-conditioned 4x4 vehicle before enjoying a thrilling drive up, down and across its rolling dunes.\n\nThroughout your morning in the desert, you’ll have plenty of opportunities to spot fascinating native wildlife – with the help of our expert guides.\n\nYou’ll then take your place atop a majestic Arabian camel and head off on a memorable trek through the rugged, striking terrain of the DDCR. Led by an expert camel shepherd and keeping to a steady pace, you’ll get a true sample of the local culture as you admire sensational views from your lofty vantage point.\n\nAfter this, you’ll have the option of an exhilarating sandboarding session, subject to availability and weather conditions. Those seeking an adrenaline rush will receive all the necessary equipment and a comprehensive safety briefing before taking to the sandy slopes. Feel the wind on your face as you sweep your way down colossal dunes in a truly unique experience.\n\nIt will then be time for your breakfast at a peaceful camp among the dunes, where you can relax, admire gorgeous vistas and snap incredible photographs. You’ll be treated to a delicious breakfast box as well as soft drinks and refreshments, a fitting end to a memorable morning of activities.\n\nA return transfer to your hotel or residence in Dubai is included as part of your Morning Desert Adventure, so you’ll return to the city in an air-conditioned vehicle - still buzzing with excitement from your once-in-a-lifetime desert safari.",
+      "highlights": "A thrilling dune drive through the Dubai Desert Conservation Reserve\nWalking across the dunes on an Arabian Camel\nEnjoying a breakfast box underneath the morning sunshine\nSpotting the native wildlife of the DDCR roaming through their natural habitat\nSurfing the dunes during an optional sandboarding session",
+      "know_before_you_go": "We recommend wearing lightweight, breathable clothing and comfortable, robust shoes for your Morning Desert Adventure. Find out more about what to wear on a desert safari\nWe recommend wearing sunscreen for the safari and packing a pair of sunglasses and a hat\nTemperatures can fluctuate in the desert quite quickly. Warm afternoons can turn into cool evenings, particularly in the winter months\nWhile we endeavour to show you as much wildlife as possible, we cannot predict the movements of every species. Therefore, if some of the animals change their plans, we can’t guarantee you’ll spot them\nWe will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp to share your requirements, or complete a contact form\nPlease inform our team of any existing medical conditions before joining us for your Morning Desert Adventure. Where necessary, we will work to make alternative arrangements for certain activities to ensure the comfort and enjoyment of all guests throughout the experience\nPlease note, expectant mothers and guests with pre-existing medical conditions are unable to join us for the dune drive section of the experience but are invited to join us for all other excursions\nDuring the Holy Month of Ramadan, water will continue to be available to guests. However, we kindly request that it is consumed in our vehicles during daylight hours. Water may not be consumed outside during daylight hours, however, there will be plenty of opportunities to drink in the vehicles throughout your experience. Speak to your tour guide if you have any questions\nRestrooms are available during this activity",
+      "age_policy": "Adults: 12 years old and above\nChildren: 5-11\nInfants: Below 5 years old\nA private vehicle must be booked for infants or those under 135cm height. Details must be shared with our team at the time of booking",
+      "cancellation_policy": "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts\nFull payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity\nIn exceptional circumstances, we may have to amend the Morning Desert Adventure schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible",
+      "additional_notes": "Source screenshot price; not a live quotation. Price shown is per person.\nBooking mode: online date and service selection.\nSource operator: Arabian Adventures. Source policy contact details are retained verbatim.\nOptional sandboarding is subject to availability and weather conditions.\nPublished duration is 4 hours. Published itinerary steps total 245 minutes; both source values are retained.",
+      "thumbnail": "images/safaris/morning-desert-adventure/01.webp",
+      "main_image": "images/safaris/morning-desert-adventure/01.webp",
+      "image_alt": "Couple beside a lake in the Dubai desert",
+      "youtube_url": "https://www.youtube.com/watch?v=2-7YLcsXmRs",
+      "status": "active",
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 3,
+      "is_bestseller": true,
+      "is_travellers_choice": true,
+      "is_original": true,
+      "features": [
+        {
+          "name": "Shared or Private transfers",
+          "icon": "images/tour-icons/shared-or-private-transfers.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png"
+        },
+        {
+          "name": "Dune drive",
+          "icon": "images/tour-icons/dune-drive.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw0a12f8f4/evening-dune-drive-icon.png"
+        },
+        {
+          "name": "Wildlife",
+          "icon": "images/tour-icons/wildlife.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw46799d39/safari-wildlife-icon.png"
+        },
+        {
+          "name": "Camel ride",
+          "icon": "images/tour-icons/camel-ride.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf792b680/evening-camel- ride-icon.png"
+        },
+        {
+          "name": "Breakfast box",
+          "icon": "images/tour-icons/breakfast-box.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw35d3a90f/safari-breakfast-icon.png"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/safaris/morning-desert-adventure/01.webp",
+          "alt": "Couple beside a lake in the Dubai desert",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw007f158f/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_4-min.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/morning-desert-adventure/02.webp",
+          "alt": "Guests beside a safari vehicle on the dunes",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw537e14bf/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_5-min.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/morning-desert-adventure/03.webp",
+          "alt": "Native wildlife in the Dubai desert",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw87730535/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_9-min.webp",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/morning-desert-adventure/04.webp",
+          "alt": "Morning desert safari scenery",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw5d49230a/images/webp-optimised-desktop/morning-desert-safari/IMGR244-Morning-Desert-Safari_1920-x1080_7-min.webp",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup and journey to the desert",
+          "description": "Pickup is estimated to be 8:30am. Times may vary depending on operational requirements.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null
+        },
+        {
+          "display_order": 2,
+          "title": "Dubai Desert Conservation Reserve Visitor Centre",
+          "description": "Start your morning with an interactive, immersive overview of our protected conservation reserve.",
+          "duration": 15,
+          "duration_unit": "minutes",
+          "icon": null
+        },
+        {
+          "display_order": 3,
+          "title": "Dune and wildlife drive",
+          "description": "Experience a drive across the dunes while spotting native wildlife roaming freely across the reserve.",
+          "duration": 30,
+          "duration_unit": "minutes",
+          "icon": null
+        },
+        {
+          "display_order": 4,
+          "title": "Camel ride experience",
+          "description": "Take a short ride across the sand on an Arabian camel.",
+          "duration": 20,
+          "duration_unit": "minutes",
+          "icon": null
+        },
+        {
+          "display_order": 5,
+          "title": "Sandboarding",
+          "description": "Opt in to a sandboarding session and enjoy a unique, exhilarating ride down the dunes.",
+          "duration": 30,
+          "duration_unit": "minutes",
+          "icon": null
+        },
+        {
+          "display_order": 6,
+          "title": "Breakfast in a Bedouin-inspired dining space",
+          "description": "Enjoy breakfast in the desert, admiring your tranquil surroundings and its Bedouin inspirations.",
+          "duration": 60,
+          "duration_unit": "minutes",
+          "icon": null
+        },
+        {
+          "display_order": 7,
+          "title": "Return journey to your accommodation",
+          "description": "Dropoff is estimated to be 12 pm. Times may vary depending on operational requirements.",
+          "duration": 45,
+          "duration_unit": "minutes",
+          "icon": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Shared Vehicle",
+          "description": "Shared hotel pick-up and drop-off in a 4-wheel drive (Toyota Land Cruiser or similar). Exact package rates are not exposed in the supplied screenshot.",
+          "source": "official product page; shared/private transfer types also visible in screenshot",
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "display_order": 1
+        },
+        {
+          "name": "Private Vehicle 1-6 Guests",
+          "description": "Private hotel pick-up and drop-off in a 4-wheel drive (Toyota Land Cruiser or similar), for 1-6 guests. Exact package rates are not exposed in the supplied screenshot.",
+          "source": "official product page; capacity is supplementary to screenshot",
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "display_order": 2
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "screenshot": "image(9).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-safaris/aa-morning-desert-safaris-in-dubai.html",
+        "booking_mode": "online",
+        "primary_list_heading": "Highlights",
+        "sections": {
+          "About": [
+            "Experience the spectacular Dubai desert in the tranquillity of the morning hours, with an action-packed itinerary culminating in an idyllic breakfast stop."
+          ],
+          "Full description": [
+            "Complete with a thrilling drive through the dunes, an unforgettable camel ride and a picturesque breakfast stop, our Morning Desert Adventure is a spectacular reason to start your day early in Dubai.",
+            "Your experience will begin with pick-up from your hotel or residence in Dubai. You’ll be taken to the staggeringly beautiful Dubai Desert Conservation Reserve (DDCR) in an air-conditioned 4x4 vehicle before enjoying a thrilling drive up, down and across its rolling dunes.",
+            "Throughout your morning in the desert, you’ll have plenty of opportunities to spot fascinating native wildlife – with the help of our expert guides.",
+            "You’ll then take your place atop a majestic Arabian camel and head off on a memorable trek through the rugged, striking terrain of the DDCR. Led by an expert camel shepherd and keeping to a steady pace, you’ll get a true sample of the local culture as you admire sensational views from your lofty vantage point.",
+            "After this, you’ll have the option of an exhilarating sandboarding session, subject to availability and weather conditions. Those seeking an adrenaline rush will receive all the necessary equipment and a comprehensive safety briefing before taking to the sandy slopes. Feel the wind on your face as you sweep your way down colossal dunes in a truly unique experience.",
+            "It will then be time for your breakfast at a peaceful camp among the dunes, where you can relax, admire gorgeous vistas and snap incredible photographs. You’ll be treated to a delicious breakfast box as well as soft drinks and refreshments, a fitting end to a memorable morning of activities.",
+            "A return transfer to your hotel or residence in Dubai is included as part of your Morning Desert Adventure, so you’ll return to the city in an air-conditioned vehicle - still buzzing with excitement from your once-in-a-lifetime desert safari."
+          ],
+          "Experience Itinerary": [
+            "1 Pickup and journey to the desert Pickup is estimated to be 8:30am. Times may vary depending on operational requirements. 45 minutes",
+            "2 Dubai Desert Conservation Reserve Visitor Centre Start your morning with an interactive, immersive overview of our protected conservation reserve. 15 minutes",
+            "3 Dune and wildlife drive Experience a drive across the dunes while spotting native wildlife roaming freely across the reserve. 30 minutes",
+            "4 Camel ride experience Take a short ride across the sand on an Arabian camel. 20 minutes",
+            "5 Sandboarding Opt in to a sandboarding session and enjoy a unique, exhilarating ride down the dunes. 30 minutes",
+            "6 Breakfast in a Bedouin-inspired dining space Enjoy breakfast in the desert, admiring your tranquil surroundings and its Bedouin inspirations. 60 minutes",
+            "7 Return journey to your accommodation Dropoff is estimated to be 12 pm. Times may vary depending on operational requirements. 45 minutes"
+          ],
+          "Highlights": [
+            "A thrilling dune drive through the Dubai Desert Conservation Reserve",
+            "Walking across the dunes on an Arabian Camel",
+            "Enjoying a breakfast box underneath the morning sunshine",
+            "Spotting the native wildlife of the DDCR roaming through their natural habitat",
+            "Surfing the dunes during an optional sandboarding session"
+          ],
+          "Know before you go": [
+            "We recommend wearing lightweight, breathable clothing and comfortable, robust shoes for your Morning Desert Adventure. Find out more about what to wear on a desert safari",
+            "We recommend wearing sunscreen for the safari and packing a pair of sunglasses and a hat",
+            "Temperatures can fluctuate in the desert quite quickly. Warm afternoons can turn into cool evenings, particularly in the winter months",
+            "While we endeavour to show you as much wildlife as possible, we cannot predict the movements of every species. Therefore, if some of the animals change their plans, we can’t guarantee you’ll spot them",
+            "We will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp to share your requirements, or complete a contact form",
+            "Please inform our team of any existing medical conditions before joining us for your Morning Desert Adventure. Where necessary, we will work to make alternative arrangements for certain activities to ensure the comfort and enjoyment of all guests throughout the experience",
+            "Please note, expectant mothers and guests with pre-existing medical conditions are unable to join us for the dune drive section of the experience but are invited to join us for all other excursions",
+            "During the Holy Month of Ramadan, water will continue to be available to guests. However, we kindly request that it is consumed in our vehicles during daylight hours. Water may not be consumed outside during daylight hours, however, there will be plenty of opportunities to drink in the vehicles throughout your experience. Speak to your tour guide if you have any questions",
+            "Restrooms are available during this activity"
+          ],
+          "Age policy": [
+            "Adults: 12 years old and above",
+            "Children: 5-11",
+            "Infants: Below 5 years old",
+            "A private vehicle must be booked for infants or those under 135cm height. Details must be shared with our team at the time of booking"
+          ],
+          "Cancellation policy": [
+            "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts",
+            "Full payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity",
+            "In exceptional circumstances, we may have to amend the Morning Desert Adventure schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible"
+          ]
+        },
+        "travellers_choice_label": "2025 Travellers' Choice",
+        "price_status": "historical screenshot value; currency is PKR",
+        "gallery_scope": "First 3 match the screenshot. Remaining images supplement it from the original product gallery.",
+        "packages_policy": "Inactive until exact service rates and booking behavior are configured. No price rows are invented."
+      }
+    },
+    {
+      "slug": "desert-dune-buggies-evening-safari-combo",
+      "name": "Desert Dune Buggies & Evening Safari Combo",
+      "starting_price": 307009,
+      "currency": "PKR",
+      "duration": 9,
+      "duration_unit": "hours",
+      "experience_time": "evening",
+      "location": "Dubai",
+      "languages": [
+        "English"
+      ],
+      "pickup_information": "Hotel or residence pick-up included from anywhere in Dubai",
+      "about": "The Dune Buggy Adventure and Evening Desert Safari Combo package is a thrilling way to experience every side of the Dubai Desert. In a full afternoon and evening away from the beaten path, you will feel the bumps and turns of the dunes, spot the indigenous wildlife of the Dubai desert, and enjoy an evening of traditional Arabian hospitality in the company of our attentive team.",
+      "short_description": "The Dune Buggy Adventure and Evening Desert Safari Combo package is a thrilling way to experience every side of the Dubai Desert.",
+      "full_description": "The Dune Buggy and Evening Safari Combo afternoon begins with a transfer from your hotel or residence to the Lisaili Camp, where you will experience the thrill of the dunes on a Dune Buggy Adventure. The Lisaili Camp is home to a set driving trail through which specially designed dune buggies weave their way along the bumps, turns and pivots of the desert. There are passenger and driver experiences available, both equally exhilarating.\n\nOnce your two-hour Dune Buggy Adventure is complete, we will take you on a short drive in our 4x4 vehicles over to the Dubai Desert Conservation Reserve, where your Evening Desert Safari begins. The itinerary for the evening includes a wildlife drive, a camel ride on board on Arabian Camel, a short sandboarding lesson, a stop to watch the sun set over the Dubai desert, and a BBQ dinner in a traditional Bedouin setting, amongst the many unique moments you’ll experience throughout your time on the dunes.\n\nThe Dune Buggy Adventure follows a set path under the guidance of our experienced team of drivers. Before the experience, a full safety briefing will be provided by our team. We encourage all guests to enjoy a thrilling drive responsibly.\n\nOur Dune Buggies & Evening Safari Combo offers the unique opportunity to experience the thrill of dune buggies in addition to one of our unforgettable desert safaris in the heart of the Dubai Desert Conservation Reserve (DDCR).",
+      "highlights": "Transfers in a private, 4-wheel drive vehicle to and from both activities from your hotel or residence\nFull driving brief from a trained driving instructor, including a safety briefing to ensure responsible enjoyment of the activity\nTwo-hour dune drive in a private 4-seater off-road dune buggy, for you and up to 3 other guests\nAll necessary equipment, including safety gear such as helmets and goggles\nComplimentary refreshments throughout your Dune Buggy Adventure\nTransfers between Al Lisaili Camp and the DDCR to take you from the Dune Buggy Adventure to the Evening Desert Safari\nThrilling 4x4 dune drive across the desert dunes\nCamel ride on an Arabian Camel\nShort sandboarding lesson\nA sunset stop to watch one of nature’s greatest sights\nBBQ dinner in a traditional Bedouin setting\nNature spotting opportunities throughout your time on the dunes\nUnlimited soft drinks included in each package, with House and Premium upgrade options available\nOptional shisha\nA dedicated Arabian Adventures driver/guide throughout your safari",
+      "know_before_you_go": "The Dune Buggy Adventure takes place in Lisaili, in a location separate to the Dubai Desert Conservation Reserve. Your activity includes private transfers in a 4-wheel drive vehicle to and from Lisaili\nA security deposit of AED 5,000 is required for driver experiences and will be collected prior to the beginning of the activity. This will be returned as soon as the activity is completed with no damages. The deposit is to ensure the safety of both the guests and the equipment\nTransfers to the Dune Buggy Adventure are in a private vehicle\nWe recommend comfortable clothing for this experience, including modest dress and comfortable shoes\nAll guests must wear closed shoes to ride the buggy. Flip-Flops and sandals are not accepted for safety reasons\nGuests with pre-existing medical conditions and expectant mothers are not advised to participate in the Dune Buggy Adventure, but are welcome to join us for the majority of the Evening Desert Safari\nThe Arabian Adventures team reserve the right to stop your participation in the activity if we deem you to be acting in an unsafe manner. Please follow the safety instructions provided by the team before the activity begins to ensure an enjoyable experience which doesn’t compromise your safety\nWe recommend wearing comfortable clothing for your Evening Desert Safari, including sneakers/walking shoes and modest dress\nTemperatures can fluctuate in the desert quite quickly. Warm afternoons can turn into cool evenings, particularly in the winter months. Please take this into account when deciding what to wear for your Evening Desert Safari\nWe recommend wearing sunscreen for your activity, and packing a pair of sunglasses and a hat\nWe will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp on +971 4 274 8803 to share your requirements, or complete the form linked here, and we will work to accommodate your request.\nPlease inform our team of any existing medical conditions before joining us for your Evening Desert Safari. Where necessary, we will work to make alternative arrangements for certain activities to ensure the comfort and enjoyment of all guests throughout the experience\nPlease note, expectant mothers and guests with existing medical conditions will be required to skip the 4x4 dune drive for their comfort",
+      "age_policy": "The minimum age requirement for drivers participating in a Dune Buggy Adventure is 16 years old, and must possess a valid driver’s license from their country of residence\nNon-driving passengers accompanying the lead buggy must be at least 6+ and need to be seated with the adult accompanying them\nChildren aged between 6-13 can join the Dune Buggy Experience as non-drivers, only in a private vehicle with an adult from their group\nFor the Evening Desert Safari, a private vehicle must be booked for children aged between 2-5 or under 135cm, and details shared with our team at the time of booking",
+      "cancellation_policy": "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts\nFull payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity\nIn exceptional circumstances, we may have to amend the Dune Buggy Adventure or the Evening Desert Safari schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible\nBoth the Dune Buggy Adventure and Evening Desert Safari are subject to cancellation if weather conditions are not suitable. While we do our best to prepare for any adverse weather in advance, activities may be amended or cancelled as a result of bad weather",
+      "additional_notes": "Source screenshot price; not a live quotation. Price varies by vehicle, group sizes and other selections.\nBooking mode: callback only; this product is not available for online bookings.\nSource operator: Arabian Adventures. Source policy contact details are retained verbatim.",
+      "thumbnail": "images/safaris/desert-dune-buggies-evening-safari-combo/01.webp",
+      "main_image": "images/safaris/desert-dune-buggies-evening-safari-combo/01.webp",
+      "image_alt": "Off-road dune buggy driving across desert sand",
+      "youtube_url": null,
+      "status": "active",
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 4,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": true,
+      "features": [
+        {
+          "name": "Transfers Private",
+          "icon": "images/tour-icons/private-transfers.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png"
+        },
+        {
+          "name": "Thrilling dune drive in off-road dune buggy",
+          "icon": "images/tour-icons/dune-buggy-drive.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb24e3b7e/safari-thrilling-drive-in-off-road-dune-buggy-icon.png"
+        },
+        {
+          "name": "Sunset stop",
+          "icon": "images/tour-icons/sunset-stop.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw3ac15ce8/evening-sunset Stop-icon.png"
+        },
+        {
+          "name": "Modern Bedouin-style camp",
+          "icon": "images/tour-icons/bedouin-camp.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb9aa6a04/evening-modern-bedouin-camp-icon.png"
+        },
+        {
+          "name": "Camel ride",
+          "icon": "images/tour-icons/camel-ride.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf792b680/evening-camel- ride-icon.png"
+        },
+        {
+          "name": "Sandboarding",
+          "icon": "images/tour-icons/sandboarding.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw46354a8c/evening-sandboarding-icon.png"
+        },
+        {
+          "name": "Henna hand painting",
+          "icon": "images/tour-icons/henna-hand-painting.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw441bda9b/evening-henna-hand-painting-icon.png"
+        },
+        {
+          "name": "Entertainment (fire and dance show)",
+          "icon": "images/tour-icons/entertainment.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwfa838b5f/evening-entertainment-icon.png"
+        },
+        {
+          "name": "BBQ Dinner",
+          "icon": "images/tour-icons/bbq-dinner.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2bd575f4/evening-bbq-dinner-icon.png"
+        },
+        {
+          "name": "Unlimited soft drinks",
+          "icon": "images/tour-icons/unlimited-soft-drinks.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw08b46131/evening-unlimited-soft-drinks-icon.png"
+        },
+        {
+          "name": "House or Premium beverages (optional)",
+          "icon": "images/tour-icons/premium-beverages.png",
+          "inclusion_status": "optional",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwc3b68fc9/evening-premium-beverages-icon.png"
+        },
+        {
+          "name": "Shisha (optional)",
+          "icon": "images/tour-icons/shisha.png",
+          "inclusion_status": "optional",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb98220d8/evening-shisha-icon.png"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/01.webp",
+          "alt": "Off-road dune buggy driving across desert sand",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd05ffa97/images/hi-res/03-dune-buggy-1182x709 (3).jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/02.webp",
+          "alt": "Safari vehicle on the Dubai desert dunes",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2eb28d60/images/hi-res/01-dune.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/03.webp",
+          "alt": "Arabian oryx in the desert",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw132f961c/images/large/evening-desert-safari-wildlife-1232x1232.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/04.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw35b96215/images/hi-res/03-dune-buggy-1182x709 (1).jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/05.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw52ed11e8/images/hi-res/03-dune-buggy-1182x709.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/06.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwdf145e03/images/hi-res/03-dune-buggy-1182x709 (2).jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/07.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 7",
+          "caption": null,
+          "display_order": 7,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw38d37c2e/images/large/combo-car4-1232x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/08.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 8",
+          "caption": null,
+          "display_order": 8,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwdf614784/images/hi-res/03-dune-buggy-1182x709 .jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/09.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 9",
+          "caption": null,
+          "display_order": 9,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw12d40726/images/large/combo-mat-1232x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/10.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 10",
+          "caption": null,
+          "display_order": 10,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwcf531a05/images/large/Evening_Desert-Safari-camel-ride-lg-1232x1232.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/11.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 11",
+          "caption": null,
+          "display_order": 11,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6c6b877e/images/hi-res/01-sandboarding.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/12.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 12",
+          "caption": null,
+          "display_order": 12,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw778844f6/images/hi-res/01-firework.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/13.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 13",
+          "caption": null,
+          "display_order": 13,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwcf0b309b/images/hi-res/01-tanoura-dancer-1182x709.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-evening-safari-combo/14.webp",
+          "alt": "Desert Dune Buggies & Evening Safari Combo gallery photograph 14",
+          "caption": null,
+          "display_order": 14,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd6d21176/images/hi-res/01-bellydance.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Desert Dune Buggies & Evening Safari Combo",
+          "description": "Callback booking only. Vehicle, group size, beverage package and final quotation must be confirmed.",
+          "source": "database grouping using the exact tour title; not an independently named source package",
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "screenshot": "image(8).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-safaris/aa-desert-dune-buggies-evening-safari-combo.html",
+        "booking_mode": "callback",
+        "primary_list_heading": "What's included",
+        "sections": {
+          "About": [
+            "The Dune Buggy Adventure and Evening Desert Safari Combo package is a thrilling way to experience every side of the Dubai Desert. In a full afternoon and evening away from the beaten path, you will feel the bumps and turns of the dunes, spot the indigenous wildlife of the Dubai desert, and enjoy an evening of traditional Arabian hospitality in the company of our attentive team."
+          ],
+          "Full description": [
+            "The Dune Buggy and Evening Safari Combo afternoon begins with a transfer from your hotel or residence to the Lisaili Camp, where you will experience the thrill of the dunes on a Dune Buggy Adventure. The Lisaili Camp is home to a set driving trail through which specially designed dune buggies weave their way along the bumps, turns and pivots of the desert. There are passenger and driver experiences available, both equally exhilarating.",
+            "Once your two-hour Dune Buggy Adventure is complete, we will take you on a short drive in our 4x4 vehicles over to the Dubai Desert Conservation Reserve, where your Evening Desert Safari begins. The itinerary for the evening includes a wildlife drive, a camel ride on board on Arabian Camel, a short sandboarding lesson, a stop to watch the sun set over the Dubai desert, and a BBQ dinner in a traditional Bedouin setting, amongst the many unique moments you’ll experience throughout your time on the dunes.",
+            "The Dune Buggy Adventure follows a set path under the guidance of our experienced team of drivers. Before the experience, a full safety briefing will be provided by our team. We encourage all guests to enjoy a thrilling drive responsibly.",
+            "Our Dune Buggies & Evening Safari Combo offers the unique opportunity to experience the thrill of dune buggies in addition to one of our unforgettable desert safaris in the heart of the Dubai Desert Conservation Reserve (DDCR)."
+          ],
+          "What's included": [
+            "Transfers in a private, 4-wheel drive vehicle to and from both activities from your hotel or residence",
+            "Full driving brief from a trained driving instructor, including a safety briefing to ensure responsible enjoyment of the activity",
+            "Two-hour dune drive in a private 4-seater off-road dune buggy, for you and up to 3 other guests",
+            "All necessary equipment, including safety gear such as helmets and goggles",
+            "Complimentary refreshments throughout your Dune Buggy Adventure",
+            "Transfers between Al Lisaili Camp and the DDCR to take you from the Dune Buggy Adventure to the Evening Desert Safari",
+            "Thrilling 4x4 dune drive across the desert dunes",
+            "Camel ride on an Arabian Camel",
+            "Short sandboarding lesson",
+            "A sunset stop to watch one of nature’s greatest sights",
+            "BBQ dinner in a traditional Bedouin setting",
+            "Nature spotting opportunities throughout your time on the dunes",
+            "Unlimited soft drinks included in each package, with House and Premium upgrade options available",
+            "Optional shisha",
+            "A dedicated Arabian Adventures driver/guide throughout your safari"
+          ],
+          "Know before you go": [
+            "The Dune Buggy Adventure takes place in Lisaili, in a location separate to the Dubai Desert Conservation Reserve. Your activity includes private transfers in a 4-wheel drive vehicle to and from Lisaili",
+            "A security deposit of AED 5,000 is required for driver experiences and will be collected prior to the beginning of the activity. This will be returned as soon as the activity is completed with no damages. The deposit is to ensure the safety of both the guests and the equipment",
+            "Transfers to the Dune Buggy Adventure are in a private vehicle",
+            "We recommend comfortable clothing for this experience, including modest dress and comfortable shoes",
+            "All guests must wear closed shoes to ride the buggy. Flip-Flops and sandals are not accepted for safety reasons",
+            "Guests with pre-existing medical conditions and expectant mothers are not advised to participate in the Dune Buggy Adventure, but are welcome to join us for the majority of the Evening Desert Safari",
+            "The Arabian Adventures team reserve the right to stop your participation in the activity if we deem you to be acting in an unsafe manner. Please follow the safety instructions provided by the team before the activity begins to ensure an enjoyable experience which doesn’t compromise your safety",
+            "We recommend wearing comfortable clothing for your Evening Desert Safari, including sneakers/walking shoes and modest dress",
+            "Temperatures can fluctuate in the desert quite quickly. Warm afternoons can turn into cool evenings, particularly in the winter months. Please take this into account when deciding what to wear for your Evening Desert Safari",
+            "We recommend wearing sunscreen for your activity, and packing a pair of sunglasses and a hat",
+            "We will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp on +971 4 274 8803 to share your requirements, or complete the form linked here, and we will work to accommodate your request.",
+            "Please inform our team of any existing medical conditions before joining us for your Evening Desert Safari. Where necessary, we will work to make alternative arrangements for certain activities to ensure the comfort and enjoyment of all guests throughout the experience",
+            "Please note, expectant mothers and guests with existing medical conditions will be required to skip the 4x4 dune drive for their comfort"
+          ],
+          "Age policy": [
+            "The minimum age requirement for drivers participating in a Dune Buggy Adventure is 16 years old, and must possess a valid driver’s license from their country of residence",
+            "Non-driving passengers accompanying the lead buggy must be at least 6+ and need to be seated with the adult accompanying them",
+            "Children aged between 6-13 can join the Dune Buggy Experience as non-drivers, only in a private vehicle with an adult from their group",
+            "For the Evening Desert Safari, a private vehicle must be booked for children aged between 2-5 or under 135cm, and details shared with our team at the time of booking"
+          ],
+          "Cancellation policy": [
+            "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts",
+            "Full payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity",
+            "In exceptional circumstances, we may have to amend the Dune Buggy Adventure or the Evening Desert Safari schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible",
+            "Both the Dune Buggy Adventure and Evening Desert Safari are subject to cancellation if weather conditions are not suitable. While we do our best to prepare for any adverse weather in advance, activities may be amended or cancelled as a result of bad weather"
+          ]
+        },
+        "travellers_choice_label": null,
+        "price_status": "historical screenshot value; currency is PKR",
+        "gallery_scope": "First 3 match the screenshot. Remaining images supplement it from the original product gallery.",
+        "packages_policy": "Inactive until exact service rates and booking behavior are configured. No price rows are invented."
+      }
+    },
+    {
+      "slug": "desert-dune-buggies-exclusive-desert-experience-combo",
+      "name": "Desert Dune Buggies & Exclusive Desert Experience Combo",
+      "starting_price": 368505,
+      "currency": "PKR",
+      "duration": 9,
+      "duration_unit": "hours",
+      "experience_time": "evening",
+      "location": "Dubai",
+      "languages": [
+        "English"
+      ],
+      "pickup_information": "Hotel or residence pick-up included from anywhere in Dubai",
+      "about": "The Dune Buggy Adventure and Exclusive Desert Experience package combines two of our most memorable desert activities in one incredible evening. Starting with a thrilling drive across the dunes and concluding with a magical night of private desert dining, this is the perfect experience to share with your partner, friends or family.",
+      "short_description": "The Dune Buggy Adventure and Exclusive Desert Experience package combines two of our most memorable desert activities in one incredible evening.",
+      "full_description": "Our Dune Buggies & Evening Safari Combo offers the unique opportunity to experience the thrill of dune buggies in addition to one of our unforgettable desert safaris in the heart of the Dubai Desert Conservation Reserve (DDCR). The Dune Buggy Adventure takes place at Lisaili Camp and is one of the most unique driving experiences in the world, with the open road of Dubai’s super-highways swapped for the bumps, turns and pivots of the desert dunes. During this experience, you’ll get the opportunity to take the wheel and drive the buggy yourself, which is specially adapted for off-road driving and designed to tackle and conquer every dip along your route.\n\nFrom here, the evening continues with the Exclusive Desert Experience, hosted in your very own corner of the Dubai desert. Here, you’ll enjoy a three-course BBQ dinner in a Bedouin-inspired dining space, served to your table by your personal waiter. Other inclusions on your Exclusive Desert Experience consist of a short camel ride with an Arabian Camel, a picturesque sunset stop with a glass of sparkling bubbles to raise a toast with, unlimited premium beverages, and plenty of stargazing and wildlife spotting opportunities.\n\nThis experience is ideal for couples, families or groups of best friends who want to share a memorable evening together while enjoying the thrill of a desert drive and the magic of desert dining. Whether you’re an adrenaline seeker or lover of life’s finer things, you’re covered by the Dune Buggy Adventure and Exclusive Desert Experience.\n\nThe individual itineraries of both products are included as part of this combo, including private transfers to and from your hotel or residence.",
+      "highlights": "Return transfers from your hotel or residence\nFull driving brief from a trained driving instructor, including a safety briefing to ensure responsible enjoyment of the Dune Buggy Adventure\nAll necessary equipment, including safety gear such as helmets and goggles\nComplimentary refreshments throughout the Dune Buggy Adventure\nTransport between the Dune Buggy Adventure and Exclusive Desert Experience\nThrilling 4x4 dune drive and camel ride experience\nShort sandboarding lesson\nWildlife spotting opportunities throughout the evening\nPicturesque sunset stop with a glass of sparkling bubbles to toast with\nExclusive dining space for you and your group\nThree course BBQ dinner served by your private waiter\nUnlimited soft or premium beverages (depending on package selected)",
+      "know_before_you_go": "The Dune Buggy Adventure takes place in Lisaili, in a different location to the Exclusive Desert Experience. Your activity includes private transfers in a 4-wheel drive vehicle from Lisaili to the Dubai Desert Conservation Reserve, where the Exclusive Desert Experience takes place.\nA security deposit of AED 5,000 is required for driver experiences and will be collected prior to the beginning of the activity. This will be returned as soon as the activity is completed with no damages. This deposit is to ensure the safety of both the guests and the equipment.\nTransfers to the Dune Buggy Adventure are in a private vehicle.\nWe recommend comfortable clothing for this experience, including modest dress and comfortable shoes.\nAll guests must wear closed shoes to ride the buggy. Flip-Flops and sandals are not accepted for safety reasons\nGuests with pre-existing medical conditions and expectant mothers are not advised to participate in the Dune Buggy Adventure but are welcome to join us for the majority of the Exclusive Desert Experience. Please note, expectant mothers and guests with existing medical conditions will be required to skip the 4x4 dune drive for their comfort.\nThe Arabian Adventures team reserves the right to stop your participation in the activity if we deem you to be acting in an unsafe manner. Please follow the safety instructions provided by the team before the activity begins to ensure an enjoyable experience that doesn’t compromise your safety.\nWe recommend wearing comfortable clothing for your Exclusive Desert Experience, including sneakers or walking shoes and modest dress.\nTemperatures can fluctuate in the desert quite quickly. Warm afternoons can turn into cool evenings, particularly during the winter months. Please take this into account when deciding what to wear for your Exclusive Desert Experience.\nWe recommend wearing sunscreen for your activity and packing a pair of sunglasses and a hat.\nWe will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp on +971 4 274 8803 to share your requirements, or complete the form linked here, and we will work to accommodate your request.\nPlease inform our team of any existing medical conditions before joining us for your Exclusive Desert Experience. Where necessary, we will work to make alternative arrangements for certain activities to ensure the comfort and enjoyment of all guests throughout the experience.",
+      "age_policy": "The minimum age requirement for drivers participating in a Dune Buggy Adventure is 16 years old, and must possess a valid driver’s license from their country of residence\nNon-driving passengers accompanying the lead buggy must be at least 6+ and need to be seated with the adult accompanying them\nChildren aged between 6-13 can join the Dune Buggy Adventure as non-drivers, only in a private vehicle with an adult from their group\nFor the Exclusive Desert Experience, a private vehicle must be booked for children aged between 2-5 or under 135cm, and details shared with our team at the time of booking",
+      "cancellation_policy": "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts\nFull payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity\nIn exceptional circumstances, we may have to amend the Dune Buggy Adventure or the Exclusive Desert Experience schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible\nBoth the Dune Buggy Adventure and Exclusive Desert Experience are subject to cancellation if weather conditions are not suitable. While we do our best to prepare for any adverse weather in advance, activities may be amended or cancelled as a result of bad weather",
+      "additional_notes": "Source screenshot price; not a live quotation. Price varies by vehicle, group sizes and other selections.\nBooking mode: callback only; this product is not available for online bookings.\nSource operator: Arabian Adventures. Source policy contact details are retained verbatim.\nThe feature cards say Unlimited Premium beverages; the inclusion list makes soft or premium beverages dependent on the selected package. Premium beverages are stored as optional to avoid promising them for every package.\nShisha is shown on the feature strip without an optional label, but is absent from the detailed inclusion list.",
+      "thumbnail": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/01.webp",
+      "main_image": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/01.webp",
+      "image_alt": "Driver following a dune buggy along a desert trail",
+      "youtube_url": null,
+      "status": "active",
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 5,
+      "is_bestseller": false,
+      "is_travellers_choice": false,
+      "is_original": true,
+      "features": [
+        {
+          "name": "Transfers Private",
+          "icon": "images/tour-icons/private-transfers.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwd04d7601/evening-transfer-icon1.png"
+        },
+        {
+          "name": "Thrilling dune drive in off-road dune buggy",
+          "icon": "images/tour-icons/dune-buggy-drive.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb24e3b7e/safari-thrilling-drive-in-off-road-dune-buggy-icon.png"
+        },
+        {
+          "name": "Sunset stop",
+          "icon": "images/tour-icons/sunset-stop.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw3ac15ce8/evening-sunset Stop-icon.png"
+        },
+        {
+          "name": "Modern Bedouin-style camp",
+          "icon": "images/tour-icons/bedouin-camp.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb9aa6a04/evening-modern-bedouin-camp-icon.png"
+        },
+        {
+          "name": "Camel ride",
+          "icon": "images/tour-icons/camel-ride.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf792b680/evening-camel- ride-icon.png"
+        },
+        {
+          "name": "Personal waiter service",
+          "icon": "images/tour-icons/personal-waiter.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw689cc722/safari-personal-waiter-service-icon.png"
+        },
+        {
+          "name": "Wildlife",
+          "icon": "images/tour-icons/wildlife.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw46799d39/safari-wildlife-icon.png"
+        },
+        {
+          "name": "Bubbles",
+          "icon": "images/tour-icons/bubbles.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2347a088/safari-unlimited-premium-beverages-and-bubbles-icon.png"
+        },
+        {
+          "name": "BBQ Dinner",
+          "icon": "images/tour-icons/bbq-dinner.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw2bd575f4/evening-bbq-dinner-icon.png"
+        },
+        {
+          "name": "Unlimited soft drinks",
+          "icon": "images/tour-icons/unlimited-soft-drinks.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw08b46131/evening-unlimited-soft-drinks-icon.png"
+        },
+        {
+          "name": "Unlimited Premium beverages",
+          "icon": "images/tour-icons/premium-beverages.png",
+          "inclusion_status": "optional",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwc3b68fc9/evening-premium-beverages-icon.png"
+        },
+        {
+          "name": "Shisha",
+          "icon": "images/tour-icons/shisha.png",
+          "inclusion_status": "included",
+          "source_icon_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwb98220d8/evening-shisha-icon.png"
+        }
+      ],
+      "images": [
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/01.webp",
+          "alt": "Driver following a dune buggy along a desert trail",
+          "caption": null,
+          "display_order": 1,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw20e7316e/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_1.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/02.webp",
+          "alt": "Private desert dining beneath string lights",
+          "caption": null,
+          "display_order": 2,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw878b0a43/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_10.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/03.webp",
+          "alt": "Dune buggy driving at sunset",
+          "caption": null,
+          "display_order": 3,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwc4c82600/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_11.jpg",
+          "visible_in_screenshot": true,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/04.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 4",
+          "caption": null,
+          "display_order": 4,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw86166f92/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_2.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/05.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 5",
+          "caption": null,
+          "display_order": 5,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw6a3bbdf4/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_3.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/06.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 6",
+          "caption": null,
+          "display_order": 6,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwf38fd8f6/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_4.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/07.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 7",
+          "caption": null,
+          "display_order": 7,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwbd5eac96/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_5.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/08.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 8",
+          "caption": null,
+          "display_order": 8,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dwac6e144f/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_6.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/09.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 9",
+          "caption": null,
+          "display_order": 9,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw9976d8bf/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_7.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/10.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 10",
+          "caption": null,
+          "display_order": 10,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw46fc3c03/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_8.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        },
+        {
+          "path": "images/safaris/desert-dune-buggies-exclusive-desert-experience-combo/11.webp",
+          "alt": "Desert Dune Buggies & Exclusive Desert Experience Combo gallery photograph 11",
+          "caption": null,
+          "display_order": 11,
+          "source_url": "https://www.arabian-adventures.com/on/demandware.static/-/Sites-dnata-master-catalog/default/dw3a354967/images/hi-res/EDE & Buggies/IMGR233 - 1451x764_EDE+Dune Buggies_9.jpg",
+          "visible_in_screenshot": false,
+          "alt_is_editorial": true
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "Desert Dune Buggies & Exclusive Desert Experience Combo",
+          "description": "Callback booking only. Vehicle, group size, beverage package and final quotation must be confirmed.",
+          "source": "database grouping using the exact tour title; not an independently named source package",
+          "is_active": false,
+          "is_recommended": false,
+          "badge_label": null,
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "screenshot": "image(10).png",
+        "url": "https://www.arabian-adventures.com/ae/english/desert-safaris/aa-exclusive-desert-experience-with-dune-buggies-combo.html",
+        "booking_mode": "callback",
+        "primary_list_heading": "What's included",
+        "sections": {
+          "About": [
+            "The Dune Buggy Adventure and Exclusive Desert Experience package combines two of our most memorable desert activities in one incredible evening. Starting with a thrilling drive across the dunes and concluding with a magical night of private desert dining, this is the perfect experience to share with your partner, friends or family."
+          ],
+          "Full description": [
+            "Our Dune Buggies & Evening Safari Combo offers the unique opportunity to experience the thrill of dune buggies in addition to one of our unforgettable desert safaris in the heart of the Dubai Desert Conservation Reserve (DDCR). The Dune Buggy Adventure takes place at Lisaili Camp and is one of the most unique driving experiences in the world, with the open road of Dubai’s super-highways swapped for the bumps, turns and pivots of the desert dunes. During this experience, you’ll get the opportunity to take the wheel and drive the buggy yourself, which is specially adapted for off-road driving and designed to tackle and conquer every dip along your route.",
+            "From here, the evening continues with the Exclusive Desert Experience, hosted in your very own corner of the Dubai desert. Here, you’ll enjoy a three-course BBQ dinner in a Bedouin-inspired dining space, served to your table by your personal waiter. Other inclusions on your Exclusive Desert Experience consist of a short camel ride with an Arabian Camel, a picturesque sunset stop with a glass of sparkling bubbles to raise a toast with, unlimited premium beverages, and plenty of stargazing and wildlife spotting opportunities.",
+            "This experience is ideal for couples, families or groups of best friends who want to share a memorable evening together while enjoying the thrill of a desert drive and the magic of desert dining. Whether you’re an adrenaline seeker or lover of life’s finer things, you’re covered by the Dune Buggy Adventure and Exclusive Desert Experience.",
+            "The individual itineraries of both products are included as part of this combo, including private transfers to and from your hotel or residence."
+          ],
+          "What's included": [
+            "Return transfers from your hotel or residence",
+            "Full driving brief from a trained driving instructor, including a safety briefing to ensure responsible enjoyment of the Dune Buggy Adventure",
+            "All necessary equipment, including safety gear such as helmets and goggles",
+            "Complimentary refreshments throughout the Dune Buggy Adventure",
+            "Transport between the Dune Buggy Adventure and Exclusive Desert Experience",
+            "Thrilling 4x4 dune drive and camel ride experience",
+            "Short sandboarding lesson",
+            "Wildlife spotting opportunities throughout the evening",
+            "Picturesque sunset stop with a glass of sparkling bubbles to toast with",
+            "Exclusive dining space for you and your group",
+            "Three course BBQ dinner served by your private waiter",
+            "Unlimited soft or premium beverages (depending on package selected)"
+          ],
+          "Know before you go": [
+            "The Dune Buggy Adventure takes place in Lisaili, in a different location to the Exclusive Desert Experience. Your activity includes private transfers in a 4-wheel drive vehicle from Lisaili to the Dubai Desert Conservation Reserve, where the Exclusive Desert Experience takes place.",
+            "A security deposit of AED 5,000 is required for driver experiences and will be collected prior to the beginning of the activity. This will be returned as soon as the activity is completed with no damages. This deposit is to ensure the safety of both the guests and the equipment.",
+            "Transfers to the Dune Buggy Adventure are in a private vehicle.",
+            "We recommend comfortable clothing for this experience, including modest dress and comfortable shoes.",
+            "All guests must wear closed shoes to ride the buggy. Flip-Flops and sandals are not accepted for safety reasons",
+            "Guests with pre-existing medical conditions and expectant mothers are not advised to participate in the Dune Buggy Adventure but are welcome to join us for the majority of the Exclusive Desert Experience. Please note, expectant mothers and guests with existing medical conditions will be required to skip the 4x4 dune drive for their comfort.",
+            "The Arabian Adventures team reserves the right to stop your participation in the activity if we deem you to be acting in an unsafe manner. Please follow the safety instructions provided by the team before the activity begins to ensure an enjoyable experience that doesn’t compromise your safety.",
+            "We recommend wearing comfortable clothing for your Exclusive Desert Experience, including sneakers or walking shoes and modest dress.",
+            "Temperatures can fluctuate in the desert quite quickly. Warm afternoons can turn into cool evenings, particularly during the winter months. Please take this into account when deciding what to wear for your Exclusive Desert Experience.",
+            "We recommend wearing sunscreen for your activity and packing a pair of sunglasses and a hat.",
+            "We will work to accommodate special dietary requirements when they are shared with us in advance. Please contact our team via WhatsApp on +971 4 274 8803 to share your requirements, or complete the form linked here, and we will work to accommodate your request.",
+            "Please inform our team of any existing medical conditions before joining us for your Exclusive Desert Experience. Where necessary, we will work to make alternative arrangements for certain activities to ensure the comfort and enjoyment of all guests throughout the experience."
+          ],
+          "Age policy": [
+            "The minimum age requirement for drivers participating in a Dune Buggy Adventure is 16 years old, and must possess a valid driver’s license from their country of residence",
+            "Non-driving passengers accompanying the lead buggy must be at least 6+ and need to be seated with the adult accompanying them",
+            "Children aged between 6-13 can join the Dune Buggy Adventure as non-drivers, only in a private vehicle with an adult from their group",
+            "For the Exclusive Desert Experience, a private vehicle must be booked for children aged between 2-5 or under 135cm, and details shared with our team at the time of booking"
+          ],
+          "Cancellation policy": [
+            "We understand that plans can change. If they do, please let us know at least 24 hours prior to your activity. We will not be able to process refunds for bookings cancelled less than 24 hours before your activity starts",
+            "Full payment for your booking is required at least two days prior to your activity. If payment is not received before the expected date, we reserve the right to cancel your activity",
+            "In exceptional circumstances, we may have to amend the Dune Buggy Adventure or the Exclusive Desert Experience schedule or cancel the activity entirely. We reserve the right to amend and cancel activities in such circumstances, and will ensure we communicate any changes in advance where possible",
+            "Both the Dune Buggy Adventure and Exclusive Desert Experience are subject to cancellation if weather conditions are not suitable. While we do our best to prepare for any adverse weather in advance, activities may be amended or cancelled as a result of bad weather"
+          ]
+        },
+        "travellers_choice_label": null,
+        "price_status": "historical screenshot value; currency is PKR",
+        "gallery_scope": "First 3 match the screenshot. Remaining images supplement it from the original product gallery.",
+        "packages_policy": "Inactive until exact service rates and booking behavior are configured. No price rows are invented."
+      }
+    }
+  ]
+}

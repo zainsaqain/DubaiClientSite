@@ -1,0 +1,2697 @@
+{
+  "categories": [
+    {
+      "slug": "city-tours",
+      "name": "City Tours",
+      "description": "City tours across Dubai, Abu Dhabi, Al Ain and Sharjah.",
+      "image": "images/city-tours/private-highlights-of-dubai-city-tour/01.jpg",
+      "display_order": 3
+    }
+  ],
+  "subcategories": [],
+  "tours": [
+    {
+      "slug": "the-adventure-pass",
+      "name": "The Adventure Pass",
+      "category_slug": "city-tours",
+      "short_description": "The Adventure Pass provides incredible savings of up to 40% on the most popular attractions and experiences across Dubai and Abu Dhabi.",
+      "about": "The Adventure Pass provides incredible savings of up to 40% on the most popular attractions and experiences across Dubai and Abu Dhabi. Now offering over 30+ unique activities in 3 or 5 activity passes, there’s more choice and value than ever before to be unlocked by both visitors and residents of Dubai. Download the Adventure Pass to your phone, book your favourite activities as you go, and pay one single price while enjoying the city’s most sought after experiences.",
+      "full_description": "Value, flexibility, endless activities - The Adventure Pass offers so much more than just Dubai’s and Abu Dhabi's most popular attractions in one place. For a fixed price, both visitors and residents in the amazing city of Dubai can enjoy over 30+ activities whilst saving up to 40% on standard prices. With tickets stored conveniently on your mobile device, you can explore the best of Dubai, for less, with seamless convenience and flexibility.\n\nWith The Adventure Pass, over 30+ exciting, cultural, family-friendly attractions are in the palm of your hand. Whether you’re heading for the dunes on an The Fort-Lisaili, want to take a leap of faith at Atlantis Aquaventure, or seek a charming boat ride across the Dubai Marina, the Adventure Pass is your ticket to experience the best of Dubai.\n\nThe Adventure Pass is available in both 3 adventure and 5 adventure packages. Both passes are available for a fixed price, which doesn’t change based on the activities you choose to enjoy. The Adventure Pass must be registered and activated on the Smartvisit app within 6 months of the date of purchase, and is valid for 7 days after redeeming the first experience on your pass.",
+      "location": "Dubai",
+      "duration": 7,
+      "duration_unit": "days",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 56939,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/the-adventure-pass/01.jpg",
+      "main_image": "images/city-tours/the-adventure-pass/01.jpg",
+      "image_alt": "The Adventure Pass",
+      "pickup_information": null,
+      "highlights": null,
+      "know_before_you_go": "The Adventure Pass is available in 3 or 5 activity packages for a fixed price. Each package includes The Fort – Lisaili plus your choice of 2 or 4 additional adventures. The price remains the same regardless of which activities you select for your Adventure Pass\nFor Arabian Adventures Desert Safari\nOnce you have purchased your Adventure Pass, it will be available on the Smartvisit app. You can download this app in the App Store for iPhone, or Google Play store for Android devices, or by following the link to get started: ( https://app.smartvisit.com/download )\nThere will be a ticket number printed underneath the QR code once you complete your purchase. Use this ticket number to add the Adventure Pass to the Smartvisit app\nSome activities will require advanced booking. Please check the unique booking conditions for each activity directly\nYou will be required to complete registration when you download the Smartvisit app. This is a normal part of the process and we encourage you to complete this step upon downloading the app\nPlease share any pre-existing medical conditions with the respective venues prior to attending your activities\nThe Adventure Pass is valid for 7 days from redeeming the first experience\nYour Adventure Pass must be registered and activated on the Smartvisit app within 6 months from date of purchase",
+      "age_policy": null,
+      "cancellation_policy": "The Adventure Pass is non-refundable",
+      "additional_notes": "What's included:\n3 or 5 experiences, depending on your pass, including:\nThe Fort - Lisaili - Desert Experience in a shared 4-wheel drive ( children need to be min 5 years old to participate)\nSea Camel self-drive boat tour (Two passes are needed per Sea Camel. Single riders are required to pay a single supplement of AED 250 direct to the supplier)\nAdmission to Wild Wadi Waterpark, next to the Burj Al Arab\nAdmission to Aquaventure Waterpark at Atlantis the Palm\nTickets to explore the underwater world of The Lost World Aquarium in Atlantis the Palm (re-opening 27th October)\nAccess to the slopes at Ski Dubai in Mall of the Emirates, on a Snow Classic Package\nAdmission to At The Top Burj Khalifa, Levels 124 & 125, where you’ll stand at one of the highest man-made heights in the world\nTickets to explore the Dubai Frame, seeing both old and new Dubai from a unique perspective\nHop-on, hop-off bus tickets for City Sightseeing Dubai\nTickets to the thrilling IMG Worlds of Adventure theme park\nA 2 Park Pass at Dubai Parks & Resorts (requires 2 tickets from your Adventure Pass)\nAccess to The View at the Palm, providing panoramic views of Palm Jumeirah, Jumeirah Beach Residence, and out to the Burj Al Arab\nA Dubai Marina Sunset Dhow Cruise, hosted by Tour Dubai\nA Dubai Marina Breakfast Cruise, hosted by Xclusive Yachts\nLouvre General Admission Ticket (Abu Dhabi)\nMadame Tussauds General Admission\nAbra Tours Marina Promenade Cruise\nMuseum of Illusions - General Admission\nMercedes-Benz Off Road Experience (ride along)\nThe Black Boats - 60 min Atlantis Tour\nQasr Al Watan - General Admission (Abu Dhabi)\nThe Green Planet - Day Pass\nAl Shindagha Museum Entry Ticket\n3D Blacklight Minigolf\nQasr Al Hosn - History, Culture and Heritage (Abu Dhabi)\nEtihad Tower Observation Deck - Viewing with coffee/tea and slice of cake (Abu Dhabi)\n\nWhat's not included:\nTransfers to and from your hotel or residence to the attractions, unless specifically mentioned within the product\nFood and beverages purchased as part of your experience, unless specifically mentioned within the product\n\nThis product is not available for online bookings. Please request a callback.\n\nSteps to redeem Adventure Pass\n1/4\nOpen Smart visit app\nStart by downloading the Smart Visit App from the App Store or Google Play. This app is your rateway to accesing and managing your Adventure Pass. Once installed, simply sign up or log in to get started.",
+      "is_bestseller": true,
+      "is_original": false,
+      "is_travellers_choice": false,
+      "location_badge": "Dubai",
+      "promotion_label": "Up to 40% Off",
+      "display_order": 1,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/the-adventure-pass/01.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/02.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/03.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/04.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 4
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/05.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 5
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/06.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 6
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/07.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 7
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/08.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 8
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/09.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 9
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/10.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 10
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/11.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 11
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/12.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 12
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/13.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 13
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/14.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 14
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/15.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 15
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/16.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 16
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/17.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 17
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/18.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 18
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/19.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 19
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/20.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 20
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/21.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 21
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/22.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 22
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/23.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 23
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/24.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 24
+        },
+        {
+          "path": "images/city-tours/the-adventure-pass/25.jpg",
+          "alt": "The Adventure Pass",
+          "caption": null,
+          "display_order": 25
+        }
+      ],
+      "features": [
+        {
+          "name": "Seasonality Year round",
+          "icon": "images/tour-icons/city-tours/9df6689d495f.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Dress code Modest and comfortable clothing",
+          "icon": "images/tour-icons/city-tours/6256e9da6308.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly Yes",
+          "icon": "images/tour-icons/city-tours/f5aa1fba2794.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages No",
+          "icon": "images/tour-icons/city-tours/d45cf6cdcba1.png",
+          "inclusion_status": "excluded"
+        }
+      ],
+      "itineraries": [],
+      "packages": [
+        {
+          "name": "3 activity pass",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        },
+        {
+          "name": "5 activity pass",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 2
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/uae-passes/aa-adventure-pass.html",
+        "screenshot": "image(20261103-053635).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "private-highlights-of-dubai-city-tour",
+      "name": "Private Highlights of Dubai City Tour",
+      "category_slug": "city-tours",
+      "short_description": "The Highlights of Dubai tour is the best way to see the key attractions of the city, including the cultural symbols of the Jumeirah Mosque, the record-breaking Burj Khalifa and the iconic Dubai Mall.",
+      "about": "The Highlights of Dubai tour is the best way to see the key attractions of the city, including the cultural symbols of the Jumeirah Mosque, the record-breaking Burj Khalifa and the iconic Dubai Mall. This full day tour includes a venture into both old and new, showcasing the heritage of the Dubai Creek – upon which the city’s story started many centuries ago – before finishing in the ambitious, modern, forward-thinking new Dubai, home to instantly recognisable structures and a city forged in the future.\n\nThe Highlights of Dubai tour showcases the very best landmarks of Dubai in one fun-filled day of adventure. Starting with a pickup from your hotel or residence, the tour takes you and your guests across the bustling city of Dubai, filled with sights and culture.",
+      "full_description": null,
+      "location": "Dubai",
+      "duration": 8,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Chinese",
+        "Russian",
+        "Japanese",
+        "Italian",
+        "Arabic",
+        "French",
+        "German",
+        "and Spanish"
+      ],
+      "starting_price": 199287,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/private-highlights-of-dubai-city-tour/01.jpg",
+      "main_image": "images/city-tours/private-highlights-of-dubai-city-tour/01.jpg",
+      "image_alt": "Private Highlights of Dubai City Tour",
+      "pickup_information": "Start your adventure with a comfortable pickup from your hotel or residence. Guests may also select their preferred start time. We recommend an early start time to ensure you can enjoy the full itinerary and all planned attractions.",
+      "highlights": null,
+      "know_before_you_go": "Please note, this is a full day tour lasting approximately 10 hours. Starting times for the tour are flexible between 8am – 10am, depending on guest preferences\nPick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up\nWe recommend wearing comfortable clothing, including walking shoes, for this tour\nIf At The Top Burj Khalifa is added to your itinerary as an optional extra, a transfer back to your hotel or residence at the end of the tour is not included\nPlease note: an AED 200 surcharge will be added for pick-ups from Abu Dhabi, Ras al Khaimah, Umm al Quwain, Al Ain and Fujairah.",
+      "age_policy": "Adults: 12+\nChildren: 2-11",
+      "cancellation_policy": "We understand that your plans can change. Please contact our team at least 24 hours before your activity to discuss your booking, should you wish to cancel. If you cancel less than 24 hours before your activity is due to start, we will unfortunately be unable to process a refund\nIf you would like to keep your booking but amend the day of your tour, we will work to accommodate this. However, we cannot guarantee availability\nOur operating schedules, routes and activities may be adapted during the holy month of Ramadan, and during the summer months. Please check before you travel if your tour is during the relevant periods\nUnforeseen circumstances beyond our or our suppliers’ control may result in cancellation without notice. We reserve the right to cancel or alter activities in such situations. Should a sudden unforeseen circumstance affect your scheduled activity, please reach out to our team to discuss next steps\nWe reserve the right to cancel your booking if full payment has not been made at least 2 days prior to your scheduled activity\nWe reserve the right to amend schedules and bookings if business operations require",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.\n\nThe source duration badge and some narrative timings differ. Confirm the schedule when booking.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 2,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/private-highlights-of-dubai-city-tour/01.jpg",
+          "alt": "Private Highlights of Dubai City Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/private-highlights-of-dubai-city-tour/02.jpg",
+          "alt": "Private Highlights of Dubai City Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/private-highlights-of-dubai-city-tour/03.jpg",
+          "alt": "Private Highlights of Dubai City Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/private-highlights-of-dubai-city-tour/04.jpg",
+          "alt": "Private Highlights of Dubai City Tour",
+          "caption": null,
+          "display_order": 4
+        }
+      ],
+      "features": [
+        {
+          "name": "Transfers Private",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Jumeirah Mosque",
+          "icon": "images/tour-icons/city-tours/0864d1ffb617.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Union House Flag",
+          "icon": "images/tour-icons/city-tours/be975bef9bda.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Museum of the Future",
+          "icon": "images/tour-icons/city-tours/614f1039670b.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Al Fahidi Historical Neighbourhood",
+          "icon": "images/tour-icons/city-tours/33a1bdbe6483.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Abra ride across the creek",
+          "icon": "images/tour-icons/city-tours/64278d2b5a50.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "The View at the Palm",
+          "icon": "images/tour-icons/city-tours/b19852592e41.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Dubai mall and Burj Khalifa",
+          "icon": "images/tour-icons/city-tours/819e9bffdef1.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Spice Souq",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Gold Souq",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Souk Madinat Jumeirah",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Start your adventure with a comfortable pickup from your hotel or residence. Guests may also select their preferred start time. We recommend an early start time to ensure you can enjoy the full itinerary and all planned attractions.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Jumeirah Mosque",
+          "description": "Visit a cultural landmark promoting understanding in the historic Jumeirah neighbourhood.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Union House Flag",
+          "description": "Capture a photo at the iconic flagpole flying above the UAE’s historic museum.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Museum of the Future",
+          "description": "Pass Dubai’s award winning architectural marvel, voted the world’s most beautiful building.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Zabeel Palace",
+          "description": "See the impressive residence of Dubai’s ruling family from the palace gates.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Dubai Frame",
+          "description": "Admire the landmark that frames Old Dubai and New Dubai in one striking structure.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Abra ride on Dubai Creek",
+          "description": "Cross the Creek by traditional boat into Dubai’s historic heart.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Al Fahidi historical neighbourhood",
+          "description": "Explore Dubai’s oldest district filled with culture, heritage, and winding alleyways.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Gold & Spice Souks",
+          "description": "Wander vibrant markets rich with scents, colours, and traditional craftsmanship.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 10,
+          "title": "Souk Madinat Jumeirah",
+          "description": "Enjoy a modern Arabic themed marketplace with restaurants and waterways; lunch optional.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 11,
+          "title": "Palm Jumeirah Monorail",
+          "description": "Ride along the Palm’s trunk to Nakheel Mall for elevated island views.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 12,
+          "title": "The View Observation Deck",
+          "description": "Take in breathtaking panoramas over the Palm and Jumeirah Beach Residence.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 13,
+          "title": "Ain Dubai photo stop",
+          "description": "Capture Dubai’s giant observation wheel from JBR’s lively waterfront.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 14,
+          "title": "Downtown Dubai",
+          "description": "Stand beneath the world’s tallest tower and explore the world’s largest mall.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 15,
+          "title": "Optional At The Top",
+          "description": "Guests staying at Dubai Mall may add At The Top Burj Khalifa to their tour. If this activity is added to the itinerary, transfer back to hotel or residence at the end of the tour is not included.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 16,
+          "title": "Tour conclusion",
+          "description": "Enjoy a comfortable private ride back to your hotel or residence.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Highlights of Dubai City Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/highlights-of-dubai-city-tour.html",
+        "screenshot": "image(20261103-053700).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "abu-dhabi-attractions-tour",
+      "name": "Abu Dhabi Attractions Tour",
+      "category_slug": "city-tours",
+      "short_description": "The Abu Dhabi Attractions Tour is a 12-hour journey packed with the city's most iconic sights and incredible attractions.",
+      "about": "The Abu Dhabi Attractions Tour is a 12-hour journey packed with the city's most iconic sights and incredible attractions. The nation’s capital is an attractions hub – as you’ll soon find out on a full day tour of the city. Your itinerary is filled with classic, modern, exciting, cultural stops - and everything in between. Discover the very best of the UAE’s capital on a full-day tour, including free time in one of the city’s many world-class attractions.",
+      "full_description": null,
+      "location": "Abu Dhabi",
+      "duration": 14,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Italian",
+        "Spanish",
+        "Russian",
+        "French",
+        "and Portuguese"
+      ],
+      "starting_price": 24622,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/abu-dhabi-attractions-tour/01.jpg",
+      "main_image": "images/city-tours/abu-dhabi-attractions-tour/01.jpg",
+      "image_alt": "Abu Dhabi Attractions Tour",
+      "pickup_information": "Begin your journey with a morning pickup around 7:30am (timing may vary).",
+      "highlights": "A full tour of Abu Dhabi, capital city of the United Arab Emirates\nFree time in one of the city’s many incredible attractions\nIncredible views of the Corniche promenade",
+      "know_before_you_go": "Pick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up.\nImportant Dress Code Information: The Sheikh Zayed Grand Mosque and Qasr Al Watan hold religious significance for all Muslims. Guests are required to adhere strictly to the local dress code by wearing modest clothing that covers the shoulders and knees (male & female). Transparent or tight-fitting attire is not permitted, as well as clothing featuring cartoon character images, is not permitted. Arabian Adventures cannot be held responsible if entry is denied due to non-compliance with mosque/palace etiquette. For detailed guidelines, we recommend visiting the respective partner websites.",
+      "age_policy": "Adults: 12+\nChildren: 3 - 11",
+      "cancellation_policy": "If your plans change, please inform the team up to 24 hours prior to your activity. Cancellations less than 24 hours prior to the activity will not be eligible for a refund.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.\n\nThe source duration badge and some narrative timings differ. Confirm the schedule when booking.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Abu Dhabi",
+      "promotion_label": null,
+      "display_order": 3,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/abu-dhabi-attractions-tour/01.jpg",
+          "alt": "Abu Dhabi Attractions Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-attractions-tour/02.jpg",
+          "alt": "Abu Dhabi Attractions Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-attractions-tour/03.jpg",
+          "alt": "Abu Dhabi Attractions Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-attractions-tour/04.jpg",
+          "alt": "Abu Dhabi Attractions Tour",
+          "caption": null,
+          "display_order": 4
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-attractions-tour/05.jpg",
+          "alt": "Abu Dhabi Attractions Tour",
+          "caption": null,
+          "display_order": 5
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-attractions-tour/06.jpg",
+          "alt": "Abu Dhabi Attractions Tour",
+          "caption": null,
+          "display_order": 6
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-attractions-tour/07.jpg",
+          "alt": "Abu Dhabi Attractions Tour",
+          "caption": null,
+          "display_order": 7
+        }
+      ],
+      "features": [
+        {
+          "name": "Shared return transfers from Dubai",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Refreshment stop",
+          "icon": "images/tour-icons/city-tours/ab6c87b71f20.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Sheikh Zayed Grand Mosque",
+          "icon": "images/tour-icons/city-tours/0864d1ffb617.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Corniche Drive",
+          "icon": "images/tour-icons/city-tours/ecd43f6835dd.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "The Louvre (Optional)",
+          "icon": "images/tour-icons/city-tours/f983e68fb932.png",
+          "inclusion_status": "optional"
+        },
+        {
+          "name": "Warner Bros. World Abu Dhabi (Optional)",
+          "icon": "images/tour-icons/city-tours/bffc28d40224.png",
+          "inclusion_status": "optional"
+        },
+        {
+          "name": "Ferrari World Abu Dhabi (Optional)",
+          "icon": "images/tour-icons/city-tours/8875e6e4147b.png",
+          "inclusion_status": "optional"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your journey with a morning pickup around 7:30am (timing may vary).",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Drive to Abu Dhabi",
+          "description": "Travel from Dubai toward the UAE’s capital city.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Last Exit stop",
+          "description": "Enjoy a unique refreshment stop with food and drinks available for purchase.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Sheikh Zayed Grand Mosque",
+          "description": "Visit one of the world’s largest mosques featuring domes, columns, chandeliers, and a record breaking carpet.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Al Bateen drive-by",
+          "description": "Pass high rise hotels, family beaches, and the scenic Corniche promenade.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Option 1: Louvre Abu Dhabi + Yas Mall",
+          "description": "Explore world class art followed by leisure time at Yas Mall.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Option 2: Warner Bros. World Abu Dhabi",
+          "description": "Enjoy the world’s largest indoor theme park with immersive cartoon themed lands.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Option 3: Ferrari World Abu Dhabi",
+          "description": "Experience the first Ferrari themed park and ride the planet’s fastest rollercoaster.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Return to Dubai",
+          "description": "Dropoff is estimated to be 9:00pm. Times may vary depending on operational requirements.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Louvre Abu Dhabi + Yas Mall",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        },
+        {
+          "name": "Warner Bros. World Abu Dhabi",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 2
+        },
+        {
+          "name": "Ferrari World Abu Dhabi",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 3
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/aa-abu-dhabi-attractions-tour.html",
+        "screenshot": "image(20261103-053720).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "private-al-ain-city-tour",
+      "name": "Private Al Ain City Tour",
+      "category_slug": "city-tours",
+      "short_description": "Join Arabian Adventures for a peaceful journey to Al Ain, approximately 120 kilometres from Dubai.",
+      "about": "Join Arabian Adventures for a peaceful journey to Al Ain, approximately 120 kilometres from Dubai. Our inspiring Al Ain City Tour takes in forts, museums, parks and Jebel Hafeet, the second-highest mountain in the UAE.\n\nEnjoy a full day exploring the beautiful city of Al Ain, near the border with Oman. The second largest city in Abu Dhabi is known for its gorgeous palm groves and natural springs, which have earned it the nickname ‘Garden City’.",
+      "full_description": null,
+      "location": "Al Ain",
+      "duration": 10,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Chinese",
+        "Russian",
+        "Portuguese",
+        "Japanese",
+        "Italian",
+        "Arabic",
+        "French",
+        "German",
+        "and Spanish"
+      ],
+      "starting_price": 191515,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/private-al-ain-city-tour/01.jpg",
+      "main_image": "images/city-tours/private-al-ain-city-tour/01.jpg",
+      "image_alt": "Private Al Ain City Tour",
+      "pickup_information": "Begin your journey with a comfortable pickup from your hotel or residence. Guests may also select their preferred start time. We recommend an early start time to ensure you can enjoy the full itinerary and all planned attractions.",
+      "highlights": null,
+      "know_before_you_go": "Based on the guests’ preference, the tour can start as early as 8:00 am, but no later than 10 am. The duration of the tour is about 10 hours\nPick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up\nWe advise wearing comfortable shoes, and all guests must adhere to the local dress code requirements (modest clothing with shoulders and knees covered). We also recommend wearing sunblock, sunglasses, and a hat, especially during the summer months\nThe tour runs every day except on Mondays and public holidays",
+      "age_policy": "Adults are 12 years and above\nChild age is 2-11 years",
+      "cancellation_policy": "Schedules, prices, routings and information published here are correct at this time, but are subject to variation without notice.\nOur operating schedules and the routes of some of our tours and safaris may change during the holy month of Ramadan, and during the summer months, or due to force majeure.\nWe reserve the right to cancel any tour or alter any part of the tour at our discretion without prior notification.\nThe full price of any Activity shall be due and payable when a booking is made and we may cancel any booking if the full price of the Activity is not paid to us at least two (2) days prior to commencement of the said Activity.\nWe shall be entitled to cancel, alter or omit any part of any Activity for which a booking has been made with or without notice to you and at our sole discretion. In particular, due to the nature of many of the Activities, delays and cancellations may result due to factors beyond our or our suppliers’ control, such as the weather, accidents, sickness, governmental restrictions and other events of force majeure. In such cases, a refund or partial refund may be given at our discretion and/or the discretion of the supplier of the Activity concerned.\nNo refund will be payable to you in respect of a booking cancelled less than twenty four (24) hours prior to commencement of an Activity.\nFailure to arrive at the designated location for an Activity by the specified departure time shall be considered to be cancellation.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Al Ain",
+      "promotion_label": null,
+      "display_order": 4,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/private-al-ain-city-tour/01.jpg",
+          "alt": "Private Al Ain City Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/private-al-ain-city-tour/02.jpg",
+          "alt": "Private Al Ain City Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/private-al-ain-city-tour/03.jpg",
+          "alt": "Private Al Ain City Tour",
+          "caption": null,
+          "display_order": 3
+        }
+      ],
+      "features": [
+        {
+          "name": "Transfers Private",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Al Jahili Fort",
+          "icon": "images/tour-icons/city-tours/2c16317b8323.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Al Ain Oasis",
+          "icon": "images/tour-icons/city-tours/fb9aecceeb74.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your journey with a comfortable pickup from your hotel or residence. Guests may also select their preferred start time. We recommend an early start time to ensure you can enjoy the full itinerary and all planned attractions.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Drive to Al Ain",
+          "description": "Travel toward the UAE’s Garden City near the Oman border.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Al Jahili Fort",
+          "description": "Explore one of the UAE’s largest forts, built in the 19th century to protect palm farmers.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Qasr Al Muwaiji",
+          "description": "Continue your fort journey at this historic landmark and former royal residence.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Al Ain Oasis",
+          "description": "Walk through a 4,000 year old palm oasis showcasing ancient irrigation and settlement history.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Jebel Hafeet drive by",
+          "description": "Pass the dramatic mountain bordering the UAE and Oman, perfect for scenic photos.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Mercure Grand Jebel Hafeet lunch",
+          "description": "Enjoy lunch at this mountaintop hotel with beautiful views of the region.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Return to Dubai",
+          "description": "Conclude your Al Ain adventure with a comfortable drive back to your hotel.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Al Ain City Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/al-ain-city-tour.html",
+        "screenshot": "image(20261103-053740).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "dubai-full-day-tour",
+      "name": "Dubai Full Day Tour",
+      "category_slug": "city-tours",
+      "short_description": "Join us on an unforgettable 8-hour Dubai Full Day Tour, where you'll experience the best of both worlds: traditional and modern Dubai.",
+      "about": "Join us on an unforgettable 8-hour Dubai Full Day Tour, where you'll experience the best of both worlds: traditional and modern Dubai. This comprehensive city tour tells the full story of our incredible home, from its historical roots to its world-famous landmarks.\n\nYour itinerary includes stops at Dubai’s most famous sights, alongside journeys into more traditional, culture-filled areas. It’s the perfect way to experience every side of our world-famous city.",
+      "full_description": null,
+      "location": "Dubai",
+      "duration": 10,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Italian",
+        "Spanish",
+        "Russian",
+        "French",
+        "and Portuguese"
+      ],
+      "starting_price": 18390,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/dubai-full-day-tour/01.jpg",
+      "main_image": "images/city-tours/dubai-full-day-tour/01.jpg",
+      "image_alt": "Dubai Full Day Tour",
+      "pickup_information": "Begin your day of Dubai adventure with pickup around 9:30am (timing may vary).",
+      "highlights": "Photo opportunities with some of Dubai’s most recognisable landmarks\nA visit to some of the city’s religious symbols\nA cultural journey through the souks and spice markets of the Old Town\nLunch at the Souk Madinat at the guest’s discretion\nIncredible views of the world-famous Palm Jumeirah\nAn opportunity to add a shopping adventure at the Dubai Mall once the tour is completed",
+      "know_before_you_go": "Pick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up.",
+      "age_policy": "Adults: 12+\nChildren: 3 - 11",
+      "cancellation_policy": "If your plans change, please inform the team up to 24 hours prior to your activity. Cancellations less than 24 hours prior to the activity will not be eligible for a refund.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.\n\nThe source duration badge and some narrative timings differ. Confirm the schedule when booking.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 5,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/dubai-full-day-tour/01.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/02.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/03.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/04.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 4
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/05.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 5
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/06.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 6
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/07.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 7
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/08.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 8
+        },
+        {
+          "path": "images/city-tours/dubai-full-day-tour/09.jpg",
+          "alt": "Dubai Full Day Tour",
+          "caption": null,
+          "display_order": 9
+        }
+      ],
+      "features": [
+        {
+          "name": "Shared return transfers",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Jumeirah Mosque",
+          "icon": "images/tour-icons/city-tours/0864d1ffb617.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Gold and Spice Souq",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Burj Al Arab",
+          "icon": "images/tour-icons/city-tours/beba88c15b61.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Monorail across Palm Jumeirah",
+          "icon": "images/tour-icons/city-tours/31ec82be616e.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Dubai Marina",
+          "icon": "images/tour-icons/city-tours/3eb430341779.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Museum of The Future",
+          "icon": "images/tour-icons/city-tours/614f1039670b.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your day of Dubai adventure with pickup around 9:30am (timing may vary).",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Jumeirah Mosque photo stop",
+          "description": "Capture photos at one of Dubai’s most beautiful mosques.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Za’abeel Palace photo stop",
+          "description": "Stop outside the residence of Dubai’s ruling family.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Al Fahidi historical district",
+          "description": "Walk through Dubai’s oldest neighbourhood filled with classic architecture and stories of the city’s roots.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Abra creek crossing",
+          "description": "Ride a traditional wooden boat across Dubai Creek into Old Dubai.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Gold & Spice Souks",
+          "description": "Explore buzzing markets that were once the heart of Dubai’s trading network.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Souk Madinat & Burj Al Arab",
+          "description": "Enjoy a photo stop at the world-famous Burj Al Arab and optional lunch at Souk Madinat.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Palm Monorail ride",
+          "description": "Travel along the trunk of Palm Jumeirah to Atlantis The Palm, enjoying scenic views along the way.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Dubai Marina waterfront",
+          "description": "Visit the Marina’s eye-catching skyline and beautiful harbour.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 10,
+          "title": "Bluewaters island & Ain Dubai",
+          "description": "Stop for photos at the world’s largest observation wheel.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 11,
+          "title": "Museum of the Future",
+          "description": "Capture a photo of the landmark once named the most beautiful building in the world.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 12,
+          "title": "Dubai Mall",
+          "description": "Conclude with leisure time at Dubai Mall or choose a return transfer.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 13,
+          "title": "Optional At The Top",
+          "description": "Guests staying at Dubai Mall may add At The Top Burj Khalifa to their tour.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 14,
+          "title": "Tour conclusion",
+          "description": "Dropoff is estimated to be 7:00pm. Times may vary depending on operational requirements.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Dubai Full Day Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/aa-dubai-full-day-tour.html",
+        "screenshot": "image(20261103-053815).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "abu-dhabi-heritage-tour",
+      "name": "Abu Dhabi Heritage Tour",
+      "category_slug": "city-tours",
+      "short_description": "Abu Dhabi is the UAE’s capital, home to a wealth of history and culture.",
+      "about": "Abu Dhabi is the UAE’s capital, home to a wealth of history and culture. So why not experience the city’s iconic sights with the Abu Dhabi Heritage Tour?\n\nOur full-day guided tour departs from Dubai and takes you to the capital city’s cultural highlights. Drive along the Corniche, visit the Presidential Palace, Qasr Al Watan, and enjoy the thrills of Yas Island. Discover everything Abu Dhabi has to offer with Arabian Adventures.",
+      "full_description": "A guided trip from Dubai visits Abu Dhabi’s cultural landmarks, including Qasr Al Watan and Sheikh Zayed Grand Mosque, with photo stops and a lunch break.",
+      "location": "Abu Dhabi",
+      "duration": 11,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Italian",
+        "Spanish",
+        "Russian",
+        "French",
+        "and Portuguese"
+      ],
+      "starting_price": 26161,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/abu-dhabi-heritage-tour/01.jpg",
+      "main_image": "images/city-tours/abu-dhabi-heritage-tour/01.jpg",
+      "image_alt": "Abu Dhabi Heritage Tour",
+      "pickup_information": "Begin your heritage journey with pickup around 8:30am (timing may vary).",
+      "highlights": "A full overview of Abu Dhabi’s incredible heritage and influence on the UAE\nPhoto opportunities with many of the city’s cultural landmarks",
+      "know_before_you_go": "Pick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up.\nImportant Dress Code Information: The Sheikh Zayed Grand Mosque and Qasr Al Watan hold great religious significance for all Muslims. Guests are required to adhere strictly to the local dress code by wearing modest clothing that covers the shoulders and knees (male & female). Transparent or tight-fitting attire is not permitted, as well as clothing featuring cartoon character images. Arabian Adventures cannot be held responsible if entry is denied due to non-compliance with mosque/palace etiquette. For detailed guidelines, we recommend visiting the respective partner websites.",
+      "age_policy": "Adults: 12+\nChildren: 3 - 11",
+      "cancellation_policy": "If your plans change, please inform the team up to 24 hours prior to your activity. Cancellations less than 24 hours prior to the activity will not be eligible for a refund.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Abu Dhabi",
+      "promotion_label": null,
+      "display_order": 6,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/abu-dhabi-heritage-tour/01.jpg",
+          "alt": "Abu Dhabi Heritage Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-heritage-tour/02.jpg",
+          "alt": "Abu Dhabi Heritage Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-heritage-tour/03.jpg",
+          "alt": "Abu Dhabi Heritage Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/abu-dhabi-heritage-tour/04.jpg",
+          "alt": "Abu Dhabi Heritage Tour",
+          "caption": null,
+          "display_order": 4
+        }
+      ],
+      "features": [
+        {
+          "name": "Year round",
+          "icon": "images/tour-icons/city-tours/9df6689d495f.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Shared return transfers from Dubai",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Type of Tour: Guided",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Tickets: Sheikh Zayed Grand Mosque and Qasr Al Watan",
+          "icon": "images/tour-icons/city-tours/a467526d1981.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Photo Opportunities: The Louvre, Yas Island, Corniche, Marina Mall",
+          "icon": "images/tour-icons/city-tours/beba88c15b61.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Dress Code: Modest and comfortable clothing",
+          "icon": "images/tour-icons/city-tours/6256e9da6308.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly: Yes",
+          "icon": "images/tour-icons/city-tours/f5aa1fba2794.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages: Not included, but stop-offs available",
+          "icon": "images/tour-icons/city-tours/d45cf6cdcba1.png",
+          "inclusion_status": "excluded"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your heritage journey with pickup around 8:30am (timing may vary).",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Drive to Abu Dhabi",
+          "description": "Travel from Dubai towards Abu Dhabi.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Last Exit stop",
+          "description": "Break up the journey at an American-inspired themed refreshment stop with food and drinks available for purchase.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Yas Island drive through",
+          "description": "Pass Abu Dhabi’s entertainment hub featuring theme parks and attractions.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Louvre Abu Dhabi photo stop",
+          "description": "Capture photos of the iconic museum’s striking architecture.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Corniche drive",
+          "description": "Enjoy views of the eight-kilometre waterfront and city skyline.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Presidential Palace photo stop",
+          "description": "Stop for memorable photos outside the nation’s seat of leadership.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Qasr Al Watan",
+          "description": "Visit the UAE’s beautiful national palace and discover stories of heritage, governance, and craftsmanship.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Marina Mall lunch break",
+          "description": "Enjoy lunch options at the mall. Food and beverages available for purchase.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 10,
+          "title": "Sheikh Zayed Grand Mosque",
+          "description": "Explore one of the world’s largest mosques with breathtaking, pure white domes, columns, chandeliers, and a record breaking woven carpet.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 11,
+          "title": "Return to Dubai",
+          "description": "Dropoff is estimated to be 8:00pm. Times may vary depending on operational requirements.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Abu Dhabi Heritage Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/aa-abu-dhabi-heritage-tour.html",
+        "screenshot": "image(20261103-053842).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "private-authentic-dubai-food-tour",
+      "name": "Private Authentic Dubai Food Tour",
+      "category_slug": "city-tours",
+      "short_description": "In a city famous for skyscrapers, 5-star hotels and beautiful beaches, look a little closer and you’ll find so much more to celebrate – including a world of incredible, culture-filled food.",
+      "about": "In a city famous for skyscrapers, 5-star hotels and beautiful beaches, look a little closer and you’ll find so much more to celebrate – including a world of incredible, culture-filled food. Our Authentic Dubai Food Tour stops at the city’s main food highlights on the Dubai Creek, travelling through restaurants where communities once came together to socialise and enjoy the very same foods you’ll eat on this tour.\n\nOur Authentic Dubai Food Tour takes place in the heart of old Dubai, where the city’s first communities settled and developed the cuisine we enjoy today.",
+      "full_description": null,
+      "location": "Dubai",
+      "duration": 6,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 136577,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/private-authentic-dubai-food-tour/01.jpg",
+      "main_image": "images/city-tours/private-authentic-dubai-food-tour/01.jpg",
+      "image_alt": "Private Authentic Dubai Food Tour",
+      "pickup_information": "Begin your private tour at your preferred start time, booked in advance. Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+      "highlights": "Arabic tea served with dates - an Emirati favourite\nA first-hand experience of the Spice Souk\nDelicious starters at Bayt Al Wakeel restaurant\nExperience traditional main dishes at Local House Restaurant\nArabic sweets and desserts at Arabian Tea House Restaurant",
+      "know_before_you_go": "This is a private tour, enjoyed between you and your guests only\nPick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up\nOur Authentic Dubai Food Tour operates either between 11:00 – 15:00 for lunchtime tours (winter only), or 16:30 – 20:30 for sunset dinner experiences. If you would like to request an alternative starting time based on your preferences, please reach out and we will do our best to accommodate\nWe recommend wearing comfortable shoes as this tour involves walking",
+      "age_policy": "Adults: 12+\nChildren: 2 – 11",
+      "cancellation_policy": "For a full refund, please cancel 48 hours in advance. No-shows and late cancellations are non-refundable.\nAmendments to services provided by our company cannot be accepted within 24 hours before the scheduled service time. If an amendment is made, it must be confirmed with an Arabian Adventures agent, otherwise the service may be delivered as originally reserved.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.\n\nVenue map: https://maps.google.com/?daddr=25°16'08.2\"N,55°17'36.7\"E",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 7,
+      "youtube_url": "https://www.youtube.com/watch?v=qmJVTLmsF3s",
+      "images": [
+        {
+          "path": "images/city-tours/private-authentic-dubai-food-tour/01.jpg",
+          "alt": "Private Authentic Dubai Food Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/private-authentic-dubai-food-tour/02.jpg",
+          "alt": "Private Authentic Dubai Food Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/private-authentic-dubai-food-tour/03.jpg",
+          "alt": "Private Authentic Dubai Food Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/private-authentic-dubai-food-tour/04.jpg",
+          "alt": "Private Authentic Dubai Food Tour",
+          "caption": null,
+          "display_order": 4
+        },
+        {
+          "path": "images/city-tours/private-authentic-dubai-food-tour/05.jpg",
+          "alt": "Private Authentic Dubai Food Tour",
+          "caption": null,
+          "display_order": 5
+        },
+        {
+          "path": "images/city-tours/private-authentic-dubai-food-tour/06.jpg",
+          "alt": "Private Authentic Dubai Food Tour",
+          "caption": null,
+          "display_order": 6
+        }
+      ],
+      "features": [
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Spice Souq",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Traditional Middle East cuisine",
+          "icon": "images/tour-icons/city-tours/ed5ac21261ac.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Return transfers",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your private tour at your preferred start time, booked in advance. Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Arabic tea & dates",
+          "description": "Start in Old Dubai with freshly brewed tea paired with traditional local dates.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Spice Souk",
+          "description": "Wander through aromatic market lanes as your guide shares the souk’s rich history.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Local juice refreshment",
+          "description": "Enjoy a fresh local juice before crossing the Creek.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Abra Creek crossing",
+          "description": "Ride a traditional wooden boat into Bur Dubai’s historic waterfront.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Bayt Al Wakeel restaurant",
+          "description": "Take in panoramic Creek views while enjoying handcrafted starter dishes.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Local House restaurant",
+          "description": "Savour an authentic Emirati main course, including the famous Camel Burger.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Arabian Tea House",
+          "description": "Conclude with traditional Arabic desserts in a serene heritage district hideaway.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Tour conclusion",
+          "description": "Enjoy a comfortable private ride back to your hotel or residence.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Authentic Dubai Food Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/authentic-dubai-food-tour.html",
+        "screenshot": "image(20261103-053858).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "traditional-dubai-tour",
+      "name": "Traditional Dubai Tour",
+      "category_slug": "city-tours",
+      "short_description": "The Traditional Dubai Tour is a whistlestop journey through the heritage, culture and classic architecture of Dubai’s old city.",
+      "about": "The Traditional Dubai Tour is a whistlestop journey through the heritage, culture and classic architecture of Dubai’s old city. For anyone looking to experience the cultural fabric of Dubai on a short and fruitful trip, there’s no better way to do so than on a Traditional Dubai Tour.\n\nThis itinerary offers a rich, half-day journey through the customs, traditions and ways of living that continue to thrive in Old Dubai. The old side of the city still has the hum, bustle and cultural foundations that it’s had for many centuries and is as appealing and fascinating as Dubai’s array of modern achievements.",
+      "full_description": null,
+      "location": "Dubai",
+      "duration": 9,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Italian",
+        "French",
+        "Russian",
+        "Spanish",
+        "Portuguese"
+      ],
+      "starting_price": 13850,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/traditional-dubai-tour/01.jpg",
+      "main_image": "images/city-tours/traditional-dubai-tour/01.jpg",
+      "image_alt": "Traditional Dubai Tour",
+      "pickup_information": "Begin your cultural journey with a morning pickup around 9am (timing may vary).",
+      "highlights": "A cultural journey through old Dubai, filled with remnants of the country’s past\nWalking tours through the souqs and spice markets of old Dubai\nPhoto opportunities with beautiful religious symbols and cultural landmarks",
+      "know_before_you_go": "Pick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up.",
+      "age_policy": "Adults: 12+\nChildren: 3 - 11",
+      "cancellation_policy": "If your plans change, please inform the team up to 24 hours prior to your activity. Cancellations less than 24 hours prior to the activity will not be eligible for a refund.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 8,
+      "youtube_url": "https://www.youtube.com/watch?v=qmJVTLmsF3s",
+      "images": [
+        {
+          "path": "images/city-tours/traditional-dubai-tour/01.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/02.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/03.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/04.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 4
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/05.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 5
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/06.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 6
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/07.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 7
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/08.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 8
+        },
+        {
+          "path": "images/city-tours/traditional-dubai-tour/09.jpg",
+          "alt": "Traditional Dubai Tour",
+          "caption": null,
+          "display_order": 9
+        }
+      ],
+      "features": [
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Spice Souq",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Traditional Middle East cuisine",
+          "icon": "images/tour-icons/city-tours/ed5ac21261ac.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Return transfers",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your cultural journey with a morning pickup around 9am (timing may vary).",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Jumeirah Mosque photo stop",
+          "description": "Capture photos at one of Dubai’s most beautiful mosques.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Za’abeel Palace photo stop",
+          "description": "Stop outside the residence of Dubai’s ruling family.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Al Fahidi historical district",
+          "description": "Walk through Dubai’s oldest neighbourhood filled with classic architecture and stories of the city’s roots.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Abra creek crossing",
+          "description": "Ride a traditional wooden boat across Dubai Creek into Old Dubai.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Gold & Spice Souks",
+          "description": "Explore buzzing markets that were once the heart of Dubai’s trading network.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Souk Madinat & Burj Al Arab",
+          "description": "Enjoy a photo stop at the world-famous Burj Al Arab and optional lunch at Souk Madinat.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Tour conclusion",
+          "description": "Dropoff is estimated to be 6:00pm. Times may vary depending on operational requirements.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Traditional Dubai Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/aa-traditional-dubai-tour.html",
+        "screenshot": "image(20261103-053917).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "private-modern-dubai-city-tour",
+      "name": "Private Modern Dubai City Tour",
+      "category_slug": "city-tours",
+      "short_description": "Dubai was mostly desert not so long ago, with a small population living near the Dubai Creek.",
+      "about": "Dubai was mostly desert not so long ago, with a small population living near the Dubai Creek. Today, it’s a bustling global city, home to some of the world’s most recognisable buildings and beautiful backdrops. On the Modern Dubai City Tour, you’ll see the side of the city that was once a dream, now turned into an incredible reality.\n\nThe Modern Dubai City Tour is a window in the world of New Dubai. The tour showcases the man-made side of the city, borne out of the vision, ambition and imagination of the leaders of the UAE. On this tour, you’ll see the most instantly recognisable sights and landmarks of Dubai up close.",
+      "full_description": null,
+      "location": "Dubai",
+      "duration": 6,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Chinese",
+        "Russian",
+        "Portuguese",
+        "Japanese",
+        "Italian",
+        "Arabic",
+        "French",
+        "German",
+        "and Spanish"
+      ],
+      "starting_price": 141496,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/private-modern-dubai-city-tour/01.jpg",
+      "main_image": "images/city-tours/private-modern-dubai-city-tour/01.jpg",
+      "image_alt": "Private Modern Dubai City Tour",
+      "pickup_information": "Begin your journey with a comfortable pickup from your hotel or residence. Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+      "highlights": null,
+      "know_before_you_go": "Please note that this tour lasts approximately six hours. Start times are flexible between 8:00 am and 10:00 am, depending on guest preferences\nPick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up\nWe recommend wearing comfortable clothing, including walking shoes, for this tour\nIf At The Top Burj Khalifa is added to your itinerary as an optional extra, a transfer back to your hotel or residence at the end of the tour is not included\nPlease note: an AED 200 surcharge will be added for pick-ups from Abu Dhabi, Ras al Khaimah, Umm al Quwain, Al Ain and Fujairah",
+      "age_policy": "Adults: 12+\nChildren: 2-11",
+      "cancellation_policy": "We understand that your plans can change. Please contact our team at least 24 hours before your activity to discuss your booking, should you wish to cancel. If you cancel less than 24 hours before your activity is due to start, we will unfortunately be unable to process a refund\nIf you would like to keep your booking but amend the day of your tour, we will work to accommodate this. However, we cannot guarantee availability\nOur operating schedules, routes and activities may be adapted during the holy month of Ramadan, and during the summer months. Please check before you travel if your tour is during the relevant periods\nUnforeseen circumstances beyond our or our suppliers’ control may result in cancellation without notice. We reserve the right to cancel or alter activities in such situations. Should a sudden unforeseen circumstance affect your scheduled activity, please reach out to our team to discuss next steps\nWe reserve the right to cancel your booking if full payment has not been made at least 2 days prior to your scheduled activity\nWe reserve the right to amend schedules and bookings if business operations require",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 9,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/private-modern-dubai-city-tour/01.jpg",
+          "alt": "Private Modern Dubai City Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/private-modern-dubai-city-tour/02.jpg",
+          "alt": "Private Modern Dubai City Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/private-modern-dubai-city-tour/03.jpg",
+          "alt": "Private Modern Dubai City Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/private-modern-dubai-city-tour/04.jpg",
+          "alt": "Private Modern Dubai City Tour",
+          "caption": null,
+          "display_order": 4
+        },
+        {
+          "path": "images/city-tours/private-modern-dubai-city-tour/05.jpg",
+          "alt": "Private Modern Dubai City Tour",
+          "caption": null,
+          "display_order": 5
+        }
+      ],
+      "features": [
+        {
+          "name": "Transfers Private",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Museum of the Future",
+          "icon": "images/tour-icons/city-tours/614f1039670b.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "The View at the Palm",
+          "icon": "images/tour-icons/city-tours/b19852592e41.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Dubai mall and Burj Khalifa",
+          "icon": "images/tour-icons/city-tours/819e9bffdef1.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Souk Madinat Jumeirah",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Palm Monorail",
+          "icon": "images/tour-icons/city-tours/8c4ea941b43a.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Ain Dubai",
+          "icon": "images/tour-icons/city-tours/d3e9e587bc36.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your journey with a comfortable pickup from your hotel or residence. Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Bluewaters island",
+          "description": "Enjoy sweeping views over JBR where blue waters meet golden sands and towering skylines.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "JBR waterfront",
+          "description": "Capture beachfront photos framed by Dubai’s iconic high rise backdrop.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Dubai Marina Walk",
+          "description": "Stroll the marina’s waterfront promenade lined with cafés, shops, and photo spots.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Palm Jumeirah Monorail",
+          "description": "Ride along the Palm’s trunk for elevated views of this world famous island.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "The View at Nakheel Mall",
+          "description": "Experience 360° panoramas over the Palm, JBR, Burj Al Arab, and Burj Khalifa.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Museum of the Future",
+          "description": "Photograph Dubai’s most futuristic architectural landmark up close.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Dubai Frame",
+          "description": "See the city’s past and future framed together in one striking structure.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Downtown Dubai",
+          "description": "Stand beneath the world’s tallest tower and explore the world’s largest mall.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 10,
+          "title": "Dubai Mall leisure time",
+          "description": "At The Top Burj Khalifa can be added to your itinerary as an optional extra. If you add this activity to the itinerary, transfer back to your hotel or residence at the end of the tour is not included.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 11,
+          "title": "Tour conclusion",
+          "description": "Enjoy a comfortable private ride back to your hotel or residence.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Modern Dubai City Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/modern-dubai-city-tour.html",
+        "screenshot": "image(20261103-053939).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "private-traditional-dubai-city-tour",
+      "name": "Private Traditional Dubai City Tour",
+      "category_slug": "city-tours",
+      "short_description": "Turn the stones on Dubai’s rich history, long before skyscrapers filled the sky.",
+      "about": "Turn the stones on Dubai’s rich history, long before skyscrapers filled the sky. With a Private Traditional City Tour from Arabian Adventures, Dubai’s fascinating past is yours to uncover. Join your guide as you unearth hidden gems and fall in love with a different side of the city.\n\nExplore historic neighbourhoods, take a ride in an abra boat , and make time for tea at an Arabian Tea House. Pack your bags, dress comfortably, and get ready for your next adventure.",
+      "full_description": "Explore historic Dubai with a private guide, from archaeological sites and a tea stop to a creek crossing and the Gold and Spice Souqs.",
+      "location": "Dubai",
+      "duration": 6,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Chinese",
+        "Russian",
+        "Portuguese",
+        "Japanese",
+        "Italian",
+        "Arabic",
+        "French",
+        "German",
+        "Spanish"
+      ],
+      "starting_price": 127343,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/private-traditional-dubai-city-tour/01.jpg",
+      "main_image": "images/city-tours/private-traditional-dubai-city-tour/01.jpg",
+      "image_alt": "Private Traditional Dubai City Tour",
+      "pickup_information": "Begin your private heritage journey with pickup by your knowledgeable guide.Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+      "highlights": "Based on the guests’ preference, the tour can start as early as 8:00 am. The tour takes about six hours\nWe advise wearing comfortable shoes. All guests must adhere to the local dress code requirements (modest clothing with shoulders and knees covered).\nWe also recommend wearing sunblock, sunglasses, and a hat, especially during the summer months.",
+      "know_before_you_go": "Based on your preferences, the tour can start as early as 08:00 am.\nThe Private Traditional Dubai City Tour takes around four to six hours.\nWe advise wearing comfortable shoes, as there is a significant amount of walking.\nGuests must adhere to the local dress code requirements (modest clothing with the shoulders and knees covered).\nWe recommend applying suncream, bringing sunglasses, and wearing a hat during the tour – especially in the summer months.\nSchedules, prices, routings and information published here are correct at this time, but are subject to variation without notice.\nOur operating schedules and routes may change during the holy month of Ramadan, summer months, or due to force majeure.",
+      "age_policy": "Adults include anyone aged 12 years and above\nChildren must be aged 2-11 years",
+      "cancellation_policy": "We reserve the right to cancel any tour or alter any part of the tour at our discretion without prior notification.\nThe full price of any Activity shall be due and payable when a booking is made.\nWe may cancel any booking if the full price of the activity is not paid to us at least two days before the start of said activity.\nBookings cancelled less than twenty-four hours before commencement of an activity in local time are not eligible for a refund.\nFailure to arrive at the designated location for an Activity by the specified departure time shall be considered to be cancellation.\nWe shall be entitled to cancel, alter or omit any part of any Activity for which a booking has been made with or without notice to you and at our sole discretion. In particular, due to the nature of many of the activities, delays and cancellations may result due to factors beyond our or our suppliers’ control, such as the weather, accidents, sickness, governmental restrictions and other events of force majeure. In such cases, a refund or partial refund may be given at our discretion and/or the discretion of the supplier of the Activity concerned.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Dubai",
+      "promotion_label": null,
+      "display_order": 10,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/private-traditional-dubai-city-tour/01.jpg",
+          "alt": "Private Traditional Dubai City Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/private-traditional-dubai-city-tour/02.jpg",
+          "alt": "Private Traditional Dubai City Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/private-traditional-dubai-city-tour/03.jpg",
+          "alt": "Private Traditional Dubai City Tour",
+          "caption": null,
+          "display_order": 3
+        },
+        {
+          "path": "images/city-tours/private-traditional-dubai-city-tour/04.jpg",
+          "alt": "Private Traditional Dubai City Tour",
+          "caption": null,
+          "display_order": 4
+        }
+      ],
+      "features": [
+        {
+          "name": "Year round",
+          "icon": "images/tour-icons/city-tours/9df6689d495f.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Private return transfers",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Type of Tour: Guided",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Tickets: Jumeirah Archaeological Site and Abra ride across Dubai Creek",
+          "icon": "images/tour-icons/city-tours/0864d1ffb617.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Photo Opportunities: Blue Mosque, Zabeel Palace, Al Fahidi Historical Neighbourhood",
+          "icon": "images/tour-icons/city-tours/beba88c15b61.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Dress Code: Modest and comfortable clothing",
+          "icon": "images/tour-icons/city-tours/6256e9da6308.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Family Friendly: Yes",
+          "icon": "images/tour-icons/city-tours/f5aa1fba2794.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Food & Beverages: Tea and a snack at the Arabian Tea House",
+          "icon": "images/tour-icons/city-tours/d45cf6cdcba1.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pick-up and transfer",
+          "description": "Begin your private heritage journey with pickup by your knowledgeable guide.Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Drive to old Dubai",
+          "description": "Travel toward the city’s historic heart and glimpse life from Dubai’s fishing village past.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Jumeirah Archaeological Site",
+          "description": "Explore artefacts dating back to the 9th century, including pottery, coins, and tools.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "The Arabian Tea House",
+          "description": "Enjoy traditional tea and a snack in one of Dubai’s most charming cultural cafés.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Blue Mosque photo stop",
+          "description": "Capture a striking photo or step inside this beautifully designed mosque.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Union House Flag",
+          "description": "See the historic 123 meter flag marking the birthplace of the UAE’s union.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Zabeel Palace",
+          "description": "Stop for photos outside the impressive residence of Dubai’s ruling family.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Al Fahidi Historical Neighbourhood",
+          "description": "Wander through Dubai’s oldest district, filled with heritage and traditional architecture.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Hindu Temple",
+          "description": "Admire one of the city’s most vibrant cultural landmarks within the historic quarter.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 10,
+          "title": "Abra Ride",
+          "description": "Cross Dubai Creek aboard a traditional wooden boat toward the bustling souqs.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 11,
+          "title": "Gold and Spice Souqs",
+          "description": "Explore colourful markets rich with scents, jewellery, and centuries old trading heritage.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 12,
+          "title": "Tour conclusion",
+          "description": "Enjoy a comfortable private ride back to your hotel or residence.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Traditional Dubai City Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/traditional-dubai-city-tour.html",
+        "screenshot": "image(20261103-054009).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "private-sharjah-city-tour",
+      "name": "Private Sharjah City Tour",
+      "category_slug": "city-tours",
+      "short_description": "Are you looking to explore further than just Dubai on your visit to the UAE? Then this Sharjah City Tour is your answer! Discover what the beautiful emirate has to offer and don’t miss your chance to experience a few incredible souk shopping sprees and jaw-dropping attractions on your day out.",
+      "about": "Are you looking to explore further than just Dubai on your visit to the UAE? Then this Sharjah City Tour is your answer! Discover what the beautiful emirate has to offer and don’t miss your chance to experience a few incredible souk shopping sprees and jaw-dropping attractions on your day out. Look beyond Dubai and explore the historic and beautiful emirate of Sharjah. Located less than a 30-minute drive from Dubai, the third largest emirate is guaranteed to steal your heart with its unique charms and hidden gems.",
+      "full_description": null,
+      "location": "Sharjah",
+      "duration": 6,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English",
+        "Chinese",
+        "Russian",
+        "Portuguese",
+        "Japanese",
+        "Italian",
+        "Arabic",
+        "French",
+        "German",
+        "and Spanish"
+      ],
+      "starting_price": 130036,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/private-sharjah-city-tour/01.jpg",
+      "main_image": "images/city-tours/private-sharjah-city-tour/01.jpg",
+      "image_alt": "Private Sharjah City Tour",
+      "pickup_information": "Begin your private tour at your preferred start time, booked in advance. Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+      "highlights": null,
+      "know_before_you_go": "Based on the guests’ preference, the tour can start as early as 8:00 am, but no later than 10 am. The duration of the tour is about six hours\nPick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up\nWe advise wearing comfortable shoes, and all guests must adhere to the local dress code requirements (modest clothing with shoulders and knees covered). We also recommend wearing sunblock, sunglasses, and a hat, especially during the summer months\nThe tour runs every day except on Fridays and public holidays\nSharjah is one of the most beautiful and culturally rich cities in the United Arab Emirates. Join us on a four-hour tour from Dubai to explore the highlights of this Pearl of the Gulf. With our knowledgeable guide, you'll learn about the city's rich culture, traditions, and history as you visit landmarks like the King Faisal Mosque, Al Bait Museum, and more",
+      "age_policy": "Adults are 12 years and above\nChild age is 2-11 years",
+      "cancellation_policy": "Schedules, prices, routings and information published here are correct at this time, but are subject to variation without notice.\nOur operating schedules and the routes of some of our tours and safaris may change during the holy month of Ramadan, and during the summer months, or due to force majeure.\nWe reserve the right to cancel any tour or alter any part of the tour at our discretion without prior notification.\nThe full price of any Activity shall be due and payable when a booking is made and we may cancel any booking if the full price of the Activity is not paid to us at least two (2) days prior to commencement of the said Activity. No refund will be payable to you in respect of a booking cancelled less than twenty four (24) hours prior to commencement of an Activity. Failure to arrive at the designated location for an Activity by the specified departure time shall be considered to be cancellation.\nWe shall be entitled to cancel, alter or omit any part of any Activity for which a booking has been made with or without notice to you and at our sole discretion. In particular, due to the nature of many of the Activities, delays and cancellations may result due to factors beyond our or our suppliers’ control, such as the weather, accidents, sickness, governmental restrictions and other events of force majeure. In such cases, a refund or partial refund may be given at our discretion and/or the discretion of the supplier of the Activity concerned.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.\n\nThe source duration badge and some narrative timings differ. Confirm the schedule when booking.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Sharjah",
+      "promotion_label": null,
+      "display_order": 11,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/private-sharjah-city-tour/01.jpg",
+          "alt": "Private Sharjah City Tour",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/private-sharjah-city-tour/02.jpg",
+          "alt": "Private Sharjah City Tour",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/private-sharjah-city-tour/03.jpg",
+          "alt": "Private Sharjah City Tour",
+          "caption": null,
+          "display_order": 3
+        }
+      ],
+      "features": [
+        {
+          "name": "Transfers Private",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Souq Al Jubail & Al Arsah",
+          "icon": "images/tour-icons/city-tours/e4d22c1fc813.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Tea and snacks",
+          "icon": "images/tour-icons/city-tours/6042a2b64783.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Souvenir clay pot",
+          "icon": "images/tour-icons/city-tours/37ce883bd725.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Sharjah Mosque",
+          "icon": "images/tour-icons/city-tours/0864d1ffb617.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Photo stop",
+          "icon": "images/tour-icons/city-tours/951c92d71225.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Begin your private tour at your preferred start time, booked in advance. Guests may select their preferred tour start time, subject to the availability of our tour guides. Please book your scheduled time in advance.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Scenic drive to Sharjah",
+          "description": "Enjoy a 30 minute journey filled with stories and insights from your guide.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Souq Al Jubail",
+          "description": "Explore a bustling two‑storey market offering fresh produce and gourmet ingredients.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Pearl monument",
+          "description": "Stop for photos at one of Sharjah’s most recognisable cultural landmarks.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "King Faisal Mosque",
+          "description": "Capture the grandeur of one of the emirate’s largest and most iconic mosques.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Sharjah Museum of Islamic Civilization",
+          "description": "Discover over 5,000 artefacts showcasing Islamic history, culture, and traditions.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Jenan Tea House",
+          "description": "Take a relaxing tea break and receive a clay pot as a charming keepsake.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Souk Al Arsah",
+          "description": "Visit the UAE’s oldest marketplace, once a meeting point for Bedouins and traders.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 9,
+          "title": "Chedi Al Bait lunch",
+          "description": "Enjoy a refined lunch at one of Sharjah’s most beautiful heritage hotels.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 10,
+          "title": "Rain Room",
+          "description": "Experience a stunning modern art installation where you walk through falling rain without getting wet.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 11,
+          "title": "Sharjah Church Area",
+          "description": "Capture photos in one of the UAE’s most architecturally striking religious districts.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 12,
+          "title": "Sharjah Mosque and return to Dubai",
+          "description": "End with a photo stop at this spectacular landmark before returning to Dubai.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Sharjah City Tour",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/sharjah-city-tour.html",
+        "screenshot": "image(20261103-054034).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    },
+    {
+      "slug": "private-highlights-of-abu-dhabi",
+      "name": "Private Highlights of Abu Dhabi",
+      "category_slug": "city-tours",
+      "short_description": "The highlights of Abu Dhabi tour showcases the culture, heritage and natural wonder of the nation’s capital city.",
+      "about": "The highlights of Abu Dhabi tour showcases the culture, heritage and natural wonder of the nation’s capital city. In the company of our knowledgeable, hospitable, professional tour guides, you’ll be taken on a full day tour of the city’s best sights and activities, including skyline views from Etihad Towers, the world-famous Sheikh Zayed Grand Mosque, and the crossroads of religion in the Abrahamic Family House. Private transfers to and from Abu Dhabi from your hotel residence are included as part of this inspiring one-day activity.\n\nThere's a lot to be discovered when you head to the capital city. Away from the record-breaking skyscrapers of Dubai, you'll find a city that's full of charm, nature, culture - and a few record-breaking achievements of its own.",
+      "full_description": null,
+      "location": "Abu Dhabi",
+      "duration": 10,
+      "duration_unit": "hours",
+      "experience_time": null,
+      "languages": [
+        "English"
+      ],
+      "starting_price": 237759,
+      "currency": "PKR",
+      "thumbnail": "images/city-tours/private-highlights-of-abu-dhabi/01.jpg",
+      "main_image": "images/city-tours/private-highlights-of-abu-dhabi/01.jpg",
+      "image_alt": "Private Highlights of Abu Dhabi",
+      "pickup_information": "Start your adventure with a comfortable pickup from your hotel or residence. Guests may also select their preferred start time. We recommend an early start time to ensure you can enjoy the full itinerary and all planned attractions.",
+      "highlights": null,
+      "know_before_you_go": "This is a full day tour. We recommend that you wear comfortable clothing that also adheres to local requirements. Shoulders and knees must be covered, to ensure smooth entry to Sheikh Zayed Grand Mosque and other cultural attractions.\nPick-up times for this tour are approximate and may vary. To avoid any delays, please be ready in the hotel’s main lobby before the scheduled time and inform the hotel concierge that you are waiting for an Arabian Adventures tour pick-up\nPlease bring bottles of water to keep suitably hydrated throughout the day.\nThe sun in the UAE can be intense at any time of year. While this tour does not include too much time exposed to the sun, we recommend wearing sunblock, and bringing sunglasses and a hat should you so wish.\nThere will be a lunch opportunity within the food court at Sheikh Zayed Grand Mosque. Any purchases are not covered in your activity fee.\nImportant Dress Code Information: The Sheikh Zayed Grand Mosque and Qasr Al Watan hold religious significance for all Muslims. Guests are required to adhere strictly to the local dress code by wearing modest clothing that covers the shoulders and knees (male & female). Transparent or tight-fitting attire is not permitted, as well as clothing featuring cartoon character images, is not permitted. Arabian Adventures cannot be held responsible if entry is denied due to non-compliance with mosque/palace etiquette. For detailed guidelines, we recommend visiting the respective partner websites.\nPresidential events can sometimes mean access to Qasr Al Watan is prohibited at short notice. Qasr al Hosn will replace this activity should this occur.\nYou will be visiting spiritual places of great significance to local culture. Please ensure you respect their significance throughout your time on the tour.\nWe welcome you to bring along your own snacks to keep in a backpack. If you are to bring a backpack to any of the activities, please be prepared for it to be searched when entering certain venues. We request you to make yourself aware of any prohibited items at each venue, and ensure you comply with venue regulations.",
+      "age_policy": "Adults: 12+\nChildren: 2-11",
+      "cancellation_policy": "We understand that your plans can change. Please contact our team at least 24 hours before your activity to discuss your booking, should you wish to cancel. If you cancel less than 24 hours before your activity is due to start, we will unfortunately be unable to process a refund.\nIf you would like to keep your booking but amend the day of your tour, we will work to accommodate this. However, we cannot guarantee availability.\nOur operating schedules, routes and activities may be adapted during the holy month of Ramadan, and during the summer months. Please check before you travel if your tour is during the relevant periods.\nUnforseen circumstances beyond our or our suppliers’ control may result in cancellation without notice. We reserve the right to cancel or alter activities in such situations. Should a sudden unforeseen circumstance affect your scheduled activity, please reach out to our team to discuss next steps.\nWe reserve the right to cancel your booking if full payment has not been made at least 2 days prior to your scheduled activity.\nWe reserve the right to amend schedules and bookings if business operations require.",
+      "additional_notes": "This product is not available for online bookings. Please request a callback.\n\nTo book this tour in languages other than English, please contact us via WhatsApp.",
+      "is_bestseller": false,
+      "is_original": true,
+      "is_travellers_choice": false,
+      "location_badge": "Abu Dhabi",
+      "promotion_label": null,
+      "display_order": 12,
+      "youtube_url": null,
+      "images": [
+        {
+          "path": "images/city-tours/private-highlights-of-abu-dhabi/01.jpg",
+          "alt": "Private Highlights of Abu Dhabi",
+          "caption": null,
+          "display_order": 1
+        },
+        {
+          "path": "images/city-tours/private-highlights-of-abu-dhabi/02.jpg",
+          "alt": "Private Highlights of Abu Dhabi",
+          "caption": null,
+          "display_order": 2
+        },
+        {
+          "path": "images/city-tours/private-highlights-of-abu-dhabi/03.jpg",
+          "alt": "Private Highlights of Abu Dhabi",
+          "caption": null,
+          "display_order": 3
+        }
+      ],
+      "features": [
+        {
+          "name": "Transfers Private",
+          "icon": "images/tour-icons/city-tours/d3e73d276792.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Knowledgeable tour guide",
+          "icon": "images/tour-icons/city-tours/cac43d5e1cbb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Abrahamic Family House",
+          "icon": "images/tour-icons/city-tours/4ec0365a1896.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Emirates Palace",
+          "icon": "images/tour-icons/city-tours/43742025456c.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Tea and snacks",
+          "icon": "images/tour-icons/city-tours/6042a2b64783.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Observation at Conrad at Etihad Towers",
+          "icon": "images/tour-icons/city-tours/79d053555acb.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Qasr Al Watan",
+          "icon": "images/tour-icons/city-tours/4e94a2ea81bf.png",
+          "inclusion_status": "included"
+        },
+        {
+          "name": "Sheikh Zayed Grand Mosque",
+          "icon": "images/tour-icons/city-tours/0864d1ffb617.png",
+          "inclusion_status": "included"
+        }
+      ],
+      "itineraries": [
+        {
+          "display_order": 1,
+          "title": "Pickup",
+          "description": "Start your adventure with a comfortable pickup from your hotel or residence. Guests may also select their preferred start time. We recommend an early start time to ensure you can enjoy the full itinerary and all planned attractions.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 2,
+          "title": "Abrahamic Family House",
+          "description": "Explore a powerful cultural landmark uniting Islam, Judaism, and Christianity.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 3,
+          "title": "Corniche Road drive",
+          "description": "Enjoy a scenic coastal route showcasing Abu Dhabi’s charm and waterfront beauty.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 4,
+          "title": "Qasr Al Watan",
+          "description": "Discover the UAE’s story inside a spectacular palace celebrating national heritage.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 5,
+          "title": "Presidential Palace visit",
+          "description": "Experience an exclusive glimpse into the nation’s seat of leadership.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 6,
+          "title": "Conrad Abu Dhabi Observation Deck",
+          "description": "Take in uninterrupted city views from the 74th floor of Emirates Towers, including a slice of cake and a choice of tea or coffee.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 7,
+          "title": "Sheikh Zayed Grand Mosque",
+          "description": "Admire the UAE’s most iconic place of worship and architectural masterpiece.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        },
+        {
+          "display_order": 8,
+          "title": "Return to Dubai",
+          "description": "Relax as your driver takes you back to your hotel or residence to conclude the tour.",
+          "duration": null,
+          "duration_unit": null,
+          "icon": null,
+          "source_duration_label": null
+        }
+      ],
+      "packages": [
+        {
+          "name": "Private Highlights of Abu Dhabi",
+          "description": "Request a callback for the final quote and availability.",
+          "display_order": 1
+        }
+      ],
+      "prices": [],
+      "_source": {
+        "url": "https://www.arabian-adventures.com/ae/english/city-tours/highlights-of-abu-dhabi-tour.html",
+        "screenshot": "image(20261103-054052).png",
+        "booking_mode": "callback",
+        "price_basis": "Screenshot starting quote; final unit/rate requires confirmation"
+      }
+    }
+  ]
+}

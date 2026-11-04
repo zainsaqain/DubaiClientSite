@@ -4,8 +4,11 @@ namespace Tests\Feature;
 
 use App\Models\Tour;
 use App\Models\TourCategory;
+use App\Models\TourPackage;
+use App\Models\TourPrice;
 use App\Models\TourSubcategory;
 use App\Models\User;
+use Database\Seeders\MorningDesertAdventureSeeder;
 use Database\Seeders\TheFortLisailiDesertExperienceSeeder;
 use Database\Seeders\TourManagementSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -55,6 +58,87 @@ class TourManagementTest extends TestCase
             'currency' => 'AED',
             'status' => 'draft',
         ])->assertStatus(422);
+    }
+
+    public function test_admin_can_delete_a_tour_with_package_prices(): void
+    {
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
+        $category = TourCategory::query()->create(['name' => 'Desert Adventures', 'slug' => 'desert-adventures', 'is_active' => true]);
+        $tour = Tour::query()->create([
+            'tour_category_id' => $category->id,
+            'name' => 'Deletable Desert Safari',
+            'slug' => 'deletable-desert-safari',
+            'location' => 'Dubai',
+            'starting_price' => 299,
+            'currency' => 'AED',
+            'status' => 'draft',
+        ]);
+        $package = TourPackage::query()->create([
+            'tour_id' => $tour->id,
+            'name' => 'Standard Package',
+        ]);
+        TourPrice::query()->create([
+            'tour_id' => $tour->id,
+            'tour_package_id' => $package->id,
+            'vehicle_type' => 'shared',
+            'adult_price' => 299,
+            'currency' => 'AED',
+        ]);
+
+        $this->actingAs($user)->delete(route('admin.tours.destroy', $tour))
+            ->assertRedirect(route('admin.tours.index'));
+
+        $this->assertDatabaseMissing('tours', ['id' => $tour->id]);
+        $this->assertDatabaseMissing('tour_packages', ['id' => $package->id]);
+        $this->assertDatabaseCount('tour_prices', 0);
+    }
+
+    public function test_admin_can_delete_multiple_tours_with_package_prices(): void
+    {
+        $user = User::factory()->create(['email_verified_at' => now(), 'is_admin' => true]);
+        $category = TourCategory::query()->create(['name' => 'Desert Adventures', 'slug' => 'desert-adventures', 'is_active' => true]);
+        $tours = collect(['First', 'Second'])->map(function (string $name) use ($category): Tour {
+            $tour = Tour::query()->create([
+                'tour_category_id' => $category->id,
+                'name' => $name.' Deletable Desert Safari',
+                'slug' => strtolower($name).'-deletable-desert-safari',
+                'location' => 'Dubai',
+                'starting_price' => 299,
+                'currency' => 'AED',
+                'status' => 'draft',
+            ]);
+            $package = TourPackage::query()->create(['tour_id' => $tour->id, 'name' => 'Standard Package']);
+            TourPrice::query()->create(['tour_id' => $tour->id, 'tour_package_id' => $package->id, 'vehicle_type' => 'shared', 'adult_price' => 299, 'currency' => 'AED']);
+
+            return $tour;
+        });
+
+        $this->actingAs($user)->get(route('admin.tours.index'))
+            ->assertOk()
+            ->assertSee('Delete selected')
+            ->assertSee('data-select-all-tours', false);
+
+        $this->actingAs($user)->delete(route('admin.tours.destroy-many'), [
+            'tour_ids' => $tours->pluck('id')->all(),
+        ])->assertRedirect(route('admin.tours.index'));
+
+        $this->assertDatabaseCount('tours', 0);
+        $this->assertDatabaseCount('tour_packages', 0);
+        $this->assertDatabaseCount('tour_prices', 0);
+    }
+
+    public function test_morning_desert_adventure_seeder_creates_its_missing_tour(): void
+    {
+        $this->seed(MorningDesertAdventureSeeder::class);
+
+        $tour = Tour::query()->where('slug', 'morning-desert-adventure')->firstOrFail();
+
+        $this->assertSame('Morning Desert Adventure', $tour->name);
+        $this->assertSame('active', $tour->status);
+        $this->assertDatabaseHas('tour_categories', ['slug' => 'desert-adventures']);
+        $this->assertDatabaseHas('tour_subcategories', ['slug' => 'desert-safaris']);
+        $this->assertDatabaseCount('tour_packages', 2);
+        $this->assertDatabaseCount('tour_prices', 3);
     }
 
     public function test_evening_desert_safari_details_and_active_feature_icons_are_seeded(): void

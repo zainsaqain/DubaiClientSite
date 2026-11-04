@@ -1,7 +1,7 @@
 const menuButton = document.querySelector('.menu-toggle');
 const mobileNavigation = document.querySelector('.mobile-navigation');
-const mobileDesertMenuTrigger = document.querySelector('.mobile-menu-trigger');
-const mobileDesertSubmenu = document.querySelector('.mobile-submenu-panel');
+const mobileSubmenuTriggers = Array.from(document.querySelectorAll('[data-mobile-submenu-target]'));
+const mobileSubmenus = Array.from(document.querySelectorAll('.mobile-submenu-panel'));
 const desktopMediaQuery = window.matchMedia('(min-width: 901px)');
 const megaMenuItems = Array.from(document.querySelectorAll('[data-mega-menu], [data-attractions-mega-menu], [data-city-tours-mega-menu], [data-why-us-mega-menu], [data-category-mega-menu]'));
 
@@ -34,24 +34,26 @@ const scheduleMegaMenuClose = (item) => {
     megaMenuCloseTimer = window.setTimeout(() => setMegaMenuState(item, false), 140);
 };
 
-const openMobileDesertMenu = () => {
-    if (!mobileNavigation || !mobileDesertSubmenu) {
+const closeMobileSubmenus = () => {
+    mobileNavigation?.classList.remove('is-submenu-open');
+    mobileSubmenuTriggers.forEach((trigger) => trigger.setAttribute('aria-expanded', 'false'));
+    mobileSubmenus.forEach((submenu) => submenu.setAttribute('aria-hidden', 'true'));
+};
+
+const openMobileSubmenu = (trigger) => {
+    const submenu = document.getElementById(trigger.dataset.mobileSubmenuTarget);
+
+    if (!mobileNavigation || !submenu) {
         return;
     }
 
     mobileNavigation.classList.add('is-submenu-open');
-    mobileDesertMenuTrigger?.setAttribute('aria-expanded', 'true');
-    mobileDesertSubmenu.setAttribute('aria-hidden', 'false');
-};
-
-const closeMobileDesertMenu = () => {
-    mobileNavigation?.classList.remove('is-submenu-open');
-    mobileDesertMenuTrigger?.setAttribute('aria-expanded', 'false');
-    mobileDesertSubmenu?.setAttribute('aria-hidden', 'true');
+    mobileSubmenuTriggers.forEach((item) => item.setAttribute('aria-expanded', String(item === trigger)));
+    mobileSubmenus.forEach((item) => item.setAttribute('aria-hidden', String(item !== submenu)));
 };
 
 const closeMobileNavigation = () => {
-    closeMobileDesertMenu();
+    closeMobileSubmenus();
     mobileNavigation?.classList.remove('is-open');
     menuButton?.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
@@ -84,8 +86,8 @@ menuButton?.addEventListener('click', () => {
     }
 });
 
-mobileDesertMenuTrigger?.addEventListener('click', openMobileDesertMenu);
-document.querySelector('.mobile-menu-back')?.addEventListener('click', closeMobileDesertMenu);
+mobileSubmenuTriggers.forEach((trigger) => trigger.addEventListener('click', () => openMobileSubmenu(trigger)));
+document.querySelectorAll('.mobile-menu-back').forEach((button) => button.addEventListener('click', closeMobileSubmenus));
 
 document.querySelectorAll('.mobile-menu-close, .mobile-menu-scrim, .mobile-navigation a').forEach((element) => {
     element.addEventListener('click', closeMobileNavigation);

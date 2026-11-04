@@ -3,7 +3,9 @@
 namespace Database\Seeders;
 
 use App\Models\Tour;
+use App\Models\TourCategory;
 use App\Models\TourFeature;
+use App\Models\TourSubcategory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -15,10 +17,34 @@ class MorningDesertAdventureSeeder extends Seeder
     public function run(): void
     {
         DB::transaction(function (): void {
-            $tour = Tour::query()
-                ->where('slug', 'morning-desert-adventure')
-                ->firstOrFail();
+            $category = TourCategory::query()->updateOrCreate(
+                ['slug' => 'desert-adventures'],
+                ['name' => 'Desert Adventures', 'is_active' => true],
+            );
+            $subcategory = TourSubcategory::query()->updateOrCreate(
+                ['slug' => 'desert-safaris'],
+                [
+                    'tour_category_id' => $category->id,
+                    'name' => 'Desert Safaris',
+                    'is_active' => true,
+                ],
+            );
+            $tour = Tour::query()->firstOrCreate(
+                ['slug' => 'morning-desert-adventure'],
+                [
+                    'tour_category_id' => $category->id,
+                    'tour_subcategory_id' => $subcategory->id,
+                    'name' => 'Morning Desert Adventure',
+                    'location' => 'Dubai',
+                    'starting_price' => 49937,
+                    'currency' => 'PKR',
+                    'status' => 'active',
+                ],
+            );
             $tour->update([
+                'tour_category_id' => $category->id,
+                'tour_subcategory_id' => $subcategory->id,
+                'name' => 'Morning Desert Adventure',
                 'short_description' => 'Explore Dubai’s desert landscape on a guided safari with dune driving, wildlife viewing, camel rides and a Bedouin-inspired camp experience.',
                 'about' => 'A full desert journey combining guided transfer, dune terrain, wildlife moments, camel rides and a camp-style dining experience.',
                 'full_description' => 'Begin with a guided journey from Dubai into the desert, followed by a visit to the conservation reserve visitor centre and a drive through dune terrain. The experience continues with a sunset stop, falcon encounter, camel ride and time at a Bedouin-inspired camp. Selectable beverage and vehicle options are displayed separately so the final choice remains clear before availability is checked.',
@@ -29,6 +55,7 @@ class MorningDesertAdventureSeeder extends Seeder
                 'languages' => ['English'],
                 'starting_price' => 49937,
                 'currency' => 'PKR',
+                'status' => 'active',
                 'thumbnail' => 'images/safaris/morning-desert-adventure.jpg',
                 'main_image' => 'images/safaris/morning-desert-adventure.jpg',
                 'image_alt' => 'Desert safari guests beside a 4x4 at sunset',
