@@ -52,7 +52,13 @@ class CustomerAccountController extends Controller
 
     public function orders(Request $request): View
     {
-        return view('customer.orders', ['user' => $this->customer($request)]);
+        $user = $this->customer($request);
+        $bookings = $user->bookings()
+            ->with(['tour.category', 'tour.subcategory'])
+            ->latest()
+            ->get();
+
+        return view('customer.orders', compact('user', 'bookings'));
     }
 
     public function wishlist(Request $request): View

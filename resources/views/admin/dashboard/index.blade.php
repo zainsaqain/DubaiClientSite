@@ -6,12 +6,6 @@
     @php
         $adminName = auth()->user()?->name ?? 'Administrator';
         $initials = collect(explode(' ', $adminName))->filter()->map(fn ($part) => strtoupper(mb_substr($part, 0, 1)))->take(2)->implode('') ?: 'WM';
-        $bookings = [
-            ['guest' => 'Ayesha Khan', 'reference' => 'WMT-1048', 'experience' => 'Evening Desert Safari', 'date' => 'Today · 4 guests', 'amount' => 'AED 860', 'status' => 'Confirmed'],
-            ['guest' => 'Michael Evans', 'reference' => 'WMT-1049', 'experience' => 'Dubai Marina Cruise', 'date' => 'Tomorrow · 2 guests', 'amount' => 'AED 510', 'status' => 'Pending'],
-            ['guest' => 'Sara Ahmed', 'reference' => 'WMT-1050', 'experience' => 'Atlantis Aquaventure', 'date' => '01 Nov · 5 guests', 'amount' => 'AED 1,245', 'status' => 'Confirmed'],
-            ['guest' => 'Daniel Wright', 'reference' => 'WMT-1051', 'experience' => 'Airport Transfer', 'date' => '02 Nov · 3 guests', 'amount' => 'AED 320', 'status' => 'New'],
-        ];
     @endphp
 
     <div class="wmt-admin-shell">
@@ -37,41 +31,36 @@
                     <span>OPERATIONS OVERVIEW</span>
                     <h2>Every journey,<br><em>beautifully managed.</em></h2>
                     <p>Keep a clear view of today’s guests, bookings and your most-loved Dubai experiences.</p>
-                    <a href="#bookings">Review today’s bookings <i>→</i></a>
+                    <a href="{{ route('admin.bookings.index') }}">Review confirmed bookings <i>→</i></a>
                 </div>
-                <div class="wmt-admin-hero-number"><b>128</b><span>GUESTS EXPLORING<br>WITH WMT THIS WEEK</span></div>
+                <div class="wmt-admin-hero-number"><b>{{ $dashboardMetrics['confirmed_bookings'] }}</b><span>CONFIRMED<br>BOOKINGS</span></div>
             </section>
 
             <section class="wmt-admin-stat-grid" aria-label="Business summary">
-                <article><span class="gold">▤</span><p>Total bookings<small>↗ 12.5% from last week</small></p><strong>128</strong></article>
-                <article><span class="coral">◇</span><p>Monthly revenue<small>↗ 8.2% from last month</small></p><strong>AED 48.6K</strong></article>
-                <article><span class="teal">◎</span><p>New guests<small>16 arrivals today</small></p><strong>86</strong></article>
-                <article><span class="blue">◷</span><p>Pending actions<small>5 need a reply</small></p><strong>12</strong></article>
+                <article><span class="gold">▤</span><p>Total bookings<small>All orders received</small></p><strong>{{ $dashboardMetrics['total_bookings'] }}</strong></article>
+                <article><span class="coral">◇</span><p>Verified payment total<small>Approved bank transfers</small></p><strong>AED {{ number_format($dashboardMetrics['verified_payment_total'], 2) }}</strong></article>
+                <article><span class="teal">◎</span><p>Confirmed bookings<small>Ready to deliver</small></p><strong>{{ $dashboardMetrics['confirmed_bookings'] }}</strong></article>
+                <article><span class="blue">◷</span><p>Pending bookings<small>Payment or review pending</small></p><strong>{{ $dashboardMetrics['pending_bookings'] }}</strong></article>
             </section>
 
             <section class="wmt-admin-two-column" id="reports">
                 <article class="wmt-admin-panel wmt-admin-revenue">
-                    <div class="wmt-admin-panel-heading"><div><span>BOOKING PERFORMANCE</span><h2>Revenue overview</h2></div><button type="button">This month⌄</button></div>
-                    <div class="wmt-admin-total"><strong>AED 48,640</strong><span>+8.2%</span></div>
-                    <div class="wmt-admin-chart" aria-label="Weekly revenue chart"><i style="--value:48%"></i><i style="--value:72%"></i><i style="--value:56%"></i><i style="--value:86%"></i><i style="--value:66%"></i><i style="--value:94%"></i><i style="--value:78%"></i></div>
-                    <div class="wmt-admin-chart-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+                    <div class="wmt-admin-panel-heading"><div><span>BOOKING PERFORMANCE</span><h2>Revenue overview</h2></div><button type="button">This month</button></div>
+                    <div class="wmt-admin-total"><strong>AED {{ number_format($dashboardMetrics['monthly_payment_total'], 2) }}</strong><span>Verified</span></div>
+                    <div class="wmt-admin-chart" aria-label="Weekly verified payment chart">@foreach ($weeklyRevenue as $revenue)<i style="--value: {{ max(6, round(($revenue['amount'] / $maximumWeeklyRevenue) * 100)) }}%"></i>@endforeach</div>
+                    <div class="wmt-admin-chart-days">@foreach ($weeklyRevenue as $revenue)<span>{{ $revenue['label'] }}</span>@endforeach</div>
                 </article>
                 <article class="wmt-admin-panel wmt-admin-feature" id="experiences">
-                    <div class="wmt-admin-panel-heading"><div><span>TOP EXPERIENCE</span><h2>Desert safari leads</h2></div><a href="#bookings">View all →</a></div>
-                    <img src="{{ asset('images/desert-safari.png') }}" alt="Desert safari in Dubai">
-                    <div><strong>Evening Desert Safari</strong><p>42 bookings · AED 16,840 in revenue</p><span class="wmt-admin-progress"><i></i></span><small>84% of weekly booking target</small></div>
+                    <div class="wmt-admin-panel-heading"><div><span>TOP EXPERIENCE</span><h2>{{ $topExperience?->tour?->name ?? 'No confirmed bookings yet' }}</h2></div><a href="{{ route('admin.bookings.index') }}">View bookings →</a></div>
+                    @if ($topExperience?->tour)
+                        <img src="{{ $topExperience->tour->imageUrl() }}" alt="{{ $topExperience->tour->image_alt ?: $topExperience->tour->name }}">
+                        <div><strong>{{ $topExperience->tour->name }}</strong><p>{{ $topExperience->booking_count }} confirmed booking{{ (int) $topExperience->booking_count === 1 ? '' : 's' }} · AED {{ number_format((float) $topExperience->payment_total, 2) }} in verified payments</p></div>
+                    @else
+                        <div><p>Confirmed bookings will reveal your top experience here.</p></div>
+                    @endif
                 </article>
             </section>
 
-            <section class="wmt-admin-panel wmt-admin-bookings" id="bookings">
-                <div class="wmt-admin-panel-heading"><div><span>LIVE ACTIVITY</span><h2>Recent bookings</h2></div><a href="#bookings">View all bookings →</a></div>
-                <div class="wmt-admin-table-wrap"><table><thead><tr><th>Guest &amp; reference</th><th>Experience</th><th>Travel date</th><th>Amount</th><th>Status</th></tr></thead><tbody>@foreach ($bookings as $booking)<tr><td><strong>{{ $booking['guest'] }}</strong><small>{{ $booking['reference'] }}</small></td><td>{{ $booking['experience'] }}</td><td>{{ $booking['date'] }}</td><td><b>{{ $booking['amount'] }}</b></td><td><span class="wmt-admin-status {{ strtolower($booking['status']) }}">{{ $booking['status'] }}</span></td></tr>@endforeach</tbody></table></div>
-            </section>
-
-            <section class="wmt-admin-bottom-grid" id="guests">
-                <article class="wmt-admin-panel"><div class="wmt-admin-panel-heading"><div><span>GUEST CARE</span><h2>Messages waiting</h2></div><b class="wmt-admin-count">5</b></div><div class="wmt-admin-message"><b>AK</b><p><strong>Ayesha Khan</strong><small>Could you confirm our desert pickup time?</small></p><em>10m</em></div><div class="wmt-admin-message"><b>ME</b><p><strong>Michael Evans</strong><small>Can we change our marina cruise date?</small></p><em>32m</em></div><a class="wmt-admin-text-link" href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer">Open guest support →</a></article>
-                <article class="wmt-admin-quick"><span>QUICK ACTIONS</span><h2>Keep the day<br>moving.</h2><div><a href="#bookings"><b>＋</b>Create booking</a><a href="#experiences"><b>✦</b>Add experience</a><a href="#reports"><b>⌁</b>View reports</a></div></article>
-            </section>
         </main>
     </div>
 @endsection

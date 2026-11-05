@@ -42,11 +42,8 @@
     <p class="wmt-admin-label">WORKSPACE</p>
     <nav class="wmt-admin-nav" aria-label="Admin navigation">
         <a href="{{ route('admin.dashboard') }}" class="{{ request()->routeIs('admin.dashboard') ? 'is-active' : '' }}"><i>▦</i> Overview</a>
-        <a href="{{ route('admin.dashboard') }}#bookings"><i>▤</i> Bookings <b>12</b></a>
-        <a href="{{ route('admin.dashboard') }}#experiences"><i>✦</i> Experiences</a>
-        <a href="{{ route('admin.dashboard') }}#guests"><i>◎</i> Guests</a>
-        <a href="{{ route('admin.dashboard') }}#reports"><i>⌁</i> Reports</a>
-        <a href="{{ route('admin.bank-transfer-payments.index') }}" class="{{ request()->routeIs('admin.bank-transfer-payments.*') ? 'is-active' : '' }}"><i>¤</i> Bank transfer payments</a>
+        <a href="{{ route('admin.bookings.index') }}" class="{{ request()->routeIs('admin.bookings.*') ? 'is-active' : '' }}"><i>▤</i> Bookings</a>
+        <a href="{{ route('admin.bank-transfer-payments.index') }}" class="{{ request()->routeIs('admin.bank-transfer-payments.*') ? 'is-active' : '' }}"><i>¤</i> Bank transfer payments @if ($pendingBankTransferPaymentCount > 0)<b aria-label="{{ $pendingBankTransferPaymentCount }} pending booking{{ $pendingBankTransferPaymentCount === 1 ? '' : 's' }}">{{ $pendingBankTransferPaymentCount }}</b>@endif</a>
         <a href="{{ route('admin.bank-transfer-settings.edit') }}" class="{{ request()->routeIs('admin.bank-transfer-settings.*') ? 'is-active' : '' }}"><i>⚙</i> Bank transfer settings</a>
 
         <details class="wmt-admin-menu" {{ request()->routeIs('admin.tours.*') || request()->routeIs('admin.tour-categories.*') || request()->routeIs('admin.tour-subcategories.*') || request()->routeIs('admin.tour-features.*') ? 'open' : '' }}>
@@ -67,11 +64,6 @@
         <a href="{{ route('profile.edit') }}" class="{{ request()->routeIs('profile.edit') ? 'is-active' : '' }}"><i>⚙</i> Account settings</a>
         <a href="{{ route('home') }}"><i>↗</i> View website</a>
     </nav>
-
-    <div class="wmt-admin-help">
-        <span>✦</span><strong>Need a hand?</strong><p>WMT support is one message away.</p>
-        <a href="https://wa.me/971500000000" target="_blank" rel="noopener noreferrer">Chat on WhatsApp <i>→</i></a>
-    </div>
 
     <form method="POST" action="{{ route('logout') }}" class="wmt-admin-logout">
         @csrf

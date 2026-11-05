@@ -73,6 +73,32 @@ class BankTransferPaymentTest extends TestCase
         $this->assertDatabaseHas('bank_transfer_payments', ['id' => $payment->id, 'status' => 'paid', 'verified_by' => $admin->id]);
         $this->assertDatabaseHas('bookings', ['id' => $booking->id, 'payment_status' => 'paid', 'status' => 'confirmed']);
         $this->assertDatabaseCount('bank_transfer_payment_audits', 1);
+
+        $this->actingAs($admin)
+            ->get(route('admin.bookings.index'))
+            ->assertOk()
+            ->assertSee('Confirmed Bookings')
+            ->assertSee($booking->order_number)
+            ->assertSee('Dubai Aquarium')
+            ->assertSee('Confirmed');
+    }
+
+    public function test_admin_sidebar_shows_a_badge_for_bookings_that_need_payment_action(): void
+    {
+        $admin = User::factory()->create(['is_admin' => true]);
+        $booking = $this->bookingFor(User::factory()->create());
+
+        $this->actingAs($admin)
+            ->get(route('admin.bank-transfer-payments.index'))
+            ->assertOk()
+            ->assertSee('aria-label="1 pending booking"', false);
+
+        $booking->bankTransferPayment->update(['status' => 'paid']);
+
+        $this->actingAs($admin)
+            ->get(route('admin.bank-transfer-payments.index'))
+            ->assertOk()
+            ->assertDontSee('pending booking', false);
     }
 
     private function activeTour(): Tour

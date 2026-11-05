@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\BankTransferPayment;
 use App\Models\TourCategory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Schema;
@@ -53,6 +54,14 @@ class AppServiceProvider extends ServiceProvider
                 ->values();
 
             $view->with('navigationCategories', $navigationCategories);
+        });
+
+        View::composer('admin.partials.sidebar', function ($view): void {
+            $pendingBankTransferPaymentCount = BankTransferPayment::query()
+                ->whereIn('status', ['pending_payment', 'pending_verification'])
+                ->count();
+
+            $view->with('pendingBankTransferPaymentCount', $pendingBankTransferPaymentCount);
         });
     }
 }
