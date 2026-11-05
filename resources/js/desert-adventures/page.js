@@ -91,7 +91,6 @@ if (bookingCard) {
     const quantities = { adults: 1, children: 0, infants: 0 };
     const serviceSelect = bookingCard.querySelector('[data-booking-service]');
     const totalOutput = bookingCard.querySelector('[data-booking-total]');
-    const status = bookingCard.querySelector('[data-booking-status]');
     const currency = bookingCard.dataset.currency ?? 'AED';
     const travelerToggle = bookingCard.querySelector('[data-traveler-toggle]');
     const travelerPicker = bookingCard.querySelector('[data-traveler-picker]');
@@ -106,6 +105,10 @@ if (bookingCard) {
 
         bookingCard.querySelectorAll('[data-quantity-output]').forEach((output) => {
             output.textContent = quantities[output.dataset.quantityOutput];
+        });
+
+        bookingCard.querySelectorAll('[data-cart-quantity]').forEach((input) => {
+            input.value = quantities[input.dataset.cartQuantity];
         });
 
         if (totalOutput) {
@@ -157,15 +160,6 @@ if (bookingCard) {
         }
         travelerToggle?.setAttribute('aria-expanded', 'false');
     });
-    bookingCard.querySelector('[data-check-availability]')?.addEventListener('click', () => {
-        const selectedDate = bookingCard.querySelector('[data-booking-date]')?.value;
-        if (status) {
-            status.textContent = selectedDate
-                ? `Your preferred date is ${selectedDate}. Our travel desk will confirm availability with you.`
-                : 'Please choose your preferred date to continue.';
-        }
-    });
-
     refreshBookingTotal();
 }
 

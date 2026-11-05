@@ -117,9 +117,13 @@
             @if($tour->youtube_url)<a class="da-video-preview" href="{{ $tour->youtube_url }}" target="_blank" rel="noopener" aria-label="Watch {{ $tour->name }} on YouTube"><img src="{{ $youtubeThumbnail ?: $tour->imageUrl($mainImage) }}" alt="{{ $tour->name }} video preview" loading="lazy" data-video-thumbnail data-fallback="{{ $tour->imageUrl($mainImage) }}"><span class="da-video-preview-play" aria-hidden="true">▶</span><strong>Watch {{ $tour->name }} video</strong><span class="da-video-preview-source">Watch on YouTube</span></a>@endif
         </div>
 
-        <aside class="da-booking-card" data-booking-card data-currency="{{ $bookingCurrency }}">
+        <form method="POST" action="{{ route('cart.store', $tour) }}" class="da-booking-card" data-booking-card data-currency="{{ $bookingCurrency }}">
+            @csrf
             <h2>Select Date and Travelers</h2>
-            <div class="da-booking-input-wrap"><span>▣</span><input data-booking-date type="date" min="{{ now()->toDateString() }}" aria-label="Select date"></div>
+            <div class="da-booking-input-wrap"><span>▣</span><input name="travel_date" data-booking-date type="date" min="{{ now()->toDateString() }}" aria-label="Select date" required></div>
+            <input type="hidden" name="adults" value="1" data-cart-quantity="adults">
+            <input type="hidden" name="children" value="0" data-cart-quantity="children">
+            <input type="hidden" name="infants" value="0" data-cart-quantity="infants">
             <button type="button" class="da-booking-input-wrap da-traveler-toggle" data-traveler-toggle aria-expanded="false">
                 <span>♧</span><strong data-traveler-summary>1 adult</strong>
             </button>
@@ -146,7 +150,7 @@
                             $priceDescription = $price->description ?: $price->package?->description;
                         @endphp
                         <label class="da-booking-option">
-                            <input type="radio" name="booking_price" value="{{ $price->id }}" data-booking-service-choice data-adult-price="{{ $price->adult_price }}" data-child-price="{{ $price->child_price ?? 0 }}" data-infant-price="{{ $price->infant_price ?? 0 }}" @checked($loop->first)>
+                            <input type="radio" name="tour_price_id" value="{{ $price->id }}" data-booking-service-choice data-adult-price="{{ $price->adult_price }}" data-child-price="{{ $price->child_price ?? 0 }}" data-infant-price="{{ $price->infant_price ?? 0 }}" @checked($loop->first)>
                             <span><strong>{{ $priceLabel }}</strong>@if ($priceDescription)<small>{{ $priceDescription }}</small>@endif</span>
                             <b>{{ $price->currency }} {{ number_format((float) $price->adult_price) }}</b>
                         </label>
@@ -159,10 +163,10 @@
                 <p class="da-booking-empty">Pricing will be confirmed by our travel team.</p>
             @endif
             <p class="da-booking-total">Estimated total: <strong data-booking-total>{{ $bookingCurrency }} {{ number_format((float) ($defaultBookingPrice?->adult_price ?? $tour->starting_price)) }}</strong></p>
-            <button type="button" class="da-check-avail-btn" data-check-availability>Check Availability</button>
-            <p class="da-booking-status" data-booking-status aria-live="polite"></p>
-            <a class="da-check-avail-btn" style="display:block;text-align:center;text-decoration:none;margin-top:12px" href="{{ route('checkout.create', $tour) }}">Book with bank transfer</a>
-        </aside>
+            <button type="submit" class="da-check-avail-btn da-add-to-cart-btn">Add to cart <span aria-hidden="true">→</span></button>
+            <a class="da-bank-transfer-btn" href="{{ route('checkout.create', $tour) }}">Book with bank transfer <span aria-hidden="true">→</span></a>
+            <p class="da-booking-status">Choose your date and travellers, then continue to your cart.</p>
+        </form>
     </div>
 
     <x-desert-adventures.related-experiences :products="$relatedTours" />

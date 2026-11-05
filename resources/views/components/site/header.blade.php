@@ -20,7 +20,7 @@
             </div>
             <div class="mobile-quick-actions" aria-label="Quick actions">
                 <a class="mobile-icon-link" href="{{ auth()->check() && !auth()->user()->is_admin ? route('account.wishlist') : route('login') }}" aria-label="Wishlist, {{ $wishlistCount }} items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.9a5.3 5.3 0 0 0-7.5 0L12 6.2l-1.3-1.3a5.3 5.3 0 0 0-7.5 0L3.2 12.4 12 21l8.8-8.6a5.3 5.3 0 0 0 0-7.5Z"/></svg><b>{{ $wishlistCount }}</b></span></a>
-                <a class="mobile-icon-link" href="{{ url('/') }}#cart" aria-label="Cart, 0 items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 11H6.2l-.7-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><b>0</b></span></a>
+                <a class="mobile-icon-link" href="{{ route('cart.index') }}" aria-label="Cart, {{ $cartCount }} items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 11H6.2l-.7-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><b>{{ $cartCount }}</b></span></a>
                 <a class="mobile-icon-link whatsapp-mobile" href="https://wa.me/971502299598?text=Hello%20Waheed%20Murad%20Tourism%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4.3A8.4 8.4 0 1 1 20.5 11.7Z"/><path d="M8.6 7.9c.2-.5.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.3 0 .5.5 1 1.3 1.8 2.4 2.3.2.1.4.1.5 0l.8-.9c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.5-.3.2-.7.4-1.2.4-.7 0-1.5-.2-2.7-.8a10.3 10.3 0 0 1-4.3-4.1c-.8-1.2-1-2.1-1-2.8 0-.4.2-.8.4-1.1Z"/></svg></a>
             </div>
             <button class="menu-toggle" type="button" aria-controls="mobile-navigation" aria-expanded="false"><span class="sr-only">Open navigation</span><i></i><i></i><i></i></button>
@@ -65,7 +65,7 @@
                     <a href="{{ route('login') }}" class="account-link"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg><span>My account</span></a>
                 @endauth
                 <a class="header-action" href="{{ auth()->check() && !auth()->user()->is_admin ? route('account.wishlist') : route('login') }}" aria-label="Wishlist, {{ $wishlistCount }} items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.9a5.3 5.3 0 0 0-7.5 0L12 6.2l-1.3-1.3a5.3 5.3 0 0 0-7.5 0L3.2 12.4 12 21l8.8-8.6a5.3 5.3 0 0 0 0-7.5Z"/></svg><b>{{ $wishlistCount }}</b></span><span>Wishlist</span></a>
-                <a class="header-action" href="{{ url('/') }}#cart" aria-label="Cart, 0 items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 11H6.2l-.7-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><b>0</b></span><span>Cart</span></a>
+                <a class="header-action" href="{{ route('cart.index') }}" aria-label="Cart, {{ $cartCount }} items"><span class="action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 11H6.2l-.7-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg><b>{{ $cartCount }}</b></span><span>Cart</span></a>
             </div>
         </div>
     </nav>

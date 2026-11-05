@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Models\Booking;
 use App\Models\Tour;
 use App\Models\TourCategory;
 use App\Models\User;
@@ -88,5 +89,57 @@ class CustomerAccountTest extends TestCase
             ->assertRedirect(route('account.wishlist'));
 
         $this->assertDatabaseCount('wishlists', 0);
+    }
+
+    public function test_customer_can_see_their_active_orders_but_not_another_customers_orders(): void
+    {
+        $customer = User::factory()->create(['is_admin' => false]);
+        $otherCustomer = User::factory()->create(['is_admin' => false]);
+        $category = TourCategory::query()->create([
+            'name' => 'Desert Adventures',
+            'slug' => 'desert-adventures',
+            'is_active' => true,
+        ]);
+        $tour = Tour::query()->create([
+            'tour_category_id' => $category->id,
+            'name' => 'Evening Desert Safari',
+            'slug' => 'evening-desert-safari',
+            'location' => 'Dubai',
+            'starting_price' => 300,
+            'currency' => 'AED',
+            'status' => 'active',
+        ]);
+
+        Booking::query()->create([
+            'user_id' => $customer->id,
+            'tour_id' => $tour->id,
+            'order_number' => 'WMT-ACTIVE-001',
+            'travel_date' => now()->addWeek(),
+            'adults' => 2,
+            'amount' => 600,
+            'currency' => 'AED',
+            'payment_method' => 'direct_bank_transfer',
+            'payment_status' => 'pending_verification',
+            'status' => 'pending_verification',
+        ]);
+        Booking::query()->create([
+            'user_id' => $otherCustomer->id,
+            'tour_id' => $tour->id,
+            'order_number' => 'WMT-PRIVATE-002',
+            'travel_date' => now()->addWeek(),
+            'adults' => 1,
+            'amount' => 300,
+            'currency' => 'AED',
+            'payment_method' => 'direct_bank_transfer',
+        ]);
+
+        $this->actingAs($customer)
+            ->get(route('account.orders'))
+            ->assertOk()
+            ->assertSee('WMT-ACTIVE-001')
+            ->assertSee('Evening Desert Safari')
+            ->assertSee('Payment under review')
+            ->assertSee('AED 600.00')
+            ->assertDontSee('WMT-PRIVATE-002');
     }
 }

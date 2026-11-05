@@ -3,8 +3,10 @@
 use App\Http\Controllers\Admin\AttractionController;
 use App\Http\Controllers\Admin\BankTransferPaymentController as AdminBankTransferPaymentController;
 use App\Http\Controllers\Admin\BankTransferSettingController;
+use App\Http\Controllers\Admin\BookingController as AdminBookingController;
 use App\Http\Controllers\Admin\CityTourController;
 use App\Http\Controllers\Admin\CruiseBoatTourController;
+use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\Admin\DesertAdventureController;
 use App\Http\Controllers\Admin\HeroSlideController;
 use App\Http\Controllers\Admin\HomePromoCardController;
@@ -21,6 +23,7 @@ use App\Http\Controllers\Admin\TransferController;
 use App\Http\Controllers\Admin\WaterparkThemeParkController;
 use App\Http\Controllers\Admin\WhyUsFeatureController;
 use App\Http\Controllers\BankTransferPaymentController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CustomerAccountController;
 use App\Http\Controllers\ProfileController;
@@ -116,11 +119,14 @@ Route::get('/dashboard', function () {
     return redirect()->route('account.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::view('/admin', 'admin.dashboard.index')
+Route::get('/admin', [AdminDashboardController::class, 'index'])
     ->middleware(['auth', 'verified', 'admin'])
     ->name('admin.dashboard');
 
 Route::get('/search', [PublicCatalogueController::class, 'search'])->name('tours.search');
+Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+Route::post('/cart/{tour:slug}', [CartController::class, 'store'])->middleware('throttle:20,1')->name('cart.store');
+Route::delete('/cart/{lineId}', [CartController::class, 'destroy'])->name('cart.destroy');
 Route::get('/experiences/{category:slug}', [PublicCatalogueController::class, 'category'])->name('tour-categories.show');
 Route::get('/experiences/{category:slug}/{subcategory:slug}', [PublicCatalogueController::class, 'subcategory'])->name('tour-subcategories.show');
 
@@ -362,6 +368,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->as('admin.')->group(function () {
+    Route::get('bookings', [AdminBookingController::class, 'index'])->name('bookings.index');
     Route::get('bank-transfer-payments', [AdminBankTransferPaymentController::class, 'index'])->name('bank-transfer-payments.index');
     Route::get('bank-transfer-payments/{payment}', [AdminBankTransferPaymentController::class, 'show'])->name('bank-transfer-payments.show');
     Route::patch('bank-transfer-payments/{payment}/approve', [AdminBankTransferPaymentController::class, 'approve'])->name('bank-transfer-payments.approve');
