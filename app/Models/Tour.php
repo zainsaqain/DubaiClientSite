@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Tour extends Model
 {
@@ -63,6 +64,11 @@ class Tour extends Model
         return $this->hasMany(TourAvailability::class);
     }
 
+    public function wishlists(): HasMany
+    {
+        return $this->hasMany(Wishlist::class);
+    }
+
     public function isPublic(): bool
     {
         if ($this->status !== 'active' || ! $this->category()->where('is_active', true)->exists()) {
@@ -102,6 +108,40 @@ class Tour extends Model
         }
 
         return asset('images/desert-safari.png');
+    }
+
+    public function youtubeThumbnailUrl(): ?string
+    {
+        $url = trim((string) $this->youtube_url);
+
+        if ($url === '') {
+            return null;
+        }
+
+        $parts = parse_url($url);
+        $host = Str::lower((string) ($parts['host'] ?? ''));
+        $videoId = null;
+
+        if (str_ends_with($host, 'youtu.be')) {
+            $videoId = trim((string) ($parts['path'] ?? ''), '/');
+        } elseif (str_ends_with($host, 'youtube.com')) {
+            parse_str((string) ($parts['query'] ?? ''), $query);
+            $videoId = $query['v'] ?? null;
+
+            if (! $videoId) {
+                $segments = array_values(array_filter(explode('/', (string) ($parts['path'] ?? ''))));
+
+                if (in_array($segments[0] ?? null, ['embed', 'shorts', 'live'], true)) {
+                    $videoId = $segments[1] ?? null;
+                }
+            }
+        }
+
+        if (! is_string($videoId) || ! preg_match('/^[A-Za-z0-9_-]{6,}$/', $videoId)) {
+            return null;
+        }
+
+        return "https://i.ytimg.com/vi/{$videoId}/hqdefault.jpg";
     }
 
     /** @return array<string, mixed> */

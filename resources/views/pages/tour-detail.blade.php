@@ -10,6 +10,10 @@
     $mainImage = $gallery->first() ?: $tour->thumbnail;
     $sideImages = $gallery->skip(1)->take(2);
     $visibleFeatures = $tour->features->where('is_active', true);
+    $youtubeThumbnail = $tour->youtubeThumbnailUrl();
+    $isWishlisted = auth()->check() && ! auth()->user()->is_admin
+        ? auth()->user()->wishlists()->where('tour_id', $tour->id)->exists()
+        : false;
     $activePackages = $tour->packages->where('is_active', true);
     $activePrices = $tour->prices->where('is_active', true);
     $bookingPrices = $activePrices->values();
@@ -39,6 +43,21 @@
             @if($tour->is_travellers_choice)<span>2025 Travellers' Choice</span>@endif
             @if($tour->location_badge)<span>⌖ {{ $tour->location_badge }}</span>@endif
         </div>
+        <div class="da-product-actions">
+            @auth
+                @if (! auth()->user()->is_admin)
+                    @if ($isWishlisted)
+                        <form method="POST" action="{{ route('tours.wishlist.destroy', $tour) }}">@csrf @method('DELETE')<button class="is-saved" type="submit" aria-label="Remove {{ $tour->name }} from wishlist">♥ <span>Saved</span></button></form>
+                    @else
+                        <form method="POST" action="{{ route('tours.wishlist.store', $tour) }}">@csrf <button type="submit" aria-label="Add {{ $tour->name }} to wishlist">♡ <span>Wishlist</span></button></form>
+                    @endif
+                @endif
+            @else
+                <a href="{{ route('login') }}" aria-label="Log in to add {{ $tour->name }} to wishlist">♡ <span>Wishlist</span></a>
+            @endauth
+            <button type="button" data-share-tour data-share-title="{{ $tour->name }}" data-share-url="{{ route('tours.show', $tour) }}" aria-label="Share {{ $tour->name }}">↗ <span>Share</span></button>
+            <span class="da-product-share-status" data-share-status aria-live="polite"></span>
+        </div>
     </div>
 
     <div class="da-product-gallery" aria-label="{{ $tour->name }} gallery">
@@ -53,8 +72,19 @@
                 <img src="{{ $tour->imageUrl($mainImage) }}" alt="{{ $tour->image_alt ?: $tour->name }}" loading="lazy">
                 <img src="{{ $tour->imageUrl($mainImage) }}" alt="{{ $tour->image_alt ?: $tour->name }}" loading="lazy">
             @endforelse
-            <span class="da-product-gallery-count">See all photos</span>
+            <button class="da-product-gallery-count" type="button" data-gallery-open>See all photos</button>
         </div>
+    </div>
+    <div class="da-gallery-modal" data-gallery-modal hidden aria-hidden="true">
+        <button class="da-gallery-modal-scrim" type="button" data-gallery-close aria-label="Close photo gallery"></button>
+        <section class="da-gallery-modal-dialog" role="dialog" aria-modal="true" aria-label="{{ $tour->name }} photo gallery">
+            <header><h2>{{ $tour->name }} photos</h2><button type="button" data-gallery-close aria-label="Close photo gallery">×</button></header>
+            <div class="da-gallery-modal-grid">
+                @foreach($gallery as $image)
+                    <img src="{{ $tour->imageUrl($image) }}" alt="{{ $tour->image_alt ?: $tour->name }}" loading="lazy">
+                @endforeach
+            </div>
+        </section>
     </div>
 
     <div class="da-pickup-callout-row">
@@ -67,7 +97,7 @@
             @if($visibleFeatures->isNotEmpty())
                 <div class="da-features-grid-12">
                     @foreach($visibleFeatures as $feature)
-                        <div class="da-feature-item"><span class="da-feature-orb"><x-tour-feature-icon :name="$feature->icon" /></span><span class="da-feature-label">{{ $feature->name }}@if($feature->pivot->inclusion_status === 'optional') <small>optional</small>@endif</span></div>
+                        <div class="da-feature-item"><span class="da-feature-orb"><x-tour-feature-icon :name="$feature->displayIcon()" /></span><span class="da-feature-label">{{ $feature->name }}@if($feature->pivot->inclusion_status === 'optional') <small>optional</small>@endif</span></div>
                     @endforeach
                 </div>
             @endif
@@ -84,7 +114,7 @@
             @foreach (['Highlights' => 'highlights', 'Know before you go' => 'know_before_you_go', 'Age policy' => 'age_policy', 'Cancellation policy' => 'cancellation_policy', 'Additional notes' => 'additional_notes'] as $label => $field)
                 @if ($tour->$field)<details class="da-product-disclosure"><summary>{{ $label }} <b>⌄</b></summary><p>{!! nl2br(e($tour->$field)) !!}</p></details>@endif
             @endforeach
-            @if($tour->youtube_url)<a class="da-video-preview" href="{{ $tour->youtube_url }}" target="_blank" rel="noopener"><img src="{{ $tour->imageUrl($tour->main_image) }}" alt="{{ $tour->name }} video preview"><span>▶</span><strong>Watch {{ $tour->name }} video</strong></a>@endif
+            @if($tour->youtube_url)<a class="da-video-preview" href="{{ $tour->youtube_url }}" target="_blank" rel="noopener" aria-label="Watch {{ $tour->name }} on YouTube"><img src="{{ $youtubeThumbnail ?: $tour->imageUrl($mainImage) }}" alt="{{ $tour->name }} video preview" loading="lazy" data-video-thumbnail data-fallback="{{ $tour->imageUrl($mainImage) }}"><span class="da-video-preview-play" aria-hidden="true">▶</span><strong>Watch {{ $tour->name }} video</strong><span class="da-video-preview-source">Watch on YouTube</span></a>@endif
         </div>
 
         <aside class="da-booking-card" data-booking-card data-currency="{{ $bookingCurrency }}">

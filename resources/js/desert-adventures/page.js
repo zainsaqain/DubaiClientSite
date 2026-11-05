@@ -304,3 +304,71 @@ if (heroCarousel) {
         if (e.key === 'ArrowRight') { heroGoTo(heroIndex + 1); }
     });
 }
+
+queryAll('[data-video-thumbnail]').forEach((thumbnail) => {
+    thumbnail.addEventListener('error', () => {
+        const fallback = thumbnail.dataset.fallback;
+
+        if (fallback && thumbnail.src !== fallback) {
+            thumbnail.src = fallback;
+        }
+    }, { once: true });
+});
+
+const galleryModal = document.querySelector('[data-gallery-modal]');
+const galleryOpen = document.querySelector('[data-gallery-open]');
+const galleryClose = () => {
+    if (!galleryModal) {
+        return;
+    }
+
+    galleryModal.hidden = true;
+    galleryModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    galleryOpen?.focus();
+};
+
+galleryOpen?.addEventListener('click', () => {
+    if (!galleryModal) {
+        return;
+    }
+
+    galleryModal.hidden = false;
+    galleryModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    galleryModal.querySelector('[data-gallery-close]')?.focus();
+});
+
+queryAll('[data-gallery-close]').forEach((button) => button.addEventListener('click', galleryClose));
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && galleryModal && !galleryModal.hidden) {
+        galleryClose();
+    }
+});
+
+queryAll('[data-share-tour]').forEach((button) => {
+    button.addEventListener('click', async () => {
+        const title = button.dataset.shareTitle;
+        const url = button.dataset.shareUrl;
+        const status = button.closest('.da-product-actions')?.querySelector('[data-share-status]');
+
+        try {
+            if (navigator.share) {
+                await navigator.share({ title, url });
+                if (status) {
+                    status.textContent = 'Shared';
+                }
+            } else {
+                await navigator.clipboard.writeText(url);
+                if (status) {
+                    status.textContent = 'Link copied';
+                }
+            }
+        } catch (error) {
+            if (error?.name !== 'AbortError' && status) {
+                status.textContent = 'Unable to share';
+            }
+        }
+    });
+});

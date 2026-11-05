@@ -21,7 +21,7 @@ class User extends Authenticatable
     /**
      * Get the attributes that should be cast.
      *
-     * @return array<string, string>
+     * @return arr  ay<string, string>
      */
     protected function casts(): array
     {
@@ -36,5 +36,10 @@ class User extends Authenticatable
     public function bookings(): HasMany
     {
         return $this->hasMany(Booking::class);
+    }
+
+    public function wishlists(): HasMany
+    {
+        return $this->hasMany(Wishlist::class);
     }
 }

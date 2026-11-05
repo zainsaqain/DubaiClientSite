@@ -38,5 +38,5 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 4h12l-2 15a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2L6 4ZM5 4h14M12 2v2"/></svg>
         @break
     @default
-        <span>{{ $name ?: '✦' }}</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 3 2.05 5.95L20 11l-5.95 2.05L12 19l-2.05-5.95L4 11l5.95-2.05L12 3Z"/></svg>
 @endswitch

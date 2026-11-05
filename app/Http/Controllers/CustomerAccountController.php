@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tour;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -56,7 +57,33 @@ class CustomerAccountController extends Controller
 
     public function wishlist(Request $request): View
     {
-        return view('customer.wishlist', ['user' => $this->customer($request)]);
+        $user = $this->customer($request);
+        $wishlists = $user->wishlists()
+            ->with(['tour.category', 'tour.subcategory', 'tour.images', 'tour.prices'])
+            ->latest()
+            ->get();
+
+        return view('customer.wishlist', compact('user', 'wishlists'));
+    }
+
+    public function storeWishlist(Request $request, Tour $tour): RedirectResponse
+    {
+        $user = $this->customer($request);
+
+        abort_unless($tour->isPublic(), 404);
+
+        $user->wishlists()->firstOrCreate(['tour_id' => $tour->id]);
+
+        return back()->with('wishlist-status', 'Experience added to your wishlist.');
+    }
+
+    public function destroyWishlist(Request $request, Tour $tour): RedirectResponse
+    {
+        $user = $this->customer($request);
+
+        $user->wishlists()->where('tour_id', $tour->id)->delete();
+
+        return back()->with('wishlist-status', 'Experience removed from your wishlist.');
     }
 
     private function customer(Request $request): User

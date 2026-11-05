@@ -194,4 +194,37 @@ class TourCatalogueFieldsTest extends TestCase
 
         Storage::disk('public')->assertExists($tour->thumbnail);
     }
+
+    public function test_public_tour_uses_safe_feature_icons_and_a_youtube_thumbnail(): void
+    {
+        $category = TourCategory::query()->create([
+            'name' => 'Desert Adventures',
+            'slug' => 'desert-adventures',
+            'is_active' => true,
+        ]);
+        $tour = Tour::query()->create([
+            'tour_category_id' => $category->id,
+            'name' => 'YouTube Safari',
+            'slug' => 'youtube-safari',
+            'location' => 'Dubai',
+            'starting_price' => 299,
+            'currency' => 'AED',
+            'status' => 'active',
+            'youtube_url' => 'https://www.youtube.com/watch?v=ScMzIvxBSi4',
+        ]);
+        $feature = TourFeature::query()->create([
+            'name' => 'Shared or Private Transfer',
+            'icon' => 'images/tour-icons/Shared-or-Private-transfers.png',
+            'is_active' => true,
+        ]);
+        $tour->features()->attach($feature, ['inclusion_status' => 'included']);
+
+        $this->get(route('tours.show', $tour))
+            ->assertOk()
+            ->assertSee('https://i.ytimg.com/vi/ScMzIvxBSi4/hqdefault.jpg', false)
+            ->assertSee('data-video-thumbnail', false)
+            ->assertDontSee('images/tour-icons/Shared-or-Private-transfers.png', false);
+
+        $this->assertSame('transfer', $feature->displayIcon());
+    }
 }
