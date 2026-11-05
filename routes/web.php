@@ -23,6 +23,7 @@ use App\Http\Controllers\Admin\TransferController;
 use App\Http\Controllers\Admin\WaterparkThemeParkController;
 use App\Http\Controllers\Admin\WhyUsFeatureController;
 use App\Http\Controllers\BankTransferPaymentController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CustomerAccountController;
 use App\Http\Controllers\ProfileController;
@@ -123,6 +124,9 @@ Route::get('/admin', [AdminDashboardController::class, 'index'])
     ->name('admin.dashboard');
 
 Route::get('/search', [PublicCatalogueController::class, 'search'])->name('tours.search');
+Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+Route::post('/cart/{tour:slug}', [CartController::class, 'store'])->middleware('throttle:20,1')->name('cart.store');
+Route::delete('/cart/{lineId}', [CartController::class, 'destroy'])->name('cart.destroy');
 Route::get('/experiences/{category:slug}', [PublicCatalogueController::class, 'category'])->name('tour-categories.show');
 Route::get('/experiences/{category:slug}/{subcategory:slug}', [PublicCatalogueController::class, 'subcategory'])->name('tour-subcategories.show');
 

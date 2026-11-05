@@ -54,6 +54,7 @@ class AppServiceProvider extends ServiceProvider
                 ->values();
 
             $view->with('navigationCategories', $navigationCategories);
+            $view->with('cartCount', count(session('cart', [])));
         });
 
         View::composer('admin.partials.sidebar', function ($view): void {

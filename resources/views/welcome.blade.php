@@ -1,4 +1,5 @@
 @php
+$cartCount = count(session('cart', []));
 $heroSlides = $heroSlides ?? [
     [
         'id' => 'dubai-adventure',
@@ -381,10 +382,10 @@ $dubaiMoments = $dubaiMoments ?? [
                             <b>0</b>
                         </span>
                     </a>
-                    <a class="mobile-icon-link" href="#cart" aria-label="Cart, 0 items">
+                    <a class="mobile-icon-link" href="{{ route('cart.index') }}" aria-label="Cart, {{ $cartCount }} items">
                         <span class="action-icon">
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 11H6.2l-.7-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg>
-                            <b>0</b>
+                            <b>{{ $cartCount }}</b>
                         </span>
                     </a>
                     <a class="mobile-icon-link whatsapp-mobile" href="https://wa.me/971502299598?text=Hello%20Waheed%20Murad%20Tourism%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
@@ -455,10 +456,10 @@ $dubaiMoments = $dubaiMoments ?? [
                         </span>
                         <span>Wishlist</span>
                     </a>
-                    <a class="header-action" href="#cart" aria-label="Cart, 0 items">
+                    <a class="header-action" href="{{ route('cart.index') }}" aria-label="Cart, {{ $cartCount }} items">
                         <span class="action-icon">
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l-.7 11H6.2l-.7-11Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg>
-                            <b>0</b>
+                            <b>{{ $cartCount }}</b>
                         </span>
                         <span>Cart</span>
                     </a>
