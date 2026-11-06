@@ -1011,6 +1011,41 @@ $dubaiMoments = $dubaiMoments ?? [
             </div>
         </section>
 
+        <section class="home-travel-stats" aria-label="Waheed Murad Tourism at a glance">
+            <div class="header-container">
+                <div class="home-travel-stats-grid">
+                    <article class="home-travel-stat">
+                        <span class="home-travel-stat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 49c9-17 18-17 27 0h21"/><path d="M11 49 4 56"/><path d="M26 49 33 56"/><path d="M19 23a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/><path d="M40 17a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/></svg>
+                        </span>
+                        <strong>100+</strong>
+                        <span>Tour Activities</span>
+                    </article>
+                    <article class="home-travel-stat">
+                        <span class="home-travel-stat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="24"/><path d="M8 32h48M32 8c7 7 10 15 10 24S39 49 32 56c-7-7-10-15-10-24S25 15 32 8Z"/></svg>
+                        </span>
+                        <strong>5K+</strong>
+                        <span>Happy Travelers</span>
+                    </article>
+                    <article class="home-travel-stat">
+                        <span class="home-travel-stat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M23 53H13V28h10"/><path d="M23 53h19c5 0 9-2 9-7 0-3-2-5-5-5h-5c5 0 8-2 8-6 0-3-2-5-5-5h-7c5 0 8-2 8-6 0-3-2-5-5-5H29l3-8c1-4-1-7-4-7l-8 17v32Z"/></svg>
+                        </span>
+                        <strong>97%</strong>
+                        <span>Customer Satisfaction</span>
+                    </article>
+                    <article class="home-travel-stat">
+                        <span class="home-travel-stat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 35v-5a20 20 0 0 1 40 0v5"/><path d="M12 35h8v15h-3a5 5 0 0 1-5-5V35ZM52 35h-8v15h3a5 5 0 0 0 5-5V35Z"/><path d="M47 50c0 5-4 7-9 7h-6"/></svg>
+                        </span>
+                        <strong>24/7</strong>
+                        <span>Customer Support</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Signature Journeys & Guest Stories (#why-us) -->
         <section class="signature-journeys-section" id="why-us">
             <div class="header-container">
