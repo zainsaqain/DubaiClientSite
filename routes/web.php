@@ -26,18 +26,13 @@ use App\Http\Controllers\BankTransferPaymentController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CustomerAccountController;
+use App\Http\Controllers\LegacyTourController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicCatalogueController;
-use App\Models\Attraction;
-use App\Models\CityTour;
-use App\Models\CruiseBoatTour;
 use App\Models\DesertAdventure;
-use App\Models\SportsEvent;
 use App\Models\Tour;
 use App\Models\TourCategory;
 use App\Models\TourSubcategory;
-use App\Models\Transfer;
-use App\Models\WaterparkThemePark;
 use App\Models\WhyUsFeature;
 use Illuminate\Support\Facades\Route;
 
@@ -51,49 +46,6 @@ $tourListing = static function (Tour $tour): array {
         'location' => $tour->location,
         'price' => $tour->currency.' '.number_format((float) $tour->starting_price),
         'url' => route('tours.show', $tour),
-    ];
-};
-
-/**
- * Keep unified tour records first while avoiding duplicate legacy listings.
- *
- * @param  array<int, array<string, mixed>>  $managed
- * @param  array<int, array<string, mixed>>  $legacy
- * @return array<int, array<string, mixed>>
- */
-$mergeCatalogue = static function (array $managed, array $legacy, bool $includeCategory = false): array {
-    return collect([...$managed, ...$legacy])
-        ->unique(static function (array $listing) use ($includeCategory): string {
-            $key = str($listing['title'] ?? '')->lower()->toString();
-
-            return $includeCategory
-                ? $key.'|'.str($listing['category_name'] ?? '')->lower()->toString()
-                : $key;
-        })
-        ->values()
-        ->all();
-};
-
-/** @return array<string, mixed> */
-$legacyCatalogueItem = static function (object $item, string $type, string $fallbackImage, string $tagField): array {
-    $image = $item->image ?: $fallbackImage;
-
-    return [
-        'image' => str_starts_with($image, 'images/') ? $image : 'storage/'.$image,
-        'gallery' => [str_starts_with($image, 'images/') ? $image : 'storage/'.$image],
-        'title' => $item->title,
-        'description' => $item->description,
-        'category' => str($item->{$tagField} ?: $type)->slug()->toString(),
-        'category_name' => $item->{$tagField} ?: $type,
-        'time' => 'anytime',
-        'location' => str($item->location ?: 'Dubai')->slug()->toString(),
-        'location_label' => $item->location ?: 'Dubai',
-        'vehicle' => 'standard',
-        'language' => 'english',
-        'price' => (float) $item->price,
-        'price_label' => 'PKR '.number_format((float) $item->price),
-        'location_tag' => $item->location ?: 'Dubai',
-        'url' => url('/').'#booking',
     ];
 };
 
@@ -149,6 +101,7 @@ Route::get('/tours/{tour:slug}', function (Tour $tour) {
 
     return view('pages.tour-detail', compact('tour', 'relatedTours', 'recentTours'));
 })->name('tours.show');
+Route::get('/legacy-tours/{type}/{legacyTour}', [LegacyTourController::class, 'show'])->name('legacy-tours.show');
 
 Route::middleware('auth')->group(function () {
     Route::get('/tours/{tour:slug}/checkout', [CheckoutController::class, 'create'])->name('checkout.create');
@@ -159,16 +112,19 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/desert-adventures', [PublicCatalogueController::class, 'desertAdventures'])->name('desert-adventures');
-Route::get('/attractions', function () use ($mergeCatalogue, $tourListing) {
-    $attractions = Attraction::query()->where('is_active', true)->latest()->get()
-        ->map(fn (Attraction $attraction) => $attraction->toPublicArray())->all();
-
-    $managed = Tour::query()->public()->with(['category', 'subcategory'])->whereHas('category', fn ($query) => $query->where('slug', 'attractions'))->orderBy('display_order')->get()->map($tourListing)->all();
-    $attractions = $mergeCatalogue($managed, $attractions);
+Route::get('/attractions', function () use ($tourListing) {
+    $attractions = Tour::query()
+        ->public()
+        ->with(['category', 'subcategory'])
+        ->whereHas('category', fn ($query) => $query->where('slug', 'attractions'))
+        ->orderBy('display_order')
+        ->get()
+        ->map($tourListing)
+        ->all();
 
     return view('pages.attractions', compact('attractions'));
 })->name('attractions');
-Route::get('/city-tours', function () use ($mergeCatalogue, $tourListing) {
+Route::get('/city-tours', function () use ($tourListing) {
     $category = TourCategory::query()
         ->where('slug', 'city-tours')
         ->where('is_active', true)
@@ -185,57 +141,158 @@ Route::get('/city-tours', function () use ($mergeCatalogue, $tourListing) {
         ])
         ->first();
 
-    $tours = CityTour::query()->where('is_active', true)->latest()->get()
-        ->map(fn (CityTour $tour) => $tour->toPublicArray())->all();
-
-    $managed = Tour::query()->public()->with(['category', 'subcategory'])->whereHas('category', fn ($query) => $query->where('slug', 'city-tours'))->orderBy('display_order')->get()->map($tourListing)->all();
-    $tours = $mergeCatalogue($managed, $tours);
+    $tours = Tour::query()
+        ->public()
+        ->with(['category', 'subcategory'])
+        ->whereHas('category', fn ($query) => $query->where('slug', 'city-tours'))
+        ->orderBy('display_order')
+        ->get()
+        ->map($tourListing)
+        ->all();
 
     return view('pages.city-tours', compact('category', 'tours'));
 })->name('city-tours');
+Route::get('/culture', function () use ($tourListing) {
+    $category = TourCategory::query()
+        ->where('slug', 'city-tours')
+        ->where('is_active', true)
+        ->with([
+            'contentBlocks' => static function ($query): void {
+                $query->where('is_active', true)->orderBy('display_order');
+            },
+            'faqs' => static function ($query): void {
+                $query->where('is_active', true)->orderBy('display_order');
+            },
+            'subcategories' => static function ($query): void {
+                $query->where('is_active', true)->orderBy('display_order');
+            },
+        ])
+        ->first();
+
+    $tours = Tour::query()
+        ->public()
+        ->with(['category', 'subcategory'])
+        ->whereHas('category', fn ($query) => $query->where('slug', 'city-tours'))
+        ->orderBy('display_order')
+        ->get()
+        ->map($tourListing)
+        ->all();
+
+    return view('pages.city-tours', [
+        'category' => $category,
+        'tours' => $tours,
+        'listingTitle' => 'Culture',
+        'listingBreadcrumb' => 'Culture',
+        'listingCategoryParent' => 'Why us',
+        'listingCategoryName' => 'Culture',
+        'listingCategoryValue' => 'city-tours',
+        'hideReferenceContent' => true,
+    ]);
+})->name('culture');
+Route::get('/nature', function () use ($tourListing) {
+    $natureTourSlugs = [
+        ['evening-desert-safari-in-dubai'],
+        ['exclusive-desert-experience'],
+        ['camel-ride'],
+        ['private-al-ain-city-tour'],
+        ['the-fort-lisaili-desert-experience', 'a-morning-at-the-fort-lisaili'],
+    ];
+    $availableTours = Tour::query()
+        ->public()
+        ->with(['category', 'subcategory'])
+        ->whereIn('slug', collect($natureTourSlugs)->flatten())
+        ->get()
+        ->keyBy('slug');
+    $tours = collect($natureTourSlugs)
+        ->map(fn (array $slugs): ?Tour => collect($slugs)->map(fn (string $slug): ?Tour => $availableTours->get($slug))->first())
+        ->filter()
+        ->map($tourListing)
+        ->values()
+        ->all();
+
+    return view('pages.city-tours', [
+        'category' => null,
+        'tours' => $tours,
+        'listingTitle' => 'Nature',
+        'listingBreadcrumb' => 'Nature',
+        'listingCategoryParent' => 'Why us',
+        'listingCategoryName' => 'Nature',
+        'listingCategoryValue' => 'nature',
+        'hideReferenceContent' => true,
+    ]);
+})->name('nature');
+Route::get('/innovation', function () use ($tourListing) {
+    $innovationTourNames = [
+        'At the Top Burj Khalifa - Lounge Access',
+        'Ce La Vi - Lunch set menu with Burj Khalifa views',
+        'Kaleidoscope Dinner Buffet',
+        'Etihad Tower Observation Deck',
+        'At the Top Burj Khalifa - Sky Level 148 + 125 + 124',
+        'Lotus Megayacht- shared dinner cruise',
+        'Aura - Friday Night Brunch in the Lounge',
+        'Museum of the Future',
+        'Palm Monorail - Gateway to Atlantis Station - Round Trip',
+        'Yas Marina Circuit - Karting',
+        'Dubai Frame Entrance Ticket',
+        'Aura - Lunch in the Sky',
+    ];
+    $availableTours = Tour::query()
+        ->public()
+        ->with(['category', 'subcategory'])
+        ->whereIn('name', $innovationTourNames)
+        ->get()
+        ->keyBy('name');
+    $tours = collect($innovationTourNames)
+        ->map(fn (string $name): ?Tour => $availableTours->get($name))
+        ->filter()
+        ->map($tourListing)
+        ->values()
+        ->all();
+
+    return view('pages.city-tours', [
+        'category' => null,
+        'tours' => $tours,
+        'listingTitle' => 'Innovation',
+        'listingBreadcrumb' => 'Innovation',
+        'listingCategoryParent' => 'Why us',
+        'listingCategoryName' => 'Innovation',
+        'listingCategoryValue' => 'innovation',
+        'hideReferenceContent' => true,
+    ]);
+})->name('innovation');
 Route::get('/city-tours/{subcategory:slug}', [PublicCatalogueController::class, 'cityTourDestination'])
     ->name('city-tours.destination');
 
-Route::get('/sports-events', function () use ($mergeCatalogue, $tourListing) {
-    $events = SportsEvent::query()
-        ->where('is_active', true)
-        ->latest()
+Route::get('/sports-events', function () use ($tourListing) {
+    $events = Tour::query()
+        ->public()
+        ->with(['category', 'subcategory'])
+        ->whereHas('category', fn ($query) => $query->where('slug', 'sports-events'))
+        ->orderBy('display_order')
         ->get()
-        ->map(fn (SportsEvent $event) => $event->toPublicArray())
+        ->map($tourListing)
         ->all();
-
-    $managed = Tour::query()->public()->with(['category', 'subcategory'])->whereHas('category', fn ($query) => $query->where('slug', 'sports-events'))->orderBy('display_order')->get()->map($tourListing)->all();
-    $events = $mergeCatalogue($managed, $events);
 
     return view('pages.sports-events', compact('events'));
 })->name('sports-events');
-Route::get('/cruise-boat-tours', function () use ($legacyCatalogueItem, $managedCatalogueItem) {
-    $legacy = CruiseBoatTour::query()->where('is_active', true)->latest()->get()
-        ->map(fn (CruiseBoatTour $tour): array => $legacyCatalogueItem($tour, 'Cruise & Boat Tours', 'images/cruise-dubai-marina.png', 'tour_type'));
-    $managed = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
+Route::get('/cruise-boat-tours', function () use ($managedCatalogueItem) {
+    $items = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
         ->whereHas('category', fn ($query) => $query->where('slug', 'cruise-and-boat-tours'))
         ->orderBy('display_order')->get()->map($managedCatalogueItem);
-    $items = collect($managed->all())->merge($legacy)->unique('title')->values();
 
     return view('pages.cruise-boat-tours', compact('items'));
 })->name('cruise-boat-tours');
-Route::get('/waterparks-theme-parks', function () use ($legacyCatalogueItem, $managedCatalogueItem) {
-    $legacy = WaterparkThemePark::query()->where('is_active', true)->latest()->get()
-        ->map(fn (WaterparkThemePark $park): array => $legacyCatalogueItem($park, 'Waterparks & Theme Parks', 'images/water-theme-parks-dubai.png', 'park_type'));
-    $managed = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
+Route::get('/waterparks-theme-parks', function () use ($managedCatalogueItem) {
+    $items = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
         ->whereHas('category', fn ($query) => $query->where('slug', 'waterparks-theme-parks'))
         ->orderBy('display_order')->get()->map($managedCatalogueItem);
-    $items = collect($managed->all())->merge($legacy)->unique('title')->values();
 
     return view('pages.waterparks-theme-parks', compact('items'));
 })->name('waterparks-theme-parks');
-Route::get('/transfers', function () use ($legacyCatalogueItem, $managedCatalogueItem) {
-    $legacy = Transfer::query()->where('is_active', true)->latest()->get()
-        ->map(fn (Transfer $transfer): array => $legacyCatalogueItem($transfer, 'Transfers', 'images/airport-transfer.png', 'transfer_type'));
-    $managed = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
+Route::get('/transfers', function () use ($managedCatalogueItem) {
+    $items = Tour::query()->public()->with(['category', 'subcategory', 'images', 'prices'])
         ->whereHas('category', fn ($query) => $query->where('slug', 'transfers'))
         ->orderBy('display_order')->get()->map($managedCatalogueItem);
-    $items = collect($managed->all())->merge($legacy)->unique('title')->values();
 
     return view('pages.transfers', compact('items'));
 })->name('transfers');
@@ -244,6 +301,7 @@ Route::get('/why-us', function () {
 
     return view('pages.why-us', compact('features'));
 })->name('why-us');
+Route::view('/sustainable-tourism', 'pages.sustainable-tourism')->name('sustainable-tourism');
 Route::view('/about-us', 'pages.about-us')->name('about-us');
 Route::view('/where-to-find-us', 'pages.where-to-find-us')->name('where-to-find-us');
 Route::view('/travel-agent-partners', 'pages.travel-agent-partners')->name('travel-agent-partners');
@@ -295,38 +353,22 @@ Route::get('/desert-adventures/desert-safaris/evening-desert-safari', function (
     ]);
 })->name('evening-desert-safari');
 Route::view('/desert-adventures/desert-safaris/overnight-wildlife-adventure', 'pages.adventure-product-detail', ['productKey' => 'overnight-wildlife-adventure'])->name('overnight-wildlife-adventure');
-Route::get('/desert-adventures/dune-buggies', function () use ($mergeCatalogue) {
-    $adventures = DesertAdventure::query()
-        ->where('is_active', true)
-        ->where('category', 'Dune Buggies')
-        ->latest()
-        ->get()
-        ->map(fn (DesertAdventure $adventure) => $adventure->toCatalogueArray())
-        ->all();
-
-    $tourManagerAdventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
+Route::get('/desert-adventures/dune-buggies', function () {
+    $adventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
         ->whereHas('subcategory', fn ($query) => $query->where('slug', 'dune-buggies'))
         ->orderBy('display_order')->get()->map(fn (Tour $tour) => $tour->toCatalogueArray())->all();
 
-    return view('pages.dune-buggies', ['adventures' => $mergeCatalogue($tourManagerAdventures, $adventures ?: config('dune-buggies.adventures', []), true)]);
+    return view('pages.dune-buggies', compact('adventures'));
 })->name('dune-buggies-category');
 Route::view('/desert-adventures/dune-buggies/dune-buggy-adventure', 'pages.dune-buggy-adventure')->name('dune-buggy-adventure');
 Route::view('/desert-adventures/dune-buggies/dune-buggy-evening-safari-combo', 'pages.adventure-product-detail', ['productKey' => 'dune-buggy-evening-safari-combo'])->name('dune-buggy-evening-safari-combo');
 Route::view('/desert-adventures/dune-buggies/dune-buggy-exclusive-experience-combo', 'pages.adventure-product-detail', ['productKey' => 'dune-buggy-exclusive-experience-combo'])->name('dune-buggy-exclusive-experience-combo');
-Route::get('/desert-adventures/desert-experiences', function () use ($mergeCatalogue) {
-    $adventures = DesertAdventure::query()
-        ->where('is_active', true)
-        ->where('category', 'Desert Experiences')
-        ->latest()
-        ->get()
-        ->map(fn (DesertAdventure $adventure) => $adventure->toCatalogueArray())
-        ->all();
-
-    $tourManagerAdventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
+Route::get('/desert-adventures/desert-experiences', function () {
+    $adventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
         ->whereHas('subcategory', fn ($query) => $query->where('slug', 'desert-experiences'))
         ->orderBy('display_order')->get()->map(fn (Tour $tour) => $tour->toCatalogueArray())->all();
 
-    return view('pages.desert-experiences', ['adventures' => $mergeCatalogue($tourManagerAdventures, $adventures ?: config('desert-experiences.adventures', []), true)]);
+    return view('pages.desert-experiences', compact('adventures'));
 })->name('desert-experiences');
 Route::view('/desert-adventures/desert-experiences/exclusive-desert-experience', 'pages.exclusive-desert-experience')->name('exclusive-desert-experience');
 Route::view('/desert-adventures/desert-experiences/camel-ride', 'pages.camel-ride')->name('camel-ride');
@@ -336,20 +378,12 @@ Route::view('/desert-adventures/desert-experiences/vantage-desert-experience', '
 Route::view('/desert-adventures/desert-experiences/wadi-adventures', 'pages.adventure-product-detail', ['productKey' => 'wadi-adventures'])->name('wadi-adventures');
 Route::view('/desert-adventures/desert-experiences/three-day-camping-adventure', 'pages.adventure-product-detail', ['productKey' => 'three-day-camping-adventure'])->name('three-day-camping-adventure');
 Route::view('/desert-adventures/desert-experiences/morning-at-the-fort-lisaili', 'pages.adventure-product-detail', ['productKey' => 'morning-at-the-fort-lisaili'])->name('morning-at-the-fort-lisaili');
-Route::get('/desert-adventures/school-trips', function () use ($mergeCatalogue) {
-    $adventures = DesertAdventure::query()
-        ->where('is_active', true)
-        ->where('category', 'School Trips')
-        ->latest()
-        ->get()
-        ->map(fn (DesertAdventure $adventure) => $adventure->toCatalogueArray())
-        ->all();
-
-    $tourManagerAdventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
+Route::get('/desert-adventures/school-trips', function () {
+    $adventures = Tour::query()->public()->with(['category', 'subcategory', 'images'])
         ->whereHas('subcategory', fn ($query) => $query->where('slug', 'school-trips'))
         ->orderBy('display_order')->get()->map(fn (Tour $tour) => $tour->toCatalogueArray())->all();
 
-    return view('pages.school-trips', ['adventures' => $mergeCatalogue($tourManagerAdventures, $adventures ?: config('school-trips.adventures', []), true)]);
+    return view('pages.school-trips', compact('adventures'));
 })->name('school-trips');
 Route::view('/desert-adventures/school-trips/morning-wildlife-safari', 'pages.adventure-product-detail', ['productKey' => 'morning-wildlife-safari'])->name('morning-wildlife-safari');
 Route::view('/blogs', 'pages.blogs')->name('blogs');

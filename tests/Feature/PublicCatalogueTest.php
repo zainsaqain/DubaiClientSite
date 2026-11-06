@@ -2,8 +2,6 @@
 
 namespace Tests\Feature;
 
-use App\Models\Attraction;
-use App\Models\SportsEvent;
 use App\Models\Tour;
 use App\Models\TourCategory;
 use App\Models\TourCategoryContentBlock;
@@ -12,9 +10,6 @@ use App\Models\TourImage;
 use App\Models\TourPackage;
 use App\Models\TourPrice;
 use App\Models\TourSubcategory;
-use App\Models\Transfer;
-use App\Models\CruiseBoatTour;
-use App\Models\WaterparkThemePark;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -24,21 +19,17 @@ class PublicCatalogueTest extends TestCase
 
     public function test_attractions_and_sports_events_render_the_shared_live_filter_markup(): void
     {
-        Attraction::query()->create([
-            'title' => 'Palm View',
-            'attraction_type' => 'Sky views',
-            'description' => 'A view across Palm Jumeirah.',
+        $attractions = $this->createCategory('attractions', 'Attractions');
+        $sports = $this->createCategory('sports-events', 'Sports Events');
+        $attractionSubcategory = $this->createSubcategory($attractions, 'sky-views', 'Sky Views');
+        $sportsSubcategory = $this->createSubcategory($sports, 'golf', 'Golf');
+
+        $this->createTour($attractions, $attractionSubcategory, 'palm-view', 'Palm View', [
             'location' => 'Palm Jumeirah',
-            'price' => 12500,
-            'is_active' => true,
+            'starting_price' => 12500,
         ]);
-        SportsEvent::query()->create([
-            'title' => 'Dubai Golf Day',
-            'event_type' => 'Golf',
-            'description' => 'An outdoor golf experience.',
-            'location' => 'Dubai',
-            'price' => 21000,
-            'is_active' => true,
+        $this->createTour($sports, $sportsSubcategory, 'dubai-golf-day', 'Dubai Golf Day', [
+            'starting_price' => 21000,
         ]);
 
         foreach (['attractions' => 'Palm View', 'sports-events' => 'Dubai Golf Day'] as $route => $title) {
@@ -349,10 +340,13 @@ class PublicCatalogueTest extends TestCase
 
     public function test_speciality_catalogues_use_the_shared_filterable_listing_and_empty_categories_have_no_dropdown(): void
     {
-        Transfer::query()->create(['title' => 'Airport Transfer', 'transfer_type' => 'Airport', 'description' => 'Private airport pickup.', 'location' => 'Dubai', 'price' => 12000, 'is_active' => true]);
-        CruiseBoatTour::query()->create(['title' => 'Marina Cruise', 'tour_type' => 'Dinner cruise', 'description' => 'A Dubai Marina dinner cruise.', 'location' => 'Dubai Marina', 'price' => 30000, 'is_active' => true]);
-        WaterparkThemePark::query()->create(['title' => 'Waterpark Day Pass', 'park_type' => 'Waterpark', 'description' => 'A family waterpark day.', 'location' => 'Dubai', 'price' => 25000, 'is_active' => true]);
-        $this->createCategory('transfers', 'Transfers');
+        $transfers = $this->createCategory('transfers', 'Transfers');
+        $cruises = $this->createCategory('cruise-and-boat-tours', 'Cruise and Boat Tours');
+        $waterparks = $this->createCategory('waterparks-theme-parks', 'Waterparks and Theme Parks');
+
+        $this->createTour($transfers, null, 'airport-transfer', 'Airport Transfer', ['starting_price' => 12000]);
+        $this->createTour($cruises, null, 'marina-cruise', 'Marina Cruise', ['location' => 'Dubai Marina', 'starting_price' => 30000]);
+        $this->createTour($waterparks, null, 'waterpark-day-pass', 'Waterpark Day Pass', ['starting_price' => 25000]);
 
         foreach ([
             ['route' => 'transfers', 'title' => 'Airport Transfer'],
@@ -413,11 +407,11 @@ class PublicCatalogueTest extends TestCase
     }
 
     /** @param array<string, mixed> $overrides */
-    private function createTour(TourCategory $category, TourSubcategory $subcategory, string $slug, string $name, array $overrides = []): Tour
+    private function createTour(TourCategory $category, ?TourSubcategory $subcategory, string $slug, string $name, array $overrides = []): Tour
     {
         return Tour::query()->create(array_merge([
             'tour_category_id' => $category->id,
-            'tour_subcategory_id' => $subcategory->id,
+            'tour_subcategory_id' => $subcategory?->id,
             'name' => $name,
             'slug' => $slug,
             'short_description' => $name.' description.',

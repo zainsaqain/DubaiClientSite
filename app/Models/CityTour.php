@@ -32,6 +32,7 @@ class CityTour extends Model
             'title' => $this->title, 'tag' => $this->tour_type, 'description' => $this->description,
             'location' => $this->location, 'price' => 'PKR '.number_format((float) $this->price),
             'image' => ! $this->image ? 'images/dubai-adventure.png' : (str_starts_with($this->image, 'images/') ? $this->image : 'storage/'.$this->image),
+            'url' => route('legacy-tours.show', ['type' => 'city-tour', 'legacyTour' => $this]),
         ];
     }
 }

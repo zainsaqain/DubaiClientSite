@@ -33,11 +33,11 @@
                 @foreach($navigationCategories as $navigationCategory)
                     @if($navigationCategory->subcategories->isNotEmpty())
                         <div class="nav-item has-mega-menu {{ request()->routeIs('tour-categories.show') && request()->route('category')?->is($navigationCategory) ? 'is-active' : '' }}" data-category-mega-menu>
-                            <a class="nav-trigger" href="{{ $navigationCategory->slug === 'desert-adventures' ? route('desert-adventures') : route('catalogue.shortcut', ['catalogueSlug' => $navigationCategory->slug]) }}" aria-expanded="false">{{ $navigationCategory->name }}</a>
+                            <a class="nav-trigger" href="{{ $navigationCategory->slug === 'desert-adventures' ? route('desert-adventures') : ($navigationCategory->slug === 'attractions' ? route('attractions') : route('catalogue.shortcut', ['catalogueSlug' => $navigationCategory->slug])) }}" aria-expanded="false">{{ $navigationCategory->name }}</a>
                             <x-site.category-mega-menu :category="$navigationCategory" />
                         </div>
                     @else
-                        <a class="nav-trigger" href="{{ $navigationCategory->slug === 'desert-adventures' ? route('desert-adventures') : route('catalogue.shortcut', ['catalogueSlug' => $navigationCategory->slug]) }}">{{ $navigationCategory->name }}</a>
+                        <a class="nav-trigger" href="{{ $navigationCategory->slug === 'desert-adventures' ? route('desert-adventures') : ($navigationCategory->slug === 'attractions' ? route('attractions') : route('catalogue.shortcut', ['catalogueSlug' => $navigationCategory->slug])) }}">{{ $navigationCategory->name }}</a>
                     @endif
                 @endforeach
                 <div class="nav-item has-mega-menu {{ request()->routeIs('why-us') ? 'is-active' : '' }}" data-why-us-mega-menu><a class="nav-trigger" href="{{ route('why-us') }}" aria-expanded="false">Why us <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4"/></svg></a><x-site.why-us-mega-menu /></div>
@@ -79,7 +79,7 @@
                     @if($navigationCategory->subcategories->isNotEmpty())
                         <button class="mobile-menu-item" type="button" data-mobile-submenu-target="mobile-category-menu-{{ $navigationCategory->id }}" aria-expanded="false"><span class="mobile-nav-icon icon-dunes" aria-hidden="true">⌁</span><span>{{ $navigationCategory->name }}</span><i aria-hidden="true">›</i></button>
                     @else
-                        <a class="mobile-menu-item" href="{{ $navigationCategory->slug === 'desert-adventures' ? route('desert-adventures') : route('catalogue.shortcut', ['catalogueSlug' => $navigationCategory->slug]) }}"><span class="mobile-nav-icon icon-dunes" aria-hidden="true">⌁</span><span>{{ $navigationCategory->name }}</span></a>
+                        <a class="mobile-menu-item" href="{{ $navigationCategory->slug === 'desert-adventures' ? route('desert-adventures') : ($navigationCategory->slug === 'attractions' ? route('attractions') : route('catalogue.shortcut', ['catalogueSlug' => $navigationCategory->slug])) }}"><span class="mobile-nav-icon icon-dunes" aria-hidden="true">⌁</span><span>{{ $navigationCategory->name }}</span></a>
                     @endif
                 @endforeach
                 <a class="mobile-menu-item {{ request()->routeIs('why-us') ? 'is-active' : '' }}" href="{{ route('why-us') }}"><span class="mobile-nav-icon icon-why" aria-hidden="true">♥</span><span>Why us</span><i aria-hidden="true">›</i></a>

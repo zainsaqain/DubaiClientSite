@@ -35,6 +35,7 @@ class Attraction extends Model
             'description' => $this->description,
             'location' => $this->location,
             'price' => 'PKR '.number_format((float) $this->price),
+            'url' => route('legacy-tours.show', ['type' => 'attraction', 'legacyTour' => $this]),
         ];
     }
 }

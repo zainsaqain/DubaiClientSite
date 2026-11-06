@@ -1,6 +1,6 @@
 @extends('layouts.desert-adventures')
 
-@section('title', 'Dubai City Tours | Waheed Murad Tourism')
+@section('title', ($listingTitle ?? 'Dubai City Tours').' | Waheed Murad Tourism')
 
 @section('content')
     @php
@@ -16,7 +16,7 @@
 
             return [
                 ...$tour,
-                'category' => \Illuminate\Support\Str::slug((string) ($tour['category'] ?? 'city-tours')),
+                'category' => \Illuminate\Support\Str::slug((string) ($listingCategoryValue ?? $tour['category'] ?? 'city-tours')),
                 'time' => \Illuminate\Support\Str::slug((string) ($tour['time'] ?? $tour['experience_time'] ?? 'flexible')),
                 'location' => \Illuminate\Support\Str::slug($location),
                 'location_tag' => $location,
@@ -50,10 +50,18 @@
     @endphp
 
     <section class="da-intro da-container">
-        <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => 'City Tours']]" />
-        <h1>{{ $category?->name ?? 'City Tours' }}</h1>
-        <p>{{ $category?->description ?: 'At Waheed Murad Tourism, choose from city tours across Dubai and the UAE, designed around the landmarks, culture and experiences you want to discover.' }}</p>
-        <h2 class="da-section-title">All City <span>Tours</span></h2>
+        <x-breadcrumb :items="[['label' => 'Home', 'url' => route('home')], ['label' => $listingBreadcrumb ?? 'City Tours']]" />
+        <h1>{{ $listingTitle ?? $category?->name ?? 'City Tours' }}</h1>
+        @isset($listingDescription)
+            <p>{{ $listingDescription }}</p>
+        @else
+            @unless(isset($hideReferenceContent) && $hideReferenceContent)
+                <p>{{ $category?->description ?: 'At Waheed Murad Tourism, choose from city tours across Dubai and the UAE, designed around the landmarks, culture and experiences you want to discover.' }}</p>
+            @endunless
+        @endisset
+        @unless(isset($hideReferenceContent) && $hideReferenceContent)
+            <h2 class="da-section-title">All City <span>Tours</span></h2>
+        @endunless
     </section>
 
     <section class="da-container da-catalogue" id="all-city-tours" aria-label="All city tours">
@@ -65,7 +73,10 @@
             <div class="da-filter-groups" data-filter-groups>
                 <details open>
                     <summary>Category <b>⌃</b></summary>
-                    <p class="da-filter-parent">{{ $category?->name ?? 'City Tours' }}</p>
+                    <p class="da-filter-parent">{{ $listingCategoryParent ?? $category?->name ?? 'City Tours' }}</p>
+                    @if (isset($listingCategoryName, $listingCategoryValue))
+                        <label><input type="checkbox" value="{{ $listingCategoryValue }}" data-filter="category" data-filter-label="{{ $listingCategoryName }}"> {{ $listingCategoryName }} ({{ $catalogueTours->count() }})</label>
+                    @endif
                 </details>
                 <details open>
                     <summary>Location <b>⌃</b></summary>
@@ -139,6 +150,7 @@
         </div>
     </section>
 
+    @unless(isset($hideReferenceContent) && $hideReferenceContent)
     @php
         $fallbackStories = [
             ['heading' => 'City experiences designed around you', 'body' => 'Explore the UAE through city tours that bring together landmark visits, cultural discoveries and time to enjoy each destination at your own pace.', 'image' => 'images/abu-dhabi/abu-dhabi-corniche.png', 'alt' => 'UAE city skyline'],
@@ -209,4 +221,5 @@
             @endif
         </section>
     </section>
+    @endunless
 @endsection

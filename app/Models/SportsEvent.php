@@ -52,6 +52,7 @@ class SportsEvent extends Model
             'location' => $this->location,
             'price' => 'PKR '.number_format((float) $this->price),
             'tag' => $this->event_type,
+            'url' => route('legacy-tours.show', ['type' => 'sports-event', 'legacyTour' => $this]),
         ];
     }
 }
